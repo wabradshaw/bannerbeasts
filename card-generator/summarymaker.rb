@@ -13,8 +13,8 @@ SCALE = 2 # 1-> 300DPI, 2-> 600DPI
 DPI = 300
 DPMM = DPI * SCALE / 25.4
 
-#PAD = 0 #Tabletop
-PAD = 36 * SCALE #Printer
+PAD = 0 #Tabletop
+#PAD = 36 * SCALE #Printer
 DOUBLE_PAD = 2*PAD
 
 CARD_WIDTH = MM_TOTAL_CARD_WIDTH * DPMM
