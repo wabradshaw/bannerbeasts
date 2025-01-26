@@ -177,7 +177,7 @@ Squib::Deck.new(cards: MAX_CARD_COUNT, width: FULL_CARD_WIDTH, height: FULL_CARD
   line x1: BAR_END_X, x2: ONE_BAR_PAD, y1: TITLE_BAR_H, y2: TITLE_BAR_H, stroke_width: STROKE, stroke_color: 'black'
 
   save_png dir: '_cards', prefix: data['Unit'], count_format: '', suffix: 1
-  save_sheet dir: '_sprues', rows:6, cols: 5, suffix: 1 
+  save_sheet dir: '_sprues', rows:6, columns: 5, suffix: 1 
 end
 
 Squib::Deck.new(cards: MAX_CARD_COUNT, width: FULL_CARD_WIDTH, height: FULL_CARD_HEIGHT) do
@@ -263,7 +263,7 @@ Squib::Deck.new(cards: MAX_CARD_COUNT, width: FULL_CARD_WIDTH, height: FULL_CARD
   line x1: BAR_END_X, x2: CONTENT_EDGE, y1: TITLE_BAR_H, y2: TITLE_BAR_H, stroke_width: STROKE, stroke_color: 'black'
 
   save_png dir: '_cards', prefix: data['Unit'], count_format: '', suffix: 2
-  save_sheet dir: '_sprues', rows:6, cols: 5, suffix: 2 
+  save_sheet dir: '_sprues', rows:6, columns: 5, suffix: 2 
 end
 
 
