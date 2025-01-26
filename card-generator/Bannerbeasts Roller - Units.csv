@@ -1,48 +1,50 @@
-Unit,Name,Class,Faction,Tier,C1,C2,N1,N2,Movement,Melee Hit,Ranged Hit,Front Line,Attacks,HP,Block,AP,Powers,Spears,Axes,Clubs,Offhand,Shields,Ranged,Faction Colour,Faction Icon,Class Icon,Min Speed
-Ratkin Warriors,Warriors,Rat,Ratkin,1,2,4,9,18,1,5,6,9,1,1,6,,,1,1,1,1,1,1,#733d00,rats.png,rat,1
-Ratkin Skitterers,Skitterers,Rat,Ratkin,1,3,6,9,18,2,5,5,9,1,1,6,,<b>Maneouverable</b> - May turn once at any point during a move or charge,1,1,1,1,,,#733d00,rats.png,rat,1
-Ratkin Pelters,Pelters,Rat,Ratkin,1,2,4,9,18,1,5,5,9,1,1,-,,,,,,,,1,#733d00,rats.png,rat,1
-Ratkin Horde,Horde,Rat,Ratkin,1,1,2,9,18,1,6,-,9,1,1,-,,,1,,,,1,,#733d00,rats.png,rat,1
-Gobbo Warriors,Warriors,Gobbo,Gobbo,1,2,4,6,12,1,4,6,6,1,1,5,,,1,1,1,1,1,1,#00ab1f,gobbos.png,gobbo,1
-Gobbo Bomb Squad,Bomb Squad,Gobbo,Gobbo,1,3,5,6,12,1,2,-,6,2,1,-,-4,"<b>AP 4</b> - Reduce block rolls by 4.
+Unit,Name,Single Class,Plural Class,Faction,Tier,C1,C2,N1,N2,Movement,Melee Hit,Ranged Hit,Front Line,Attacks,HP,Block,AP,Powers,Spears,Axes,Clubs,Offhand,Shields,Ranged,L1 Colour,L2 Colour,L1 Text Colour,L2 Text Colour,Faction Icon,Class Icon,Min Speed
+Ratkin Warriors,Warriors,Rat,Rats,Ratkin,1,2,4,9,18,1,5,6,9,1,1,6,,,1,1,1,1,1,1,#ffb380,#733d00,#000000,#ffffff,rats.png,rat,1
+Ratkin Skitterers,Skitterers,Rat,Rats,Ratkin,1,3,6,9,18,2,5,5,9,1,1,6,,<b>Maneouverable</b> - May turn once at any point during a move or charge,1,1,1,1,,,#ffb380,#733d00,#000000,#ffffff,rats.png,rat,1
+Ratkin Pelters,Pelters,Rat,Rats,Ratkin,1,2,4,9,18,1,5,5,9,1,1,-,,,,,,,,1,#ffb380,#733d00,#000000,#ffffff,rats.png,rat,1
+Ratkin Horde,Horde,Rat,Rats,Ratkin,1,1,2,9,18,1,6,-,9,1,1,-,,,1,,,,1,,#ffb380,#733d00,#000000,#ffffff,rats.png,rat,1
+Gobbo Warriors,Warriors,Goblin,Goblins,Gobbo,1,2,4,6,12,1,4,6,6,1,1,5,,,1,1,1,1,1,1,#00dd28,#00941A,#000000,#ffffff,gobbos.png,gobbo,1
+Gobbo Bomb Squad,Bomb Squad,Goblin,Goblins,Gobbo,1,3,5,6,12,1,2,-,6,2,1,-,-4,"<b>AP 4</b> - Reduce block rolls by 4.
 
-<b>Insane</b> - Dies after combat.",,,,,,,#00ab1f,gobbos.png,gobbo,1
-Gobbo Beserkers,Beserkers,Gobbo,Gobbo,1,3,6,6,12,1,4,-,6,1,1,6,,"<b>Random mover</b> - Roll a die for movement and charging. 
+<b>Insane</b> - Dies after combat.",,,,,,,#00dd28,#00941A,#000000,#ffffff,gobbos.png,gobbo,1
+Gobbo Beserkers,Beserkers,Goblin,Goblins,Gobbo,1,3,6,6,12,1,4,-,6,1,1,6,,"<b>Random mover</b> - Roll a die for movement and charging. 
 1-2 -> 1 space 
 3-4 -> 2 spaces
 5-6 -> 3 spaces
 You must move the full distance, or collide with something. If the unit moves off the board, it is lost.
 
-<b>Maneouverable</b> - May turn once at any point during a move or charge",,1,1,1,,,#00ab1f,gobbos.png,gobbo,1
-Gobbo Archers,Archers,Gobbo,Gobbo,1,2,4,6,12,1,4,5,6,1,1,6,,,,,,,,1,#00ab1f,gobbos.png,gobbo,1
-Skeletons Warriors,Warriors,Skeleton,Skeletons,1,2,4,6,12,1,5,-,6,1,1,-,,"<b>Unstable</b> - Instead of rolling to flee, lose extra wounds for every point you lost combat.",1,1,1,1,1,,#e0e0d3,skellies.png,skellie,1
-Skeletons Archers,Archers,Skeleton,Skeletons,1,2,4,6,12,1,5,5,6,1,1,-,,"<b>Unstable</b> - Instead of rolling to flee, lose extra wounds for every point you lost combat.",,,,,,1,#e0e0d3,skellies.png,skellie,1
-Skeletons Revenants,Revenants,Skeleton,Skeletons,1,3,6,6,12,1,5,-,6,1,1,5,,"<b>Unstable</b> - Instead of rolling to flee, lose extra wounds for every point you lost combat.
+<b>Maneouverable</b> - May turn once at any point during a move or charge",,1,1,1,,,#00dd28,#00941A,#000000,#ffffff,gobbos.png,gobbo,1
+Gobbo Archers,Archers,Goblin,Goblins,Gobbo,1,2,4,6,12,1,4,5,6,1,1,6,,,,,,,,1,#00dd28,#00941A,#000000,#ffffff,gobbos.png,gobbo,1
+Skeletons Warriors,Warriors,Skeleton,Skeletons,Skeletons,1,2,4,6,12,1,5,-,6,1,1,-,,"<b>Unstable</b> - Instead of rolling to flee, lose extra wounds for every point you lost combat.",1,1,1,1,1,,#e0e0d3,#999999,#000000,#ffffff,skellies.png,skellie,1
+Skeletons Archers,Archers,Skeleton,Skeletons,Skeletons,1,2,4,6,12,1,5,5,6,1,1,-,,"<b>Unstable</b> - Instead of rolling to flee, lose extra wounds for every point you lost combat.",,,,,,1,#e0e0d3,#999999,#000000,#ffffff,skellies.png,skellie,1
+Skeletons Revenants,Revenants,Skeleton,Skeletons,Skeletons,1,3,6,6,12,1,5,-,6,1,1,5,,"<b>Unstable</b> - Instead of rolling to flee, lose extra wounds for every point you lost combat.
 
-<b>Revenants</b> - After combat, add a new revenant for each enemy that died.",,1,1,1,1,,#e0e0d3,skellies.png,skellie,1
-Skeletons Fodder,Fodder,Skeleton,Skeletons,1,1,2,6,12,1,6,-,6,1,1,6,,"<b>Unstable</b> - Instead of rolling to flee, lose extra wounds for every point you lost combat.",1,,,,1,,#e0e0d3,skellies.png,skellie,1
-Spiders Warriors,Warriors,Spiderling,Spiders,1,2,4,5,10,1,4,6,5,1,1,5,,<b>Poison</b> - 6s to hit can't be saved,1,1,1,1,1,1,#3d3d3d,spiders.png,spiderling,1
-Spiders Webspitters,Webspitters,Spiderling,Spiders,1,3,5,5,10,1,5,5,5,1,1,5,,"<b>Poison</b> - 6s to hit can't be saved
+<b>Revenants</b> - After combat, add a new revenant for each enemy that died.",,1,1,1,1,,#e0e0d3,#999999,#000000,#ffffff,skellies.png,skellie,1
+Skeletons Fodder,Fodder,Skeleton,Skeletons,Skeletons,1,1,2,6,12,1,6,-,6,1,1,6,,"<b>Unstable</b> - Instead of rolling to flee, lose extra wounds for every point you lost combat.",1,,,,1,,#e0e0d3,#999999,#000000,#ffffff,skellies.png,skellie,1
+Spiders Warriors,Warriors,Spiderling,Spiderlings,Spiders,1,2,4,5,10,1,4,6,5,1,1,5,,<b>Poison</b> - 6s to hit can't be saved,1,1,1,1,1,1,#f1baff,#2d2d2d,#000000,#ffffff,spiders.png,spiderling,1
+Spiders Webspitters,Webspitters,Spiderling,Spiderlings,Spiders,1,3,5,5,10,1,5,5,5,1,1,5,,"<b>Poison</b> - 6s to hit can't be saved
 
-<b>Spit Webs</b> - Opponents that start a combat with this unit gain strikes last for the turn.",1,1,1,1,1,1,#3d3d3d,spiders.png,spiderling,1
-Spiders Trappers,Trappers,Spiderling,Spiders,1,3,6,5,10,1,4,-,5,1,1,5,,"<b>Poison</b> - 6s to hit can't be saved
+<b>Spit Webs</b> - Opponents that start a combat with this unit gain strikes last for the turn.",1,1,1,1,1,1,#f1baff,#2d2d2d,#000000,#ffffff,spiders.png,spiderling,1
+Spiders Trappers,Trappers,Spiderling,Spiderlings,Spiders,1,3,6,5,10,1,4,-,5,1,1,5,,"<b>Poison</b> - 6s to hit can't be saved
 
-<b>Web Sacs</b> - Enemies can't use evasion against this unit",1,1,1,1,1,,#3d3d3d,spiders.png,spiderling,1
-Spiders Huntsmen,Huntsmen,Spiderling,Spiders,1,2,4,5,10,1,5,5,5,1,1,5,,"<b>Poison</b> - 6s to hit can't be saved
+<b>Web Sacs</b> - Enemies can't use evasion against this unit",1,1,1,1,1,,#f1baff,#2d2d2d,#000000,#ffffff,spiders.png,spiderling,1
+Spiders Huntsmen,Huntsmen,Spiderling,Spiderlings,Spiders,1,2,4,5,10,1,5,5,5,1,1,5,,"<b>Poison</b> - 6s to hit can't be saved
 
-<b>Flexible</b> - Turn to face any direction at the start of your turn",,,,1,,1,#3d3d3d,spiders.png,spiderling,1
-Ratkin Chumpwagon,Chumpwagon,Ratwagon,Ratkin,2,3,5,1,2,2,5,-,9,6,2,6,,"<b>Trojan Rats</b> - When this unit is wiped out, place a unit of Ratkin Warriors (same level as this) either in the same cell, or one of the four adjacent cells. You choose which direction they are facing.",,,,,,,#733d00,rats.png,rat-wagon,2
-Ratkin Battering-Rat,Battering-Rat,Ratwagon,Ratkin,2,3,5,1,2,2,6,-,9,4,3,5,,"<b>Impact Hits d6+1</b> - If you get a charge bonus, do d6+1 attacks per model hitting on a 4+. These count towards who won combat.",,,,,,,#733d00,rats.png,rat-wagon,2
-Ratkin Ninjas,Ninjas,Elites,Ratkin,2,4,6,9,18,2,4,5,9,1,1,-,,"<b>Elusive 1</b> - Attackers suffer a -1 to hit from all sources.
+<b>Flexible</b> - Turn to face any direction at the start of your turn",,,,1,,1,#f1baff,#2d2d2d,#000000,#ffffff,spiders.png,spiderling,1
+Ratkin Chumpwagon,Chumpwagon,Ratwagon,Ratwagons,Ratkin,2,3,5,1,2,2,5,-,9,6,2,6,,"<b>Trojan Rats</b> - When this unit is wiped out, place a unit of Ratkin Warriors (same level as this) either in the same cell, or one of the four adjacent cells. You choose which direction they are facing.",,,,,,,#ffb380,#733d00,#000000,#ffffff,rats.png,rat-wagon,2
+Ratkin Battering-Rat,Battering-Rat,Ratwagons,Ratwagons,Ratkin,2,3,5,1,2,2,6,-,9,4,3,5,,"<b>Impact Hits d6+1</b> - If you get a charge bonus, do d6+1 attacks per model hitting on a 4+. These count towards who won combat.
 
-<b>Smoke Bombs</b> - Once per game before combat, move this unit forward 2. This can go through any unit but must end in an unoccupied space. This can bring the unit into a new combat.",,,,2,,2,#733d00,rats.png,rat-elites,1
-Ratkin Heavies,Heavies,Elites,Ratkin,2,4,6,9,18,1,5,6,9,1,1,4,,<b>Stalwart</b> - Add 1 to leadership rolls,2,2,2,2,2,1,#733d00,rats.png,rat-elites,1
-Ratkin Swarmaltar,Swarmaltar,Rataltar,Ratkin,2,5,7,1,2,1,5,-,9,4,3,5,,<b>Aura of the Swarm</b> - Free action: Revive d6 rats in an adjacent common unit. If you have two Swarmaltars select up to two different adjacent units. Limited to the starting number of rats.,,,,,,,#733d00,rats.png,rat-altar,1
-Ratkin Feastaltar,Feastaltar,Rataltar,Ratkin,2,3,4,1,2,1,5,-,9,4,3,5,,<b>Aura of Power</b> - Adjacent rats gain +1 to hit in melee,,,,,,,#733d00,rats.png,rat-altar,1
-Gobbo Starchucker,Starchucker,Hurtbox,Gobbo,2,3,5,1,2,1,6,-,6,2,2,6,,"<b>War Machine</b> - Dies if it flees. Can't move into combat.
+<b>Push</b> - If you charge an opponent one square away with an empty space behind them, they are pushed. Move them back one and move into their original square. This can't push opponents off the board. This counts for charge distance. ",,,,,,,#ffb380,#733d00,#000000,#ffffff,rats.png,rat-wagon,2
+Ratkin Ninjas,Ninjas,Elite,Elites,Ratkin,2,4,6,9,18,2,4,5,9,1,1,-,,"<b>Elusive 1</b> - All to-hit rolls targetting this unit suffer a -1 penalty.
+
+<b>Smoke Bombs</b> - Once per game before combat, move this unit forward 2. This can go through any unit but must end in an unoccupied space. This can bring the unit into a new combat.",,,,2,,2,#ffb380,#733d00,#000000,#ffffff,rats.png,rat-elites,1
+Ratkin Heavies,Heavies,Elite,Elites,Ratkin,2,4,6,9,18,1,5,6,9,1,1,4,,<b>Stalwart</b> - Add 1 to leadership rolls,2,2,2,2,2,1,#ffb380,#733d00,#000000,#ffffff,rats.png,rat-elites,1
+Ratkin Swarmaltar,Swarmaltar,Rataltar,Rataltars,Ratkin,2,5,7,1,2,1,5,-,9,4,3,5,,<b>Aura of the Swarm</b> - Free action: Revive d6 rats in an adjacent common unit. If you have two Swarmaltars select up to two different adjacent units. Limited to the starting number of rats.,,,,,,,#ffb380,#733d00,#000000,#ffffff,rats.png,rat-altar,1
+Ratkin Feastaltar,Feastaltar,Rataltar,Rataltars,Ratkin,2,3,4,1,2,1,5,-,9,4,3,5,,<b>Aura of Power</b> - Adjacent rats gain +1 to hit in melee,,,,,,,#ffb380,#733d00,#000000,#ffffff,rats.png,rat-altar,1
+Gobbo Starchucker,Starchucker,Hurtbox,Hurtboxes,Gobbo,2,3,5,1,2,1,6,-,6,2,2,6,,"<b>War Machine</b> - Dies if it flees. Can't move into combat.
 <b>Razorstar</b> - <small>Pick a straight line and roll a d6 for each model in this unit. For each shot, the first unit in that range gets one attack that hits on 3+, AP -3, and does 3 wounds. If it hits, the next unit takes a 4+, AP -2, 2 wound attack. If that hits, the third unit takes a 5+, AP -1, 1 wound attack. This shot can't pass through terrain.</small>
-<b>Friendly Fire</b> - Can shoot into combat and into friendly units.",,,,,,,#00ab1f,gobbos.png,gobbo-hurtbox,1
-Gobbo Boombox,Boombox,Hurtbox,Gobbo,2,4,6,1,2,1,6,-,6,2,3,6,,"<small><b>War Machine</b> - Dies if it flees. Can't move into combat.
+<b>Friendly Fire</b> - Can shoot into combat and into friendly units.",,,,,,,#00dd28,#00941A,#000000,#ffffff,gobbos.png,gobbo-hurtbox,1
+Gobbo Boombox,Boombox,Hurtbox,Hurtboxes,Gobbo,2,4,6,1,2,1,6,-,6,2,3,6,,"<small><b>War Machine</b> - Dies if it flees. Can't move into combat.
 <b>The Big Guns</b> - Pick a target square within 6. Roll a die for each model in this unit. 
 6 - Direct hit. 
 5 - Off by one, your choice. 
@@ -51,42 +53,42 @@ Gobbo Boombox,Boombox,Hurtbox,Gobbo,2,4,6,1,2,1,6,-,6,2,3,6,,"<small><b>War Mach
 2 - Off by two, opponent's choice where. 
 1 - Hit yourself. 
 The central tile takes d6 attacks, 3+ AP -1. The four adjacent tiles take 1 hit each, 4+ AP0.
-<b>Friendly Fire</b> - Can shoot into combat and into friendly units.</small>",,,,,,,#00ab1f,gobbos.png,gobbo-hurtbox,1
-Gobbo Flagellants,Flagellants,Priesthood,Gobbo,2,3,5,6,12,1,4,-,6,3,1,6,,"<b>Unbreakable</b> - Can't flee
+<b>Friendly Fire</b> - Can shoot into combat and into friendly units.</small>",,,,,,,#00dd28,#00941A,#000000,#ffffff,gobbos.png,gobbo-hurtbox,1
+Gobbo Flagellants,Flagellants,Priest,Priests,Gobbo,2,3,5,6,12,1,4,-,6,3,1,6,,"<b>Unbreakable</b> - Can't flee
 
-<b>Rabid</b> - Must charge if able to",,,2,,,,#00ab1f,gobbos.png,gobbo-priest,1
-Gobbo Tincans,Tincans,Priesthood,Gobbo,2,4,7,6,12,1,4,6,6,1,1,3,,"<b>Stalwart</b> - Add 1 to leadership rolls
+<b>Rabid</b> - Must charge if able to",,,2,,,,#00dd28,#00941A,#000000,#ffffff,gobbos.png,gobbo-priest,1
+Gobbo Tincans,Tincans,Priest,Priests,Gobbo,2,4,7,6,12,1,4,6,6,1,1,3,,"<b>Stalwart</b> - Add 1 to leadership rolls
 
-<b>Slow</b> - Don't roll a bonus charge dice ",2,2,2,2,2,1,#00ab1f,gobbos.png,gobbo-priest,1
-Gobbo Wolf Chariots,Wolf Chariots,Chariots,Gobbo,2,4,6,2,4,2,4,5,6,4,4,5,,"<b>Impact Hits d3</b> - If you get a charge bonus, do d3 attacks per model hitting on 4+. These count towards who won combat.",2,2,2,2,2,2,#00ab1f,gobbos.png,gobbo-chariot,2
-Gobbo Bangwagons,Bangwagons,Chariots,Gobbo,2,3,4,2,4,2,2,-,6,d6,2,-,-4,"<b>Insane</b> - Dies after combat.
+<b>Slow</b> - Don't roll a bonus charge dice ",2,2,2,2,2,1,#00dd28,#00941A,#000000,#ffffff,gobbos.png,gobbo-priest,1
+Gobbo Wolf Chariots,Wolf Chariots,Chariot,Chariots,Gobbo,2,4,6,2,4,2,4,5,6,4,4,5,,"<b>Impact Hits d3</b> - If you get a charge bonus, do d3 attacks per model hitting on 4+. These count towards who won combat.",2,2,2,2,2,2,#00dd28,#00941A,#000000,#ffffff,gobbos.png,gobbo-chariot,2
+Gobbo Bangwagons,Bangwagons,Chariot,Chariots,Gobbo,2,3,4,2,4,2,2,-,6,d6,2,-,-4,"<b>Insane</b> - Dies after combat.
 
 <b>Powder Keg</b> - d6 attacks per model
 
 <b>AP 4</b> - Reduce block rolls by 4.
 
-<b>Fast Charger</b> - Rolls two charge bonus die, so it can travel up to two extra squares on the charge.",,,,,,,#00ab1f,gobbos.png,gobbo-chariot,2
-Skeletons ,,,Skeletons,2,,,,,,,,,,,,,"<b>Unstable</b> - Instead of rolling to flee, lose extra wounds for every point you lost combat.",,,,,,,#e0e0d3,skellies.png,,0
-Skeletons ,,,Skeletons,2,,,,,,,,,,,,,"<b>Unstable</b> - Instead of rolling to flee, lose extra wounds for every point you lost combat.",,,,,,,#e0e0d3,skellies.png,,0
-Skeletons ,,,Skeletons,2,,,,,,,,,,,,,"<b>Unstable</b> - Instead of rolling to flee, lose extra wounds for every point you lost combat.",,,,,,,#e0e0d3,skellies.png,,0
-Skeletons ,,,Skeletons,2,,,,,,,,,,,,,"<b>Unstable</b> - Instead of rolling to flee, lose extra wounds for every point you lost combat.",,,,,,,#e0e0d3,skellies.png,,0
-Skeletons ,,,Skeletons,2,,,,,,,,,,,,,"<b>Unstable</b> - Instead of rolling to flee, lose extra wounds for every point you lost combat.",,,,,,,#e0e0d3,skellies.png,,0
-Skeletons ,,,Skeletons,2,,,,,,,,,,,,,"<b>Unstable</b> - Instead of rolling to flee, lose extra wounds for every point you lost combat.",,,,,,,#e0e0d3,skellies.png,,0
-Spiders ,,,Spiders,2,,,,,,,,,,,,,,,,,,,,#3d3d3d,spiders.png,,0
-Spiders ,,,Spiders,2,,,,,,,,,,,,,,,,,,,,#3d3d3d,spiders.png,,0
-Spiders ,,,Spiders,2,,,,,,,,,,,,,,,,,,,,#3d3d3d,spiders.png,,0
-Spiders ,,,Spiders,2,,,,,,,,,,,,,,,,,,,,#3d3d3d,spiders.png,,0
-Spiders ,,,Spiders,2,,,,,,,,,,,,,,,,,,,,#3d3d3d,spiders.png,,0
-Spiders ,,,Spiders,2,,,,,,,,,,,,,,,,,,,,#3d3d3d,spiders.png,,0
-Ratkin ,,Leader,Ratkin,3,,,,,,,,,,,,,,,,,,,,#733d00,rats.png,,0
-Ratkin ,,Leader,Ratkin,3,,,,,,,,,,,,,,,,,,,,#733d00,rats.png,,0
-Ratkin ,,Leader,Ratkin,3,,,,,,,,,,,,,,,,,,,,#733d00,rats.png,,0
-Goblins ,,Leader,Goblins,3,,,,,,,,,,,,,,,,,,,,#00ab1f,gobbos.png,,0
-Goblins ,,Leader,Goblins,3,,,,,,,,,,,,,,,,,,,,#00ab1f,gobbos.png,,0
-Goblins ,,Leader,Goblins,3,,,,,,,,,,,,,,,,,,,,#00ab1f,gobbos.png,,0
-Skeletons ,,Leader,Skeletons,3,,,,,,,,,,,,,"<b>Unstable</b> - Instead of rolling to flee, lose extra wounds for every point you lost combat.",,,,,,,#e0e0d3,skellies.png,,0
-Skeletons ,,Leader,Skeletons,3,,,,,,,,,,,,,"<b>Unstable</b> - Instead of rolling to flee, lose extra wounds for every point you lost combat.",,,,,,,#e0e0d3,skellies.png,,0
-Skeletons ,,Leader,Skeletons,3,,,,,,,,,,,,,"<b>Unstable</b> - Instead of rolling to flee, lose extra wounds for every point you lost combat.",,,,,,,#e0e0d3,skellies.png,,0
-Spiders ,,Leader,Spiders,3,,,,,,,,,,,,,,,,,,,,#3d3d3d,spiders.png,,0
-Spiders ,,Leader,Spiders,3,,,,,,,,,,,,,,,,,,,,#3d3d3d,spiders.png,,0
-Spiders ,,Leader,Spiders,3,,,,,,,,,,,,,,,,,,,,#3d3d3d,spiders.png,,0
+<b>Fast Charger</b> - Rolls two charge bonus die, so it can travel up to two extra squares on the charge.",,,,,,,#00dd28,#00941A,#000000,#ffffff,gobbos.png,gobbo-chariot,2
+Skeletons ,,,,Skeletons,2,,,,,,,,,,,,,"<b>Unstable</b> - Instead of rolling to flee, lose extra wounds for every point you lost combat.",,,,,,,#e0e0d3,#999999,#000000,#ffffff,skellies.png,,0
+Skeletons ,,,,Skeletons,2,,,,,,,,,,,,,"<b>Unstable</b> - Instead of rolling to flee, lose extra wounds for every point you lost combat.",,,,,,,#e0e0d3,#999999,#000000,#ffffff,skellies.png,,0
+Skeletons ,,,,Skeletons,2,,,,,,,,,,,,,"<b>Unstable</b> - Instead of rolling to flee, lose extra wounds for every point you lost combat.",,,,,,,#e0e0d3,#999999,#000000,#ffffff,skellies.png,,0
+Skeletons ,,,,Skeletons,2,,,,,,,,,,,,,"<b>Unstable</b> - Instead of rolling to flee, lose extra wounds for every point you lost combat.",,,,,,,#e0e0d3,#999999,#000000,#ffffff,skellies.png,,0
+Skeletons ,,,,Skeletons,2,,,,,,,,,,,,,"<b>Unstable</b> - Instead of rolling to flee, lose extra wounds for every point you lost combat.",,,,,,,#e0e0d3,#999999,#000000,#ffffff,skellies.png,,0
+Skeletons ,,,,Skeletons,2,,,,,,,,,,,,,"<b>Unstable</b> - Instead of rolling to flee, lose extra wounds for every point you lost combat.",,,,,,,#e0e0d3,#999999,#000000,#ffffff,skellies.png,,0
+Spiders ,,,,Spiders,2,,,,,,,,,,,,,,,,,,,,#f1baff,#2d2d2d,#000000,#ffffff,spiders.png,,0
+Spiders ,,,,Spiders,2,,,,,,,,,,,,,,,,,,,,#f1baff,#2d2d2d,#000000,#ffffff,spiders.png,,0
+Spiders ,,,,Spiders,2,,,,,,,,,,,,,,,,,,,,#f1baff,#2d2d2d,#000000,#ffffff,spiders.png,,0
+Spiders ,,,,Spiders,2,,,,,,,,,,,,,,,,,,,,#f1baff,#2d2d2d,#000000,#ffffff,spiders.png,,0
+Spiders ,,,,Spiders,2,,,,,,,,,,,,,,,,,,,,#f1baff,#2d2d2d,#000000,#ffffff,spiders.png,,0
+Spiders ,,,,Spiders,2,,,,,,,,,,,,,,,,,,,,#f1baff,#2d2d2d,#000000,#ffffff,spiders.png,,0
+Ratkin ,,Leader,,Ratkin,3,,,,,,,,,,,,,,,,,,,,#ffb380,#733d00,#000000,#ffffff,rats.png,,0
+Ratkin ,,Leader,,Ratkin,3,,,,,,,,,,,,,,,,,,,,#ffb380,#733d00,#000000,#ffffff,rats.png,,0
+Ratkin ,,Leader,,Ratkin,3,,,,,,,,,,,,,,,,,,,,#ffb380,#733d00,#000000,#ffffff,rats.png,,0
+Goblins ,,Leader,,Goblins,3,,,,,,,,,,,,,,,,,,,,#00dd28,#00941A,#000000,#ffffff,gobbos.png,,0
+Goblins ,,Leader,,Goblins,3,,,,,,,,,,,,,,,,,,,,#00dd28,#00941A,#000000,#ffffff,gobbos.png,,0
+Goblins ,,Leader,,Goblins,3,,,,,,,,,,,,,,,,,,,,#00dd28,#00941A,#000000,#ffffff,gobbos.png,,0
+Skeletons ,,Leader,,Skeletons,3,,,,,,,,,,,,,"<b>Unstable</b> - Instead of rolling to flee, lose extra wounds for every point you lost combat.",,,,,,,#e0e0d3,#999999,#000000,#ffffff,skellies.png,,0
+Skeletons ,,Leader,,Skeletons,3,,,,,,,,,,,,,"<b>Unstable</b> - Instead of rolling to flee, lose extra wounds for every point you lost combat.",,,,,,,#e0e0d3,#999999,#000000,#ffffff,skellies.png,,0
+Skeletons ,,Leader,,Skeletons,3,,,,,,,,,,,,,"<b>Unstable</b> - Instead of rolling to flee, lose extra wounds for every point you lost combat.",,,,,,,#e0e0d3,#999999,#000000,#ffffff,skellies.png,,0
+Spiders ,,Leader,,Spiders,3,,,,,,,,,,,,,,,,,,,,#f1baff,#2d2d2d,#000000,#ffffff,spiders.png,,0
+Spiders ,,Leader,,Spiders,3,,,,,,,,,,,,,,,,,,,,#f1baff,#2d2d2d,#000000,#ffffff,spiders.png,,0
+Spiders ,,Leader,,Spiders,3,,,,,,,,,,,,,,,,,,,,#f1baff,#2d2d2d,#000000,#ffffff,spiders.png,,0

@@ -1,0 +1,139 @@
+#!/usr/bin/ruby -w
+require 'squib'
+
+# Config
+
+FILE_NAME = 'Bannerbeasts Roller - Units.csv'
+MAX_CARD_COUNT = 28
+
+MM_TOTAL_CARD_WIDTH = 125 
+MM_TOTAL_CARD_HEIGHT = 78
+
+SCALE = 2 # 1-> 300DPI, 2-> 600DPI
+DPI = 300
+DPMM = DPI * SCALE / 25.4
+
+PAD = 0 #Tabletop
+#PAD = 36 * SCALE #Printer
+DOUBLE_PAD = 2*PAD
+
+CARD_WIDTH = MM_TOTAL_CARD_WIDTH * DPMM
+CARD_HEIGHT = MM_TOTAL_CARD_HEIGHT * DPMM
+
+FULL_CARD_WIDTH = CARD_WIDTH + DOUBLE_PAD
+FULL_CARD_HEIGHT = CARD_HEIGHT + DOUBLE_PAD
+
+FACTION_TEXT = 18 * SCALE
+UNIT_TEXT = 30 * SCALE
+STAT_TEXT = 24 * SCALE
+
+SIDEBAR_W = CARD_WIDTH / 4
+BAR_W = 2 * SIDEBAR_W / 7
+SINGLE_BAR_SPACER_W = (SIDEBAR_W - BAR_W) / 2 
+DOUBLE_BAR_SPACER_W = (SIDEBAR_W - (2 * BAR_W)) / 3
+
+CENTRAL_W = CARD_WIDTH / 2
+CENTRAL_X = PAD + SIDEBAR_W
+
+TITLE_BAR_H = CARD_HEIGHT / 3
+TITLE_BAR_Y = CARD_HEIGHT / 6
+UNIT_TEXT_X = PAD + SIDEBAR_W
+
+CONTENT_BOX_SIZE = CENTRAL_W / 3
+CONTENT_BAR_Y = TITLE_BAR_Y + TITLE_BAR_H
+FACTION_ICON_MARGIN = CONTENT_BOX_SIZE * 0.1
+FACTION_ICON_SIZE = CONTENT_BOX_SIZE - (FACTION_ICON_MARGIN * 2)
+
+ICON_SPACER = (CONTENT_BOX_SIZE / 2)
+ICON_MARGIN = ICON_SPACER * 0.1
+ICON_SIZE = ICON_SPACER - (ICON_MARGIN * 2)
+ICON_X_PAD = (CONTENT_BOX_SIZE - ICON_SIZE) / 2
+
+MIDDLE_BOX_X = CENTRAL_X + CONTENT_BOX_SIZE
+RIGHT_BOX_X = CENTRAL_X + CONTENT_BOX_SIZE + CONTENT_BOX_SIZE
+
+# Main
+puts "Start";
+
+data = Squib.csv file: FILE_NAME
+
+t1_range = data['Tier'].each_with_index.select{ |t, i| t == 1}.map {|t, i| i}.select{|i| i < MAX_CARD_COUNT}
+t2_range = data['Tier'].each_with_index.select{ |t, i| t == 2}.map {|t, i| i}.select{|i| i < MAX_CARD_COUNT}
+
+factions = data['Faction Icon'].map {|t| t != nil && t != '.png' ? './assets/factions/' + t.to_s : ''}
+
+single_range = data['N1'].each_with_index.select{ |t, i| t == 1}.map {|t, i| i}.select{|i| i < MAX_CARD_COUNT}
+plural_range = data['N1'].each_with_index.select{ |t, i| t != 1}.map {|t, i| i}.select{|i| i < MAX_CARD_COUNT}
+
+Squib::Deck.new(cards: MAX_CARD_COUNT, width: FULL_CARD_WIDTH, height: FULL_CARD_HEIGHT) do
+  background range: t1_range, color: data['L1 Colour']
+  background range: t2_range, color: data['L2 Colour']
+
+  rect x: PAD + SINGLE_BAR_SPACER_W, y: 0, width: BAR_W, height: FULL_CARD_HEIGHT, stroke_width: 0, fill_color: data['L2 Colour'], range: t1_range
+  rect x: PAD + SINGLE_BAR_SPACER_W, y: 0, width: BAR_W, height: FULL_CARD_HEIGHT, stroke_width: 0, fill_color: data['L1 Colour'], range: t2_range
+  rect x: FULL_CARD_WIDTH - (PAD + SINGLE_BAR_SPACER_W + BAR_W), y: 0, width: BAR_W, height: FULL_CARD_HEIGHT, stroke_width: 0, fill_color: data['L2 Colour'], range: t1_range
+  rect x: FULL_CARD_WIDTH - (PAD + SINGLE_BAR_SPACER_W + BAR_W), y: 0, width: BAR_W, height: FULL_CARD_HEIGHT, stroke_width: 0, fill_color: data['L1 Colour'], range: t2_range
+
+  text str: data['Faction'], range: t1_range, x: UNIT_TEXT_X, y: TITLE_BAR_Y, width: CENTRAL_W, height: TITLE_BAR_H / 3, align: 'center', valign: 'middle', font_size: FACTION_TEXT, font: 'Atkinson Hyperlegible Bold', color: data['L1 Text Colour']   
+  text str: data['Faction'], range: t2_range, x: UNIT_TEXT_X, y: TITLE_BAR_Y, width: CENTRAL_W, height: TITLE_BAR_H / 3, align: 'center', valign: 'middle', font_size: FACTION_TEXT, font: 'Atkinson Hyperlegible Bold', color: data['L2 Text Colour']   
+  text str: data['Single Class'], range: t1_range & single_range, x: UNIT_TEXT_X, y: TITLE_BAR_Y, width: CENTRAL_W, height: TITLE_BAR_H, align: 'center', valign: 'middle', font_size: UNIT_TEXT, font: 'Atkinson Hyperlegible Bold', color: data['L1 Text Colour']   
+  text str: data['Single Class'], range: t2_range & single_range, x: UNIT_TEXT_X, y: TITLE_BAR_Y, width: CENTRAL_W, height: TITLE_BAR_H, align: 'center', valign: 'middle', font_size: UNIT_TEXT, font: 'Atkinson Hyperlegible Bold', color: data['L2 Text Colour']   
+  text str: data['Plural Class'], range: t1_range & plural_range, x: UNIT_TEXT_X, y: TITLE_BAR_Y, width: CENTRAL_W, height: TITLE_BAR_H, align: 'center', valign: 'middle', font_size: UNIT_TEXT, font: 'Atkinson Hyperlegible Bold', color: data['L1 Text Colour']
+  text str: data['Plural Class'], range: t2_range & plural_range, x: UNIT_TEXT_X, y: TITLE_BAR_Y, width: CENTRAL_W, height: TITLE_BAR_H, align: 'center', valign: 'middle', font_size: UNIT_TEXT, font: 'Atkinson Hyperlegible Bold', color: data['L2 Text Colour']
+
+  png file: factions, x: CENTRAL_X + FACTION_ICON_MARGIN, y: CONTENT_BAR_Y + FACTION_ICON_MARGIN, width: FACTION_ICON_SIZE, height: FACTION_ICON_SIZE
+  
+  png file: './assets/black/count.png', range: t1_range, x: MIDDLE_BOX_X + ICON_X_PAD + ICON_MARGIN, y: CONTENT_BAR_Y + ICON_MARGIN, width: ICON_SIZE, height: ICON_SIZE
+  png file: './assets/black/move.png', range: t1_range, x: RIGHT_BOX_X + ICON_X_PAD + ICON_MARGIN, y: CONTENT_BAR_Y + ICON_MARGIN, width: ICON_SIZE, height: ICON_SIZE
+  png file: './assets/white/count.png', range: t2_range, x: MIDDLE_BOX_X + ICON_X_PAD + ICON_MARGIN, y: CONTENT_BAR_Y + ICON_MARGIN, width: ICON_SIZE, height: ICON_SIZE
+  png file: './assets/white/move.png', range: t2_range, x: RIGHT_BOX_X + ICON_X_PAD + ICON_MARGIN, y: CONTENT_BAR_Y + ICON_MARGIN, width: ICON_SIZE, height: ICON_SIZE
+  text str: data['N1'], range: t1_range, color: data['L1 Text Colour'], x: MIDDLE_BOX_X + ICON_X_PAD, y: CONTENT_BAR_Y + ICON_SPACER + ICON_MARGIN, width: ICON_SPACER, height: ICON_SIZE, align: 'center', valign: 'middle', font_size: STAT_TEXT, font: 'Atkinson Hyperlegible Bold'  
+  text str: data['N1'], range: t2_range, color: data['L2 Text Colour'], x: MIDDLE_BOX_X + ICON_X_PAD, y: CONTENT_BAR_Y + ICON_SPACER + ICON_MARGIN, width: ICON_SPACER, height: ICON_SIZE, align: 'center', valign: 'middle', font_size: STAT_TEXT, font: 'Atkinson Hyperlegible Bold'  
+  text str: data['Movement'], range: t1_range, color: data['L1 Text Colour'], x: RIGHT_BOX_X + ICON_X_PAD, y: CONTENT_BAR_Y + ICON_SPACER + ICON_MARGIN, width: ICON_SPACER, height: ICON_SIZE, align: 'center', valign: 'middle', font_size: STAT_TEXT, font: 'Atkinson Hyperlegible Bold'  
+  text str: data['Movement'], range: t2_range, color: data['L2 Text Colour'], x: RIGHT_BOX_X + ICON_X_PAD, y: CONTENT_BAR_Y + ICON_SPACER + ICON_MARGIN, width: ICON_SPACER, height: ICON_SIZE, align: 'center', valign: 'middle', font_size: STAT_TEXT, font: 'Atkinson Hyperlegible Bold'  
+
+  #rect x: PAD + SIDEBAR_W, y: CONTENT_BAR_Y, width: CONTENT_BOX, height: CONTENT_BOX, color: 'red', stroke_color: 'black', stroke: 4
+
+  # png file: './assets/black/move.png', x: ICON_X_PAD, y: ICON_Y_PAD + (1 * BAR_BOX_H), width: ICON_SIZE, height: ICON_SIZE
+  
+  
+  
+  save_png dir: '_backs', prefix: data['Unit'], count_format: '', suffix: 1
+  save_sheet dir: '_sprues', prefix: 'backs', rows:6, columns: 5, suffix: 1 
+end
+
+Squib::Deck.new(cards: MAX_CARD_COUNT, width: FULL_CARD_WIDTH, height: FULL_CARD_HEIGHT) do
+  background range: t1_range, color: data['L1 Colour']
+  background range: t2_range, color: data['L2 Colour']
+
+  rect x: PAD + DOUBLE_BAR_SPACER_W, y: 0, width: BAR_W, height: FULL_CARD_HEIGHT, stroke_width: 0, fill_color: data['L2 Colour'], range: t1_range
+  rect x: PAD + DOUBLE_BAR_SPACER_W, y: 0, width: BAR_W, height: FULL_CARD_HEIGHT, stroke_width: 0, fill_color: data['L1 Colour'], range: t2_range
+  rect x: PAD + DOUBLE_BAR_SPACER_W + BAR_W + DOUBLE_BAR_SPACER_W, y: 0, width: BAR_W, height: FULL_CARD_HEIGHT, stroke_width: 0, fill_color: data['L2 Colour'], range: t1_range
+  rect x: PAD + DOUBLE_BAR_SPACER_W + BAR_W + DOUBLE_BAR_SPACER_W, y: 0, width: BAR_W, height: FULL_CARD_HEIGHT, stroke_width: 0, fill_color: data['L1 Colour'], range: t2_range
+  rect x: FULL_CARD_WIDTH - (PAD + DOUBLE_BAR_SPACER_W + BAR_W), y: 0, width: BAR_W, height: FULL_CARD_HEIGHT, stroke_width: 0, fill_color: data['L2 Colour'], range: t1_range
+  rect x: FULL_CARD_WIDTH - (PAD + DOUBLE_BAR_SPACER_W + BAR_W), y: 0, width: BAR_W, height: FULL_CARD_HEIGHT, stroke_width: 0, fill_color: data['L1 Colour'], range: t2_range
+  rect x: FULL_CARD_WIDTH - (PAD + DOUBLE_BAR_SPACER_W + BAR_W + DOUBLE_BAR_SPACER_W + BAR_W), y: 0, width: BAR_W, height: FULL_CARD_HEIGHT, stroke_width: 0, fill_color: data['L2 Colour'], range: t1_range
+  rect x: FULL_CARD_WIDTH - (PAD + DOUBLE_BAR_SPACER_W + BAR_W + DOUBLE_BAR_SPACER_W + BAR_W), y: 0, width: BAR_W, height: FULL_CARD_HEIGHT, stroke_width: 0, fill_color: data['L1 Colour'], range: t2_range
+
+  text str: data['Faction'], range: t1_range, x: UNIT_TEXT_X, y: TITLE_BAR_Y, width: CENTRAL_W, height: TITLE_BAR_H / 3, align: 'center', valign: 'middle', font_size: FACTION_TEXT, font: 'Atkinson Hyperlegible Bold', color: data['L1 Text Colour']   
+  text str: data['Faction'], range: t2_range, x: UNIT_TEXT_X, y: TITLE_BAR_Y, width: CENTRAL_W, height: TITLE_BAR_H / 3, align: 'center', valign: 'middle', font_size: FACTION_TEXT, font: 'Atkinson Hyperlegible Bold', color: data['L2 Text Colour']   
+  text str: data['Plural Class'], x: UNIT_TEXT_X, y: TITLE_BAR_Y, width: CENTRAL_W, height: TITLE_BAR_H, align: 'center', valign: 'middle', font_size: UNIT_TEXT, font: 'Atkinson Hyperlegible Bold', color: data['L1 Text Colour'], range: t1_range   
+  text str: data['Plural Class'], x: UNIT_TEXT_X, y: TITLE_BAR_Y, width: CENTRAL_W, height: TITLE_BAR_H, align: 'center', valign: 'middle', font_size: UNIT_TEXT, font: 'Atkinson Hyperlegible Bold', color: data['L2 Text Colour'], range: t2_range   
+
+  png file: factions, x: CENTRAL_X + FACTION_ICON_MARGIN, y: CONTENT_BAR_Y + FACTION_ICON_MARGIN, width: FACTION_ICON_SIZE, height: FACTION_ICON_SIZE
+  
+  png file: './assets/black/count.png', range: t1_range, x: MIDDLE_BOX_X + ICON_X_PAD + ICON_MARGIN, y: CONTENT_BAR_Y + ICON_MARGIN, width: ICON_SIZE, height: ICON_SIZE
+  png file: './assets/black/move.png', range: t1_range, x: RIGHT_BOX_X + ICON_X_PAD + ICON_MARGIN, y: CONTENT_BAR_Y + ICON_MARGIN, width: ICON_SIZE, height: ICON_SIZE
+  png file: './assets/white/count.png', range: t2_range, x: MIDDLE_BOX_X + ICON_X_PAD + ICON_MARGIN, y: CONTENT_BAR_Y + ICON_MARGIN, width: ICON_SIZE, height: ICON_SIZE
+  png file: './assets/white/move.png', range: t2_range, x: RIGHT_BOX_X + ICON_X_PAD + ICON_MARGIN, y: CONTENT_BAR_Y + ICON_MARGIN, width: ICON_SIZE, height: ICON_SIZE
+  text str: data['N2'], range: t1_range, color: data['L1 Text Colour'], x: MIDDLE_BOX_X + ICON_X_PAD, y: CONTENT_BAR_Y + ICON_SPACER, width: ICON_SPACER, height: ICON_SIZE, align: 'center', valign: 'middle', font_size: STAT_TEXT, font: 'Atkinson Hyperlegible Bold'  
+  text str: data['N2'], range: t2_range, color: data['L2 Text Colour'], x: MIDDLE_BOX_X + ICON_X_PAD, y: CONTENT_BAR_Y + ICON_SPACER, width: ICON_SPACER, height: ICON_SIZE, align: 'center', valign: 'middle', font_size: STAT_TEXT, font: 'Atkinson Hyperlegible Bold'  
+  text str: data['Movement'], range: t1_range, color: data['L1 Text Colour'], x: RIGHT_BOX_X + ICON_X_PAD, y: CONTENT_BAR_Y + ICON_SPACER, width: ICON_SPACER, height: ICON_SIZE, align: 'center', valign: 'middle', font_size: STAT_TEXT, font: 'Atkinson Hyperlegible Bold'  
+  text str: data['Movement'], range: t2_range, color: data['L2 Text Colour'], x: RIGHT_BOX_X + ICON_X_PAD, y: CONTENT_BAR_Y + ICON_SPACER, width: ICON_SPACER, height: ICON_SIZE, align: 'center', valign: 'middle', font_size: STAT_TEXT, font: 'Atkinson Hyperlegible Bold'  
+  
+  save_png dir: '_backs', prefix: data['Unit'], count_format: '', suffix: 2
+  save_sheet dir: '_sprues', prefix: 'backs', rows:6, columns: 5, suffix: 2 
+end
+
+
+puts "Done";
