@@ -36,11 +36,11 @@ COMMON = '#C14B00';
 UNCOMMON = '#737373';
 RARE = '#0019FF';
 
-BAR_BOX_H = CARD_HEIGHT / 10
-BAR_BOX_W = BAR_BOX_H
+BAR_BOX_H = CARD_HEIGHT / 9
+BAR_BOX_W = CARD_HEIGHT / 9
 BAR_X = FULL_CARD_WIDTH - (PAD + BAR_BOX_W)
 
-ICON_SIZE = BAR_BOX_W / 2
+ICON_SIZE = (BAR_BOX_W / 2) - STROKE
 ICON_X_PAD = BAR_X + STROKE
 ICON_Y_PAD = PAD + ((BAR_BOX_H - ICON_SIZE) / 2)
 
@@ -79,7 +79,6 @@ numbers = data['N1'].zip(data['N2']).map { |a| a.join('|') }
 melees = data['Melee Hit'].map {|t| t != nil && t != '-' ? t.to_s + '+' : '-'}
 ranges = data['Ranged Hit'].map {|t| t != nil && t != '-' ? t.to_s + '+' : '-'}
 blocks = data['Block'].map {|t| t != nil && t != '-' ? t.to_s + '+' : '-'}
-evasions = data['Evasion'].map {|t| t != nil && t != '-' ? t.to_s + '+' : '-'}
 
 spears = data['Spears'].map {|t| t != nil ? './assets/weapons/' + t.to_s + '/spear.png' : ''}
 axes = data['Axes'].map {|t| t != nil ? './assets/weapons/' + t.to_s + '/axe.png' : ''}
@@ -112,25 +111,23 @@ Squib::Deck.new(cards: MAX_CARD_COUNT, width: FULL_CARD_WIDTH, height: FULL_CARD
   text str: data['Tier'], color: 'black', x: ICON_X_PAD, y: ICON_Y_PAD, width: ICON_SIZE, height: ICON_SIZE, align: 'center', valign: 'middle', font_size: NUMBER_TEXT, font: 'Atkinson Hyperlegible Bold'
 
   png file: './assets/black/count.png', x: ICON_X_PAD, y: ICON_Y_PAD + (1 * BAR_BOX_W), width: ICON_SIZE, height: ICON_SIZE
-  png file: './assets/black/move.png', x: ICON_X_PAD, y: ICON_Y_PAD + (2 * BAR_BOX_W), width: ICON_SIZE, height: ICON_SIZE
-  png file: './assets/black/rank.png', x: ICON_X_PAD, y: ICON_Y_PAD + (3 * BAR_BOX_W), width: ICON_SIZE, height: ICON_SIZE
-  png file: './assets/black/attacks.png', x: ICON_X_PAD, y: ICON_Y_PAD + (4 * BAR_BOX_W), width: ICON_SIZE, height: ICON_SIZE
-  png file: './assets/black/melee.png', x: ICON_X_PAD, y: ICON_Y_PAD + (5 * BAR_BOX_W), width: ICON_SIZE, height: ICON_SIZE
-  png file: './assets/black/ranged.png', x: ICON_X_PAD, y: ICON_Y_PAD + (6 * BAR_BOX_W), width: ICON_SIZE, height: ICON_SIZE
-  png file: './assets/black/heart.png', x: ICON_X_PAD, y: ICON_Y_PAD + (7 * BAR_BOX_W), width: ICON_SIZE, height: ICON_SIZE
+  png file: './assets/black/heart.png', x: ICON_X_PAD, y: ICON_Y_PAD + (2 * BAR_BOX_W), width: ICON_SIZE, height: ICON_SIZE
+  png file: './assets/black/move.png', x: ICON_X_PAD, y: ICON_Y_PAD + (3 * BAR_BOX_W), width: ICON_SIZE, height: ICON_SIZE  
+  png file: './assets/black/rank.png', x: ICON_X_PAD, y: ICON_Y_PAD + (4 * BAR_BOX_W), width: ICON_SIZE, height: ICON_SIZE
+  png file: './assets/black/attacks.png', x: ICON_X_PAD, y: ICON_Y_PAD + (5 * BAR_BOX_W), width: ICON_SIZE, height: ICON_SIZE
+  png file: './assets/black/melee.png', x: ICON_X_PAD, y: ICON_Y_PAD + (6 * BAR_BOX_W), width: ICON_SIZE, height: ICON_SIZE
+  png file: './assets/black/ranged.png', x: ICON_X_PAD, y: ICON_Y_PAD + (7 * BAR_BOX_W), width: ICON_SIZE, height: ICON_SIZE
   png file: './assets/black/block.png', x: ICON_X_PAD, y: ICON_Y_PAD + (8 * BAR_BOX_W), width: ICON_SIZE, height: ICON_SIZE
-  png file: './assets/black/dodge.png', x: ICON_X_PAD, y: ICON_Y_PAD + (9 * BAR_BOX_W), width: ICON_SIZE, height: ICON_SIZE
 
   text str: costs, color: 'black', x: ICON_X_PAD + ICON_SIZE + STROKE, y: ICON_Y_PAD + (0 * BAR_BOX_W), width: ICON_SIZE, height: ICON_SIZE, align: 'center', valign: 'middle', font_size: BAR_TEXT, font: 'Atkinson Hyperlegible Bold'  
   text str: numbers, color: 'black', x: ICON_X_PAD + ICON_SIZE + STROKE, y: ICON_Y_PAD + (1 * BAR_BOX_W), width: ICON_SIZE, height: ICON_SIZE, align: 'center', valign: 'middle', font_size: NUMBER_TEXT, font: 'Atkinson Hyperlegible Bold'  
-  text str: data['Movement'], color: 'black', x: ICON_X_PAD + ICON_SIZE + STROKE, y: ICON_Y_PAD + (2 * BAR_BOX_W), width: ICON_SIZE, height: ICON_SIZE, align: 'center', valign: 'middle', font_size: BAR_TEXT, font: 'Atkinson Hyperlegible Bold'  
-  text str: data['Front Line'], color: 'black', x: ICON_X_PAD + ICON_SIZE + STROKE, y: ICON_Y_PAD + (3 * BAR_BOX_W), width: ICON_SIZE, height: ICON_SIZE, align: 'center', valign: 'middle', font_size: BAR_TEXT, font: 'Atkinson Hyperlegible Bold'  
-  text str: data['Attacks'], color: 'black', x: ICON_X_PAD + ICON_SIZE + STROKE, y: ICON_Y_PAD + (4 * BAR_BOX_W), width: ICON_SIZE, height: ICON_SIZE, align: 'center', valign: 'middle', font_size: BAR_TEXT, font: 'Atkinson Hyperlegible Bold'  
-  text str: melees, color: 'black', x: ICON_X_PAD + ICON_SIZE + STROKE, y: ICON_Y_PAD + (5 * BAR_BOX_W), width: ICON_SIZE, height: ICON_SIZE, align: 'center', valign: 'middle', font_size: BAR_TEXT, font: 'Atkinson Hyperlegible Bold'  
-  text str: ranges, color: 'black', x: ICON_X_PAD + ICON_SIZE + STROKE, y: ICON_Y_PAD + (6 * BAR_BOX_W), width: ICON_SIZE, height: ICON_SIZE, align: 'center', valign: 'middle', font_size: BAR_TEXT, font: 'Atkinson Hyperlegible Bold'  
-  text str: data['HP'], color: 'black', x: ICON_X_PAD + ICON_SIZE + STROKE, y: ICON_Y_PAD + (7 * BAR_BOX_W), width: ICON_SIZE, height: ICON_SIZE, align: 'center', valign: 'middle', font_size: BAR_TEXT, font: 'Atkinson Hyperlegible Bold'  
-  text str: blocks, color: 'black', x: ICON_X_PAD + ICON_SIZE + STROKE, y: ICON_Y_PAD + (8 * BAR_BOX_W), width: ICON_SIZE, height: ICON_SIZE, align: 'center', valign: 'middle', font_size: BAR_TEXT, font: 'Atkinson Hyperlegible Bold'  
-  text str: evasions, color: 'black', x: ICON_X_PAD + ICON_SIZE + STROKE, y: ICON_Y_PAD + (9 * BAR_BOX_W), width: ICON_SIZE, height: ICON_SIZE, align: 'center', valign: 'middle', font_size: BAR_TEXT, font: 'Atkinson Hyperlegible Bold'  
+  text str: data['HP'], color: 'black', x: ICON_X_PAD + ICON_SIZE + STROKE, y: ICON_Y_PAD + (2 * BAR_BOX_W), width: ICON_SIZE, height: ICON_SIZE, align: 'center', valign: 'middle', font_size: BAR_TEXT, font: 'Atkinson Hyperlegible Bold'  
+  text str: data['Movement'], color: 'black', x: ICON_X_PAD + ICON_SIZE + STROKE, y: ICON_Y_PAD + (3 * BAR_BOX_W), width: ICON_SIZE, height: ICON_SIZE, align: 'center', valign: 'middle', font_size: BAR_TEXT, font: 'Atkinson Hyperlegible Bold'  
+  text str: data['Front Line'], color: 'black', x: ICON_X_PAD + ICON_SIZE + STROKE, y: ICON_Y_PAD + (4 * BAR_BOX_W), width: ICON_SIZE, height: ICON_SIZE, align: 'center', valign: 'middle', font_size: BAR_TEXT, font: 'Atkinson Hyperlegible Bold'  
+  text str: data['Attacks'], color: 'black', x: ICON_X_PAD + ICON_SIZE + STROKE, y: ICON_Y_PAD + (5 * BAR_BOX_W), width: ICON_SIZE, height: ICON_SIZE, align: 'center', valign: 'middle', font_size: BAR_TEXT, font: 'Atkinson Hyperlegible Bold'  
+  text str: melees, color: 'black', x: ICON_X_PAD + ICON_SIZE + STROKE, y: ICON_Y_PAD + (6 * BAR_BOX_W), width: ICON_SIZE, height: ICON_SIZE, align: 'center', valign: 'middle', font_size: BAR_TEXT, font: 'Atkinson Hyperlegible Bold'  
+  text str: ranges, color: 'black', x: ICON_X_PAD + ICON_SIZE + STROKE, y: ICON_Y_PAD + (7 * BAR_BOX_W), width: ICON_SIZE, height: ICON_SIZE, align: 'center', valign: 'middle', font_size: BAR_TEXT, font: 'Atkinson Hyperlegible Bold'    
+  text str: blocks, color: 'black', x: ICON_X_PAD + ICON_SIZE + STROKE, y: ICON_Y_PAD + (8 * BAR_BOX_W), width: ICON_SIZE, height: ICON_SIZE, align: 'center', valign: 'middle', font_size: BAR_TEXT, font: 'Atkinson Hyperlegible Bold'    
 
   save_png dir: '_summaries', prefix: data['Unit'], count_format: ''
   save_sheet dir: '_sprues', prefix: 'summaries_', rows:3, columns: 3
