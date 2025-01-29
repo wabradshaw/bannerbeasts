@@ -4,12 +4,12 @@ require 'squib'
 # Config
 
 FILE_NAME = 'Bannerbeasts Roller - Units.csv'
-MAX_CARD_COUNT = 28
+MAX_CARD_COUNT = 40
 
 MM_TOTAL_CARD_WIDTH = 125 
 MM_TOTAL_CARD_HEIGHT = 78
 
-SCALE = 2 # 1-> 300DPI, 2-> 600DPI
+SCALE = 1 # 1-> 300DPI, 2-> 600DPI
 DPI = 300
 DPMM = DPI * SCALE / 25.4
 
@@ -69,6 +69,12 @@ WEAPON_COUNT = 7
 WEAPONS_X = CONTENT_EDGE - (WEAPON_COUNT * WEAPON_SIZE)
 WEAPONS_Y = PAD + TITLE_BAR_H - (WEAPON_SIZE + STROKE)
 
+COST_SIZE = FACTION_ICON_SIZE * 0.6
+COST_RADIUS = COST_SIZE / 2
+COST_PAD = COST_SIZE * 0.5
+COST_X = BAR_BOX_W + STROKE + COST_PAD
+COST_Y = TITLE_BAR_H - COST_RADIUS 
+
 POWERS_PAD = FACTION_TEXT_PAD
 POWERS_X = BAR_END_X + STROKE + POWERS_PAD
 POWERS_Y = PAD + TITLE_BAR_H + STROKE
@@ -84,6 +90,7 @@ t1_range = data['Tier'].each_with_index.select{ |t, i| t == 1}.map {|t, i| i}.se
 t2_range = data['Tier'].each_with_index.select{ |t, i| t == 2}.map {|t, i| i}.select{|i| i < MAX_CARD_COUNT}
 
 factions = data['Faction Icon'].map {|t| t != nil && t != '.png' ? './assets/factions/' + t.to_s : ''}
+summaries = data['Faction'].zip(data['Plural Class']).map { |a| a.join(' - ') }
 
 melees = data['Melee Hit'].map {|t| t != nil && t != '-' ? t.to_s + '+' : '-'}
 ranges = data['Ranged Hit'].map {|t| t != nil && t != '-' ? t.to_s + '+' : '-'}
@@ -101,7 +108,7 @@ powers = data['Powers'].map {|t| t != nil ? t : ''}
 Squib::Deck.new(cards: MAX_CARD_COUNT, width: FULL_CARD_WIDTH, height: FULL_CARD_HEIGHT) do
   background color: 'white'
 
-  text str: data['Faction'], color: 'black', x: FACTION_TEXT_X, y: PAD, height: TITLE_BAR_H / 3, align: 'left', valign: 'top', font_size: FACTION_TEXT, font: 'Atkinson Hyperlegible Bold'   
+  text str: summaries, color: 'black', x: FACTION_TEXT_X, y: PAD, height: TITLE_BAR_H / 3, align: 'left', valign: 'top', font_size: FACTION_TEXT, font: 'Atkinson Hyperlegible Bold'   
   text str: data['Name'], color: 'black', x: UNIT_TEXT_X, y: PAD, height: TITLE_BAR_H, align: 'left', valign: 'middle', font_size: UNIT_TEXT, font: 'Atkinson Hyperlegible Bold'   
 
   png file: spears, x: WEAPONS_X + (0 * WEAPON_SIZE), y: WEAPONS_Y - WEAPON_SIZE, width: WEAPON_SIZE, height: WEAPON_SIZE
@@ -175,15 +182,19 @@ Squib::Deck.new(cards: MAX_CARD_COUNT, width: FULL_CARD_WIDTH, height: FULL_CARD
   line x1: BAR_END_X, x2: BAR_END_X, y1: 0, y2: FULL_CARD_HEIGHT, stroke_width: STROKE, stroke_color: 'black'
   line x1: ONE_BAR_PAD, x2: ONE_BAR_PAD, y1: 0, y2: FULL_CARD_HEIGHT, stroke_width: STROKE, stroke_color: 'black'
   line x1: BAR_END_X, x2: ONE_BAR_PAD, y1: TITLE_BAR_H, y2: TITLE_BAR_H, stroke_width: STROKE, stroke_color: 'black'
+  
+  circle range: t1_range, x: COST_X + COST_RADIUS, y: COST_Y + COST_RADIUS, radius: COST_RADIUS, stroke_width: STROKE, stroke_color: 'black', fill_color: COMMON
+  circle range: t2_range, x: COST_X + COST_RADIUS, y: COST_Y + COST_RADIUS, radius: COST_RADIUS, stroke_width: STROKE, stroke_color: 'black', fill_color: UNCOMMON
+  text str: data['C1'], color: 'black', x: COST_X, y: COST_Y, width: COST_SIZE, height: COST_SIZE, align: 'center', valign: 'middle', font_size: POWERS_TEXT, font: 'Atkinson Hyperlegible Bold'
 
-  save_png dir: '_cards', prefix: data['Unit'], count_format: '', suffix: 1
-  save_sheet dir: '_sprues', rows:6, columns: 5, suffix: 1 
+  save_png dir: '_cards', prefix: data['Unit'], count_format: '', suffix: 'L1'
+  save_sheet dir: '_sprues', rows:5, columns: 2, suffix: 'L1' 
 end
 
 Squib::Deck.new(cards: MAX_CARD_COUNT, width: FULL_CARD_WIDTH, height: FULL_CARD_HEIGHT) do
   background color: 'white'
 
-  text str: data['Faction'], color: 'black', x: FACTION_TEXT_X, y: PAD, height: TITLE_BAR_H / 3, align: 'left', valign: 'top', font_size: FACTION_TEXT, font: 'Atkinson Hyperlegible Bold'   
+  text str: summaries, color: 'black', x: FACTION_TEXT_X, y: PAD, height: TITLE_BAR_H / 3, align: 'left', valign: 'top', font_size: FACTION_TEXT, font: 'Atkinson Hyperlegible Bold'   
   text str: data['Name'], color: 'black', x: UNIT_TEXT_X, y: PAD, height: TITLE_BAR_H, align: 'left', valign: 'middle', font_size: UNIT_TEXT, font: 'Atkinson Hyperlegible Bold'   
 
   png file: spears, x: WEAPONS_X + (0 * WEAPON_SIZE), y: WEAPONS_Y - WEAPON_SIZE, width: WEAPON_SIZE, height: WEAPON_SIZE
@@ -261,9 +272,13 @@ Squib::Deck.new(cards: MAX_CARD_COUNT, width: FULL_CARD_WIDTH, height: FULL_CARD
   line x1: CONTENT_EDGE, x2: CONTENT_EDGE, y1: 0, y2: FULL_CARD_HEIGHT, stroke_width: STROKE, stroke_color: 'black'
   line x1: ONE_BAR_PAD, x2: ONE_BAR_PAD, y1: 0, y2: FULL_CARD_HEIGHT, stroke_width: STROKE, stroke_color: 'black'
   line x1: BAR_END_X, x2: CONTENT_EDGE, y1: TITLE_BAR_H, y2: TITLE_BAR_H, stroke_width: STROKE, stroke_color: 'black'
+  
+  circle range: t1_range, x: COST_X + COST_RADIUS, y: COST_Y + COST_RADIUS, radius: COST_RADIUS, stroke_width: STROKE, stroke_color: 'black', fill_color: COMMON
+  circle range: t2_range, x: COST_X + COST_RADIUS, y: COST_Y + COST_RADIUS, radius: COST_RADIUS, stroke_width: STROKE, stroke_color: 'black', fill_color: UNCOMMON
+  text str: data['C2'], color: 'black', x: COST_X, y: COST_Y, width: COST_SIZE, height: COST_SIZE, align: 'center', valign: 'middle', font_size: POWERS_TEXT, font: 'Atkinson Hyperlegible Bold'
 
-  save_png dir: '_cards', prefix: data['Unit'], count_format: '', suffix: 2
-  save_sheet dir: '_sprues', rows:6, columns: 5, suffix: 2 
+  save_png dir: '_cards', prefix: data['Unit'], count_format: '', suffix: 'L2'
+  save_sheet dir: '_sprues', rows:5, columns: 2, suffix: 'L2' 
 end
 
 

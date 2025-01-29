@@ -4,12 +4,12 @@ require 'squib'
 # Config
 
 FILE_NAME = 'Bannerbeasts Roller - Units.csv'
-MAX_CARD_COUNT = 28
+MAX_CARD_COUNT = 40
 
 MM_TOTAL_CARD_WIDTH = 125 
 MM_TOTAL_CARD_HEIGHT = 78
 
-SCALE = 2 # 1-> 300DPI, 2-> 600DPI
+SCALE = 1 # 1-> 300DPI, 2-> 600DPI
 DPI = 300
 DPMM = DPI * SCALE / 25.4
 
@@ -23,8 +23,8 @@ CARD_HEIGHT = MM_TOTAL_CARD_HEIGHT * DPMM
 FULL_CARD_WIDTH = CARD_WIDTH + DOUBLE_PAD
 FULL_CARD_HEIGHT = CARD_HEIGHT + DOUBLE_PAD
 
-FACTION_TEXT = 18 * SCALE
-UNIT_TEXT = 30 * SCALE
+FACTION_TEXT = 16 * SCALE
+UNIT_TEXT = 28 * SCALE
 STAT_TEXT = 24 * SCALE
 
 SIDEBAR_W = CARD_WIDTH / 4
@@ -98,8 +98,8 @@ Squib::Deck.new(cards: MAX_CARD_COUNT, width: FULL_CARD_WIDTH, height: FULL_CARD
   
   
   
-  save_png dir: '_backs', prefix: data['Unit'], count_format: '', suffix: 1
-  save_sheet dir: '_sprues', prefix: 'backs', rows:6, columns: 5, suffix: 1 
+  save_png dir: '_backs', prefix: data['Unit'], count_format: '', suffix: 'L1'
+  save_sheet dir: '_sprues', prefix: 'backs', rows:5, columns: 2, suffix: 'L1' 
 end
 
 Squib::Deck.new(cards: MAX_CARD_COUNT, width: FULL_CARD_WIDTH, height: FULL_CARD_HEIGHT) do
@@ -130,9 +130,9 @@ Squib::Deck.new(cards: MAX_CARD_COUNT, width: FULL_CARD_WIDTH, height: FULL_CARD
   text str: data['N2'], range: t2_range, color: data['L2 Text Colour'], x: MIDDLE_BOX_X + ICON_X_PAD, y: CONTENT_BAR_Y + ICON_SPACER, width: ICON_SPACER, height: ICON_SIZE, align: 'center', valign: 'middle', font_size: STAT_TEXT, font: 'Atkinson Hyperlegible Bold'  
   text str: data['Movement'], range: t1_range, color: data['L1 Text Colour'], x: RIGHT_BOX_X + ICON_X_PAD, y: CONTENT_BAR_Y + ICON_SPACER, width: ICON_SPACER, height: ICON_SIZE, align: 'center', valign: 'middle', font_size: STAT_TEXT, font: 'Atkinson Hyperlegible Bold'  
   text str: data['Movement'], range: t2_range, color: data['L2 Text Colour'], x: RIGHT_BOX_X + ICON_X_PAD, y: CONTENT_BAR_Y + ICON_SPACER, width: ICON_SPACER, height: ICON_SIZE, align: 'center', valign: 'middle', font_size: STAT_TEXT, font: 'Atkinson Hyperlegible Bold'  
-  
-  save_png dir: '_backs', prefix: data['Unit'], count_format: '', suffix: 2
-  save_sheet dir: '_sprues', prefix: 'backs', rows:6, columns: 5, suffix: 2 
+
+  save_png dir: '_backs', prefix: data['Unit'], count_format: '', suffix: 'L2'
+  save_sheet dir: '_sprues', prefix: 'backs', rows:5, columns: 2, suffix: 'L2' 
 end
 
 

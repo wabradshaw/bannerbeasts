@@ -4,12 +4,12 @@ require 'squib'
 # Config
 
 FILE_NAME = 'Bannerbeasts Roller - Units.csv'
-MAX_CARD_COUNT = 28
+MAX_CARD_COUNT = 40
 
 MM_TOTAL_CARD_WIDTH = 63.5 
 MM_TOTAL_CARD_HEIGHT = 88.8
 
-SCALE = 2 # 1-> 300DPI, 2-> 600DPI
+SCALE = 0.5 # 1-> 300DPI, 2-> 600DPI
 DPI = 300
 DPMM = DPI * SCALE / 25.4
 
@@ -130,7 +130,7 @@ Squib::Deck.new(cards: MAX_CARD_COUNT, width: FULL_CARD_WIDTH, height: FULL_CARD
   text str: blocks, color: 'black', x: ICON_X_PAD + ICON_SIZE + STROKE, y: ICON_Y_PAD + (8 * BAR_BOX_W), width: ICON_SIZE, height: ICON_SIZE, align: 'center', valign: 'middle', font_size: BAR_TEXT, font: 'Atkinson Hyperlegible Bold'    
 
   save_png dir: '_summaries', prefix: data['Unit'], count_format: ''
-  save_sheet dir: '_sprues', prefix: 'summaries_', rows:3, columns: 3
+  save_sheet dir: '_sprues', prefix: 'summaries_', rows:6, columns: 5
 end
 
 puts "Done";

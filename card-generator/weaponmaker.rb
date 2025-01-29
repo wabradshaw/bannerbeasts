@@ -4,7 +4,7 @@ require 'squib'
 # Config
 
 FILE_NAME = 'Bannerbeasts Roller - Weapons.csv'
-MAX_CARD_COUNT = 17
+MAX_CARD_COUNT = 23
 
 MM_TOTAL_CARD_WIDTH = 63.5 
 MM_TOTAL_CARD_HEIGHT = 88.8
@@ -83,7 +83,7 @@ Squib::Deck.new(cards: MAX_CARD_COUNT, width: FULL_CARD_WIDTH, height: FULL_CARD
   text str: data['Cost'], x: COST_X_PAD, y: COST_Y_PAD, height: COST_SIZE, width: COST_SIZE, color: 'black', align: 'center', valign: 'middle', font_size: UNIT_TEXT, font: 'Atkinson Hyperlegible'   
 
   save_png dir: '_weapons', prefix: data['Name'], count_format: ''
-  save_sheet dir: '_sprues', prefix: 'weapons_', rows:3, columns: 3
+  save_sheet dir: '_sprues', prefix: 'weapons_', rows:4, columns: 5
 end
 
 puts "Done";
