@@ -1,10 +1,11 @@
 #!/usr/bin/ruby -w
 require 'squib'
+#require 'daru'
 
 # Config
 
 FILE_NAME = 'Bannerbeasts Roller - Weapons.csv'
-MAX_CARD_COUNT = 23
+MAX_CARD_COUNT = 53
 
 MM_TOTAL_CARD_WIDTH = 63.5 
 MM_TOTAL_CARD_HEIGHT = 88.8
@@ -62,28 +63,52 @@ puts "Start";
 
 data = Squib.csv file: FILE_NAME
 
-names = data['Name'].zip(data['Tier']).map { |a| a.join(' - L') }
-powers = data['Power'].map {|t| t != nil ? t : ''}
+factions = ['Ratkin','Gobbo','Boneborn','Silk Court']
+
+# Initialize a new hash of arrays for expanded data
+expanded_data = Hash.new { |hash, key| hash[key] = [] }
+
+# Iterate through each row in the DataFrame
+data.nrows.times do |i|
+  row = data.row(i)  # Get the current row as a hash
+
+  # Determine the factions this row should apply to
+  target_factions = row['Faction'] == 'Any' ? factions : [row['Faction']]
+
+  # Duplicate the row for each applicable faction
+  target_factions.each do |fact|
+    data.columns.each { |col| expanded_data[col] << row[col] }  # Copy all original columns
+    expanded_data['Fact'] << fact  # Add new 'fact' column
+  end
+end
+
+# Convert expanded data back into a Squib::DataFrame
+full_data = Squib::DataFrame.new(expanded_data)
+
+id = full_data['Fact'].zip(full_data['Name']).map { |a| a.join('-') }
+names = full_data['Name'].zip(full_data['Tier']).map { |a| a.join(' - L') }
+powers = full_data['Power'].map {|t| t != nil ? t : ''}
 
 Squib::Deck.new(cards: MAX_CARD_COUNT, width: FULL_CARD_WIDTH, height: FULL_CARD_HEIGHT) do
   background color: 'white'
 
   line x1: 0, x2: FULL_CARD_WIDTH, y1: PAD + TITLE_H, y2: PAD + TITLE_H, stroke_width: STROKE, stroke_color: 'black'
 
-  text str: data['Faction'], color: 'black', x: FACTION_TEXT_X, y: PAD, height: TITLE_H / 3, align: 'left', valign: 'top', font_size: FACTION_TEXT, font: 'Atkinson Hyperlegible Bold'   
+  text str: full_data['Faction'], color: 'black', x: FACTION_TEXT_X, y: PAD, height: TITLE_H / 3, align: 'left', valign: 'top', font_size: FACTION_TEXT, font: 'Atkinson Hyperlegible Bold'   
   text str: names, color: 'black', x: UNIT_TEXT_X, y: PAD, height: TITLE_H, align: 'left', valign: 'middle', font_size: UNIT_TEXT, font: 'Atkinson Hyperlegible Bold'   
 
   text_sizes = text str: powers, color: 'black', x: POWERS_X, y: POWERS_Y, width: POWERS_W, height: POWERS_H, align: 'left', valign: 'bottom', font_size: POWERS_TEXT, font: 'Atkinson Hyperlegible', markup: true
   min_dimensions = text_sizes.map {|t| [(BODY_H * 0.9) - t[:height], MAX_IMAGE_WIDTH].min} 
   xs = min_dimensions.map {|t| PAD + (CARD_WIDTH - t)/2}
 
-  png file: data['Image'], x: xs, y: TITLE_H + STROKE, width: min_dimensions, height: min_dimensions 
+  png file: full_data['Image'], x: xs, y: TITLE_H + STROKE, width: min_dimensions, height: min_dimensions 
 
   circle x: COST_X_PAD + COST_SIZE/2, y: COST_Y_PAD + COST_SIZE/2, radius: COST_SIZE * 0.5, stroke_width: STROKE, stroke_color: 'black', fill_color: 'white'
-  text str: data['Cost'], x: COST_X_PAD, y: COST_Y_PAD, height: COST_SIZE, width: COST_SIZE, color: 'black', align: 'center', valign: 'middle', font_size: UNIT_TEXT, font: 'Atkinson Hyperlegible'   
+  text str: full_data['Cost'], x: COST_X_PAD, y: COST_Y_PAD, height: COST_SIZE, width: COST_SIZE, color: 'black', align: 'center', valign: 'middle', font_size: UNIT_TEXT, font: 'Atkinson Hyperlegible'   
 
-  save_png dir: '_weapons', prefix: data['Name'], count_format: ''
-  save_sheet dir: '_sprues', prefix: 'weapons_', rows:4, columns: 5
+  save_png dir: '_weapons', prefix: id, count_format: ''
+  save_sheet dir: '_sprues_print', prefix: 'weapons_', rows:3, columns: 3
+  save_sheet dir: '_sprues_tt', prefix: 'weapons_', rows:4, columns: 5
 end
 
 puts "Done";
