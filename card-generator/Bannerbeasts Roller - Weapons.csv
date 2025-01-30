@@ -1,11 +1,11 @@
 Name,Tier,Class,Faction,Cost,Melee to hit,Wounds,AP,Frontline Mult,Attacks Mult,Block,Evade,Range to hit,Range,Power,Image
-Spear,1,Spear,Any,1,,,,,,,,,,<b>Readied</b> - Strikes first when charged,./assets/weapons/1/spear.png
+Spear,1,Spear,Any,1,,,,,,,,,,<b>Readied</b> - Strikes first when charged in the front,./assets/weapons/1/spear.png
 Mace,1,Blunt,Any,1,,,-1,,,,,,,<b>AP 1</b> - Reduce block rolls by 1,./assets/weapons/1/club.png
 Hand Axe,1,Axe,Any,1,,2,,,,,,,,<b>Multiwound 2</b> - Each hit does 2 wounds to a single model,./assets/weapons/1/axe.png
 Second Weapon,1,Offhand,Any,1,-1,,,,2,,,,,"<b>Offhand</b> - Double the number of attacks. Can't equip a shield
 <b>Unwieldy</b> - Your rolls to hit in melee are reduced by 1",./assets/weapons/1/offhand.png
 Shield,1,Shield,Any,1,,,,,,1,,,,<b>Block 1</b> - Improve the model's block by 1,./assets/weapons/1/shield.png
-Pike,2,Spear,Any,2,,,,2,,,,,,"<b>Readied</b> - Strikes first when charged
+Pike,2,Spear,Any,2,,,,2,,,,,,"<b>Readied</b> - Strikes first when charged in the front
 <b>Long Reach</b> - Double the unit's frontline",./assets/weapons/2/spear.png
 Sledgehammer,2,Blunt,Any,2,,,-2,,,,,,,<b>AP 2</b> - Reduce block rolls by 2.,./assets/weapons/2/club.png
 Battleaxe,2,Axe,Any,2,,3,,,,,,,,"<b>Multiwound 3</b> - Each hit does 3 wounds to a single model
@@ -34,8 +34,8 @@ Firecrackers,2,Ranged,Gobbo,2,,,,,,,,,2,"<b>Range 2</b> - Hits targets up to 2 s
 <b>Single Use</b> - Can only be used once
 <b>Fire on the Move</b> - Can be used after moving
 <b>Doubleshot</b> - Fires twice",./assets/weapons/2/ranged.png
-Bone Knives,1,Ranged,Skeletons,0,,,,,,,,,2,<b>Range 2</b> - Hits targets up to 2 squares away,./assets/weapons/1/ranged.png
-Bone Shortbow,1,Ranged,Skeletons,1,,,,,,,,,3,<b>Range 3</b> - Hits targets up to 3 squares away,./assets/weapons/1/ranged.png
+Bone Knives,1,Ranged,Boneborn,0,,,,,,,,,2,<b>Range 2</b> - Hits targets up to 2 squares away,./assets/weapons/1/ranged.png
+Bone Shortbow,1,Ranged,Boneborn,1,,,,,,,,,3,<b>Range 3</b> - Hits targets up to 3 squares away,./assets/weapons/1/ranged.png
 Salvaged Bow,1,Ranged,Silk Court,1,,,,,,,,-1,3,"<b>Range 3</b> - Hits targets up to 3 squares away
 <b>Unbalanced</b> - Your rolls to hit at range are reduced by 1",./assets/weapons/1/ranged.png
 Shortbow,1,Ranged,Silk Court,1,,,,,,,,,3,<b>Range 3</b> - Hits targets up to 3 squares away,./assets/weapons/1/ranged.png
