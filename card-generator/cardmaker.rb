@@ -188,7 +188,9 @@ Squib::Deck.new(cards: MAX_CARD_COUNT, width: FULL_CARD_WIDTH, height: FULL_CARD
   text str: data['C1'], color: 'black', x: COST_X, y: COST_Y, width: COST_SIZE, height: COST_SIZE, align: 'center', valign: 'middle', font_size: POWERS_TEXT, font: 'Atkinson Hyperlegible Bold'
 
   save_png dir: '_cards', prefix: data['Unit'], count_format: '', suffix: 'L1'
-  save_sheet dir: '_sprues', rows:5, columns: 2, suffix: 'L1' 
+  save_sheet dir: '_sprues_tt', rows:5, columns: 2, suffix: 'L1' 
+  rect x: 0, y: 0, width: FULL_CARD_WIDTH, height: FULL_CARD_HEIGHT, stroke_width: SCALE, stroke_color: 'black'
+  save_sheet dir: '_sprues_print', rows:2, columns: 2, suffix: 'L1', rotate: true
 end
 
 Squib::Deck.new(cards: MAX_CARD_COUNT, width: FULL_CARD_WIDTH, height: FULL_CARD_HEIGHT) do
@@ -277,8 +279,10 @@ Squib::Deck.new(cards: MAX_CARD_COUNT, width: FULL_CARD_WIDTH, height: FULL_CARD
   circle range: t2_range, x: COST_X + COST_RADIUS, y: COST_Y + COST_RADIUS, radius: COST_RADIUS, stroke_width: STROKE, stroke_color: 'black', fill_color: UNCOMMON
   text str: data['C2'], color: 'black', x: COST_X, y: COST_Y, width: COST_SIZE, height: COST_SIZE, align: 'center', valign: 'middle', font_size: POWERS_TEXT, font: 'Atkinson Hyperlegible Bold'
 
-  save_png dir: '_cards', prefix: data['Unit'], count_format: '', suffix: 'L2'
-  save_sheet dir: '_sprues', rows:5, columns: 2, suffix: 'L2' 
+  save_png dir: '_cards', prefix: data['Unit'], count_format: '', suffix: 'L2'  
+  save_sheet dir: '_sprues_tt', rows:5, columns: 2, suffix: 'L2' 
+  rect x: 0, y: 0, width: FULL_CARD_WIDTH, height: FULL_CARD_HEIGHT, stroke_width: SCALE, stroke_color: 'black'
+  save_sheet dir: '_sprues_print', rows:2, columns: 2, suffix: 'L2', rotate: true
 end
 
 

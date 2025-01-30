@@ -107,8 +107,9 @@ Squib::Deck.new(cards: MAX_CARD_COUNT, width: FULL_CARD_WIDTH, height: FULL_CARD
   text str: full_data['Cost'], x: COST_X_PAD, y: COST_Y_PAD, height: COST_SIZE, width: COST_SIZE, color: 'black', align: 'center', valign: 'middle', font_size: UNIT_TEXT, font: 'Atkinson Hyperlegible'   
 
   save_png dir: '_weapons', prefix: id, count_format: ''
-  save_sheet dir: '_sprues_print', prefix: 'weapons_', rows:3, columns: 3
   save_sheet dir: '_sprues_tt', prefix: 'weapons_', rows:4, columns: 5
+  rect x: 0, y: 0, width: FULL_CARD_WIDTH, height: FULL_CARD_HEIGHT, stroke_width: SCALE, stroke_color: 'black'
+  save_sheet dir: '_sprues_print', prefix: 'weapons_', rows:3, columns: 3
 end
 
 puts "Done";

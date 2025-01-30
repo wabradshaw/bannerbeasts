@@ -58,10 +58,8 @@ Silk Court Webspitters,Webspitters,TRUE,Spiderling,Spiderlings,Silk Court,1,3,5,
 <b>Spit Webs</b> - Opponents that start a combat with this unit gain strikes last for the turn.",1,1,1,1,1,1,#f1baff,#2d2d2d,#000000,#ffffff,spiders.png,spiderling,1
 Silk Court Trappers,Trappers,TRUE,Spiderling,Spiderlings,Silk Court,1,3,6,5,10,1,4,-,5,1,1,5,,"<b>Poison</b> - 6s to hit can't be saved
 
-<b>Web Sacs</b> - Enemies can't use evasion against this unit",1,1,1,1,1,,#f1baff,#2d2d2d,#000000,#ffffff,spiders.png,spiderling,1
-Silk Court Huntsmen,Huntsmen,TRUE,Spiderling,Spiderlings,Silk Court,1,2,4,5,10,1,5,5,5,1,1,5,,"<b>Poison</b> - 6s to hit can't be saved
-
-<b>Flexible</b> - Turn to face any direction at the start of your turn",,,,1,,1,#f1baff,#2d2d2d,#000000,#ffffff,spiders.png,spiderling,1
+<b>Web Traps</b> - Enemies can't flee from this unit or turn after combat. Instead of rolling to flee, they lose extra wounds for every point they lost combat.",1,1,1,1,1,,#f1baff,#2d2d2d,#000000,#ffffff,spiders.png,spiderling,1
+Silk Court Huntsmen,Huntsmen,TRUE,Spiderling,Spiderlings,Silk Court,1,2,4,5,10,1,4,5,5,1,1,6,,<b>Poison</b> - 6s to hit can't be saved,,,,1,,1,#f1baff,#2d2d2d,#000000,#ffffff,spiders.png,spiderling,1
 Silk Court Jumpers,Jumpers,TRUE,Knight,Knights,Silk Court,2,3,5,5,10,2,5,4,5,1,1,6,,"<b>Poison</b> - 6s to hit can't be saved
 
 <b>Tactical Retreat</b> - Can choose to flee before combat starts
@@ -98,8 +96,8 @@ Silk Court Spitter,Spitter,TRUE,Webcannon,Webcannons,Silk Court,2,4,6,1,2,1,5,4,
 <b>Virulent</b> - Any unit wounded by this unit becomes Poisoned. At the start of each of the controlling players turns, Poisoned units take a wound on a 4+ with no armour saves allowed.
 
 <b>Spitter Cannon</b> - Ranged weapon. Range 5. Each model fires 4 shots. Can shoot over friendly units.",,,,,,,#f1baff,#2d2d2d,#000000,#ffffff,spiders.png,,1
-Boneborn Warriors,Warriors,TRUE,Skeleton,Skeletons,Boneborn,1,2,4,6,12,1,4,-,6,1,1,-,,"<b>Unstable</b> - Instead of rolling to flee, lose extra wounds for every point you lost combat.",1,1,1,1,1,,#e0e0d3,#4d4d4d,#000000,#ffffff,skellies.png,skellie,1
-Boneborn Archers,Archers,TRUE,Skeleton,Skeletons,Boneborn,1,2,4,6,12,1,4,5,6,1,1,-,,"<b>Unstable</b> - Instead of rolling to flee, lose extra wounds for every point you lost combat.",,,,,,1,#e0e0d3,#4d4d4d,#000000,#ffffff,skellies.png,skellie,1
+Boneborn Warriors,Warriors,TRUE,Skeleton,Skeletons,Boneborn,1,2,4,6,12,1,4,-,6,1,1,5,,"<b>Unstable</b> - Instead of rolling to flee, lose extra wounds for every point you lost combat.",1,1,1,1,1,,#e0e0d3,#4d4d4d,#000000,#ffffff,skellies.png,skellie,1
+Boneborn Archers,Archers,TRUE,Skeleton,Skeletons,Boneborn,1,2,4,6,12,1,4,5,6,1,1,6,,"<b>Unstable</b> - Instead of rolling to flee, lose extra wounds for every point you lost combat.",,,,,,1,#e0e0d3,#4d4d4d,#000000,#ffffff,skellies.png,skellie,1
 Boneborn Revenants,Revenants,TRUE,Skeleton,Skeletons,Boneborn,1,3,6,6,12,1,5,-,6,1,1,5,,"<b>Unstable</b> - Instead of rolling to flee, lose extra wounds for every point you lost combat.
 
 <b>Revenants</b> - After combat, add a new model for each enemy that died. Limited to the starting size.",,1,1,1,1,,#e0e0d3,#4d4d4d,#000000,#ffffff,skellies.png,skellie,1
@@ -108,7 +106,7 @@ Boneborn Wights,Wights,TRUE,Skeleton,Skeletons,Boneborn,1,3,6,6,12,1,5,-,6,1,1,4
 <b>Terrifying</b> - At the start of each round of combat, all enemy units in combat with it must roll to flee. If they flee out of combat, no combat takes place. ",1,1,1,1,1,,#e0e0d3,#4d4d4d,#000000,#ffffff,skellies.png,skellie,1
 Boneborn Skullclops,Skullclops,TRUE,Bonegiant,Bonegiants,Boneborn,2,4,7,1,2,1,3,-,2,5,5,4,,"<b>Unstable</b> - Instead of rolling to flee, lose extra wounds for every point you lost combat.
 
-<b>Mighty Cleave</b> - In combat this unit makes its attacks against all adjacent enemy units. Roll separately for each.
+<b>Mighty Cleave</b> - In combat this unit makes its attacks against all adjacent enemy units. Roll separately for each. If they are not in combat, they take damage but are not included in combat resolution and do not strike back.
 
 <b>Natural Warrior</b> - Equipment costs 1 less.",,2,2,,,,#e0e0d3,#4d4d4d,#000000,#ffffff,skellies.png,spiderling,1
 Boneborn Grave Beast,Grave Beast,TRUE,Bonegiant,Bonegiants,Boneborn,2,4,6,1,2,1,4,,2,4,5,5,,"<b>Unstable</b> - Instead of rolling to flee, lose extra wounds for every point you lost combat.
@@ -116,10 +114,10 @@ Boneborn Grave Beast,Grave Beast,TRUE,Bonegiant,Bonegiants,Boneborn,2,4,6,1,2,1,
 <b>Revenants</b> - After combat, add a new wound for each enemy that died. Can resurrect models. Limited to the starting size.
 
 <b>Terrifying</b> - At the start of each round of combat, all enemy units in combat with it must roll to flee. If they flee out of combat, no combat takes place. ",,2,2,2,,,#e0e0d3,#4d4d4d,#000000,#ffffff,skellies.png,spiderling,1
-Boneborn Necromancers,Necromancers,TRUE,Lich,Liches,Boneborn,2,4,6,2,4,1,4,,6,1,3,6,,"<b>Unstable</b> - Instead of rolling to flee, lose extra wounds for every point you lost combat.
+Boneborn Necromancers,Necromancers,TRUE,Lich,Liches,Boneborn,2,4,6,2,4,1,2,,6,1,3,6,,"<b>Unstable</b> - Instead of rolling to flee, lose extra wounds for every point you lost combat.
 
 <b>Raise the Dead 1</b> - Free action: Choose an undead unit and heal 1 wound per Necromancer. This can resurrect models. Limited to the starting number of units/wounds.",,,,,,,#e0e0d3,#4d4d4d,#000000,#ffffff,skellies.png,spiderling,1
-Boneborn Terrormancers,Terrormancers,TRUE,Lich,Liches,Boneborn,2,3,5,2,4,1,4,4,6,2,3,5,,"<b>Unstable</b> - Instead of rolling to flee, lose extra wounds for every point you lost combat.
+Boneborn Terrormancers,Terrormancers,TRUE,Lich,Liches,Boneborn,2,3,5,2,4,1,3,4,6,2,3,5,,"<b>Unstable</b> - Instead of rolling to flee, lose extra wounds for every point you lost combat.
 
 <b>Bone Spurs</b> - Ranged weapon. Can target any unit adjacent to a friendly Boneborn unit. Can fire into combat. Wounded units by this attack must immediately roll to flee.",,,,,,,#e0e0d3,#4d4d4d,#000000,#ffffff,skellies.png,spiderling,1
 Boneborn Wall of Flesh,Wall of Flesh,TRUE,Zombie,Zombies,Boneborn,2,3,6,6,12,1,5,-,6,1,2,5,,"<b>Unstable</b> - Instead of rolling to flee, lose extra wounds for every point you lost combat.

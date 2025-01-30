@@ -91,15 +91,11 @@ Squib::Deck.new(cards: MAX_CARD_COUNT, width: FULL_CARD_WIDTH, height: FULL_CARD
   text str: data['N1'], range: t2_range, color: data['L2 Text Colour'], x: MIDDLE_BOX_X + ICON_X_PAD, y: CONTENT_BAR_Y + ICON_SPACER + ICON_MARGIN, width: ICON_SPACER, height: ICON_SIZE, align: 'center', valign: 'middle', font_size: STAT_TEXT, font: 'Atkinson Hyperlegible Bold'  
   text str: data['Movement'], range: t1_range, color: data['L1 Text Colour'], x: RIGHT_BOX_X + ICON_X_PAD, y: CONTENT_BAR_Y + ICON_SPACER + ICON_MARGIN, width: ICON_SPACER, height: ICON_SIZE, align: 'center', valign: 'middle', font_size: STAT_TEXT, font: 'Atkinson Hyperlegible Bold'  
   text str: data['Movement'], range: t2_range, color: data['L2 Text Colour'], x: RIGHT_BOX_X + ICON_X_PAD, y: CONTENT_BAR_Y + ICON_SPACER + ICON_MARGIN, width: ICON_SPACER, height: ICON_SIZE, align: 'center', valign: 'middle', font_size: STAT_TEXT, font: 'Atkinson Hyperlegible Bold'  
-
-  #rect x: PAD + SIDEBAR_W, y: CONTENT_BAR_Y, width: CONTENT_BOX, height: CONTENT_BOX, color: 'red', stroke_color: 'black', stroke: 4
-
-  # png file: './assets/black/move.png', x: ICON_X_PAD, y: ICON_Y_PAD + (1 * BAR_BOX_H), width: ICON_SIZE, height: ICON_SIZE
   
-  
-  
-  save_png dir: '_backs', prefix: data['Unit'], count_format: '', suffix: 'L1'
-  save_sheet dir: '_sprues', prefix: 'backs', rows:5, columns: 2, suffix: 'L1' 
+  save_png dir: '_backs', prefix: data['Unit'], count_format: '', suffix: 'L1'  
+  save_sheet dir: '_sprues_tt', prefix: 'backs', rows:5, columns: 2, suffix: 'L1' 
+  rect x: 0, y: 0, width: FULL_CARD_WIDTH, height: FULL_CARD_HEIGHT, stroke_width: SCALE, stroke_color: 'black'
+  save_sheet dir: '_sprues_print',prefix: 'backs', rows:2, columns: 2, suffix: 'L1', rotate: true
 end
 
 Squib::Deck.new(cards: MAX_CARD_COUNT, width: FULL_CARD_WIDTH, height: FULL_CARD_HEIGHT) do
@@ -130,9 +126,11 @@ Squib::Deck.new(cards: MAX_CARD_COUNT, width: FULL_CARD_WIDTH, height: FULL_CARD
   text str: data['N2'], range: t2_range, color: data['L2 Text Colour'], x: MIDDLE_BOX_X + ICON_X_PAD, y: CONTENT_BAR_Y + ICON_SPACER, width: ICON_SPACER, height: ICON_SIZE, align: 'center', valign: 'middle', font_size: STAT_TEXT, font: 'Atkinson Hyperlegible Bold'  
   text str: data['Movement'], range: t1_range, color: data['L1 Text Colour'], x: RIGHT_BOX_X + ICON_X_PAD, y: CONTENT_BAR_Y + ICON_SPACER, width: ICON_SPACER, height: ICON_SIZE, align: 'center', valign: 'middle', font_size: STAT_TEXT, font: 'Atkinson Hyperlegible Bold'  
   text str: data['Movement'], range: t2_range, color: data['L2 Text Colour'], x: RIGHT_BOX_X + ICON_X_PAD, y: CONTENT_BAR_Y + ICON_SPACER, width: ICON_SPACER, height: ICON_SIZE, align: 'center', valign: 'middle', font_size: STAT_TEXT, font: 'Atkinson Hyperlegible Bold'  
-
-  save_png dir: '_backs', prefix: data['Unit'], count_format: '', suffix: 'L2'
-  save_sheet dir: '_sprues', prefix: 'backs', rows:5, columns: 2, suffix: 'L2' 
+   
+  save_png dir: '_backs', prefix: data['Unit'], count_format: '', suffix: 'L2'  
+  save_sheet dir: '_sprues_tt', prefix: 'backs', rows:5, columns: 2, suffix: 'L2' 
+  rect x: 0, y: 0, width: FULL_CARD_WIDTH, height: FULL_CARD_HEIGHT, stroke_width: SCALE, stroke_color: 'black'
+  save_sheet dir: '_sprues_print',prefix: 'backs', rows:2, columns: 2, suffix: 'L2', rotate: true
 end
 
 
