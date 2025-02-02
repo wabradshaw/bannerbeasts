@@ -7,7 +7,7 @@ Gobbo Beserkers,Beserkers,TRUE,Goblin,Goblins,Gobbo,1,3,6,6,12,1,4,-,6,1,1,6,,"<
 
 <b>Eager to Fight.</b> - You must move the full distance, or collide with something. If the unit moves off the board, it is lost.
 
-<b>Maneouverable</b> - May turn once at any point during a move or charge.",,1,1,1,,,#00dd28,#00941A,#000000,#ffffff,gobbos.png,gobbo,1
+<b>Maneouverable</b> - May turn once at any point during a move or hustle.",,1,1,1,,,#00dd28,#00941A,#000000,#ffffff,gobbos.png,gobbo,1
 Gobbo Archers,Archers,TRUE,Goblin,Goblins,Gobbo,1,2,4,6,12,1,4,5,6,1,1,6,,,,,,,,1,#00dd28,#00941A,#000000,#ffffff,gobbos.png,gobbo,1
 Gobbo Wolf Chariots,Wolf Chariots,TRUE,Chariot,Chariots,Gobbo,2,4,6,2,4,2,4,5,2,4,4,5,,"<b>Impact Hits d3</b> - If you get a charge bonus, do d3 attacks per model hitting on 4+. These count towards who won combat.",2,2,2,2,2,2,#00dd28,#00941A,#000000,#ffffff,gobbos.png,gobbo-chariot,2
 Gobbo Bangwagons,Bangwagons,TRUE,Chariot,Chariots,Gobbo,2,3,4,2,4,2,2,-,6,d6,2,-,-4,"<b>Insane</b> - Dies after combat.
@@ -16,7 +16,7 @@ Gobbo Bangwagons,Bangwagons,TRUE,Chariot,Chariots,Gobbo,2,3,4,2,4,2,2,-,6,d6,2,-
 
 <b>AP 4</b> - Reduce block rolls by 4.
 
-<b>Fast Charger</b> - Rolls two charge bonus die, so it can travel up to two extra squares on the charge.",,,,,,,#00dd28,#00941A,#000000,#ffffff,gobbos.png,gobbo-chariot,2
+<b>Fast</b> - Rolls two hustle die, so it can travel up to two extra squares.",,,,,,,#00dd28,#00941A,#000000,#ffffff,gobbos.png,gobbo-chariot,2
 Gobbo Starchucker,Starchucker,TRUE,Hurtbox,Hurtboxes,Gobbo,2,3,5,1,2,1,6,3,6,2,2,6,,"<b>War Machine</b> - Dies if it flees. Can't move into combat.
 <b>Razorstar</b> - Ranged weapon. Range d6+1 (per model). For each shot, the first unit in that range gets one attack that hits on 3+, AP -3, and does 3 wounds. If it hits, the next unit takes a 4+, AP -2, 2 wound attack. If that hits, the third unit takes a 5+, AP -1, 1 wound attack. This shot can't pass through terrain.
 <b>Friendly Fire</b> - Can shoot into combat and into friendly units.",,,,,,,#00dd28,#00941A,#000000,#ffffff,gobbos.png,gobbo-hurtbox,1
@@ -35,9 +35,9 @@ Gobbo Flagellants,Flagellants,TRUE,Priest,Priests,Gobbo,2,3,5,6,12,1,4,-,6,3,1,6
 <b>Rabid</b> - Must charge if able to",,,2,,,,#00dd28,#00941A,#000000,#ffffff,gobbos.png,gobbo-priest,1
 Gobbo Tincans,Tincans,TRUE,Priest,Priests,Gobbo,2,4,7,6,12,1,4,6,6,1,1,3,,"<b>Stalwart</b> - Add 1 to leadership rolls
 
-<b>Slow</b> - Don't roll a bonus charge dice ",2,2,2,2,2,1,#00dd28,#00941A,#000000,#ffffff,gobbos.png,gobbo-priest,1
+<b>Slow</b> - Can't hustle",2,2,2,2,2,1,#00dd28,#00941A,#000000,#ffffff,gobbos.png,gobbo-priest,1
 Ratkin Warriors,Warriors,TRUE,Rat,Rats,Ratkin,1,2,4,9,18,1,5,6,9,1,1,6,,,1,1,1,1,1,1,#ffb380,#733d00,#000000,#ffffff,rats.png,rat,1
-Ratkin Skitterers,Skitterers,TRUE,Rat,Rats,Ratkin,1,3,6,9,18,2,5,5,9,1,1,6,,<b>Maneouverable</b> - May turn once at any point during a move or charge,1,1,1,1,,,#ffb380,#733d00,#000000,#ffffff,rats.png,rat,1
+Ratkin Skitterers,Skitterers,TRUE,Rat,Rats,Ratkin,1,3,6,9,18,2,5,5,9,1,1,6,,<b>Maneouverable</b> - May turn once at any point during a move or hustle,1,1,1,1,,,#ffb380,#733d00,#000000,#ffffff,rats.png,rat,1
 Ratkin Pelters,Pelters,TRUE,Rat,Rats,Ratkin,1,2,4,9,18,1,5,5,9,1,1,-,,,,,,,,1,#ffb380,#733d00,#000000,#ffffff,rats.png,rat,1
 Ratkin Horde,Horde,TRUE,Rat,Rats,Ratkin,1,1,2,9,18,1,6,-,9,1,1,-,,,1,,,,1,,#ffb380,#733d00,#000000,#ffffff,rats.png,rat,1
 Ratkin Ninjas,Ninjas,TRUE,Elite,Elites,Ratkin,2,4,6,9,18,2,4,5,9,1,1,-,,"<b>Elusive 1</b> - All to-hit rolls targetting this unit suffer a -1 penalty.
@@ -62,10 +62,10 @@ Silk Court Jumpers,Jumpers,TRUE,Knight,Knights,Silk Court,2,3,5,5,10,2,5,4,5,1,1
 
 <b>Tactical Retreat</b> - Can choose to flee before combat starts
 
-<b>Jumping</b> - Can jump over units while moving and charging. Doing so increases the max movement distance by 1. Must end their turn in an empty square.",1,1,1,1,,2,#f1baff,#2d2d2d,#000000,#ffffff,spiders.png,,2
+<b>Jumping</b> - Can jump over units while moving and hustling. Doing so increases the max movement distance by 1. Must end their turn in an empty square.",1,1,1,1,,2,#f1baff,#2d2d2d,#000000,#ffffff,spiders.png,,2
 Silk Court Widowmakers,Widowmakers,TRUE,Knight,Knights,Silk Court,2,4,6,5,10,2,4,-,5,1,2,5,,"<b>Poison</b> - 6s to hit can't be saved
 
-<b>Maneouverable</b> - May turn once at any point during a move or charge
+<b>Maneouverable</b> - May turn once at any point during a move or hustle
 
 <b>Virulent</b> - Any unit wounded by this unit becomes Poisoned. At the start of each of the controlling players turns, Poisoned units take a wound on a 4+ with no armour saves allowed.",2,2,2,2,2,,#f1baff,#2d2d2d,#000000,#ffffff,spiders.png,,2
 Silk Court Shimmerwebs,Shimmerwebs,TRUE,Shifter,Shifters,Silk Court,2,3,5,5,10,1,4,6,5,1,1,6,,"<b>Poison</b> - 6s to hit can't be saved
@@ -122,12 +122,12 @@ Boneborn Wall of Flesh,Wall of Flesh,TRUE,Zombie,Zombies,Boneborn,2,3,6,6,12,1,5
 
 <b>Spongey 2</b> - Ignore 2 damage every round of combat or when hit by a ranged attack.
 
-<b>Slow</b> - Don't roll a bonus charge dice ",2,2,2,,2,,#e0e0d3,#4d4d4d,#000000,#ffffff,skellies.png,spiderling,1
+<b>Slow</b> - Can't hustle",2,2,2,,2,,#e0e0d3,#4d4d4d,#000000,#ffffff,skellies.png,spiderling,1
 Boneborn Ghouls,Ghouls,TRUE,Zombie,Zombies,Boneborn,2,3,6,6,12,1,4,-,6,1,2,6,,"<b>Unstable</b> - Instead of rolling to flee, lose extra wounds for every point you lost combat.
 
 <b>Revenants</b> - After combat, add a new revenant for each enemy that died. Limited to the starting size.
 
-<b>Fast Charger</b> - Rolls two charge bonus die, so it can travel up to two extra squares on the charge.",,2,2,2,,,#e0e0d3,#4d4d4d,#000000,#ffffff,skellies.png,spiderling,1
+<b>Fast</b> - Rolls two hustle die, so it can travel up to two extra squares.",,2,2,2,,,#e0e0d3,#4d4d4d,#000000,#ffffff,skellies.png,spiderling,1
 Gobbo ,,FALSE,Leader,,Gobbo,3,,,,,,,,,,,,,,,,,,,,#00dd28,#00941A,#000000,#ffffff,gobbos.png,,0
 Gobbo ,,FALSE,Leader,,Gobbo,3,,,,,,,,,,,,,,,,,,,,#00dd28,#00941A,#000000,#ffffff,gobbos.png,,0
 Gobbo ,,FALSE,Leader,,Gobbo,3,,,,,,,,,,,,,,,,,,,,#00dd28,#00941A,#000000,#ffffff,gobbos.png,,0
@@ -138,11 +138,20 @@ Silk Court ,,FALSE,Leader,,Silk Court,3,,,,,,,,,,,,,,,,,,,,#f1baff,#2d2d2d,#0000
 Silk Court ,,FALSE,Leader,,Silk Court,3,,,,,,,,,,,,,,,,,,,,#f1baff,#2d2d2d,#000000,#ffffff,spiders.png,,0
 Silk Court ,,FALSE,Leader,,Silk Court,3,,,,,,,,,,,,,,,,,,,,#f1baff,#2d2d2d,#000000,#ffffff,spiders.png,,0
 Boneborn Fodder,Fodder,FALSE,Skeleton,Skeletons,Boneborn,1,1,2,6,12,1,6,-,6,1,1,-,,"<b>Unstable</b> - Instead of rolling to flee, lose extra wounds for every point you lost combat.",,,,,,,#e0e0d3,#4d4d4d,#000000,#ffffff,skellies.png,,1
-Boneborn ,,FALSE,Leader,,Boneborn,3,,,,,,,,,,,,,"<b>Unstable</b> - Instead of rolling to flee, lose extra wounds for every point you lost combat.
-
+Boneborn Grand Necromancer,Grand Necromancer,FALSE,Leader,,Boneborn,3,,,,,,,,,,,,,"<b>Unstable</b> - Instead of rolling to flee, lose extra wounds for every point you lost combat.
+<b>Practiced Necromancy</b> - Unstable units lose 1 less wound if they lose combat.",,,,,,,#e0e0d3,#4d4d4d,#000000,#ffffff,skellies.png,,0
+Boneborn Banshee Queen,Banshee Queen,FALSE,Leader,,Boneborn,3,,,,,,,,,,3,,,"<b>Unstable</b> - Instead of rolling to flee, lose extra wounds for every point you lost combat.
+<b>Fearful Presence</b> - Enemy units in range 2 subtract one from rolls to flee. Natural 6s still always pass.
+<b>Ethereal</b> - Ignores Armour Piercing
+<b>Terrifying</b> - At the start of each round of combat, all enemy units in combat with it must roll to flee. If they flee out of combat, no combat takes place. ",,,,,,,#e0e0d3,#4d4d4d,#000000,#ffffff,skellies.png,,0
+Boneborn The Gravedigger,The Gravedigger,FALSE,Leader,,Boneborn,3,,,,,,,,,,,,,"<b>Unstable</b> - Instead of rolling to flee, lose extra wounds for every point you lost combat.
+<b>Corpsefinder</b> - Whenever an enemy unit in range 3 is wiped out, a unit of your choice may regain d6 wounds.",,,,,,,#e0e0d3,#4d4d4d,#000000,#ffffff,skellies.png,,0
+Boneborn Dracolich,Dracolich,FALSE,Leader,,Boneborn,3,,,,,,,,,,,,,"<b>Unstable</b> - Instead of rolling to flee, lose extra wounds for every point you lost combat.
 <b>Corpse Explosion</b> - Pick an enemy unit in combat. After combat has been resolved this turn, the unit suffers a ranged hit for each unit (friendly and enemy) that died in the combat, hitting on 4+.",,,,,,,#e0e0d3,#4d4d4d,#000000,#ffffff,skellies.png,,0
-Boneborn ,,FALSE,Leader,,Boneborn,3,,,,,,,,,,,,,"<b>Unstable</b> - Instead of rolling to flee, lose extra wounds for every point you lost combat.",,,,,,,#e0e0d3,#4d4d4d,#000000,#ffffff,skellies.png,,0
-Boneborn ,,FALSE,Leader,,Boneborn,3,,,,,,,,,,,,,"<b>Unstable</b> - Instead of rolling to flee, lose extra wounds for every point you lost combat.",,,,,,,#e0e0d3,#4d4d4d,#000000,#ffffff,skellies.png,,0
+Boneborn Archrevenant,Archrevenant,FALSE,Leader,,Boneborn,3,,,,,,,,,,,,,"<b>Unstable</b> - Instead of rolling to flee, lose extra wounds for every point you lost combat.
+<b>Archrevenant</b> - After combat, add a new wound for each wound deakt. Can resurrect models. Limited to the starting size.",,,,,,,#e0e0d3,#4d4d4d,#000000,#ffffff,skellies.png,,0
+Boneborn TODO,TODO,FALSE,Leader,,Boneborn,3,,,,,,,,,,,,,"<b>Unstable</b> - Instead of rolling to flee, lose extra wounds for every point you lost combat.
+<b>Corpse Explosion</b> - Pick an enemy unit in combat. After combat has been resolved this turn, the unit suffers a ranged hit for each unit (friendly and enemy) that died in the combat, hitting on 4+.",,,,,,,#e0e0d3,#4d4d4d,#000000,#ffffff,skellies.png,,0
 Slime ,,,,,Slime,,,,,,,,,,,,,,"<b>Unstable</b> - Instead of rolling to flee, lose extra wounds for every point you lost combat.
 
 <b>Perpetual</b> - After the unit is wiped out, leave their card face down. At the start of each turn, if the space is unoccupied you may roll a die. On a 4+, bring the unit back to life with full wounds, facing a direction of your choice 
