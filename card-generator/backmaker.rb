@@ -93,9 +93,9 @@ Squib::Deck.new(cards: MAX_CARD_COUNT, width: FULL_CARD_WIDTH, height: FULL_CARD
   text str: data['Movement'], range: t2_range, color: data['L2 Text Colour'], x: RIGHT_BOX_X + ICON_X_PAD, y: CONTENT_BAR_Y + ICON_SPACER + ICON_MARGIN, width: ICON_SPACER, height: ICON_SIZE, align: 'center', valign: 'middle', font_size: STAT_TEXT, font: 'Atkinson Hyperlegible Bold'  
   
   save_png dir: '_backs', prefix: data['Unit'], count_format: '', suffix: 'L1'  
-  save_sheet dir: '_sprues_tt', prefix: 'backs', rows:5, columns: 2, suffix: 'L1' 
+  save_sheet dir: '_sprues_tt', rows:5, columns: 2, suffix: 'L1_backs' 
   rect x: 0, y: 0, width: FULL_CARD_WIDTH, height: FULL_CARD_HEIGHT, stroke_width: SCALE, stroke_color: 'black'
-  save_sheet dir: '_sprues_print',prefix: 'backs', rows:2, columns: 2, suffix: 'L1', rotate: true
+  save_sheet dir: '_sprues_print', rows:2, columns: 2, suffix: 'L1_backs', rotate: true
 end
 
 Squib::Deck.new(cards: MAX_CARD_COUNT, width: FULL_CARD_WIDTH, height: FULL_CARD_HEIGHT) do
@@ -128,9 +128,9 @@ Squib::Deck.new(cards: MAX_CARD_COUNT, width: FULL_CARD_WIDTH, height: FULL_CARD
   text str: data['Movement'], range: t2_range, color: data['L2 Text Colour'], x: RIGHT_BOX_X + ICON_X_PAD, y: CONTENT_BAR_Y + ICON_SPACER, width: ICON_SPACER, height: ICON_SIZE, align: 'center', valign: 'middle', font_size: STAT_TEXT, font: 'Atkinson Hyperlegible Bold'  
    
   save_png dir: '_backs', prefix: data['Unit'], count_format: '', suffix: 'L2'  
-  save_sheet dir: '_sprues_tt', prefix: 'backs', rows:5, columns: 2, suffix: 'L2' 
+  save_sheet dir: '_sprues_tt', rows:5, columns: 2, suffix: 'L2_backs' 
   rect x: 0, y: 0, width: FULL_CARD_WIDTH, height: FULL_CARD_HEIGHT, stroke_width: SCALE, stroke_color: 'black'
-  save_sheet dir: '_sprues_print',prefix: 'backs', rows:2, columns: 2, suffix: 'L2', rotate: true
+  save_sheet dir: '_sprues_print', rows:2, columns: 2, suffix: 'L2_backs', rotate: true
 end
 
 
