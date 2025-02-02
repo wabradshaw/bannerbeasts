@@ -36,7 +36,7 @@ Firecrackers,2,Ranged,Gobbo,2,,,,,,,,,2,"<b>Range 2</b> - Hits targets up to 2 s
 <b>Doubleshot</b> - Fires twice",./assets/weapons/2/ranged.png
 Bone Knives,1,Ranged,Boneborn,0,,,,,,,,,2,<b>Range 2</b> - Hits targets up to 2 squares away,./assets/weapons/1/ranged.png
 Bone Shortbow,1,Ranged,Boneborn,1,,,,,,,,,3,<b>Range 3</b> - Hits targets up to 3 squares away,./assets/weapons/1/ranged.png
-Salvaged Bow,1,Ranged,Silk Court,1,,,,,,,,-1,3,"<b>Range 3</b> - Hits targets up to 3 squares away
+Salvaged Bow,1,Ranged,Silk Court,0,,,,,,,,-1,3,"<b>Range 3</b> - Hits targets up to 3 squares away
 <b>Unbalanced</b> - Your rolls to hit at range are reduced by 1",./assets/weapons/1/ranged.png
 Shortbow,1,Ranged,Silk Court,1,,,,,,,,,3,<b>Range 3</b> - Hits targets up to 3 squares away,./assets/weapons/1/ranged.png
 Longbow,2,Ranged,Silk Court,2,,,,,,,,,4,<b>Range 4</b> - Hits targets up to 4 squares away,./assets/weapons/2/ranged.png
