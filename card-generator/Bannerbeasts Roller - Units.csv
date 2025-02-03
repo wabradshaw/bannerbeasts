@@ -55,7 +55,7 @@ Ratkin Battering-Rat,Battering-Rat,TRUE,Ratwagons,Ratwagons,Ratkin,2,3,5,1,2,2,6
 
 <b>Push</b> - If you charge an opponent without using your whole movement allowance, you can push them back. Move them back one and move into their original square. This can't push opponents off the board or into occupied squares. This counts for charge distance. ",,,,,,,#ffb380,#733d00,#000000,#ffffff,rats.png,rat-wagon,2,6
 Silk Court Warriors,Warriors,TRUE,Spiderling,Spiderlings,Silk Court,1,2,4,5,10,1,4,6,5,1,1,5,,<b>Poison</b> - 6s to hit can't be saved,1,1,1,1,1,1,#f1baff,#2d2d2d,#000000,#ffffff,spiders.png,spiderling,1,6
-Silk Court Webspitters,Webspitters,TRUE,Spiderling,Spiderlings,Silk Court,1,3,5,5,10,1,5,5,5,1,1,5,,"<b>Poison</b> - 6s to hit can't be saved
+Silk Court Webspitters,Webspitters,TRUE,Spiderling,Spiderlings,Silk Court,1,3,5,5,10,1,4,5,5,1,1,5,,"<b>Poison</b> - 6s to hit can't be saved
 
 <b>Spit Webs</b> - Opponents that start a combat with this unit gain strikes last for the turn.",1,1,1,1,1,1,#f1baff,#2d2d2d,#000000,#ffffff,spiders.png,spiderling,1,6
 Silk Court Trappers,Trappers,TRUE,Spiderling,Spiderlings,Silk Court,1,3,6,5,10,1,4,-,5,1,1,5,,"<b>Poison</b> - 6s to hit can't be saved
