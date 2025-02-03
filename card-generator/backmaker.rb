@@ -32,7 +32,13 @@ BAR_W = 2 * SIDEBAR_W / 7
 SINGLE_BAR_SPACER_W = (SIDEBAR_W - BAR_W) / 2 
 DOUBLE_BAR_SPACER_W = (SIDEBAR_W - (2 * BAR_W)) / 3
 
-CENTRAL_W = CARD_WIDTH / 2
+FACTION_ICON_SIZE = BAR_W * 2.5
+FACTION_ICON_MARGIN = (SIDEBAR_W - FACTION_ICON_SIZE) / 2
+FACTION_ICON_Y = PAD + (CARD_HEIGHT - FACTION_ICON_SIZE) / 2
+FACTION_ICON_LEFT = PAD + FACTION_ICON_MARGIN
+FACTION_ICON_RIGHT = FULL_CARD_WIDTH - (PAD + FACTION_ICON_MARGIN + FACTION_ICON_SIZE)
+
+CENTRAL_W = CARD_WIDTH - (SIDEBAR_W * 2)
 CENTRAL_X = PAD + SIDEBAR_W
 
 TITLE_BAR_H = CARD_HEIGHT / 3
@@ -41,16 +47,15 @@ UNIT_TEXT_X = PAD + SIDEBAR_W
 
 CONTENT_BOX_SIZE = CENTRAL_W / 3
 CONTENT_BAR_Y = TITLE_BAR_Y + TITLE_BAR_H
-FACTION_ICON_MARGIN = CONTENT_BOX_SIZE * 0.1
-FACTION_ICON_SIZE = CONTENT_BOX_SIZE - (FACTION_ICON_MARGIN * 2)
 
 ICON_SPACER = (CONTENT_BOX_SIZE / 2)
 ICON_MARGIN = ICON_SPACER * 0.1
 ICON_SIZE = ICON_SPACER - (ICON_MARGIN * 2)
 ICON_X_PAD = (CONTENT_BOX_SIZE - ICON_SIZE) / 2
 
-MIDDLE_BOX_X = CENTRAL_X + CONTENT_BOX_SIZE
-RIGHT_BOX_X = CENTRAL_X + CONTENT_BOX_SIZE + CONTENT_BOX_SIZE
+FIRST_STAT_BOX_X = CENTRAL_X + (0 * CONTENT_BOX_SIZE)
+SECOND_STAT_BOX_X = CENTRAL_X + (1 * CONTENT_BOX_SIZE)
+THIRD_STAT_BOX_X = CENTRAL_X + (2 * CONTENT_BOX_SIZE)
 
 # Main
 puts "Start";
@@ -81,16 +86,21 @@ Squib::Deck.new(cards: MAX_CARD_COUNT, width: FULL_CARD_WIDTH, height: FULL_CARD
   text str: data['Plural Class'], range: t1_range & plural_range, x: UNIT_TEXT_X, y: TITLE_BAR_Y, width: CENTRAL_W, height: TITLE_BAR_H, align: 'center', valign: 'middle', font_size: UNIT_TEXT, font: 'Atkinson Hyperlegible Bold', color: data['L1 Text Colour']
   text str: data['Plural Class'], range: t2_range & plural_range, x: UNIT_TEXT_X, y: TITLE_BAR_Y, width: CENTRAL_W, height: TITLE_BAR_H, align: 'center', valign: 'middle', font_size: UNIT_TEXT, font: 'Atkinson Hyperlegible Bold', color: data['L2 Text Colour']
 
-  png file: factions, x: CENTRAL_X + FACTION_ICON_MARGIN, y: CONTENT_BAR_Y + FACTION_ICON_MARGIN, width: FACTION_ICON_SIZE, height: FACTION_ICON_SIZE
+  png file: factions, x: FACTION_ICON_LEFT, y: FACTION_ICON_Y, width: FACTION_ICON_SIZE, height: FACTION_ICON_SIZE
+  png file: factions, x: FACTION_ICON_RIGHT, y: FACTION_ICON_Y, width: FACTION_ICON_SIZE, height: FACTION_ICON_SIZE
   
-  png file: './assets/black/count.png', range: t1_range, x: MIDDLE_BOX_X + ICON_X_PAD + ICON_MARGIN, y: CONTENT_BAR_Y + ICON_MARGIN, width: ICON_SIZE, height: ICON_SIZE
-  png file: './assets/black/move.png', range: t1_range, x: RIGHT_BOX_X + ICON_X_PAD + ICON_MARGIN, y: CONTENT_BAR_Y + ICON_MARGIN, width: ICON_SIZE, height: ICON_SIZE
-  png file: './assets/white/count.png', range: t2_range, x: MIDDLE_BOX_X + ICON_X_PAD + ICON_MARGIN, y: CONTENT_BAR_Y + ICON_MARGIN, width: ICON_SIZE, height: ICON_SIZE
-  png file: './assets/white/move.png', range: t2_range, x: RIGHT_BOX_X + ICON_X_PAD + ICON_MARGIN, y: CONTENT_BAR_Y + ICON_MARGIN, width: ICON_SIZE, height: ICON_SIZE
-  text str: data['N1'], range: t1_range, color: data['L1 Text Colour'], x: MIDDLE_BOX_X + ICON_X_PAD, y: CONTENT_BAR_Y + ICON_SPACER + ICON_MARGIN, width: ICON_SPACER, height: ICON_SIZE, align: 'center', valign: 'middle', font_size: STAT_TEXT, font: 'Atkinson Hyperlegible Bold'  
-  text str: data['N1'], range: t2_range, color: data['L2 Text Colour'], x: MIDDLE_BOX_X + ICON_X_PAD, y: CONTENT_BAR_Y + ICON_SPACER + ICON_MARGIN, width: ICON_SPACER, height: ICON_SIZE, align: 'center', valign: 'middle', font_size: STAT_TEXT, font: 'Atkinson Hyperlegible Bold'  
-  text str: data['Movement'], range: t1_range, color: data['L1 Text Colour'], x: RIGHT_BOX_X + ICON_X_PAD, y: CONTENT_BAR_Y + ICON_SPACER + ICON_MARGIN, width: ICON_SPACER, height: ICON_SIZE, align: 'center', valign: 'middle', font_size: STAT_TEXT, font: 'Atkinson Hyperlegible Bold'  
-  text str: data['Movement'], range: t2_range, color: data['L2 Text Colour'], x: RIGHT_BOX_X + ICON_X_PAD, y: CONTENT_BAR_Y + ICON_SPACER + ICON_MARGIN, width: ICON_SPACER, height: ICON_SIZE, align: 'center', valign: 'middle', font_size: STAT_TEXT, font: 'Atkinson Hyperlegible Bold'  
+  png file: './assets/black/count.png', range: t1_range, x: FIRST_STAT_BOX_X + ICON_X_PAD + ICON_MARGIN, y: CONTENT_BAR_Y + ICON_MARGIN, width: ICON_SIZE, height: ICON_SIZE
+  png file: './assets/black/move.png', range: t1_range, x: SECOND_STAT_BOX_X + ICON_X_PAD + ICON_MARGIN, y: CONTENT_BAR_Y + ICON_MARGIN, width: ICON_SIZE, height: ICON_SIZE
+  png file: './assets/black/block.png', range: t1_range, x: THIRD_STAT_BOX_X + ICON_X_PAD + ICON_MARGIN, y: CONTENT_BAR_Y + ICON_MARGIN, width: ICON_SIZE, height: ICON_SIZE
+  png file: './assets/white/count.png', range: t2_range, x: FIRST_STAT_BOX_X + ICON_X_PAD + ICON_MARGIN, y: CONTENT_BAR_Y + ICON_MARGIN, width: ICON_SIZE, height: ICON_SIZE
+  png file: './assets/white/move.png', range: t2_range, x: SECOND_STAT_BOX_X + ICON_X_PAD + ICON_MARGIN, y: CONTENT_BAR_Y + ICON_MARGIN, width: ICON_SIZE, height: ICON_SIZE
+  png file: './assets/white/block.png', range: t2_range, x: THIRD_STAT_BOX_X + ICON_X_PAD + ICON_MARGIN, y: CONTENT_BAR_Y + ICON_MARGIN, width: ICON_SIZE, height: ICON_SIZE
+  text str: data['N1'], range: t1_range, color: data['L1 Text Colour'], x: FIRST_STAT_BOX_X + ICON_X_PAD, y: CONTENT_BAR_Y + ICON_SPACER + ICON_MARGIN, width: ICON_SPACER, height: ICON_SIZE, align: 'center', valign: 'middle', font_size: STAT_TEXT, font: 'Atkinson Hyperlegible Bold'  
+  text str: data['Min Speed'], range: t1_range, color: data['L1 Text Colour'], x: SECOND_STAT_BOX_X + ICON_X_PAD, y: CONTENT_BAR_Y + ICON_SPACER + ICON_MARGIN, width: ICON_SPACER, height: ICON_SIZE, align: 'center', valign: 'middle', font_size: STAT_TEXT, font: 'Atkinson Hyperlegible Bold'  
+  text str: data['Base Block'], range: t1_range, color: data['L1 Text Colour'], x: THIRD_STAT_BOX_X + ICON_X_PAD, y: CONTENT_BAR_Y + ICON_SPACER + ICON_MARGIN, width: ICON_SPACER, height: ICON_SIZE, align: 'center', valign: 'middle', font_size: STAT_TEXT, font: 'Atkinson Hyperlegible Bold'  
+  text str: data['N1'], range: t2_range, color: data['L2 Text Colour'], x: FIRST_STAT_BOX_X + ICON_X_PAD, y: CONTENT_BAR_Y + ICON_SPACER + ICON_MARGIN, width: ICON_SPACER, height: ICON_SIZE, align: 'center', valign: 'middle', font_size: STAT_TEXT, font: 'Atkinson Hyperlegible Bold'  
+  text str: data['Min Speed'], range: t2_range, color: data['L2 Text Colour'], x: SECOND_STAT_BOX_X + ICON_X_PAD, y: CONTENT_BAR_Y + ICON_SPACER + ICON_MARGIN, width: ICON_SPACER, height: ICON_SIZE, align: 'center', valign: 'middle', font_size: STAT_TEXT, font: 'Atkinson Hyperlegible Bold'    
+  text str: data['Base Block'], range: t2_range, color: data['L2 Text Colour'], x: THIRD_STAT_BOX_X + ICON_X_PAD, y: CONTENT_BAR_Y + ICON_SPACER + ICON_MARGIN, width: ICON_SPACER, height: ICON_SIZE, align: 'center', valign: 'middle', font_size: STAT_TEXT, font: 'Atkinson Hyperlegible Bold'  
   
   save_png dir: '_backs', prefix: data['Unit'], count_format: '', suffix: 'L1'  
   save_sheet dir: '_sprues_tt', rows:5, columns: 2, suffix: 'L1_backs' 
@@ -116,16 +126,21 @@ Squib::Deck.new(cards: MAX_CARD_COUNT, width: FULL_CARD_WIDTH, height: FULL_CARD
   text str: data['Plural Class'], x: UNIT_TEXT_X, y: TITLE_BAR_Y, width: CENTRAL_W, height: TITLE_BAR_H, align: 'center', valign: 'middle', font_size: UNIT_TEXT, font: 'Atkinson Hyperlegible Bold', color: data['L1 Text Colour'], range: t1_range   
   text str: data['Plural Class'], x: UNIT_TEXT_X, y: TITLE_BAR_Y, width: CENTRAL_W, height: TITLE_BAR_H, align: 'center', valign: 'middle', font_size: UNIT_TEXT, font: 'Atkinson Hyperlegible Bold', color: data['L2 Text Colour'], range: t2_range   
 
-  png file: factions, x: CENTRAL_X + FACTION_ICON_MARGIN, y: CONTENT_BAR_Y + FACTION_ICON_MARGIN, width: FACTION_ICON_SIZE, height: FACTION_ICON_SIZE
+  png file: factions, x: FACTION_ICON_LEFT, y: FACTION_ICON_Y, width: FACTION_ICON_SIZE, height: FACTION_ICON_SIZE
+  png file: factions, x: FACTION_ICON_RIGHT, y: FACTION_ICON_Y, width: FACTION_ICON_SIZE, height: FACTION_ICON_SIZE
   
-  png file: './assets/black/count.png', range: t1_range, x: MIDDLE_BOX_X + ICON_X_PAD + ICON_MARGIN, y: CONTENT_BAR_Y + ICON_MARGIN, width: ICON_SIZE, height: ICON_SIZE
-  png file: './assets/black/move.png', range: t1_range, x: RIGHT_BOX_X + ICON_X_PAD + ICON_MARGIN, y: CONTENT_BAR_Y + ICON_MARGIN, width: ICON_SIZE, height: ICON_SIZE
-  png file: './assets/white/count.png', range: t2_range, x: MIDDLE_BOX_X + ICON_X_PAD + ICON_MARGIN, y: CONTENT_BAR_Y + ICON_MARGIN, width: ICON_SIZE, height: ICON_SIZE
-  png file: './assets/white/move.png', range: t2_range, x: RIGHT_BOX_X + ICON_X_PAD + ICON_MARGIN, y: CONTENT_BAR_Y + ICON_MARGIN, width: ICON_SIZE, height: ICON_SIZE
-  text str: data['N2'], range: t1_range, color: data['L1 Text Colour'], x: MIDDLE_BOX_X + ICON_X_PAD, y: CONTENT_BAR_Y + ICON_SPACER, width: ICON_SPACER, height: ICON_SIZE, align: 'center', valign: 'middle', font_size: STAT_TEXT, font: 'Atkinson Hyperlegible Bold'  
-  text str: data['N2'], range: t2_range, color: data['L2 Text Colour'], x: MIDDLE_BOX_X + ICON_X_PAD, y: CONTENT_BAR_Y + ICON_SPACER, width: ICON_SPACER, height: ICON_SIZE, align: 'center', valign: 'middle', font_size: STAT_TEXT, font: 'Atkinson Hyperlegible Bold'  
-  text str: data['Movement'], range: t1_range, color: data['L1 Text Colour'], x: RIGHT_BOX_X + ICON_X_PAD, y: CONTENT_BAR_Y + ICON_SPACER, width: ICON_SPACER, height: ICON_SIZE, align: 'center', valign: 'middle', font_size: STAT_TEXT, font: 'Atkinson Hyperlegible Bold'  
-  text str: data['Movement'], range: t2_range, color: data['L2 Text Colour'], x: RIGHT_BOX_X + ICON_X_PAD, y: CONTENT_BAR_Y + ICON_SPACER, width: ICON_SPACER, height: ICON_SIZE, align: 'center', valign: 'middle', font_size: STAT_TEXT, font: 'Atkinson Hyperlegible Bold'  
+  png file: './assets/black/count.png', range: t1_range, x: FIRST_STAT_BOX_X + ICON_X_PAD + ICON_MARGIN, y: CONTENT_BAR_Y + ICON_MARGIN, width: ICON_SIZE, height: ICON_SIZE
+  png file: './assets/black/move.png', range: t1_range, x: SECOND_STAT_BOX_X + ICON_X_PAD + ICON_MARGIN, y: CONTENT_BAR_Y + ICON_MARGIN, width: ICON_SIZE, height: ICON_SIZE
+  png file: './assets/black/block.png', range: t1_range, x: THIRD_STAT_BOX_X + ICON_X_PAD + ICON_MARGIN, y: CONTENT_BAR_Y + ICON_MARGIN, width: ICON_SIZE, height: ICON_SIZE
+  png file: './assets/white/count.png', range: t2_range, x: FIRST_STAT_BOX_X + ICON_X_PAD + ICON_MARGIN, y: CONTENT_BAR_Y + ICON_MARGIN, width: ICON_SIZE, height: ICON_SIZE
+  png file: './assets/white/move.png', range: t2_range, x: SECOND_STAT_BOX_X + ICON_X_PAD + ICON_MARGIN, y: CONTENT_BAR_Y + ICON_MARGIN, width: ICON_SIZE, height: ICON_SIZE
+  png file: './assets/white/block.png', range: t2_range, x: THIRD_STAT_BOX_X + ICON_X_PAD + ICON_MARGIN, y: CONTENT_BAR_Y + ICON_MARGIN, width: ICON_SIZE, height: ICON_SIZE
+  text str: data['N2'], range: t1_range, color: data['L1 Text Colour'], x: FIRST_STAT_BOX_X + ICON_X_PAD, y: CONTENT_BAR_Y + ICON_SPACER + ICON_MARGIN, width: ICON_SPACER, height: ICON_SIZE, align: 'center', valign: 'middle', font_size: STAT_TEXT, font: 'Atkinson Hyperlegible Bold'  
+  text str: data['Min Speed'], range: t1_range, color: data['L1 Text Colour'], x: SECOND_STAT_BOX_X + ICON_X_PAD, y: CONTENT_BAR_Y + ICON_SPACER + ICON_MARGIN, width: ICON_SPACER, height: ICON_SIZE, align: 'center', valign: 'middle', font_size: STAT_TEXT, font: 'Atkinson Hyperlegible Bold'  
+  text str: data['Base Block'], range: t1_range, color: data['L1 Text Colour'], x: THIRD_STAT_BOX_X + ICON_X_PAD, y: CONTENT_BAR_Y + ICON_SPACER + ICON_MARGIN, width: ICON_SPACER, height: ICON_SIZE, align: 'center', valign: 'middle', font_size: STAT_TEXT, font: 'Atkinson Hyperlegible Bold'  
+  text str: data['N2'], range: t2_range, color: data['L2 Text Colour'], x: FIRST_STAT_BOX_X + ICON_X_PAD, y: CONTENT_BAR_Y + ICON_SPACER + ICON_MARGIN, width: ICON_SPACER, height: ICON_SIZE, align: 'center', valign: 'middle', font_size: STAT_TEXT, font: 'Atkinson Hyperlegible Bold'  
+  text str: data['Min Speed'], range: t2_range, color: data['L2 Text Colour'], x: SECOND_STAT_BOX_X + ICON_X_PAD, y: CONTENT_BAR_Y + ICON_SPACER + ICON_MARGIN, width: ICON_SPACER, height: ICON_SIZE, align: 'center', valign: 'middle', font_size: STAT_TEXT, font: 'Atkinson Hyperlegible Bold'    
+  text str: data['Base Block'], range: t2_range, color: data['L2 Text Colour'], x: THIRD_STAT_BOX_X + ICON_X_PAD, y: CONTENT_BAR_Y + ICON_SPACER + ICON_MARGIN, width: ICON_SPACER, height: ICON_SIZE, align: 'center', valign: 'middle', font_size: STAT_TEXT, font: 'Atkinson Hyperlegible Bold'  
    
   save_png dir: '_backs', prefix: data['Unit'], count_format: '', suffix: 'L2'  
   save_sheet dir: '_sprues_tt', rows:5, columns: 2, suffix: 'L2_backs' 
