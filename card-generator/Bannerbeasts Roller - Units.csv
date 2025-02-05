@@ -188,7 +188,7 @@ The target tile takes 3 attacks hitting on 4+ with poison. The unit may not move
 <b>Virulent</b> - Any unit wounded by this unit becomes Poisoned. At the start of each of the controlling players turns, Poisoned units take a wound on a 4+ with no armour saves allowed.
 
 <b>Spitter Cannon</b> - Ranged weapon. Range 5. Each model fires 4 shots. Can shoot over friendly units.",,,,,,,#f1baff,#2d2d2d,#000000,#ffffff,spiders.png,1
-04_2C_3,Silk Court Weblayer,Weblayer,TRUE,Silk Court,Webcannon,Webcannons,6,2,3,5,1,2,1,5,-,2,2,3,6,,"<b>War Machine</b> - Dies if it flees. Can't move into combat.
+04_2C_3,Silk Court Weblayer,Weblayer,TRUE,Silk Court,Webcannon,Webcannons,6,2,3,5,1,2,1,5,-,2,2,3,6,,"<small><b>War Machine</b> - Dies if it flees. Can't move into combat.
 
 <b>Poison</b> - 6s to hit can't be saved
 
@@ -197,7 +197,7 @@ The target tile takes 3 attacks hitting on 4+ with poison. The unit may not move
 3 - Off by one, your choice
 2 - Miss
 1 - Off by two, opponent's choice 
-Place a web in the target square(s). Units that move into those spaces end their turns and can't fight in combat. If this hits a unit directly, it can't fight in combat this turn. Webs are removed once stepped in.",,,,,,,#f1baff,#2d2d2d,#000000,#ffffff,spiders.png,1
+Place a web in the target square(s). Units that move into those spaces end their turns and can't fight in combat. If this hits a unit directly, it can't fight in combat this turn. Webs are removed once stepped in.</small>",,,,,,,#f1baff,#2d2d2d,#000000,#ffffff,spiders.png,1
 01_3_A,Gobbo ,,FALSE,Gobbo,Leader,,,3,,,,,,,,,,,,,,,,,,,,#00dd28,#00941A,#000000,#ffffff,gobbos.png,0
 01_3_B,Gobbo ,,FALSE,Gobbo,Leader,,,3,,,,,,,,,,,,,,,,,,,,#00dd28,#00941A,#000000,#ffffff,gobbos.png,0
 01_3_C,Gobbo ,,FALSE,Gobbo,Leader,,,3,,,,,,,,,,,,,,,,,,,,#00dd28,#00941A,#000000,#ffffff,gobbos.png,0
