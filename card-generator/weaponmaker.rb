@@ -133,7 +133,7 @@ Squib::Deck.new(cards: MAX_CARD_COUNT, width: FULL_CARD_WIDTH, height: FULL_CARD
 
   save_sheet dir: '_sprues_tt', prefix: 'weapons_', suffix: '_backs', rows:4, columns: 5
   rect x: 0, y: 0, width: FULL_CARD_WIDTH, height: FULL_CARD_HEIGHT, stroke_width: SCALE, stroke_color: 'black'
-  save_sheet dir: '_sprues_print', prefix: 'weapons_', suffix: '_backs', rows:3, columns: 3
+  save_sheet dir: '_sprues_print', prefix: 'weapons_', suffix: '_backs', rows:3, columns: 3, rtl: true
 end
 
 puts "Done";

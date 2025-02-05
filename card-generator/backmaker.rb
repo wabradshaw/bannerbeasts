@@ -105,7 +105,7 @@ Squib::Deck.new(cards: MAX_CARD_COUNT, width: FULL_CARD_WIDTH, height: FULL_CARD
   save_png dir: '_backs', prefix: data['Unit'], count_format: '', suffix: 'L1'  
   save_sheet dir: '_sprues_tt', rows:5, columns: 3, suffix: 'L1_backs' 
   rect x: 0, y: 0, width: FULL_CARD_WIDTH, height: FULL_CARD_HEIGHT, stroke_width: SCALE, stroke_color: 'black'
-  save_sheet dir: '_sprues_print', rows:2, columns: 2, suffix: 'L1_backs', rotate: true
+  save_sheet dir: '_sprues_print', rows:2, columns: 2, suffix: 'L1_backs', rotate: true, rtl: true
 end
 
 Squib::Deck.new(cards: MAX_CARD_COUNT, width: FULL_CARD_WIDTH, height: FULL_CARD_HEIGHT) do
@@ -145,7 +145,7 @@ Squib::Deck.new(cards: MAX_CARD_COUNT, width: FULL_CARD_WIDTH, height: FULL_CARD
   save_png dir: '_backs', prefix: data['Unit'], count_format: '', suffix: 'L2'  
   save_sheet dir: '_sprues_tt', rows:5, columns: 3, suffix: 'L2_backs' 
   rect x: 0, y: 0, width: FULL_CARD_WIDTH, height: FULL_CARD_HEIGHT, stroke_width: SCALE, stroke_color: 'black'
-  save_sheet dir: '_sprues_print', rows:2, columns: 2, suffix: 'L2_backs', rotate: true
+  save_sheet dir: '_sprues_print', rows:2, columns: 2, suffix: 'L2_backs', rotate: true, rtl: true
 end
 
 
