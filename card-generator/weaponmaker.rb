@@ -82,12 +82,26 @@ data.nrows.times do |i|
   end
 end
 
-# Convert expanded data back into a Squib::DataFrame
-full_data = Squib::DataFrame.new(expanded_data)
+unsorted_data = Squib::DataFrame.new(expanded_data)
+
+sorted_rows = unsorted_data.nrows.times.map { |i| unsorted_data.row(i) }.sort_by { |row| row['Fact'] }
+
+# Initialize a new hash for sorted data
+sorted_data = Hash.new { |hash, key| hash[key] = [] }
+
+# Rebuild the DataFrame with sorted rows
+sorted_rows.each do |row|
+  unsorted_data.columns.each { |col| sorted_data[col] << row[col] }
+end
+
+# Convert back to Squib::DataFrame
+full_data = Squib::DataFrame.new(sorted_data)
 
 id = full_data['Fact'].zip(full_data['Name']).map { |a| a.join('-') }
 names = full_data['Name'].zip(full_data['Tier']).map { |a| a.join(' - L') }
 powers = full_data['Power'].map {|t| t != nil ? t : ''}
+
+back_images = full_data['Fact'].map{ |t| t != nil ? './assets/weapons/backs/' + t.to_s + '-weapon-backs.png' : '' }
 
 Squib::Deck.new(cards: MAX_CARD_COUNT, width: FULL_CARD_WIDTH, height: FULL_CARD_HEIGHT) do
   background color: 'white'
@@ -110,6 +124,16 @@ Squib::Deck.new(cards: MAX_CARD_COUNT, width: FULL_CARD_WIDTH, height: FULL_CARD
   save_sheet dir: '_sprues_tt', prefix: 'weapons_', rows:4, columns: 5
   rect x: 0, y: 0, width: FULL_CARD_WIDTH, height: FULL_CARD_HEIGHT, stroke_width: SCALE, stroke_color: 'black'
   save_sheet dir: '_sprues_print', prefix: 'weapons_', rows:3, columns: 3
+end
+
+Squib::Deck.new(cards: MAX_CARD_COUNT, width: FULL_CARD_WIDTH, height: FULL_CARD_HEIGHT) do
+  background color: 'white'
+
+  png file: back_images, x: PAD, y: PAD, width: CARD_WIDTH, height: CARD_HEIGHT
+
+  save_sheet dir: '_sprues_tt', prefix: 'weapons_', suffix: '_backs', rows:4, columns: 5
+  rect x: 0, y: 0, width: FULL_CARD_WIDTH, height: FULL_CARD_HEIGHT, stroke_width: SCALE, stroke_color: 'black'
+  save_sheet dir: '_sprues_print', prefix: 'weapons_', suffix: '_backs', rows:3, columns: 3
 end
 
 puts "Done";
