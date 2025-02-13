@@ -50,6 +50,7 @@ The central tile takes d6 attacks, 3+ AP -1. The four adjacent tiles take 1 hit 
 2 - Take 1 wound
 1 - Opponent turns you 90 degrees. Range 2. 
 Each shot hits all tiles in range across all three ranged attack columns. Each time a unit is hit, roll a die for each model in the unit. Models are hit on a 6, AP1. 
+
 <b>Friendly Fire</b> - Can shoot into combat and into friendly units.</small>",,,,,,,#00dd28,#00941A,#000000,#ffffff,gobbos.png,1
 01_2C_1,Gobbo Flagellants,Flagellants,TRUE,Gobbo,Priest,Priests,6,2,3,5,6,12,1,4,-,6,3,1,6,,"<b>Unbreakable</b> - Can't flee
 
@@ -113,7 +114,7 @@ Each shot hits all tiles in range across all three ranged attack columns. Each t
 <b>Raise the Dead 1</b> - Free action: Choose an undead unit and heal 1 wound per Necromancer. This can resurrect models. Limited to the starting number of units/wounds.",,,,,,,#e0e0d3,#4d4d4d,#000000,#ffffff,skellies.png,1
 03_2B_2,Boneborn Terrormancers,Terrormancers,TRUE,Boneborn,Lich,Liches,6,2,3,5,2,4,1,3,4,6,2,3,5,,"<b>Unstable</b> - Instead of rolling to flee, lose extra wounds for every point you lost combat.
 
-<b>Bone Spurs</b> - Ranged weapon. Can target any unit adjacent to a friendly Boneborn unit. Can fire into combat. Wounded units by this attack must immediately roll to flee.",,,,,,,#e0e0d3,#4d4d4d,#000000,#ffffff,skellies.png,1
+<b>Bone Spurs</b> - Ranged weapon. Can target any unit adjacent to a friendly Boneborn unit. Can fire into combat. Units wounded by this attack must immediately roll to flee.",,,,,,,#e0e0d3,#4d4d4d,#000000,#ffffff,skellies.png,1
 03_2B_3,Boneborn Blood Mages,Blood Mages,TRUE,Boneborn,Lich,Liches,6,2,4,7,2,4,1,3,-,6,3,5,5,,"<b>Unstable</b> - Instead of rolling to flee, lose extra wounds for every point you lost combat.
 
 <b>Blood Rites</b> - After combat, roll an extra attack for each wound this unit dealt in combat. This can damage a unit that has fled from it. ",,,,,,,#e0e0d3,#4d4d4d,#000000,#ffffff,skellies.png,1
@@ -142,7 +143,7 @@ Each shot hits all tiles in range across all three ranged attack columns. Each t
 04_1_4,Silk Court Huntsmen,Huntsmen,TRUE,Silk Court,Spiderling,Spiderlings,6,1,2,4,5,10,1,4,5,5,1,1,6,,<b>Poison</b> - 6s to hit can't be saved,,,,1,,1,#f1baff,#2d2d2d,#000000,#ffffff,spiders.png,1
 04_1_5,Silk Court Trapdoors,Trapdoors,TRUE,Silk Court,Spiderling,Spiderlings,6,1,3,5,5,10,1,,-,5,1,1,6,,"<b>Poison</b> - 6s to hit can't be saved
 
-<b>Ambush</b> - Action: Remove this unit from the board. On your next turn, place it on an empty space along any board edge as an action.",1,1,1,1,,,#f1baff,#2d2d2d,#000000,#ffffff,spiders.png,1
+<b>Ambush</b> - Action: Remove this unit from the board. On your next turn, place it on an empty space along any board edge as its action for the turn",1,1,1,1,,,#f1baff,#2d2d2d,#000000,#ffffff,spiders.png,1
 04_1_6,Silk Court Squires,Squires,TRUE,Silk Court,Spiderling,Spiderlings,6,1,2,4,5,10,1,6,-,5,1,1,4,,<b>Poison</b> - 6s to hit can't be saved,1,1,1,1,1,,#f1baff,#2d2d2d,#000000,#ffffff,spiders.png,1
 04_2A_1,Silk Court Jumpers,Jumpers,TRUE,Silk Court,Knight,Knights,6,2,3,5,5,10,2,5,4,5,1,1,6,,"<b>Poison</b> - 6s to hit can't be saved
 
@@ -167,7 +168,7 @@ Each shot hits all tiles in range across all three ranged attack columns. Each t
 <b>Flexible</b> - Turn to face any direction at the start of your turn
 
 <b>Cloaked</b> - Block is higher before this unit is revealed",2,2,2,2,2,2,#f1baff,#2d2d2d,#000000,#ffffff,spiders.png,1
-04_2B_3,Silk Court Mimics,Mimics,TRUE,Silk Court,Shifter,Shifters,4,2,4,6,5,10,1,5,4,5,1,1,5,,"""<b>Poison</b> - 6s to hit can't be saved
+04_2B_3,Silk Court Mimics,Mimics,TRUE,Silk Court,Shifter,Shifters,4,2,4,6,5,10,1,5,4,5,1,1,5,,"<b>Poison</b> - 6s to hit can't be saved
 
 <b>Cunning Disguises</b> - Free action: Swap this unit with a friendly facedown unit.",2,2,2,2,2,2,#f1baff,#2d2d2d,#000000,#ffffff,spiders.png,1
 04_2C_1,Silk Court Cocoon Cannon,Cocoon Cannon,TRUE,Silk Court,Webcannon,Webcannons,6,2,4,7,1,2,1,5,-,2,2,3,6,,"<b>War Machine</b> - Dies if it flees. Can't move into combat.
