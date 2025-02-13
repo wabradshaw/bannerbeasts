@@ -43,7 +43,7 @@ Id,Unit,Name,In,Faction,Single Class,Plural Class,Base Block,Tier,C1,C2,N1,N2,Mo
 1 - Hit yourself. 
 The central tile takes d6 attacks, 3+ AP -1. The four adjacent tiles take 1 hit each, 4+ AP0.
 <b>Friendly Fire</b> - Can shoot into combat and into friendly units.</small>",,,,,,,#00dd28,#00941A,#000000,#ffffff,gobbos.png,1
-01_2B_3,Gobbo Firetruck,Firetruck,TRUE,Gobbo,Hurtbox,Hurtboxes,6,2,4,7,1,2,1,-,-,2,-,4,5,,"<small><b>Flamethrower</b> - Special action. Can be used instead of attacking in combat or as a ranged attack. Roll a die for each model in this unit. 
+01_2B_3,Gobbo Firetruck,Firetruck,TRUE,Gobbo,Hurtbox,Hurtboxes,6,2,4,7,1,2,1,-,-,2,-,6,4,,"<small><b>Flamethrower</b> - Special action. Can be used instead of attacking in combat or as a ranged attack. Roll a die for each model in this unit. 
 6 - Range 3
 5/4 - Range 2
 3 - Range 1
