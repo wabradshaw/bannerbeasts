@@ -111,7 +111,9 @@ Each shot hits all tiles in range across all three ranged attack columns. Each t
 <b>Rock Lobber</b> - Ranged Weapon - Range 3, AP -2, Multiwound 3. ",,2,2,,,,#e0e0d3,#4d4d4d,#000000,#ffffff,skellies.png,1
 03_2B_1,Boneborn Necromancers,Necromancers,TRUE,Boneborn,Lich,Liches,6,2,4,6,2,4,1,2,-,6,1,3,6,,"<b>Unstable</b> - Instead of rolling to flee, lose extra wounds for every point you lost combat.
 
-<b>Raise the Dead 1</b> - Free action: Choose an undead unit and heal 1 wound per Necromancer. This can resurrect models. Limited to the starting number of units/wounds.",,,,,,,#e0e0d3,#4d4d4d,#000000,#ffffff,skellies.png,1
+<b>Raise the Dead 1</b> - Free action: Choose an undead unit and heal 1 wound per Necromancer. This can resurrect models. Limited to the starting number of units/wounds.
+
+<b>Stabalizer</b> - Units affected by Raise the Dead do not lose wounds due to unstable this turn.",,,,,,,#e0e0d3,#4d4d4d,#000000,#ffffff,skellies.png,1
 03_2B_2,Boneborn Terrormancers,Terrormancers,TRUE,Boneborn,Lich,Liches,6,2,3,5,2,4,1,3,4,6,2,3,5,,"<b>Unstable</b> - Instead of rolling to flee, lose extra wounds for every point you lost combat.
 
 <b>Bone Spurs</b> - Ranged weapon. Can target any unit adjacent to a friendly Boneborn unit. Can fire into combat. Units wounded by this attack must immediately roll to flee.",,,,,,,#e0e0d3,#4d4d4d,#000000,#ffffff,skellies.png,1
