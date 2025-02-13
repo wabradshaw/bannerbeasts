@@ -52,9 +52,11 @@ The central tile takes d6 attacks, 3+ AP -1. The four adjacent tiles take 1 hit 
 Each shot hits all tiles in range across all three ranged attack columns. Each time a unit is hit, roll a die for each model in the unit. Models are hit on a 6, AP1. 
 
 <b>Friendly Fire</b> - Can shoot into combat and into friendly units.</small>",,,,,,,#00dd28,#00941A,#000000,#ffffff,gobbos.png,1
-01_2C_1,Gobbo Flagellants,Flagellants,TRUE,Gobbo,Priest,Priests,6,2,3,5,6,12,1,4,-,6,3,1,6,,"<b>Unbreakable</b> - Can't flee
+01_2C_1,Gobbo Flagellants,Flagellants,TRUE,Gobbo,Priest,Priests,6,2,3,5,6,12,1,4,-,6,3,1,-,,"<b>Unbreakable</b> - Can't flee
 
-<b>Rabid</b> - Must charge if able to",,,2,,,,#00dd28,#00941A,#000000,#ffffff,gobbos.png,1
+<b>Rabid</b> - Must charge if able to
+
+<b>Unprotected</b> - Reveal this unit when an attack hits it, rather than using the default block. ",,,2,,,,#00dd28,#00941A,#000000,#ffffff,gobbos.png,1
 01_2C_2,Gobbo Tincans,Tincans,TRUE,Gobbo,Priest,Priests,6,2,4,7,6,12,1,4,6,6,1,1,3,,"<b>Stalwart</b> - Add 1 to leadership rolls
 
 <b>Slow</b> - Can't hustle",2,2,2,2,2,1,#00dd28,#00941A,#000000,#ffffff,gobbos.png,1
