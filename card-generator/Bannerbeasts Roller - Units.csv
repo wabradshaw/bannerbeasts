@@ -145,7 +145,7 @@ Each shot hits all tiles in range across all three ranged attack columns. Each t
 
 <b>Web Traps</b> - Enemies can't flee from this unit or turn after combat. Instead of rolling to flee, they lose extra wounds for every point they lost combat.",1,1,1,1,1,,#f1baff,#2d2d2d,#000000,#ffffff,spiders.png,1
 04_1_4,Silk Court Huntsmen,Huntsmen,TRUE,Silk Court,Spiderling,Spiderlings,6,1,2,4,5,10,1,4,5,5,1,1,6,,<b>Poison</b> - 6s to hit can't be saved,,,,1,,1,#f1baff,#2d2d2d,#000000,#ffffff,spiders.png,1
-04_1_5,Silk Court Trapdoors,Trapdoors,TRUE,Silk Court,Spiderling,Spiderlings,6,1,3,5,5,10,1,,-,5,1,1,6,,"<b>Poison</b> - 6s to hit can't be saved
+04_1_5,Silk Court Trapdoors,Trapdoors,TRUE,Silk Court,Spiderling,Spiderlings,6,1,3,5,5,10,1,4,5,5,1,1,6,,"<b>Poison</b> - 6s to hit can't be saved
 
 <b>Ambush</b> - Action: Remove this unit from the board. On your next turn, place it on an empty space along any board edge as its action for the turn",1,1,1,1,,,#f1baff,#2d2d2d,#000000,#ffffff,spiders.png,1
 04_1_6,Silk Court Squires,Squires,TRUE,Silk Court,Spiderling,Spiderlings,6,1,2,4,5,10,1,6,-,5,1,1,4,,<b>Poison</b> - 6s to hit can't be saved,1,1,1,1,1,,#f1baff,#2d2d2d,#000000,#ffffff,spiders.png,1
