@@ -37,7 +37,7 @@ HP_STROKE = STROKE / 3
 
 COMMON = '#C14B00';
 UNCOMMON = '#737373';
-RARE = '#0019FF';
+RARE = '#3467FF';
 
 BAR_BOX_W = CARD_HEIGHT / 6
 BAR_BOX_H = CARD_HEIGHT / 7
@@ -73,6 +73,7 @@ COST_RADIUS = COST_SIZE / 2
 COST_PAD = COST_SIZE * 0.5
 COST_X = BAR_BOX_W + STROKE + COST_PAD
 COST_Y = TITLE_BAR_H - COST_RADIUS 
+EQUIP_X = WEAPONS_X - COST_SIZE
 
 POWERS_PAD = FACTION_TEXT_PAD
 POWERS_X = BAR_END_X + STROKE + POWERS_PAD
@@ -185,10 +186,10 @@ Squib::Deck.new(cards: MAX_CARD_COUNT, width: FULL_CARD_WIDTH, height: FULL_CARD
   line x1: ONE_BAR_PAD, x2: ONE_BAR_PAD, y1: 0, y2: FULL_CARD_HEIGHT, stroke_width: STROKE, stroke_color: 'black'
   line x1: BAR_END_X, x2: ONE_BAR_PAD, y1: TITLE_BAR_H, y2: TITLE_BAR_H, stroke_width: STROKE, stroke_color: 'black'
   
-  circle range: t1_range, x: COST_X + COST_RADIUS, y: COST_Y + COST_RADIUS, radius: COST_RADIUS, stroke_width: STROKE, stroke_color: 'black', fill_color: COMMON
-  circle range: t3_range, x: COST_X + COST_RADIUS, y: COST_Y + COST_RADIUS, radius: COST_RADIUS, stroke_width: STROKE, stroke_color: 'black', fill_color: RARE
+  circle range: t1_range, x: COST_X + COST_RADIUS, y: COST_Y + COST_RADIUS, radius: COST_RADIUS, stroke_width: STROKE, stroke_color: 'black', fill_color: COMMON  
   text  range: t1_range, str: data['C1'], color: 'black', x: COST_X, y: COST_Y, width: COST_SIZE, height: COST_SIZE, align: 'center', valign: 'middle', font_size: POWERS_TEXT, font: 'Atkinson Hyperlegible Bold'
-  text  range: t3_range, str: data['C1'], color: 'black', x: COST_X, y: COST_Y, width: COST_SIZE, height: COST_SIZE, align: 'center', valign: 'middle', font_size: POWERS_TEXT, font: 'Atkinson Hyperlegible Bold'
+  circle range: t3_range, x: EQUIP_X + COST_RADIUS, y: COST_Y + COST_RADIUS, radius: COST_RADIUS, stroke_width: STROKE, stroke_color: 'black', fill_color: RARE
+  text  range: t3_range, str: data['C1'], color: 'black', x: EQUIP_X, y: COST_Y, width: COST_SIZE, height: COST_SIZE, align: 'center', valign: 'middle', font_size: POWERS_TEXT, font: 'Atkinson Hyperlegible Bold'
 
   save_png dir: '_cards', prefix: data['Unit'], count_format: ''
   save_sheet dir: '_sprues_tt', rows:5, columns: 3 
