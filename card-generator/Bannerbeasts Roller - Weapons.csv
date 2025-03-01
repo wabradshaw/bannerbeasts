@@ -1,44 +1,99 @@
-Name,Tier,Class,Faction,Cost,Melee to hit,Wounds,AP,Frontline Mult,Attacks Mult,Block,Evade,Range to hit,Range,Power,Image
-Spear,1,Spear,Any,1,,,,,,,,,,<b>Readied</b> - Strikes first when charged in the front,./assets/weapons/1/spear.png
-Mace,1,Blunt,Any,1,,,-1,,,,,,,<b>AP 1</b> - Reduce block rolls by 1,./assets/weapons/1/club.png
-Hand Axe,1,Axe,Any,1,,2,,,,,,,,<b>Multiwound 2</b> - Each hit does 2 wounds to a single model,./assets/weapons/1/axe.png
-Second Weapon,1,Offhand,Any,1,-1,,,,2,,,,,"<b>Offhand</b> - Double the number of attacks. Can't equip a shield
+Name,Tier,Class,Faction,Cost,Melee to hit,Wounds,AP,Frontline Mult,Attacks Mult,Block,Evade,Range to hit,Range,Casting Value,Power,Image
+Spear,1,Spear,Any,1,,,,,,,,,,,<b>Readied</b> - Strikes first when charged in the front,./assets/weapons/1/spear.png
+Mace,1,Blunt,Any,1,,,-1,,,,,,,,<b>AP 1</b> - Reduce block rolls by 1,./assets/weapons/1/club.png
+Hand Axe,1,Axe,Any,1,,2,,,,,,,,,<b>Multiwound 2</b> - Each hit does 2 wounds to a single model,./assets/weapons/1/axe.png
+Second Weapon,1,Offhand,Any,1,-1,,,,2,,,,,,"<b>Offhand</b> - Double the number of attacks. Can't equip a shield
 <b>Unwieldy</b> - Your rolls to hit in melee are reduced by 1",./assets/weapons/1/offhand.png
-Shield,1,Shield,Any,1,,,,,,1,,,,<b>Block 1</b> - Improve the model's block by 1,./assets/weapons/1/shield.png
-Pike,2,Spear,Any,2,,,,2,,,,,,"<b>Readied</b> - Strikes first when charged in the front
-<b>Long Reach</b> - Double the unit's frontline",./assets/weapons/2/spear.png
-Sledgehammer,2,Blunt,Any,2,,,-2,,,,,,,<b>AP 2</b> - Reduce block rolls by 2.,./assets/weapons/2/club.png
-Battleaxe,2,Axe,Any,2,,3,,,,,,,,"<b>Multiwound 3</b> - Each hit does 3 wounds to a single model
+Shield,1,Shield,Any,1,,,,,,1,,,,,<b>Block 1</b> - Improve the model's block by 1,./assets/weapons/1/shield.png
+Pike,2,Spear,Any,2,,,,2,,,,,,,"<b>Readied</b> - Strikes first when charged in the front
+<b>Charge Defense</b> - When a unit moves into the square in front of this unit, this unit attacks them. They fight in combat as normal. This counts towards combat resolution.",./assets/weapons/2/spear.png
+Sledgehammer,2,Blunt,Any,2,,,-2,,,,,,,,<b>AP 2</b> - Reduce block rolls by 2.,./assets/weapons/2/club.png
+Battleaxe,2,Axe,Any,2,,3,,,,,,,,,"<b>Multiwound 3</b> - Each hit does 3 wounds to a single model
 <b>AP 1</b> - Reduce block rolls by 1",./assets/weapons/2/axe.png
-Dual Wielding,2,Offhand,Any,3,,,,,2,,,,,<b>Offhand</b> - Double the number of attacks. Can't equip a shield,./assets/weapons/2/offhand.png
-Tower Shield,2,Shield,Any,2,-1,,,,,2,,,,"<b>Block 2</b> - Improve the model's block by 2
+Dual Wielding,2,Offhand,Any,3,,,,,2,,,,,,<b>Offhand</b> - Double the number of attacks. Can't equip a shield,./assets/weapons/2/offhand.png
+Tower Shield,2,Shield,Any,2,-1,,,,,2,,,,,"<b>Block 2</b> - Improve the model's block by 2
 <b>Unwieldy</b> - Your rolls to hit in melee are reduced by 1",./assets/weapons/2/shield.png
-Rocks,1,Ranged,Ratkin,0,,,,,,,,,2,"<b>Range 2</b> - Hits targets 2 squares away
+Magic Lance,3,Spear,Any,1,,,,,,,,,,,"<b>Impact Hits d3</b> - If you get a charge bonus, do d3 attacks per model hitting on 4+. These count towards who won combat.",./assets/weapons/3/spear.png
+The Greatmaul,3,Blunt,Any,3,,,,,,,,,,,"<b>Armourbane</b> - Gain +1 to hit against units with at least 5 block.
+<b>AP 3</b> - Reduce block rolls by 2.
+<b>Multiwound 2</b> - Each hit does 2 wounds to a single model.
+<b>Slow</b> - Strikes last in combat.",./assets/weapons/3/club.png
+Cleaver,3,Axe,Any,3,,,,,,,,,,,<b>Cleave</b> - Each hit does 2 wounds that can be split across multiple models.,./assets/weapons/3/axe.png
+Parrying Dagger,3,Offhand,Any,3,,,,,,,,,,,"<b>Offhand</b> - Double the number of attacks. Can't equip a shield
+<b>Unwieldy</b> - Your rolls to hit in melee are reduced by 1
+<b>Block 1</b> - Improve the model's block by 1",./assets/weapons/3/offhand.png
+Shimmering Buckler,3,Shield,Any,3,,,,,,,,,,,<b>Uncanny Protection</b> - Block may not be reduced beneath 5.,./assets/weapons/3/shield.png
+Rocks,1,Ranged,Ratkin,0,,,,,,,,,2,,"<b>Range 2</b> - Hits targets 2 squares away
 <b>Single Use</b> - Can only be used once
 <b>Fire on the Move</b> - Can be used after moving",./assets/weapons/1/ranged.png
-Throwing Knives,1,Ranged,Ratkin,1,,,,,,,,,2,"<b>Range 2</b> - Hits targets 2 squares away
+Throwing Knives,1,Ranged,Ratkin,0,,,,,,,,,2,,"<b>Range 2</b> - Hits targets 2 squares away
 <b>Fire on the Move</b> - Can be used after moving",./assets/weapons/1/ranged.png
-Throwing Stars,2,Ranged,Ratkin,2,,,-1,,,,,,2,"<b>Range 2</b> - Hits targets 2 squares away
+Throwing Stars,2,Ranged,Ratkin,1,,,-1,,,,,,2,,"<b>Range 2</b> - Hits targets 2 squares away
 <b>Poison</b> - 6s to hit can't be saved by armour
 <b>AP 1</b> - Reduce block rolls by 1
 <b>Fire on the Move</b> - Can be used after moving",./assets/weapons/2/ranged.png
-Brace of Knives,2,Ranged,Ratkin,2,,,,,,,,-1,2,"<b>Range 2</b> - Hits targets 2 squares away
+Brace of Knives,2,Ranged,Ratkin,1,,,,,,,,-1,2,,"<b>Range 2</b> - Hits targets 2 squares away
 <b>Doubleshot</b> - Fires twice
 <b>Unbalanced</b> - Your rolls to hit at range are reduced by 1
 <b>Fire on the Move</b> - Can be used after moving",./assets/weapons/2/ranged.png
-Twigbow,1,Ranged,Gobbo,0,,,,,,,,-1,3,"<b>Range 3</b> - Hits targets up to 3 squares away
-<b>Unbalanced</b> - Your rolls to hit at range are reduced by 1",./assets/weapons/1/ranged.png
-Shortbow,1,Ranged,Gobbo,1,,,,,,,,,3,<b>Range 3</b> - Hits targets up to 3 squares away,./assets/weapons/1/ranged.png
-Firecrackers,2,Ranged,Gobbo,2,,,,,,,,,2,"<b>Range 2</b> - Hits targets up to 2 squares away
+Twigbow,1,Ranged,Gobbo,0,,,,,,,,-1,3,,<b>Range 3</b> - Hits targets up to 3 squares away,./assets/weapons/1/ranged.png
+Extra Twigbow,1,Ranged,Gobbo,1,,,,,,,,,3,,<b>Range 3</b> - Hits targets up to 3 squares away,./assets/weapons/1/ranged.png
+Firecrackers,2,Ranged,Gobbo,1,,,,,,,,,2,,"<b>Range 2</b> - Hits targets up to 2 squares away
 <b>Friendly Fire</b> - Can fire into combat or at friendly units
 <b>Single Use</b> - Can only be used once
 <b>Fire on the Move</b> - Can be used after moving
 <b>Doubleshot</b> - Fires twice",./assets/weapons/2/ranged.png
-Bone Knives,1,Ranged,Boneborn,0,,,,,,,,,2,<b>Range 2</b> - Hits targets up to 2 squares away,./assets/weapons/1/ranged.png
-Bone Shortbow,1,Ranged,Boneborn,1,,,,,,,,,3,<b>Range 3</b> - Hits targets up to 3 squares away,./assets/weapons/1/ranged.png
-Salvaged Bow,1,Ranged,Silk Court,0,,,,,,,,-1,3,"<b>Range 3</b> - Hits targets up to 3 squares away
-<b>Unbalanced</b> - Your rolls to hit at range are reduced by 1",./assets/weapons/1/ranged.png
-Shortbow,1,Ranged,Silk Court,1,,,,,,,,,3,<b>Range 3</b> - Hits targets up to 3 squares away,./assets/weapons/1/ranged.png
-Longbow,2,Ranged,Silk Court,2,,,,,,,,,4,<b>Range 4</b> - Hits targets up to 4 squares away,./assets/weapons/2/ranged.png
-Silkbow,2,Ranged,Silk Court,2,,,,,,,,,3,"<b>Range 3</b> - Hits targets up to 3 squares away
+Bangbows,2,Ranged,Gobbo,1,,,,,,,,,3,,"<b>Range 3</b> - Hits targets up to 3 squares away
+<b>Random Wounds d3</b> - Each hit does d3 wounds to a single model. Owner determines the order they are applied.",./assets/weapons/2/ranged.png
+Weeerdbolt,3,Spell,Gobbo,1,,,,,,,,,,2+,"<b>Spell</b> - All parameters of this spell match the casting roll. Target unit within X takes X attacks hitting on X+. This must target a unit if possible. It may not target a unit in combat, but can target a friendly unit. It cannot target the caster. 
+<b>Ranged Spell</b> - Can't be cast while in combat.",./assets/weapons/3/spell.png
+Good Mojo,3,Spell,Gobbo,1,,,,,,,,,,4+,"<b>Spell</b> - Target a friendly unit within 3, which can include the caster. This can target a unit in combat. The chosen unit rolls a d6 and gets the following effect:
+6 - +1 attack this turn
+5 - +1 to hit rolls this turn
+4 - +1 to block this turn
+3 - The unit moves forward 1 space (unless it is blocked)
+2 - The unit rolls to flee
+1 - Unit takes a wound with no save ",./assets/weapons/3/spell.png
+Wartex,3,Spell,Gobbo,2,,,,,,,,,,4+,"<b>Spell</b> - Target a combat with at least one combatant in range 3. Roll a die for each model in combat, they take a hit on a 5+ with AP1. 
+<b>Ranged Spell</b> - Can't be cast while in combat.",./assets/weapons/3/spell.png
+Thunda,3,Spell,Gobbo,2,,,,,,,,,,4+,"<b>Spell</b> - Target a unit within 2. Any unit that is affected takes 3 attacks hitting on 5+. If any attacks hit (they can be blocked), the spell chains to a new unit that is adjacent to them. Repeat this process until either all attacks miss a unit, or there are no new units to target in range. This can affect friendly units.",./assets/weapons/3/spell.png
+Madmaker,3,Spell,Gobbo,2,,,,,,,,,,4+,"<b>Spell</b> - Target a unit within 4 that is not in combat. It moves directly forward d3 spaces until it hits an obstacle or a board edge. They strike first this turn but lose the ability to block this turn.
+<b>Ranged Spell</b> - Can't be cast while in combat.",./assets/weapons/3/spell.png
+Pop,3,Spell,Gobbo,3,,,,,,,,,,5+,"<b>Spell</b> - Target friendly unit within 3 becomes explosive this turn. This can target a unit in combat. They gain +1 attack per model, hit on 2+, AP4, and die at the end of this turn.
+<b>Ranged Spell</b> - Can't be cast while in combat.",./assets/weapons/3/spell.png
+Bone Knives,1,Ranged,Boneborn,0,,,,,,,,,2,,<b>Range 2</b> - Hits targets up to 2 squares away,./assets/weapons/1/ranged.png
+Bone Shortbow,1,Ranged,Boneborn,0,,,,,,,,,3,,<b>Range 3</b> - Hits targets up to 3 squares away,./assets/weapons/1/ranged.png
+Raise the Dead,2,Spell,Boneborn,1,,,,,,,,,,4+,"<b>Spell</b> - Choose an undead unit in range 3 and heal 2 wounds. This can resurrect models. Limited to the starting number of units/wounds.
+
+<b>Cantrip</b> - This does not count towards the limit of how many spells per turn
+
+<b>Ranged Spell</b> - Can't be cast while in combat.",./assets/weapons/2/spell.png
+Banshee's Wail,2,Spell,Boneborn,2,,,,,,,,,,4+,"<b>Spell</b> - All enemy models in combat with the caster roll a flee dice. Any models that fail, take 1 wound. Any units that take at least 1 wound must roll to flee.",./assets/weapons/2/spell.png
+Furious Dead,2,Spell,Boneborn,2,,,,,,,,,,3+,<b>Spell</b> - Target a friendly unit within 3 that is not in combat. They can take a second move action this turn.,./assets/weapons/2/spell.png
+Terrorbolt,3,Spell,Boneborn,1,,,,,,,,,,2+,"<b>Spell</b> - Target an enemy unit within 3 that is not in combat. It takes one attack hitting on 2+ with AP2. If the target takes a wound, it must roll to flee.
+
+<b>Ranged Spell</b> - Can't be cast while in combat.",./assets/weapons/3/spell.png
+Rattlebones,3,Spell,Boneborn,2,,,,,,,,,,4+,"<b>Spell</b> - Target a friendly unit within 3. This turn it may reroll block rolls, and block rolls always succeed on a 5+.",./assets/weapons/3/spell.png
+Corpse Explosion,3,Spell,Boneborn,3,,,,,,,,,,4+,"<b>Spell</b> - Target an enemy unit in combat. After all combats have been resolved this turn, the unit suffers a ranged hit for each model (friendly and enemy) that died in the combat, hitting on 4+.
+<b>Ranged Spell</b> - Can't be cast while in combat.",./assets/weapons/3/spell.png
+Shortbow,1,Ranged,Silk Court,0,,,,,,,,-1,3,,<b>Range 3</b> - Hits targets up to 3 squares away,./assets/weapons/1/ranged.png
+Extra Shortbow,1,Ranged,Silk Court,1,,,,,,,,,3,,<b>Range 3</b> - Hits targets up to 3 squares away,./assets/weapons/1/ranged.png
+Longbow,2,Ranged,Silk Court,2,,,,,,,,,4,,<b>Range 4</b> - Hits targets up to 4 squares away,./assets/weapons/2/ranged.png
+Silkbow,2,Ranged,Silk Court,2,,,,,,,,,3,,"<b>Range 3</b> - Hits targets up to 3 squares away
 <b>Fire on the Move</b> - Can be used after moving",./assets/weapons/2/ranged.png
+Protective Cocoon,2,Spell,Silk Court,1,,,,,,,,,,4+,"<b>Spell</b> - Target a friendly unit in combat within 2. Until your next turn, it gains a 1+ save (rolls of 1 still wound), can't move, can't attack, and ignores flee rolls.",./assets/weapons/2/spell.png
+Poison Blood,2,Spell,Silk Court,2,,,,,,,,,,4+,"<b>Spell</b> - Target a friendly unit within 2. Until your next turn, it gains poison blood. For every melee attack that hits the unit (does not need to wound), return an attack that hits on 6 with poison.",./assets/weapons/2/spell.png
+Fatespin,2,Spell,Silk Court,2,,,,,,,,,,4+,<b>Spell</b> - Replace the next die you roll with a 6.,./assets/weapons/2/spell.png
+Shapeweave,3,Spell,Silk Court,3,,,,,,,,,,5+,"<b>Spell</b> - Target a friendly unit within 3. Remove the unit from the board. At the start of your next turn, place them on any board edge. They may not take an action this turn, but can fight in combat.
+<b>Ranged Spell</b> - Can't be cast while in combat.",./assets/weapons/3/spell.png
+Silence,3,Spell,Silk Court,3,,,,,,,,,,5+,"<b>Spell</b> - Target an enemy unit within 3. It loses all perks apart from racial perks until your next turn.
+<b>Ranged Spell</b> - Can't be cast while in combat.",./assets/weapons/3/spell.png
+Envelop,3,Spell,Silk Court,2,,,,,,,,,,4+,"<b>Spell</b> - Target an enemy unit within 3. Until your next turn it may not take an action. It can still fight in combat.
+<b>Ranged Spell</b> - Can't be cast while in combat.",./assets/weapons/3/spell.png
+Fly Cowards!,2,Spell,Ratkin,1,,,,,,,,,,3+,<b>Spell</b> - Target a friendly unit within 3. It moves back 1 square as a free action.,./assets/weapons/2/spell.png
+Pin Tails,2,Spell,Ratkin,1,,,,,,,,,,4+,<b>Spell</b> - Target a friendly unit within 4. It automatically passes fear tests and cannot move or rotate until your next turn.,./assets/weapons/2/spell.png
+Fester,2,Spell,Ratkin,1,,,,,,,,,,4+,<b>Spell</b> - Target an enemy unit within 3. It takes 3 attacks hitting on 5+ with poison.,./assets/weapons/2/spell.png
+Scamper,3,Spell,Ratkin,2,,,,,,,,,,5+,"<b>Spell</b> - Target a friendly unit within 3 in combat. Move it to the flank of a unit in the same combat, facing that unit.",./assets/weapons/3/spell.png
+Field Promotion,3,Spell,Ratkin,1,,,,,,,,,,5+,<b>Spell</b> - Target a friendly unit within 2. It dies. Heal another friendly unit by the same number of wounds. This can resurrect models.,./assets/weapons/3/spell.png
+Rattack Formation,3,Spell,Ratkin,3,,,,,,,,,,5+,"<b>Spell</b> - Target a friendly unit within 2. It immediately makes a full attack. It can still fight in combat.
+<b>Ranged Spell</b> - Can't be cast while in combat.",./assets/weapons/3/spell.png
