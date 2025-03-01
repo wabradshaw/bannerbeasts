@@ -229,7 +229,7 @@ Place a web in the target square. Units that move into those spaces end their tu
 <b>Uncanny Protection</b> - Block may not be reduced beneath 5.
 
 <b>Mage</b> - Can cast two spells a turn",3,,,,,,,,#000000,#cc0000,#cc0000,#000000,#000000,#000000,#00dd28,#00941A,#000000,#ffffff,gobbos.png,1
-01_3_C,Cap'n Bangtidy,Gobbo Cap'n Bangtidy,TRUE,Gobbo,Leader,,,3,1,1,2,4,4,4,7,5,"<b>Broadside</b> - Free action: Fire a shot directly left or right. It hits all units directly in range d6. If it's a 1, it does 1 damage to this unit instead. Each shot does 3 attacks per unit, hitting on 4+, with multiwound 2. Can be fired in combat.
+01_3_C,Cap'n Bangtidy,Gobbo Cap'n Bangtidy,TRUE,Gobbo,Leader,,,3,3,1,2,4,4,4,7,5,"<b>Broadside</b> - Free action: Fire a shot directly left or right. It hits all units directly in range d6. If it's a 1, it does 1 damage to this unit instead. Each shot does 3 attacks per unit, hitting on 4+, with multiwound 2. Can be fired in combat.
 
 <b>Friendly Fire</b> - Can shoot into combat and into friendly units.
 
@@ -266,7 +266,7 @@ Place a web in the target square. Units that move into those spaces end their tu
 
 <b>Deceptive Shots</b> - All units in army are able to shoot into flank or rear of units that are in combat. These wounds count towards that unit's combat resolution this turn.
 
-<b>Multishot 4</b> - Ranged attacks roll 4 dice.
+<b>Multishot 3</b> - Ranged attacks roll 3 dice.
 
 <b>Volley Fire</b> - Can fire ranged attacks over other units.
 
