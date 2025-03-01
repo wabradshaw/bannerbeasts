@@ -40,7 +40,7 @@ UNCOMMON = '#737373';
 RARE = '#0019FF';
 
 BAR_BOX_W = CARD_HEIGHT / 6
-BAR_BOX_H = CARD_HEIGHT / 6
+BAR_BOX_H = CARD_HEIGHT / 7
 BAR_END_X = PAD + BAR_BOX_W + STROKE
 
 ICON_SIZE = BAR_BOX_W * 0.45
@@ -65,7 +65,7 @@ UNIT_TEXT_X = BAR_END_X + UNIT_TEXT_PAD
 
 WEAPON_SIZE = 48 * SCALE
 WEAPON_COUNT = 7
-WEAPONS_X = ONE_BAR_PAD - (WEAPON_COUNT * WEAPON_SIZE)
+WEAPONS_X = ONE_BAR_PAD - (STROKE + (WEAPON_COUNT * WEAPON_SIZE))
 WEAPONS_Y = PAD + TITLE_BAR_H - (WEAPON_SIZE + STROKE)
 
 COST_SIZE = FACTION_ICON_SIZE * 0.6
@@ -132,16 +132,18 @@ Squib::Deck.new(cards: MAX_CARD_COUNT, width: FULL_CARD_WIDTH, height: FULL_CARD
   png file: factions, x: FACTION_ICON_X_PAD, y: FACTION_ICON_Y_PAD, width: FACTION_ICON_SIZE, height: FACTION_ICON_SIZE
   
   png file: './assets/black/move.png', x: ICON_X_PAD, y: ICON_Y_PAD + (1 * BAR_BOX_H), width: ICON_SIZE, height: ICON_SIZE
-  png file: './assets/black/attacks.png', x: ICON_X_PAD, y: ICON_Y_PAD + (2 * BAR_BOX_H), width: ICON_SIZE, height: ICON_SIZE
-  png file: './assets/black/melee.png', x: ICON_X_PAD, y: ICON_Y_PAD + (3 * BAR_BOX_H), width: ICON_SIZE, height: ICON_SIZE
-  png file: './assets/black/ranged.png', x: ICON_X_PAD, y: ICON_Y_PAD + (4 * BAR_BOX_H), width: ICON_SIZE, height: ICON_SIZE
-  png file: './assets/black/block.png', x: ICON_X_PAD, y: ICON_Y_PAD + (5 * BAR_BOX_H), width: ICON_SIZE, height: ICON_SIZE
+  png file: './assets/black/heart.png', x: ICON_X_PAD, y: ICON_Y_PAD + (2 * BAR_BOX_H), width: ICON_SIZE, height: ICON_SIZE
+  png file: './assets/black/attacks.png', x: ICON_X_PAD, y: ICON_Y_PAD + (3 * BAR_BOX_H), width: ICON_SIZE, height: ICON_SIZE
+  png file: './assets/black/melee.png', x: ICON_X_PAD, y: ICON_Y_PAD + (4 * BAR_BOX_H), width: ICON_SIZE, height: ICON_SIZE
+  png file: './assets/black/ranged.png', x: ICON_X_PAD, y: ICON_Y_PAD + (5 * BAR_BOX_H), width: ICON_SIZE, height: ICON_SIZE
+  png file: './assets/black/block.png', x: ICON_X_PAD, y: ICON_Y_PAD + (6 * BAR_BOX_H), width: ICON_SIZE, height: ICON_SIZE
 
-  text str: data['Movement'], color: 'black', x: ICON_X_PAD + ICON_SIZE, y: ICON_Y_PAD + (1 * BAR_BOX_H), width: ICON_SIZE, height: ICON_SIZE, align: 'center', valign: 'middle', font_size: BAR_TEXT, font: 'Atkinson Hyperlegible Bold'  
-  text str: data['Attacks'], color: 'black', x: ICON_X_PAD + ICON_SIZE, y: ICON_Y_PAD + (2 * BAR_BOX_H), width: ICON_SIZE, height: ICON_SIZE, align: 'center', valign: 'middle', font_size: BAR_TEXT, font: 'Atkinson Hyperlegible Bold'  
-  text str: melees, color: 'black', x: ICON_X_PAD + ICON_SIZE, y: ICON_Y_PAD + (3 * BAR_BOX_H), width: ICON_SIZE, height: ICON_SIZE, align: 'center', valign: 'middle', font_size: BAR_TEXT, font: 'Atkinson Hyperlegible Bold'  
-  text str: ranges, color: 'black', x: ICON_X_PAD + ICON_SIZE, y: ICON_Y_PAD + (4 * BAR_BOX_H), width: ICON_SIZE, height: ICON_SIZE, align: 'center', valign: 'middle', font_size: BAR_TEXT, font: 'Atkinson Hyperlegible Bold'  
-  text str: blocks, color: 'black', x: ICON_X_PAD + ICON_SIZE, y: ICON_Y_PAD + (5 * BAR_BOX_H), width: ICON_SIZE, height: ICON_SIZE, align: 'center', valign: 'middle', font_size: BAR_TEXT, font: 'Atkinson Hyperlegible Bold'    
+  text str: data['Movement'], color: data['Move Colour'], x: ICON_X_PAD + ICON_SIZE, y: ICON_Y_PAD + (1 * BAR_BOX_H), width: ICON_SIZE, height: ICON_SIZE, align: 'center', valign: 'middle', font_size: BAR_TEXT, font: 'Atkinson Hyperlegible Bold'  
+  text str: data['HP'], color: data['HP Colour'], x: ICON_X_PAD + ICON_SIZE, y: ICON_Y_PAD + (2 * BAR_BOX_H), width: ICON_SIZE, height: ICON_SIZE, align: 'center', valign: 'middle', font_size: BAR_TEXT, font: 'Atkinson Hyperlegible Bold'  
+  text str: data['Attacks'], color: data['Attacks Colour'], x: ICON_X_PAD + ICON_SIZE, y: ICON_Y_PAD + (3 * BAR_BOX_H), width: ICON_SIZE, height: ICON_SIZE, align: 'center', valign: 'middle', font_size: BAR_TEXT, font: 'Atkinson Hyperlegible Bold'  
+  text str: melees, color: data['Melee Colour'], x: ICON_X_PAD + ICON_SIZE, y: ICON_Y_PAD + (4 * BAR_BOX_H), width: ICON_SIZE, height: ICON_SIZE, align: 'center', valign: 'middle', font_size: BAR_TEXT, font: 'Atkinson Hyperlegible Bold'  
+  text str: ranges, color: data['Ranged Colour'], x: ICON_X_PAD + ICON_SIZE, y: ICON_Y_PAD + (5 * BAR_BOX_H), width: ICON_SIZE, height: ICON_SIZE, align: 'center', valign: 'middle', font_size: BAR_TEXT, font: 'Atkinson Hyperlegible Bold'  
+  text str: blocks, color: data['Block Colour'], x: ICON_X_PAD + ICON_SIZE, y: ICON_Y_PAD + (6 * BAR_BOX_H), width: ICON_SIZE, height: ICON_SIZE, align: 'center', valign: 'middle', font_size: BAR_TEXT, font: 'Atkinson Hyperlegible Bold'    
 
   data['N1'][0...MAX_CARD_COUNT].each_with_index do |n1, index|
     unit_height = FULL_CARD_HEIGHT / n1
