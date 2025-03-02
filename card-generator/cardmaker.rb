@@ -88,9 +88,10 @@ data = Squib.csv file: FILE_NAME
 
 t1_range = data['Tier'].each_with_index.select{ |t, i| t == 1}.map {|t, i| i}.select{|i| i < MAX_CARD_COUNT}
 t3_range = data['Tier'].each_with_index.select{ |t, i| t == 3}.map {|t, i| i}.select{|i| i < MAX_CARD_COUNT}
+equip_range = data['Equips'].each_with_index.select{ |t, i| t != nil}.map {|t, i| i}.select{|i| i < MAX_CARD_COUNT}
 
 factions = data['Faction Icon'].map {|t| t != nil && t != '.png' ? './assets/factions/' + t.to_s : ''}
-summaries = data['Faction'].zip(data['Plural Class']).map { |a| a.join(' - ') }
+summaries = data['Faction'].zip(data['Class']).map { |a| a.join(' - ') }
 
 melees = data['Melee Hit'].map {|t| t != nil && t != '-' ? t.to_s + '+' : '-'}
 ranges = data['Ranged Hit'].map {|t| t != nil && t != '-' ? t.to_s + '+' : '-'}
@@ -146,17 +147,17 @@ Squib::Deck.new(cards: MAX_CARD_COUNT, width: FULL_CARD_WIDTH, height: FULL_CARD
   text str: ranges, color: data['Ranged Colour'], x: ICON_X_PAD + ICON_SIZE, y: ICON_Y_PAD + (5 * BAR_BOX_H), width: ICON_SIZE, height: ICON_SIZE, align: 'center', valign: 'middle', font_size: BAR_TEXT, font: 'Atkinson Hyperlegible Bold'  
   text str: blocks, color: data['Block Colour'], x: ICON_X_PAD + ICON_SIZE, y: ICON_Y_PAD + (6 * BAR_BOX_H), width: ICON_SIZE, height: ICON_SIZE, align: 'center', valign: 'middle', font_size: BAR_TEXT, font: 'Atkinson Hyperlegible Bold'    
 
-  data['N1'][0...MAX_CARD_COUNT].each_with_index do |n1, index|
-    unit_height = FULL_CARD_HEIGHT / n1
+  data['Number'][0...MAX_CARD_COUNT].each_with_index do |number, index|
+    unit_height = FULL_CARD_HEIGHT / number
     hp = data['HP'][index] || 1
     hp_height = unit_height / hp
 
-    n1.times do |i|
+    number.times do |i|
       
       y_position = i * unit_height
       text_width = hp > 1 ? UNIT_COUNT_WIDTH : HEALTH_LINE_W
 
-      strength = (n1 - i) * 100 / n1
+      strength = (number - i) * 100 / number
       if strength <= 25
         colour = 'red'
       elsif strength <= 50
@@ -168,7 +169,7 @@ Squib::Deck.new(cards: MAX_CARD_COUNT, width: FULL_CARD_WIDTH, height: FULL_CARD
       bar_start = FULL_CARD_WIDTH - (PAD + HEALTH_LINE_W)
       rect x: bar_start, width: HEALTH_LINE_W + PAD, y: y_position, height: unit_height, stroke_width: HALF_STROKE, stroke_color: 'black', fill_color: colour, range: index
 
-      text str: (n1 - i).to_s, color: 'black', x: bar_start, y: y_position, width: text_width, height: unit_height, align: 'center', valign: 'middle', font_size: BAR_TEXT, font: 'Atkinson Hyperlegible Bold', range: index
+      text str: (number - i).to_s, color: 'black', x: bar_start, y: y_position, width: text_width, height: unit_height, align: 'center', valign: 'middle', font_size: BAR_TEXT, font: 'Atkinson Hyperlegible Bold', range: index
 
       if hp > 1
         hp.times do |j|          
@@ -187,9 +188,9 @@ Squib::Deck.new(cards: MAX_CARD_COUNT, width: FULL_CARD_WIDTH, height: FULL_CARD
   line x1: BAR_END_X, x2: ONE_BAR_PAD, y1: TITLE_BAR_H, y2: TITLE_BAR_H, stroke_width: STROKE, stroke_color: 'black'
   
   circle range: t1_range, x: COST_X + COST_RADIUS, y: COST_Y + COST_RADIUS, radius: COST_RADIUS, stroke_width: STROKE, stroke_color: 'black', fill_color: COMMON  
-  text  range: t1_range, str: data['C1'], color: 'black', x: COST_X, y: COST_Y, width: COST_SIZE, height: COST_SIZE, align: 'center', valign: 'middle', font_size: POWERS_TEXT, font: 'Atkinson Hyperlegible Bold'
-  circle range: t3_range, x: EQUIP_X + COST_RADIUS, y: COST_Y + COST_RADIUS, radius: COST_RADIUS, stroke_width: STROKE, stroke_color: 'black', fill_color: RARE
-  text  range: t3_range, str: data['C1'], color: 'black', x: EQUIP_X, y: COST_Y, width: COST_SIZE, height: COST_SIZE, align: 'center', valign: 'middle', font_size: POWERS_TEXT, font: 'Atkinson Hyperlegible Bold'
+  text  range: t1_range, str: data['Cost'], color: 'black', x: COST_X, y: COST_Y, width: COST_SIZE, height: COST_SIZE, align: 'center', valign: 'middle', font_size: POWERS_TEXT, font: 'Atkinson Hyperlegible Bold'
+  circle range: equip_range, x: EQUIP_X + COST_RADIUS, y: COST_Y + COST_RADIUS, radius: COST_RADIUS, stroke_width: STROKE, stroke_color: 'black', fill_color: RARE
+  text  range: equip_range, str: data['Equips'], color: 'black', x: EQUIP_X, y: COST_Y, width: COST_SIZE, height: COST_SIZE, align: 'center', valign: 'middle', font_size: POWERS_TEXT, font: 'Atkinson Hyperlegible Bold'
 
   save_png dir: '_cards', prefix: data['Unit'], count_format: ''
   save_sheet dir: '_sprues_tt', rows:5, columns: 3 
