@@ -1,11 +1,10 @@
 #!/usr/bin/ruby -w
 require 'squib'
-#require 'daru'
 
 # Config
 
 FILE_NAME = 'Bannerbeasts Roller - Weapons.csv'
-MAX_CARD_COUNT = 98
+MAX_CARD_COUNT = 144
 
 MM_TOTAL_CARD_WIDTH = 88.8
 MM_TOTAL_CARD_HEIGHT = 63.5 
@@ -71,7 +70,17 @@ puts "Start";
 
 data = Squib.csv file: FILE_NAME
 
-factions = ['Ratkin','Gobbo','Boneborn','Silk Court']
+factions = ['Gobbo', 'Ratkin', 'Silk Court', 'Boneborn', 'Redspines', 'Coppersand']
+
+# Map each faction to its respective id prefix
+faction_ids = {
+  'Gobbo'      => '01',
+  'Ratkin'     => '02',
+  'Silk Court' => '03',
+  'Boneborn'   => '04',
+  'Redspines'  => '05',
+  'Coppersand' => '06'
+}
 
 # Initialize a new hash of arrays for expanded data
 expanded_data = Hash.new { |hash, key| hash[key] = [] }
@@ -85,14 +94,23 @@ data.nrows.times do |i|
 
   # Duplicate the row for each applicable faction
   target_factions.each do |fact|
-    data.columns.each { |col| expanded_data[col] << row[col] }  # Copy all original columns
-    expanded_data['Fact'] << fact  # Add new 'fact' column
+    data.columns.each do |col|
+      if col == 'Id' && row['Faction'] == 'Any'
+        # Prepend faction prefix ONLY if the faction was "Any"
+        expanded_data[col] << "#{faction_ids[fact]}-#{row[col]}"
+      else
+        expanded_data[col] << row[col]
+      end
+    end
+    # Add new 'Fact' column with the current faction
+    expanded_data['Fact'] << fact
   end
 end
 
 unsorted_data = Squib::DataFrame.new(expanded_data)
 
-sorted_rows = unsorted_data.nrows.times.map { |i| unsorted_data.row(i) }.sort_by { |row| row['Fact'] }
+sorted_rows = unsorted_data.nrows.times.map { |i| unsorted_data.row(i) }
+                                 .sort_by { |row| row['Id'].to_s }  # Ensure sorting treats all Ids as strings
 
 # Initialize a new hash for sorted data
 sorted_data = Hash.new { |hash, key| hash[key] = [] }
@@ -105,7 +123,6 @@ end
 # Convert back to Squib::DataFrame
 full_data = Squib::DataFrame.new(sorted_data)
 
-id = full_data['Fact'].zip(full_data['Name']).map { |a| a.join('-') }
 names = full_data['Name'].zip(full_data['Tier']).map { |a| a.join(' - L') }
 powers = full_data['Power'].map {|t| t != nil ? t : ''}
 casting = full_data['Casting Value'].map {|t| t != nil ? t : ''}
@@ -129,7 +146,7 @@ Squib::Deck.new(cards: MAX_CARD_COUNT, width: FULL_CARD_WIDTH, height: FULL_CARD
   circle x: COST_X_PAD + COST_SIZE/2, y: COST_Y_PAD + COST_SIZE/2, radius: COST_SIZE * 0.5, stroke_width: STROKE, stroke_color: 'black', fill_color: 'white'
   text str: full_data['Cost'], x: COST_X_PAD, y: COST_Y_PAD, height: COST_SIZE, width: COST_SIZE, color: 'black', align: 'center', valign: 'middle', font_size: UNIT_TEXT, font: 'Atkinson Hyperlegible'   
 
-  save_png dir: '_weapons', prefix: id, count_format: ''
+  save_png dir: '_weapons', prefix: full_data['Id'], count_format: ''
   save_sheet dir: '_sprues_tt', prefix: 'weapons_', rows:5, columns: 4
   rect x: 0, y: 0, width: FULL_CARD_WIDTH, height: FULL_CARD_HEIGHT, stroke_width: SCALE, stroke_color: 'black'
   save_sheet dir: '_sprues_print', prefix: 'weapons_', rows:3, columns: 3
