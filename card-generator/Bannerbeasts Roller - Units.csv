@@ -34,9 +34,9 @@ Id,Name,Unit,Include,Faction,Class,Comparison Class,Base Block,Tier,Cost,Equips,
 <b>Maneouverable</b> - May turn once at any point during a move or hustle
 
 <b>Chariot</b> - Can't sidestep",,,2,2,2,2,2,2,#2b9800,#000000,#000000,#cc0000,#2b9800,#000000,#00dd28,#00941A,#000000,#ffffff,gobbos.png,2,8,12.00
-01_2B_1,Starchucker,Gobbo Starchucker,TRUE,Gobbo,Hurtbox,War Machine,6,2,,,1,1,6,3,2,2,6,"<b>War Machine</b> - Dies if it flees. Can't move into combat.
+01_2B_1,Starchucker,Gobbo Starchucker,TRUE,Gobbo,Hurtbox,War Machine,6,2,,,1,1,6,3,2,3,6,"<b>War Machine</b> - Dies if it flees. Can't move into combat.
 <b>Razorstar</b> - Ranged weapon. Range d6+1. The first unit in that range gets one attack that hits on 3+, AP -3, and does 3 wounds. If it hits, the next unit takes a 4+, AP -2, 2 wound attack. If that hits, the third unit takes a 5+, AP -1, 1 wound attack. This shot can't pass through terrain.
-<b>Friendly Fire</b> - Can shoot into combat and into friendly units.",,,,,,,,,#000000,#000000,#000000,#000000,#2b9800,#000000,#00dd28,#00941A,#000000,#ffffff,gobbos.png,1,2,2.40
+<b>Friendly Fire</b> - Can shoot into combat and into friendly units.",,,,,,,,,#000000,#000000,#000000,#000000,#2b9800,#000000,#00dd28,#00941A,#000000,#ffffff,gobbos.png,1,3,3.60
 01_2B_2,Boombox,Gobbo Boombox,TRUE,Gobbo,Hurtbox,War Machine,6,2,,,1,1,6,-,2,3,6,"<small><b>War Machine</b> - Dies if it flees. Can't move into combat.
 <b>The Big Guns</b> - Pick a target square within 6 and roll a die.
 6 - Direct hit. 
@@ -47,7 +47,7 @@ Id,Name,Unit,Include,Faction,Class,Comparison Class,Base Block,Tier,Cost,Equips,
 1 - Hit yourself. 
 The central tile takes d6 attacks, 3+ AP -1. The four adjacent tiles take 1 hit each, 4+ AP0.
 <b>Friendly Fire</b> - Can shoot into combat and into friendly units.</small>",,,,,,,,,#000000,#000000,#000000,#000000,#000000,#000000,#00dd28,#00941A,#000000,#ffffff,gobbos.png,1,3,3.60
-01_2B_3,Firetruck,Gobbo Firetruck,TRUE,Gobbo,Hurtbox,Monster,6,2,,,1,1,-,-,-,6,4,"<small><b>Flamethrower</b> - Special action. Can be used instead of attacking in combat or as a ranged attack. Roll a die for range. 
+01_2B_3,Firetruck,Gobbo Firetruck,TRUE,Gobbo,Hurtbox,Monster,6,2,,,1,1,4,-,2,6,4,"<small><b>Flamethrower</b> - Special action. Can be used instead of attacking in combat or as a ranged attack. Roll a die for range. 
 6 - Range 3
 5/4 - Range 2
 3 - Range 1
@@ -55,7 +55,9 @@ The central tile takes d6 attacks, 3+ AP -1. The four adjacent tiles take 1 hit 
 1 - Opponent turns you 90 degrees. Range 2. 
 Hits all tiles in range across all three ranged attack columns. Each unit that is hit rolls a die for each model in the unit. Models are hit on a 5, AP1. 
 
-<b>Friendly Fire</b> - Can shoot into combat and into friendly units.</small>",,,,,,,,,#000000,#2b9800,#000000,#000000,#000000,#2b9800,#00dd28,#00941A,#000000,#ffffff,gobbos.png,1,6,12.00
+<b>Friendly Fire</b> - Can shoot into combat and into friendly units.
+
+<b>Chariot</b> - Can't sidestep</small>",,,,,,,,,#000000,#2b9800,#000000,#000000,#000000,#2b9800,#00dd28,#00941A,#000000,#ffffff,gobbos.png,1,6,12.00
 01_2C_1,Flagellants,Gobbo Flagellants,TRUE,Gobbo,Priests,Attack Infantry,6,2,,,6,1,4,-,3,1,-,"<b>Unbreakable</b> - Can't flee
 
 <b>Rabid</b> - Must charge if able to
@@ -110,7 +112,7 @@ Hits all tiles in range across all three ranged attack columns. Each unit that i
 
 <b>Mighty Cleave</b> - In combat this unit makes its attacks against all adjacent enemy units. Roll separately for each. If they are not in combat, they take damage but are not included in combat resolution and do not strike back.
 
-<b>Natural Warrior</b> - Equipment costs 1 less.",,,,2,2,,,,#000000,#000000,#000000,#2b9800,#000000,#2b9800,#e0e0d3,#4d4d4d,#000000,#ffffff,skellies.png,1,5,10.00
+<b>Well Prepared</b> - Equipment costs 1 less.",,,,2,2,,,,#000000,#000000,#2b9800,#2b9800,#000000,#2b9800,#e0e0d3,#4d4d4d,#000000,#ffffff,skellies.png,1,5,10.00
 03_2A_2,Grave Beast,Boneborn Grave Beast,TRUE,Boneborn,Bonegiant,Monster,5,2,,,1,1,4,,4,5,5,"<b>Unstable</b> - Instead of rolling to flee, lose 1 extra wound
 
 <b>Revenants</b> - After combat, add a new wound for each enemy that died. Limited to the starting size.
@@ -161,7 +163,7 @@ Hits all tiles in range across all three ranged attack columns. Each unit that i
 
 <b>Tactical Retreat</b> - Can choose to flee before combat starts
 
-<b>Jumping</b> - Can jump over units while moving and hustling. Doing so increases the max movement distance by 1. Must end their turn in an empty square.
+<b>Jumping</b> - Can jump over units and obstacles while moving and hustling. Doing so increases the max movement distance by 1. Must end their turn in an empty square.
 
 <b>Maneouverable</b> - May turn once at any point during a move or hustle",,,1,1,1,1,,2,#2b9800,#000000,#000000,#cc0000,#2b9800,#cc0000,#f1baff,#2d2d2d,#000000,#ffffff,spiders.png,2,5,6.00
 04_2A_2,Tarantulas,Silk Court Tarantulas,TRUE,Silk Court,Knights,Heavy Cavalry,6,2,,,5,2,4,-,1,2,5,"<b>Poison</b> - 6s to hit can't be saved
@@ -197,14 +199,14 @@ Hits all tiles in range across all three ranged attack columns. Each unit that i
 2 or 3 - Miss
 1 - Off by one, opponent's choice 
 The target tile takes 3 attacks hitting on 4+ with poison. The unit may not move on its next turn.
-",,,,,,,,,#000000,#000000,#000000,#000000,#000000,#000000,#f1baff,#2d2d2d,#000000,#ffffff,spiders.png,1,3,3.60
+",,,,,,,,,#000000,#000000,#000000,#000000,#000000,#cc0000,#f1baff,#2d2d2d,#000000,#ffffff,spiders.png,1,3,3.60
 04_2C_2,Spitter,Silk Court Spitter,TRUE,Silk Court,Webcannon,War Machine,6,2,,,1,1,5,4,2,3,6,"<b>War Machine</b> - Dies if it flees. Can't move into combat.
 
 <b>Poison</b> - 6s to hit can't be saved
 
 <b>Virulent 4+</b> - Any unit wounded by this unit becomes Poisoned. At the end of each of the controlling players turns, Poisoned units take a wound on a 4+ with no armour saves allowed.
 
-<b>Spitter Cannon</b> - Ranged weapon. Range 5. Fires 4 shots. Can shoot over friendly units.",,,,,,,,,#000000,#000000,#000000,#000000,#2b9800,#000000,#f1baff,#2d2d2d,#000000,#ffffff,spiders.png,1,3,3.60
+<b>Spitter Cannon</b> - Ranged weapon. Range 5. Fires 4 shots. Can shoot over friendly units.",,,,,,,,,#000000,#000000,#000000,#000000,#2b9800,#cc0000,#f1baff,#2d2d2d,#000000,#ffffff,spiders.png,1,3,3.60
 04_2C_3,Weblayer,Silk Court Weblayer,TRUE,Silk Court,Webcannon,War Machine,6,2,,,1,1,5,-,2,3,6,"<small><b>War Machine</b> - Dies if it flees. Can't move into combat.
 
 <b>Poison</b> - 6s to hit can't be saved
@@ -213,10 +215,71 @@ The target tile takes 3 attacks hitting on 4+ with poison. The unit may not move
 4, 5 or 6 - Direct hit
 3 - Off by one, your choice
 2 - Miss
-1 - Off by two, opponent's choice 
+1 - Off by up to two, opponent's choice 
 Place a web in the target square. Units that move into those spaces end their turns and can't fight in combat. If this hits a unit directly, it can't fight in combat this turn. Webs are removed once stepped in.
 
-<b>Friendly Fire</b> - Can shoot into combat and into friendly units.</small>",,,,,,,,,#000000,#000000,#000000,#000000,#000000,#000000,#f1baff,#2d2d2d,#000000,#ffffff,spiders.png,1,3,3.60
+<b>Friendly Fire</b> - Can shoot into combat and into friendly units.</small>",,,,,,,,,#000000,#000000,#000000,#000000,#000000,#cc0000,#f1baff,#2d2d2d,#000000,#ffffff,spiders.png,1,3,3.60
+06_1_1,Warriors,Coppersand Warriors,TRUE,Coppersand,Mechanics,Warriors,6,1,2,,5,1,4,6,1,1,5,"<b>Mechanics</b> - At the start of your turn, heal 1 wound on an adjacent construct.",,,1,1,1,1,1,1,#000000,#000000,#000000,#000000,#000000,#000000,#ffb317,#cf6c23,#000000,#ffffff,gremlins.png,1,5,7.50
+06_1_2,Gunners,Coppersand Gunners,TRUE,Coppersand,Mechanics,Archers,6,1,2,,5,1,5,4,1,1,6,"<b>Mechanics</b> - At the start of your turn, heal 1 wound on an adjacent construct.",,,1,1,1,1,1,1,#000000,#000000,#000000,#cc0000,#2b9800,#cc0000,#ffb317,#cf6c23,#000000,#ffffff,gremlins.png,1,5,6.00
+06_1_3,Sappers,Coppersand Sappers,TRUE,Coppersand,Mechanics,Unique,6,1,2,,5,1,6,5,1,1,6,"<b>Mechanics</b> - At the start of your turn, heal 1 wound on an adjacent construct.
+
+<b>Entrench</b> - Units that move adjacent to this unit are disrupted. Each model in the unit takes a wound, hitting on that unit's block score. This affects friendly units as well.",,,1,1,1,1,1,1,#000000,#000000,#000000,#cc0000,#2b9800,#cc0000,#ffb317,#cf6c23,#000000,#ffffff,gremlins.png,1,5,6.00
+06_1_4,Supplicants,Coppersand Supplicants,TRUE,Coppersand,Mechanics,Unique,6,1,2,,5,1,5,-,1,1,-,"<b>Mechanics</b> - At the start of your turn, heal 1 wound on an adjacent construct.
+
+<b>Meatshields</b> - When a friendly construct is attacked, before rolling to block, you may redirect all of the attacks to this unit. Any wounds taken count towards combat resolution.
+
+<b>Unprotected</b> - Reveal this unit when an attack hits it, rather than using the default block. ",,,1,,,,1,,#000000,#000000,#000000,#cc0000,#000000,#cc0000,#ffb317,#cf6c23,#000000,#ffffff,gremlins.png,1,5,5.00
+06_1_5,Artificers,Coppersand Artificers,TRUE,Coppersand,Mechanics,Infantry,6,1,3,,5,1,4,5,1,1,5,"<b>Mechanics</b> - At the start of your turn, heal 1 wound on an adjacent construct
+
+<b>Well Prepared</b> - Equipment costs 1 less
+
+<b>Equippable</b> - Able to equip uncommon equipment",,,2,2,2,2,2,2,#000000,#000000,#000000,#000000,#2b9800,#000000,#ffb317,#cf6c23,#000000,#ffffff,gremlins.png,1,5,7.50
+06_1_6,Snipers,Coppersand Snipers,TRUE,Coppersand,Mechanics,Archers,6,1,3,,5,1,5,4,1,1,5,"<b>Mechanics</b> - At the start of your turn, heal 1 wound on an adjacent construct.
+
+<b>Long Range</b> - This unit's ranged weapons gain 1 range.",,,1,1,1,1,1,1,#000000,#cc0000,#2b9800,#cc0000,#2b9800,#000000,#ffb317,#cf6c23,#000000,#ffffff,gremlins.png,1,5,7.50
+06_2A_1,Clay Golems,Coppersand Clay Golems,TRUE,Coppersand,Golems,Heavy Infantry,5,2,,,3,1,4,-,2,3,5,"<b>Construct</b> - Immune to fear checks while adjacent to a mechanic. Dies if it flees.
+
+<b>Regenerative Clay</b> - At the end of each player's turn, each model heals to full. This does not ressurect dead models.",,,,,3,,2,,#000000,#2b9800,#000000,#000000,#000000,#000000,#ffb317,#cf6c23,#000000,#ffffff,gremlins.png,1,9,13.50
+06_2A_2,Minetomatons,Coppersand Minetomatons,TRUE,Coppersand,Golems,Unique,5,2,,,3,1,4,-,3,2,5,"<b>Construct</b> - Immune to fear checks while adjacent to a mechanic. Dies if it flees.
+
+<b>Ambush</b> - Action: Remove this unit from the board. On your next turn, place it on an empty space along any board edge (facing away from the board edge) as its action for the turn
+
+<b>AP 1</b> - Reduce block rolls by 1.
+",,,,3,3,,,,#000000,#000000,#2b9800,#000000,#000000,#000000,#ffb317,#cf6c23,#000000,#ffffff,gremlins.png,1,6,9.00
+06_2A_3,Bladestorms,Coppersand Bladestorms,TRUE,Coppersand,Golems,Attack Infantry,5,2,,2,3,1,4,-,2*,3,5,"<b>Construct</b> - Immune to fear checks while adjacent to a mechanic. Dies if it flees.
+
+<b>Four Arms</b> - Wields two sets of weapons. This unit performs a round of attacks with one set of weapons, then a second round of attacks with a second set of weapons. 
+
+<b>Well Equipped 2</b> - Equip with 2 points of equipment while building the army list. Show these when revealing this as a possible unit or distraction.",,,2,2,2,2,,,#000000,#2b9800,#2b9800,#000000,#000000,#000000,#ffb317,#cf6c23,#000000,#ffffff,gremlins.png,1,9,13.50
+06_2B_1,Juggernaut,Coppersand Juggernaut,TRUE,Coppersand,Colossus,Monster,5,2,,,1,2,3,-,5,5,4,"<b>Construct</b> - Immune to fear checks while adjacent to a mechanic. Dies if it flees.
+
+<b>Trample</b> - Action: Move forward 1. If there is a model in that space, it attempts to move backwards 1 unless it is blocked. Roll an attack against each model in the unit, hitting on 6+ or 4+ if the unit was blocked. These do not count for combat resolution. Can be used to move out of combat.",,,2,2,2,2,,,#2b9800,#000000,#2b9800,#2b9800,#000000,#2b9800,#ffb317,#cf6c23,#000000,#ffffff,gremlins.png,1,5,10.00
+06_2B_2,Overseer,Coppersand Overseer,TRUE,Coppersand,Colossus,Monster,5,2,,2,1,2,4,4,4,5,5,"<b>Construct</b> - Immune to fear checks while adjacent to a mechanic. Dies if it flees.
+<b>Multishot 3</b> - Ranged attacks roll 3 dice.
+<b>Overwatch</b> - During your opponent's turn, fire a round of shooting at the first enemy unit to become a new valid shooting target. Has no effect on units that were already valid shooting targets. This can take effect because of units fleeing combat or getting wiped out.
+<b>Well Equipped 2</b> - Equip with 2 points of equipment while building the army list. Show these when revealing this as a possible unit or distraction.",,,,,,,1,2,#2b9800,#000000,#000000,#000000,#2b9800,#000000,#ffb317,#cf6c23,#000000,#ffffff,gremlins.png,1,5,7.50
+06_2B_3,Warcrane,Coppersand Warcrane,TRUE,Coppersand,Colossus,Monster,5,2,,,1,1,5,-,5,5,3,"<b>Construct</b> - Immune to fear checks while adjacent to a mechanic. Dies if it flees.
+
+<b>Lift and Shift</b> - Action: Rotate an adjacent unit 90 degrees around this unit. ",,,,,,,,,#000000,#000000,#2b9800,#cc0000,#000000,#2b9800,#ffb317,#cf6c23,#000000,#ffffff,gremlins.png,1,5,15.00
+06_2C_1,Grand Bombard,Coppersand Grand Bombard,TRUE,Coppersand,Artillery,War Machine,6,2,,,1,1,6,-,2,3,6,"<b>Construct</b> - Immune to fear checks while adjacent to a mechanic. Dies if it flees.
+<b>War Machine</b> - Dies if it flees. Can't move into combat.
+<b>Primed</b> - Place 2 powder tokens on this when it is revealed.
+<b>Reloading</b> - Place a powder tokens on this unit at the end of your turn.
+<b>Bombard</b> - Action: Uses all powder tokens as X. Pick a target square within 2 + X, roll a die and add X.
+7+ - Direct hit. 
+5-6 - Off by one towards your board edge.
+4 or less - Miss. Keep all powder tokens.
+Any unit in the hit square takes 3X attacks hitting on 3+ with AP X. Lose all powder tokens.",,,,,,,,,#000000,#000000,#000000,#000000,#000000,#000000,#ffb317,#cf6c23,#000000,#ffffff,gremlins.png,1,3,3.60
+06_2C_2,Hookshot,Coppersand Hookshot,TRUE,Coppersand,Artillery,War Machine,6,2,,,1,1,6,4,2,3,6,"<b>Construct</b> - Immune to fear checks while adjacent to a mechanic. Dies if it flees.
+
+<b>War Machine</b> - Dies if it flees. Can't move into combat.
+
+<b>Hookshot</b> - Ranged Weapon. Range 5. Fires 4 shots. If any shots hit (they can be blocked), move the target unit one square towards this unit. ",,,,,,,,,#000000,#000000,#000000,#000000,#2b9800,#000000,#ffb317,#cf6c23,#000000,#ffffff,gremlins.png,1,3,3.60
+06_2C_3,Surpressor,Coppersand Surpressor,TRUE,Coppersand,Artillery,War Machine,6,2,,,1,1,6,-,2,4,6,"<b>Construct</b> - Immune to fear checks while adjacent to a mechanic. Dies if it flees.
+
+<b>War Machine</b> - Dies if it flees. Can't move into combat.
+
+<b>Surpression Cannon</b> - Target a square in shooting range 5. Each unit in that firing line at the start of your next turn takes 5 ranged attacks hitting on 3+ with AP3. May not target a firing line that includes a friendly unit, but will hit them if they move in before your turn ends.",,,,,,,,,#000000,#000000,#000000,#000000,#000000,#000000,#ffb317,#cf6c23,#000000,#ffffff,gremlins.png,1,4,4.80
 L01_3_A,Boomshaman,Gobbo Boomshaman,TRUE,Gobbo,Leader,Hybrid Mage Hero,,3,,2,1,1,2,-,d6,4,-,"<b>Master of Munitions</b> - Explosive units and direct hits by Boomboxes gain splash. For every wound dealt, all adjacent units take a hit on a 5+, AP1. 
 
 <b>Explosive</b> - Dies after combat.
@@ -281,7 +344,7 @@ L03_3_C,The Gravedigger,Boneborn The Gravedigger,TRUE,Boneborn,Leader,Warrior He
 <b>Corpsefinder</b> - Whenever an enemy unit in range 3 is wiped out, a unit of your choice may regain d6 wounds.",,,3,3,3,3,3,,#000000,#2b9800,#000000,#000000,#000000,#2b9800,#e0e0d3,#4d4d4d,#000000,#ffffff,skellies.png,1,7,14.00
 L03_3_D,Dracolich,Boneborn Dracolich,TRUE,Boneborn,Leader,Monster Hero,,3,,0,1,3,3,-,5,8,5,"<b>Unstable</b> - Instead of rolling to flee, lose 1 extra wound
 
-<b>Flying</b> - This unit can move over other units. 
+<b>Flying</b> - This unit can move over other units and obstacles
 
 <b>Maneouverable</b> - May turn once at any point during a move or hustle",2,,,3,3,3,,,#2b9800,#2b9800,#2b9800,#000000,#000000,#000000,#e0e0d3,#4d4d4d,#000000,#ffffff,skellies.png,1,8,12.00
 L03_3_E,Archrevenant,Boneborn Archrevenant,TRUE,Boneborn,Leader,Warrior Hero,,3,,3,1,1,3,,5,6,5,"<b>Unstable</b> - Instead of rolling to flee, lose 1 extra wound
@@ -316,6 +379,37 @@ L04_3_E,Broodmother,Silk Court Broodmother,TRUE,Silk Court,Leader,Monster Hero,,
 <b>Center of the Web</b> - Gain +1 attack for each adjacent friendly unit
 
 <b>Virulent 4+</b> - Any unit wounded by this unit becomes Poisoned. At the end of each of the controlling players turns, Poisoned units take a wound on a 4+ with no armour saves allowed.",,,3,3,3,,,,#2b9800,#000000,#2b9800,#000000,#000000,#2b9800,#f1baff,#2d2d2d,#000000,#ffffff,spiders.png,1,8,16.00
+L06_3_A,Master Sapper,Coppersand Master Sapper,TRUE,Coppersand,Leader,Support Hero,,3,,3,1,2,4,4,4,6,5,"<b>Mechanics</b> - At the start of your turn, heal 1 wound on an adjacent construct.
+<b>Battlefield Prep</b> - During deployment, instead of placing a unit, place a mine on any empty square on the battlefield. The first unit to enter that tile takes d6 attacks hitting on 2+ with AP2. 
+<b>Sensibly Entrenched</b> - Enemy units that move adjacent to this unit are disrupted. Each model in the unit takes a wound, hitting on that unit's block score. 
+<b>Landbreaker</b> - Free Action: Once per game, place an obstacle in range 2 that blocks movement and shooting. 
+<b>Multishot 2</b> - Ranged attacks roll 2 dice.
+<b>Fire on the Move</b> - Can shoot after moving",,,3,3,3,3,3,3,#2b9800,#000000,#000000,#000000,#000000,#000000,#ffb317,#cf6c23,#000000,#ffffff,gremlins.png,1,6,9.00
+L06_3_B,Gatebreaker,Coppersand Gatebreaker,TRUE,Coppersand,Leader,Monster Hero,,3,,4,1,2,3,-,3*,6,5,"<b>Construct</b> - Immune to fear checks while adjacent to a mechanic. Dies if it flees.
+
+<b>Four Arms</b> - Wields two sets of weapons. This unit performs a round of attacks with one set of weapons, then a second round of attacks with a second set of weapons. ",,,3,3,3,3,3,,#2b9800,#000000,#2b9800,#000000,#000000,#000000,#ffb317,#cf6c23,#000000,#ffffff,gremlins.png,1,6,9.00
+L06_3_C,The Warforger,Coppersand The Warforger,TRUE,Coppersand,Leader,Warrior Hero,,3,,5,1,1,4,4,4,5,4,"<b>Mechanics</b> - At the start of your turn, heal 1 wound on an adjacent construct.
+
+<b>Coppersmith's Upgrade</b> - After deployment, replace one equipment on any unit with any other piece of equipment of that type. Show your opponent the type. The unit does not need to be able to equip an item of that tier.
+
+<b>Custom Tools</b> - Can equip two weapons. Their effects stack. ",,,3,3,3,3,3,3,#000000,#000000,#000000,#000000,#2b9800,#2b9800,#ffb317,#cf6c23,#000000,#ffffff,gremlins.png,1,5,10.00
+L06_3_D,Crackshot,Coppersand Crackshot,TRUE,Coppersand,Leader,Archer Hero,,3,,4,1,1,4,3,4,5,5,"<b>Mechanics</b> - At the start of your turn, heal 1 wound on an adjacent construct.
+
+<b>Riflemaker</b> - All ranged weapons in the army gain AP1.
+
+<b>Entrench</b> - Units that move adjacent to this unit are disrupted. Each model in the unit takes a wound, hitting on that unit's block score. This affects friendly units as well.
+
+<b>Multishot 3</b> - Ranged attacks roll 3 dice.
+
+<b>Long Range</b> - All ranged weapons gain 1 range.",,,3,,,3,3,3,#000000,#000000,#000000,#000000,#2b9800,#000000,#ffb317,#cf6c23,#000000,#ffffff,gremlins.png,1,5,7.50
+L06_3_E,The Zeppelin,Coppersand The Zeppelin,TRUE,Coppersand,Leader,War Machine Hero,,3,,2,1,2,5,4,3,8,5,"<b>Construct</b> - Immune to fear checks while adjacent to a mechanic. Dies if it flees.
+
+<b>Flying</b> - This unit can move over other units and obstacles. 
+<b>Airborne</b> - Melee attacks against this are at -1. Natural 6s still always hit. This unit may always move out of combat. 
+<b>Bomber</b> - If this unit moves over an enemy unit, do d6+1 attacks hitting on 5+ with AP1.
+
+<b>Multishot 2</b> - Ranged attacks roll 2 dice.
+<b>Fire on the Move</b> - Can shoot after moving",,,,,,,,3,#2b9800,#2b9800,#cc0000,#cc0000,#2b9800,#000000,#ffb317,#cf6c23,#000000,#ffffff,gremlins.png,1,8,12.00
 05_1_1,Warriors,Redspines Warriors,FALSE,Redspines,Warband,Warriors,5,1,2,,6,1,4,6,1,1,5,"<b>Vengence</b> - When this unit blocks in combat, it still takes 1 wound. The unit that attacked takes 1 wound as well.",,,1,1,1,1,1,1,#000000,#000000,#000000,#000000,#2b9800,#000000,#e78e7e,#cf0000,#000000,#ffffff,redspines.png,1,6,9.00
 05_1_2,Archers,Redspines Archers,FALSE,Redspines,Warband,Archers,6,1,2,,6,1,5,4,1,1,5,"<b>Vengence</b> - When this unit blocks in combat, it still takes 1 wound. The unit that attacked takes 1 wound as well.",,,,,,,,1,#000000,#000000,#000000,#cc0000,#000000,#000000,#e78e7e,#cf0000,#000000,#ffffff,redspines.png,1,6,9.00
 05_1_3,Beserks,Redspines Beserks,FALSE,Redspines,Warband,Fast Infantry,5,1,3,,6,d3,4,-,1,1,5,"<b>Vengence</b> - When this unit blocks in combat, it still takes 1 wound. The unit that attacked takes 1 wound as well.
@@ -345,61 +439,12 @@ L04_3_E,Broodmother,Silk Court Broodmother,TRUE,Silk Court,Leader,Monster Hero,,
 05_2C_1,,Redspines ,FALSE,Redspines,Battleboars,,,2,,,,1,,,,,,"<b>Vengence</b> - When this unit blocks in combat, it still takes 1 wound. The unit that attacked takes 1 wound as well.",,,,,,,,,,,,,,,#e78e7e,#cf0000,#000000,#ffffff,redspines.png,1,0,0.00
 05_2C_2,,Redspines ,FALSE,Redspines,Battleboars,,,2,,,,1,,,,,,"<b>Vengence</b> - When this unit blocks in combat, it still takes 1 wound. The unit that attacked takes 1 wound as well.",,,,,,,,,,,,,,,#e78e7e,#cf0000,#000000,#ffffff,redspines.png,1,0,0.00
 05_2C_3,,Redspines ,FALSE,Redspines,Battleboars,,,3,,,,1,,,,,,"<b>Vengence</b> - When this unit blocks in combat, it still takes 1 wound. The unit that attacked takes 1 wound as well.",,,,,,,,,,,,,,,#e78e7e,#cf0000,#000000,#ffffff,redspines.png,1,0,0.00
-06_1_1,Warriors,Gremlins Warriors,FALSE,Gremlins,Mechanics,Warriors,,1,2,,,1,,,,,,None,,,,,,,,,,,,,,,#ffef17,#949400,#000000,#ffffff,gremlins.png,1,0,0.00
-06_1_2,Gunners,Gremlins Gunners,FALSE,Gremlins,Mechanics,Archers,,1,2,,,1,,,,,,None,,,,,,,,,,,,,,,#ffef17,#949400,#000000,#ffffff,gremlins.png,1,0,0.00
-06_1_3,Sappers,Gremlins Sappers,FALSE,Gremlins,Mechanics,Unique,,1,2,,,1,,,,,,Entrench,,,,,,,,,,,,,,,#ffef17,#949400,#000000,#ffffff,gremlins.png,1,0,0.00
-06_1_4,Supplicants,Gremlins Supplicants,FALSE,Gremlins,Mechanics,Unique,,1,2,,,1,,,,,,Take wounds for constructs,,,,,,,,,,,,,,,#ffef17,#949400,#000000,#ffffff,gremlins.png,1,0,0.00
-06_1_5,Artificers,Gremlins Artificers,FALSE,Gremlins,Mechanics,,,1,3,,,1,,,,,,,,,,,,,,,,,,,,,#ffef17,#949400,#000000,#ffffff,gremlins.png,1,0,0.00
-06_1_6,Snipers,Gremlins Snipers,FALSE,Gremlins,Mechanics,Archers,,1,3,,,1,,,,,,Long Range,,,,,,,,,,,,,,,#ffef17,#949400,#000000,#ffffff,gremlins.png,1,0,0.00
-06_2A_1,Clay Golem,Gremlins Clay Golem,FALSE,Gremlins,Golems,Heavy Infantry,,2,,,3,1,,,,3,5,"<b>Construct</b> - Immune to fear checks while adjacent to a mechanic. Dies if it flees.
-
-<b>Regenerative Clay</b> - At the end of each player's turn, each model heals to full. This does not ressurect dead models.",,,,,3,,,,,,,,,,#ffef17,#949400,#000000,#ffffff,gremlins.png,1,9,13.50
-06_2A_2,Minetomatons,Gremlins Minetomatons,FALSE,Gremlins,Golems,,,2,,,3,1,4,-,3,2,5,"<b>Construct</b> - Immune to fear checks while adjacent to a mechanic. Dies if it flees.
-
-<b>Ambush</b> - Action: Remove this unit from the board. On your next turn, place it on an empty space along any board edge (facing away from the board edge) as its action for the turn
-
-<b>AP 1</b> - Reduce block rolls by 1.
-",,,,3,3,,,,,,,,,,#ffef17,#949400,#000000,#ffffff,gremlins.png,1,6,9.00
-06_2A_3,,Gremlins ,FALSE,Gremlins,Golems,,,2,,,3,1,,,,,,<b>Construct</b> - Immune to fear checks while adjacent to a mechanic. Dies if it flees.,,,,,,,,,,,,,,,#ffef17,#949400,#000000,#ffffff,gremlins.png,1,0,0.00
-06_2B_1,Juggernaut,Gremlins Juggernaut,FALSE,Gremlins,Colossus,,,2,,,,1,,,,,,"<b>Construct</b> - Immune to fear checks while adjacent to a mechanic. Dies if it flees.
-
-<b>Trample</b> - ",,,,,,,,,,,,,,,#ffef17,#949400,#000000,#ffffff,gremlins.png,1,0,0.00
-06_2B_2,,Gremlins ,FALSE,Gremlins,Colossus,,,2,,,,1,,,,,,<b>Construct</b> - Immune to fear checks while adjacent to a mechanic. Dies if it flees.,,,,,,,,,,,,,,,#ffef17,#949400,#000000,#ffffff,gremlins.png,1,0,0.00
-06_2B_3,Warcrane,Gremlins Warcrane,FALSE,Gremlins,Colossus,,,2,,,,1,,,,,,"<b>Construct</b> - Immune to fear checks while adjacent to a mechanic. Dies if it flees.
-
-<b>Lift and Shift</b> - Action: Rotate an adjacent unit 90 degrees around this unit. ",,,,,,,,,,,,,,,#ffef17,#949400,#000000,#ffffff,gremlins.png,1,0,0.00
-06_2C_1,Grand Bombard,Gremlins Grand Bombard,FALSE,Gremlins,Artillery,,,2,,,,1,,,,,,"<b>Construct</b> - Immune to fear checks while adjacent to a mechanic. Dies if it flees.
-<b>War Machine</b> - Dies if it flees. Can't move into combat.
-<b>Primed</b> - Starts with 2 powder tokens.
-<b>Reloading</b> - Place 2 powder tokens on this unit at the start of your turn.
-<b>Bombard</b> - Action: Uses all powder tokens as X. Pick a target square within X, roll a die and add X.
-8+ - Direct hit. 
-6-7 - Off by one towards your board edge.
-3-4 - Miss. 
-1-2 - Miss. Keep all powder tokens.
-Any unit in the hit square takes 3X attacks hitting on 3+ with AP X. Lose all powder tokens.
-",,,,,,,,,,,,,,,#ffef17,#949400,#000000,#ffffff,gremlins.png,1,0,0.00
-06_2C_2,Hookshot,Gremlins Hookshot,FALSE,Gremlins,Artillery,,,2,,,,1,,,,,,"<b>Construct</b> - Immune to fear checks while adjacent to a mechanic. Dies if it flees.
-
-<b>War Machine</b> - Dies if it flees. Can't move into combat.
-
-<b>Hookshot</b> - Ranged Weapon. Range 5. Fires 4 shots. If any shots hit (they can be blocked), move the target unit one square towards this unit. ",,,,,,,,,,,,,,,#ffef17,#949400,#000000,#ffffff,gremlins.png,1,0,0.00
-06_2C_3,Surpressor,Gremlins Surpressor,FALSE,Gremlins,Artillery,,,2,,,,1,,,,,,"<b>Construct</b> - Immune to fear checks while adjacent to a mechanic. Dies if it flees.
-
-<b>War Machine</b> - Dies if it flees. Can't move into combat.
-
-<b>Surpression Cannon</b> - Target a square in firing range 5. Each unit in that firing line at the start of your next turn takes 5 ranged attacks hitting on 3+ with AP3. May not target a firing line that includes a friendly unit, but will hit them if they move in before your turn ends.",,,,,,,,,,,,,,,#ffef17,#949400,#000000,#ffffff,gremlins.png,1,0,0.00
 L01_3_E,The Green Wolf,Gobbo The Green Wolf,FALSE,Gobbo,Leader,Cav Hero,,3,,,1,2,,,,,,,,,,,,,,,#000000,#000000,#000000,#000000,#000000,#000000,#00dd28,#00941A,#000000,#ffffff,gobbos.png,#REF!,0,0.00
-L05_3_A,,Redspines ,FALSE,Redspines,Leader,Mage Hero,,3,,,,1,,,,,,"<b>Vengence</b> - When this unit blocks in combat, it still takes 1 wound. The unit that attacked takes 1 wound as well.",,,,,,,,,,,,,,,#e78e7e,#cf0000,#000000,#ffffff,redspines.png,1,0,0.00
-L05_3_B,,Redspines ,FALSE,Redspines,Leader,Hybrid Mage Hero,,3,,,,1,,,,,,"<b>Vengence</b> - When this unit blocks in combat, it still takes 1 wound. The unit that attacked takes 1 wound as well.",,,,,,,,,,,,,,,#e78e7e,#cf0000,#000000,#ffffff,redspines.png,1,0,0.00
-L05_3_C,,Redspines ,FALSE,Redspines,Leader,,,3,,,,1,,,,,,"<b>Vengence</b> - When this unit blocks in combat, it still takes 1 wound. The unit that attacked takes 1 wound as well.",,,,,,,,,,,,,,,#e78e7e,#cf0000,#000000,#ffffff,redspines.png,1,0,0.00
-L05_3_D,,Redspines ,FALSE,Redspines,Leader,,,3,,,,1,,,,,,"<b>Vengence</b> - When this unit blocks in combat, it still takes 1 wound. The unit that attacked takes 1 wound as well.",,,,,,,,,,,,,,,#e78e7e,#cf0000,#000000,#ffffff,redspines.png,1,0,0.00
-L05_3_E,,Redspines ,FALSE,Redspines,Leader,,,3,,,,1,,,,,,"<b>Vengence</b> - When this unit blocks in combat, it still takes 1 wound. The unit that attacked takes 1 wound as well.",,,,,,,,,,,,,,,#e78e7e,#cf0000,#000000,#ffffff,redspines.png,1,0,0.00
-L06_3_A,,Gremlins ,FALSE,Gremlins,Leader,Support Hero,,3,,,,1,,,,,,,,,,,,,,,,,,,,,#ffef17,#949400,#000000,#ffffff,gremlins.png,1,0,0.00
-L06_3_B,,Gremlins ,FALSE,Gremlins,Leader,Monster Hero,,3,,,,1,,,,,,,,,,,,,,,,,,,,,#ffef17,#949400,#000000,#ffffff,gremlins.png,1,0,0.00
-L06_3_C,,Gremlins ,FALSE,Gremlins,Leader,Warrior Hero,,3,,,,1,,,,,,,,,,,,,,,,,,,,,#ffef17,#949400,#000000,#ffffff,gremlins.png,1,0,0.00
-L06_3_D,,Gremlins ,FALSE,Gremlins,Leader,Archer Hero,,3,,,,1,,,,,,,,,,,,,,,,,,,,,#ffef17,#949400,#000000,#ffffff,gremlins.png,1,0,0.00
-L06_3_E,,Gremlins ,FALSE,Gremlins,Leader,War Machine Hero,,3,,,,1,,,,,,,,,,,,,,,,,,,,,#ffef17,#949400,#000000,#ffffff,gremlins.png,1,0,0.00
+L05_3_A,,Redspines ,FALSE,Redspines,Leader,Mage Hero,,3,,,1,1,,,,,,"<b>Vengence</b> - When this unit blocks in combat, it still takes 1 wound. The unit that attacked takes 1 wound as well.",,,,,,,,,,,,,,,#e78e7e,#cf0000,#000000,#ffffff,redspines.png,1,0,0.00
+L05_3_B,,Redspines ,FALSE,Redspines,Leader,Hybrid Mage Hero,,3,,,1,1,,,,,,"<b>Vengence</b> - When this unit blocks in combat, it still takes 1 wound. The unit that attacked takes 1 wound as well.",,,,,,,,,,,,,,,#e78e7e,#cf0000,#000000,#ffffff,redspines.png,1,0,0.00
+L05_3_C,,Redspines ,FALSE,Redspines,Leader,,,3,,,1,1,,,,,,"<b>Vengence</b> - When this unit blocks in combat, it still takes 1 wound. The unit that attacked takes 1 wound as well.",,,,,,,,,,,,,,,#e78e7e,#cf0000,#000000,#ffffff,redspines.png,1,0,0.00
+L05_3_D,,Redspines ,FALSE,Redspines,Leader,,,3,,,1,1,,,,,,"<b>Vengence</b> - When this unit blocks in combat, it still takes 1 wound. The unit that attacked takes 1 wound as well.",,,,,,,,,,,,,,,#e78e7e,#cf0000,#000000,#ffffff,redspines.png,1,0,0.00
+L05_3_E,,Redspines ,FALSE,Redspines,Leader,,,3,,,1,1,,,,,,"<b>Vengence</b> - When this unit blocks in combat, it still takes 1 wound. The unit that attacked takes 1 wound as well.",,,,,,,,,,,,,,,#e78e7e,#cf0000,#000000,#ffffff,redspines.png,1,0,0.00
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,#N/A,#N/A,#N/A,#N/A,#N/A,0,0,0.00
 ,,Slime ,,Slime,,,,,,,,,,,,,,"<b>Unstable</b> - Instead of rolling to flee, lose 1 extra wound
 

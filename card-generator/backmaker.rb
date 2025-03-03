@@ -4,7 +4,7 @@ require 'squib'
 # Config
 
 FILE_NAME = 'Bannerbeasts Roller - Units.csv'
-MAX_CARD_COUNT = 60
+MAX_CARD_COUNT = 75
 
 MM_TOTAL_CARD_WIDTH = 125 
 MM_TOTAL_CARD_HEIGHT = 78
@@ -66,9 +66,6 @@ t2_range = data['Tier'].each_with_index.select{ |t, i| t == 2}.map {|t, i| i}.se
 
 factions = data['Faction Icon'].map {|t| t != nil && t != '.png' ? './assets/factions/' + t.to_s : ''}
 
-single_range = data['N1'].each_with_index.select{ |t, i| t == 1}.map {|t, i| i}.select{|i| i < MAX_CARD_COUNT}
-plural_range = data['N1'].each_with_index.select{ |t, i| t != 1}.map {|t, i| i}.select{|i| i < MAX_CARD_COUNT}
-
 Squib::Deck.new(cards: MAX_CARD_COUNT, width: FULL_CARD_WIDTH, height: FULL_CARD_HEIGHT) do
   background range: t1_range, color: data['L1 Colour']
   background range: t2_range, color: data['L2 Colour']
@@ -80,10 +77,8 @@ Squib::Deck.new(cards: MAX_CARD_COUNT, width: FULL_CARD_WIDTH, height: FULL_CARD
 
   text str: data['Faction'], range: t1_range, x: UNIT_TEXT_X, y: TITLE_BAR_Y, width: CENTRAL_W, height: TITLE_BAR_H / 3, align: 'center', valign: 'middle', font_size: FACTION_TEXT, font: 'Atkinson Hyperlegible Bold', color: data['L1 Text Colour']   
   text str: data['Faction'], range: t2_range, x: UNIT_TEXT_X, y: TITLE_BAR_Y, width: CENTRAL_W, height: TITLE_BAR_H / 3, align: 'center', valign: 'middle', font_size: FACTION_TEXT, font: 'Atkinson Hyperlegible Bold', color: data['L2 Text Colour']   
-  text str: data['Single Class'], range: t1_range & single_range, x: UNIT_TEXT_X, y: TITLE_BAR_Y, width: CENTRAL_W, height: TITLE_BAR_H, align: 'center', valign: 'middle', font_size: UNIT_TEXT, font: 'Atkinson Hyperlegible Bold', color: data['L1 Text Colour']   
-  text str: data['Single Class'], range: t2_range & single_range, x: UNIT_TEXT_X, y: TITLE_BAR_Y, width: CENTRAL_W, height: TITLE_BAR_H, align: 'center', valign: 'middle', font_size: UNIT_TEXT, font: 'Atkinson Hyperlegible Bold', color: data['L2 Text Colour']   
-  text str: data['Plural Class'], range: t1_range & plural_range, x: UNIT_TEXT_X, y: TITLE_BAR_Y, width: CENTRAL_W, height: TITLE_BAR_H, align: 'center', valign: 'middle', font_size: UNIT_TEXT, font: 'Atkinson Hyperlegible Bold', color: data['L1 Text Colour']
-  text str: data['Plural Class'], range: t2_range & plural_range, x: UNIT_TEXT_X, y: TITLE_BAR_Y, width: CENTRAL_W, height: TITLE_BAR_H, align: 'center', valign: 'middle', font_size: UNIT_TEXT, font: 'Atkinson Hyperlegible Bold', color: data['L2 Text Colour']
+  text str: data['Class'], range: t1_range, x: UNIT_TEXT_X, y: TITLE_BAR_Y, width: CENTRAL_W, height: TITLE_BAR_H, align: 'center', valign: 'middle', font_size: UNIT_TEXT, font: 'Atkinson Hyperlegible Bold', color: data['L1 Text Colour']   
+  text str: data['Class'], range: t2_range, x: UNIT_TEXT_X, y: TITLE_BAR_Y, width: CENTRAL_W, height: TITLE_BAR_H, align: 'center', valign: 'middle', font_size: UNIT_TEXT, font: 'Atkinson Hyperlegible Bold', color: data['L2 Text Colour']   
 
   png file: factions, x: FACTION_ICON_LEFT, y: FACTION_ICON_Y, width: FACTION_ICON_SIZE, height: FACTION_ICON_SIZE
   png file: factions, x: FACTION_ICON_RIGHT, y: FACTION_ICON_Y, width: FACTION_ICON_SIZE, height: FACTION_ICON_SIZE
@@ -94,10 +89,10 @@ Squib::Deck.new(cards: MAX_CARD_COUNT, width: FULL_CARD_WIDTH, height: FULL_CARD
   png file: './assets/white/count.png', range: t2_range, x: FIRST_STAT_BOX_X + ICON_X_PAD + ICON_MARGIN, y: CONTENT_BAR_Y + ICON_MARGIN, width: ICON_SIZE, height: ICON_SIZE
   png file: './assets/white/move.png', range: t2_range, x: SECOND_STAT_BOX_X + ICON_X_PAD + ICON_MARGIN, y: CONTENT_BAR_Y + ICON_MARGIN, width: ICON_SIZE, height: ICON_SIZE
   png file: './assets/white/block.png', range: t2_range, x: THIRD_STAT_BOX_X + ICON_X_PAD + ICON_MARGIN, y: CONTENT_BAR_Y + ICON_MARGIN, width: ICON_SIZE, height: ICON_SIZE
-  text str: data['N1'], range: t1_range, color: data['L1 Text Colour'], x: FIRST_STAT_BOX_X + ICON_X_PAD, y: CONTENT_BAR_Y + ICON_SPACER + ICON_MARGIN, width: ICON_SPACER, height: ICON_SIZE, align: 'center', valign: 'middle', font_size: STAT_TEXT, font: 'Atkinson Hyperlegible Bold'  
+  text str: data['Number'], range: t1_range, color: data['L1 Text Colour'], x: FIRST_STAT_BOX_X + ICON_X_PAD, y: CONTENT_BAR_Y + ICON_SPACER + ICON_MARGIN, width: ICON_SPACER, height: ICON_SIZE, align: 'center', valign: 'middle', font_size: STAT_TEXT, font: 'Atkinson Hyperlegible Bold'  
   text str: data['Min Speed'], range: t1_range, color: data['L1 Text Colour'], x: SECOND_STAT_BOX_X + ICON_X_PAD, y: CONTENT_BAR_Y + ICON_SPACER + ICON_MARGIN, width: ICON_SPACER, height: ICON_SIZE, align: 'center', valign: 'middle', font_size: STAT_TEXT, font: 'Atkinson Hyperlegible Bold'  
   text str: data['Base Block'], range: t1_range, color: data['L1 Text Colour'], x: THIRD_STAT_BOX_X + ICON_X_PAD, y: CONTENT_BAR_Y + ICON_SPACER + ICON_MARGIN, width: ICON_SPACER, height: ICON_SIZE, align: 'center', valign: 'middle', font_size: STAT_TEXT, font: 'Atkinson Hyperlegible Bold'  
-  text str: data['N1'], range: t2_range, color: data['L2 Text Colour'], x: FIRST_STAT_BOX_X + ICON_X_PAD, y: CONTENT_BAR_Y + ICON_SPACER + ICON_MARGIN, width: ICON_SPACER, height: ICON_SIZE, align: 'center', valign: 'middle', font_size: STAT_TEXT, font: 'Atkinson Hyperlegible Bold'  
+  text str: data['Number'], range: t2_range, color: data['L2 Text Colour'], x: FIRST_STAT_BOX_X + ICON_X_PAD, y: CONTENT_BAR_Y + ICON_SPACER + ICON_MARGIN, width: ICON_SPACER, height: ICON_SIZE, align: 'center', valign: 'middle', font_size: STAT_TEXT, font: 'Atkinson Hyperlegible Bold'  
   text str: data['Min Speed'], range: t2_range, color: data['L2 Text Colour'], x: SECOND_STAT_BOX_X + ICON_X_PAD, y: CONTENT_BAR_Y + ICON_SPACER + ICON_MARGIN, width: ICON_SPACER, height: ICON_SIZE, align: 'center', valign: 'middle', font_size: STAT_TEXT, font: 'Atkinson Hyperlegible Bold'    
   text str: data['Base Block'], range: t2_range, color: data['L2 Text Colour'], x: THIRD_STAT_BOX_X + ICON_X_PAD, y: CONTENT_BAR_Y + ICON_SPACER + ICON_MARGIN, width: ICON_SPACER, height: ICON_SIZE, align: 'center', valign: 'middle', font_size: STAT_TEXT, font: 'Atkinson Hyperlegible Bold'  
   
