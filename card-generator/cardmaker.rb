@@ -100,7 +100,7 @@ blocks = data['Block'].map {|t| t != nil && t != '-' ? t.to_s + '+' : '-'}
 spells = data['Spells'].map {|t| t != nil ? './assets/weapons/' + t.to_s + '/spell.png' : ''}
 spears = data['Spears'].map {|t| t != nil ? './assets/weapons/' + t.to_s + '/spear.png' : ''}
 axes = data['Axes'].map {|t| t != nil ? './assets/weapons/' + t.to_s + '/axe.png' : ''}
-clubs = data['Clubs'].map {|t| t != nil ? './assets/weapons/' + t.to_s + '/club.png' : ''}
+clubs = data['Clubs'].map {|t| t != nil ? './assets/weapons/' + t.to_s + '/blunt.png' : ''}
 offhand = data['Offhand'].map {|t| t != nil ? './assets/weapons/' + t.to_s + '/offhand.png' : ''}
 shields = data['Shields'].map {|t| t != nil ? './assets/weapons/' + t.to_s + '/shield.png' : ''}
 ranged = data['Ranged'].map {|t| t != nil ? './assets/weapons/' + t.to_s + '/ranged.png' : ''}
