@@ -2,7 +2,7 @@ Id,Partial_Id,Name,Tier,Class,Faction,Cost,Casting Value,Power,Image
 0-2-1-1,1,Spear,1,Spear,Any,1,,<b>Readied</b> - Strikes first when charged in the front,./assets/weapons/1/spear.png
 0-2-2-1,1,Pike,2,Spear,Any,2,,"<b>Readied</b> - Strikes first when charged in the front
 <b>Charge Defense</b> - When a unit moves into the square in front of this unit, this unit attacks them. They fight in combat as normal. This counts towards combat resolution.",./assets/weapons/2/spear.png
-0-2-3-1,1,Magic Lance,3,Spear,Any,1,,"<b>Impact Hits d3</b> - If you get a charge bonus, do d3 attacks per model hitting on 4+. These count towards who won combat.",./assets/weapons/3/spear.png
+0-2-3-1,1,Magic Lance,3,Spear,Any,1,,"<b>Impact Hits d3</b> - If you get a charge bonus, do d3 attacks hitting on 4+. These count towards who won combat.",./assets/weapons/3/spear.png
 0-3-1-1,1,Mace,1,Blunt,Any,1,,<b>AP 1</b> - Reduce block rolls by 1,./assets/weapons/1/blunt.png
 0-3-2-1,1,Sledgehammer,2,Blunt,Any,2,,<b>AP 2</b> - Reduce block rolls by 2.,./assets/weapons/2/blunt.png
 0-3-3-1,1,The Greatmaul,3,Blunt,Any,3,,"<b>Armourbane</b> - Gain +1 to hit against units with at least 5 block.
@@ -71,14 +71,11 @@ Id,Partial_Id,Name,Tier,Class,Faction,Cost,Casting Value,Power,Image
 03-1-1-1-1,1,Bone Knives,1,Ranged,Boneborn,0,,<b>Range 2</b> - Hits targets up to 2 squares away,./assets/weapons/1/ranged.png
 03-1-1-1-2,2,Bone Shortbow,1,Ranged,Boneborn,0,,<b>Range 3</b> - Hits targets up to 3 squares away,./assets/weapons/1/ranged.png
 03-1-8-2-1,1,Raise the Dead,2,Spell,Boneborn,1,4+,"<b>Spell</b> - Choose an undead unit in range 3 and heal 2 wounds. This can resurrect models. Limited to the starting number of units/wounds.
-
 <b>Cantrip</b> - This does not count towards the limit of how many spells per turn
-
 <b>Ranged Spell</b> - Can't be cast while in combat.",./assets/weapons/2/spell.png
 03-1-8-2-2,2,Banshee's Wail,2,Spell,Boneborn,2,4+,"<b>Spell</b> - All enemy models in combat with the caster roll a flee dice. Any models that fail, take 1 wound. Any units that take at least 1 wound must roll to flee.",./assets/weapons/2/spell.png
 03-1-8-2-3,3,Furious Dead,2,Spell,Boneborn,2,3+,<b>Spell</b> - Target a friendly unit within 3 that is not in combat. They can take a second move action this turn.,./assets/weapons/2/spell.png
 03-1-8-3-4,4,Terrorbolt,3,Spell,Boneborn,1,2+,"<b>Spell</b> - Target an enemy unit within 3 that is not in combat. It takes one attack hitting on 2+ with AP2. If the target takes a wound, it must roll to flee.
-
 <b>Ranged Spell</b> - Can't be cast while in combat.",./assets/weapons/3/spell.png
 03-1-8-3-5,5,Rattlebones,3,Spell,Boneborn,2,4+,"<b>Spell</b> - Target a friendly unit within 3. This turn it may reroll block rolls, and block rolls always succeed on a 5+.",./assets/weapons/3/spell.png
 03-1-8-3-6,6,Corpse Explosion,3,Spell,Boneborn,3,4+,"<b>Spell</b> - Target an enemy unit in combat. After all combats have been resolved this turn, the unit suffers a ranged hit for each model (friendly and enemy) that died in the combat, hitting on 4+.
@@ -93,25 +90,41 @@ Id,Partial_Id,Name,Tier,Class,Faction,Cost,Casting Value,Power,Image
 04-1-8-2-3,3,Fatespin,2,Spell,Silk Court,2,4+,<b>Spell</b> - Replace the next die you roll with a 6.,./assets/weapons/2/spell.png
 04-1-8-3-4,4,Shapeweave,3,Spell,Silk Court,3,5+,"<b>Spell</b> - Target a friendly unit within 3. Remove the unit from the board. At the start of your next turn, place them on any board edge. They may not take an action this turn, but can fight in combat.
 <b>Ranged Spell</b> - Can't be cast while in combat.",./assets/weapons/3/spell.png
-04-1-8-3-5,5,Silence,3,Spell,Silk Court,2,5+,"<b>Spell</b> - Target an enemy unit within 3. It loses all perks apart from racial perks until your next turn.
+04-1-8-3-5,5,Silence,3,Spell,Silk Court,2,5+,"<b>Spell</b> - Target an enemy unit within 3. It loses all perks (including weapon perks) until your next turn.
 <b>Ranged Spell</b> - Can't be cast while in combat.",./assets/weapons/3/spell.png
 04-1-8-3-6,6,Envelop,3,Spell,Silk Court,2,4+,"<b>Spell</b> - Target an enemy unit within 3. Until your next turn it may not take an action. It can still fight in combat.
 <b>Ranged Spell</b> - Can't be cast while in combat.",./assets/weapons/3/spell.png
+05-1-1-1-1,1,Throwing Axes,1,Ranged,Redspines,0,,"<b>Range 2</b> - Hits targets 2 squares away
+<b>Fire on the Move</b> - Can be used after moving",./assets/weapons/1/ranged.png
+05-1-1-1-2,2,Spare Throwing Axes,1,Ranged,Redspines,1,,"<b>Range 2</b> - Hits targets 2 squares away
+<b>Fire on the Move</b> - Can be used after moving",./assets/weapons/1/ranged.png
+05-1-1-2-1,1,Javellins,2,Ranged,Redspines,2,,"<b>Range 2</b> - Hits targets 2 squares away
+<b>Fire on the Move</b> - Can be used after moving
+<b>Friendly Fire</b> - Can fire into combat or at friendly units",./assets/weapons/2/ranged.png
+05-1-8-2-1,1,Quill Spray,2,Spell,Redspines,1,3+,<b>Spell</b> - Target an enemy unit in the flank or rear. It takes 4 attacks hitting on 3+. This can target a unit in combat.,./assets/weapons/2/spell.png
+05-1-8-2-2,2,Transfuse,2,Spell,Redspines,1,4+,"<b>Spell</b> - Target an enemy unit in the same combat. It takes 2 attacks hitting on 3+ and AP1. For each wound dealt, heal a friendly unit in range 2 by 1. This can ressurect models. May target the caster.
+<b>Combat Spell</b> - May only be cast while in combat.",./assets/weapons/2/spell.png
+05-1-8-2-3,3,Ironspines,2,Spell,Redspines,1,3+,"<b>Spell</b> - Target a friendly unit in range 2 with Vengence. Until your next turn, it gets +1 block and whenever it blocks, it doesn't take a wound. May target the caster.",./assets/weapons/2/spell.png
+05-1-8-3-4,4,Vengeful Spirits,3,Spell,Redspines,2,5+,"<b>Spell</b> - Target a friendly unit in range 2. Until your next turn, dead models in the unit roll to attack. If the unit is wiped out in combat, it can still make its attacks. Treat the unit as full strength for fear checks.",./assets/weapons/3/spell.png
+05-1-8-3-5,5,Battle Rage,3,Spell,Redspines,3,5+,"<b>Spell</b> - Gain 3 attacks, +1 to hit, AP1, and Multiwound 2 this turn.
+<b>Combat Spell</b> - May only be cast while in combat.",./assets/weapons/3/spell.png
+05-1-8-3-6,6,Farspike,3,Spell,Redspines,3,4+,"<b>Spell</b> - Until the start of your next turn, when a friendly unit blocks a ranged attack or a spell, the shooter/caster takes 2 wounds.",./assets/weapons/3/spell.png
 06-1-1-1-1,1,Musket,1,Ranged,Coppersand,0,,<b>Range 3</b> - Hits targets up to 3 squares away,./assets/weapons/1/ranged.png
 06-1-1-1-2,2,Extra Musket,1,Ranged,Coppersand,1,,<b>Range 3</b> - Hits targets up to 3 squares away,./assets/weapons/1/ranged.png
 06-1-1-1-3,3,Blunderbuss,1,Ranged,Coppersand,1,,"<b>Range 2</b> - Hits targets up to 2 squares away
 <b>Scattershot</b> - May hit a second target in an adjacent firing line",./assets/weapons/1/ranged.png
-06-1-1-1-4,4,Handcannon,1,Ranged,Coppersand,1,,"<b>Range 3</b> - Hits targets up to 3 squares away
-<b>AP 1</b> - Reduce block rolls by 1",./assets/weapons/1/ranged.png
-06-1-1-2-1,1,Horsegun,2,Ranged,Coppersand,2,,"<b>Range 3</b> - Hits targets up to 3 squares away
+06-1-1-2-1,1,Handcannon,2,Ranged,Coppersand,1,,"<b>Range 3</b> - Hits targets up to 3 squares away
+<b>AP 1</b> - Reduce block rolls by 1",./assets/weapons/2/ranged.png
+06-1-1-2-2,2,Horsegun,2,Ranged,Coppersand,2,,"<b>Range 3</b> - Hits targets up to 3 squares away
 <b>Cripple</b> - Targets that take 1 or more wounds may move a maximum of 1 square until your next turn.",./assets/weapons/2/ranged.png
-06-1-1-2-2,2,Mine,2,Ranged,Coppersand,2,,"<b>Sidearm</b> - Can be equipped alongside another ranged weapon
+06-1-1-2-3,3,Mine,2,Ranged,Coppersand,2,,"<b>Sidearm</b> - Can be equipped alongside another ranged weapon
 <b>Single Use</b> - Can only be used once
 <b>Mine</b> - Place a mine on any empty square in range 2. The first unit to enter that tile takes d6 attacks hitting on 2+ with AP2.",./assets/weapons/2/ranged.png
 06-1-1-3-1,1,Shieldbreaker,3,Ranged,Coppersand,3,,"<b>Range 3</b> - Hits targets up to 3 squares away
 <b>AP 1</b> - Reduce block rolls by 1
 <b>Shieldbreaker</b> - If a target equipped with a shield takes damage from this, destroy the shield.",./assets/weapons/3/ranged.png
-06-1-1-3-2,2,Thunderbolt,3,Ranged,Coppersand,3,,<b>Range 3</b> - Hits targets up to 3 squares away,./assets/weapons/3/ranged.png
+06-1-1-3-2,2,Thunderbolt,3,Ranged,Coppersand,3,,"<b>Range 3</b> - Hits targets up to 3 squares away
+<b>Foe Piercing</b> - May also attack a unit within range directly behind the target, hitting with a -1 penalty.",./assets/weapons/3/ranged.png
 06-1-1-3-3,3,Grapeshot,3,Ranged,Coppersand,3,,"<b>Range 2</b> - Hits targets up to 3 squares away
 <b>Scattershot</b> - May hit a target in each firing line",./assets/weapons/3/ranged.png
 06-1-2-1-1,1,Stakes,1,Spear,Coppersand,1,,"<b>Deployed</b> - Reveal this when an enemy unit moves in front of this unit. Each model in the unit is hit on a 5+. These wounds count to combat resolution.
@@ -119,10 +132,10 @@ Id,Partial_Id,Name,Tier,Class,Faction,Cost,Casting Value,Power,Image
 06-1-3-2-1,1,Rusting Hammer,2,Blunt,Coppersand,3,,"<b>AP 1</b> - Reduce block rolls by 4.
 <b>Armourbane</b> - Gain +1 to hit against units with at least 5 block.",./assets/weapons/2/blunt.png
 06-1-3-3-1,1,Diamondcracker,3,Blunt,Coppersand,3,,<b>AP 6</b> - Reduce block rolls by 6.,./assets/weapons/3/blunt.png
-06-1-4-3-1,1,Mechanical Axe,3,Axe,Coppersand,3,,<b>Multiwound 2</b> - Each hit does 2 wounds to a single model,./assets/weapons/3/axe.png
+06-1-4-3-1,1,Mechanical Axe,3,Axe,Coppersand,3,,<b>Multiwound d6</b> - Each hit does d6 wounds to a single model. Roll and apply these hits one at a time.,./assets/weapons/3/axe.png
 06-1-6-1-1,1,Pavise,1,Shield,Coppersand,1,,"<b>Ranged Block 2</b> - Improve the model's block by 2, unless in combat",./assets/weapons/1/shield.png
 06-1-6-3-2,2,Mobile Fortifications,3,Shield,Coppersand,3,,"<b>Block 3</b> - Improve the model's block by 3
-<b>Extremely Unwieldy</b> - Rolls to hit only succeed on a 6
+<b>Extremely Unwieldy</b> - This unit's rolls to hit in combat and at range only succeed on a 6.
 <b>Immobile</b> - If the unit moves while this is revealed, destroy this item.
 ",./assets/weapons/3/shield.png
 06-1-6-3-3,3,Aegis,3,Shield,Coppersand,3,,"<b>Block 1</b> - Improve the model's block by 1

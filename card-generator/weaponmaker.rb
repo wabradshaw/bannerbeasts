@@ -4,7 +4,7 @@ require 'squib'
 # Config
 
 FILE_NAME = 'Bannerbeasts Roller - Weapons.csv'
-MAX_CARD_COUNT = 144
+MAX_CARD_COUNT = 153
 
 MM_TOTAL_CARD_WIDTH = 88.8
 MM_TOTAL_CARD_HEIGHT = 63.5 
@@ -76,8 +76,8 @@ factions = ['Gobbo', 'Ratkin', 'Silk Court', 'Boneborn', 'Redspines', 'Coppersan
 faction_ids = {
   'Gobbo'      => '01',
   'Ratkin'     => '02',
-  'Silk Court' => '03',
-  'Boneborn'   => '04',
+  'Boneborn'   => '03',
+  'Silk Court' => '04',
   'Redspines'  => '05',
   'Coppersand' => '06'
 }
