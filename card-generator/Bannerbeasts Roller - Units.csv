@@ -18,7 +18,7 @@ Id,Name,Unit,Include,Faction,Class,Comparison Class,Base Block,Tier,Cost,Equips,
 <b>Chariot</b> - Can't sidestep",,,2,2,2,2,2,2,#2b9800,#000000,#2b9800,#000000,#000000,#000000,#00dd28,#00941A,#000000,#ffffff,gobbos.png,2,8,12.00,4,8,1.00,0.00,4.00,18,FALSE
 01_2A_2,Bangwagons,Gobbo Bangwagons,TRUE,Gobbo,Chariots,Unique,5,2,,,2,2,2,-,2d6,2,-,"<b>Explosive</b> - Dies after combat.
 
-<b>Powder Keg</b> - d6 attacks per model
+<b>Giant Powder Keg</b> - 2d6 attacks per model
 
 <b>AP 4</b> - Reduce block rolls by 4.
 
@@ -307,11 +307,11 @@ Place a web in the target square. Units that move into those spaces end their tu
 
 <b>AP 1</b> - Reduce block rolls by 1.
 ",,,,3,3,,,,#000000,#000000,#2b9800,#000000,#000000,#000000,#ffb317,#cf6c23,#000000,#ffffff,gremlins.png,1,6,9.00,3,9,1.00,0.00,4.50,15.75,FALSE
-06_2A_3,Bladestorms,Coppersand Bladestorms,TRUE,Coppersand,Golems,Attack Infantry,5,2,,2,3,1,5,-,2*,2,5,"<b>Construct</b> - Immune to fear checks while adjacent to a mechanic. Dies if it flees.
+06_2A_3,Bladestorms,Coppersand Bladestorms,TRUE,Coppersand,Golems,Attack Infantry,5,2,,2,3,1,5,-,2x2,2,5,"<b>Construct</b> - Immune to fear checks while adjacent to a mechanic. Dies if it flees.
 
 <b>Four Arms</b> - Wields two sets of weapons. This unit performs a round of attacks with one set of weapons, then a second round of attacks with a second set of weapons. 
 
-<b>Well Equipped 2</b> - Equip with 2 points of equipment while building the army list. Show these when revealing this as a possible unit or distraction.",,,2,2,2,2,,,#000000,#2b9800,#2b9800,#000000,#000000,#000000,#ffb317,#cf6c23,#000000,#ffffff,gremlins.png,1,6,9.00,4,12,1.00,0.00,4.00,15,FALSE
+<b>Well Equipped 2</b> - Equip with 2 points of equipment while building the army list. Show these when revealing this as a possible unit or distraction.",,,2,2,2,2,,,#000000,#000000,#3467FF,#cc0000,#000000,#000000,#ffb317,#cf6c23,#000000,#ffffff,gremlins.png,1,6,9.00,4,12,1.00,0.00,4.00,15,FALSE
 06_2B_1,Juggernaut,Coppersand Juggernaut,TRUE,Coppersand,Colossus,Monster,5,2,,,1,2,3,-,5,5,4,"<b>Construct</b> - Immune to fear checks while adjacent to a mechanic. Dies if it flees.
 
 <b>Trample</b> - Action: Move forward 1. If there is a model in that space, it attempts to move backwards 1 unless it is blocked. Roll an attack against each model in the unit, hitting on 6+ or 4+ if the unit was blocked. These do not count for combat resolution. Can be used to move out of combat.",,,2,2,2,2,,,#2b9800,#000000,#2b9800,#2b9800,#000000,#2b9800,#ffb317,#cf6c23,#000000,#ffffff,gremlins.png,1,5,10.00,5,5,1.00,0.00,3.33,15,FALSE
@@ -368,7 +368,7 @@ L01_3_D,Funguspeddler,Gobbo Funguspeddler,TRUE,Gobbo,Leader,Warrior Hero,,3,,3,1
 L01_3_E,The Green Wolf,Gobbo The Green Wolf,TRUE,Gobbo,Leader,Cav Hero,,3,,3,1,2,3,4,5,6,5,"<b>Impact Hits 2</b> - If you get a charge bonus, do 2 attacks  hitting on 4+. These count towards who won combat.
 
 <b>Retreat</b> - After combat, instead of rotating, you may move back 2 spaces. Do not change facing. If this moves the unit off the board, it is lost.",,,3,3,3,3,3,3,#2b9800,#000000,#000000,#2b9800,#2b9800,#000000,#00dd28,#00941A,#000000,#ffffff,gobbos.png,1,6,9.00,5,5,1.00,0.00,3.33,14,FALSE
-L02_3_A,The Ratking,Ratkin The Ratking,TRUE,Ratkin,Leader,Unique Hero,,3,,2,1,1,4,-,9,3,5,"<b>Ring of Rats</b> - When the Ratking dies, each friendly ratkin unit heals by d6. ",,,,,,,,,#000000,#cc0000,#2b9800,#000000,#000000,#000000,#ffb380,#733d00,#000000,#ffffff,rats.png,#REF!,3,4.50,9,9,1.00,0.00,4.50,11.25,FALSE
+L02_3_A,The Ratking,Ratkin The Ratking,TRUE,Ratkin,Leader,Unique Hero,,3,,2,1,1,4,-,9,3,5,"<b>Ring of Rats</b> - When the Ratking dies, each friendly ratkin unit heals by d6. ",,,,,,,,,#000000,#cc0000,#2b9800,#000000,#000000,#000000,#ffb380,#733d00,#000000,#ffffff,rats.png,1,3,4.50,9,9,1.00,0.00,4.50,11.25,FALSE
 L02_3_B,The Cabal,Ratkin The Cabal,TRUE,Ratkin,Leader,Mage Hero,,3,,4,3,1,5,-,2,2,5,"<b>Tricksie Wizards</b> - Each Cabal member can cast a spell a turn.
 
 <b>Miscasts</b> - Takes 1 damage whenever it rolls a 1 to cast a spell.
@@ -482,7 +482,7 @@ L06_3_A,Master Sapper,Coppersand Master Sapper,TRUE,Coppersand,Leader,Support He
 <b>Landbreaker</b> - Free Action: Once per game, place an obstacle in range 2 that blocks movement and shooting. 
 <b>Multishot 2</b> - Ranged attacks roll 2 dice.
 <b>Fire on the Move</b> - Can shoot after moving",,,3,3,3,3,3,3,#2b9800,#000000,#000000,#000000,#2b9800,#000000,#ffb317,#cf6c23,#000000,#ffffff,gremlins.png,1,6,9.00,4,4,1.00,0.00,2.00,12,FALSE
-L06_3_B,Gatebreaker,Coppersand Gatebreaker,TRUE,Coppersand,Leader,Monster Hero,,3,,4,1,2,3,-,3*,6,5,"<b>Construct</b> - Immune to fear checks while adjacent to a mechanic. Dies if it flees.
+L06_3_B,Gatebreaker,Coppersand Gatebreaker,TRUE,Coppersand,Leader,Monster Hero,,3,,4,1,2,3,-,2x3,6,5,"<b>Construct</b> - Immune to fear checks while adjacent to a mechanic. Dies if it flees.
 
 <b>Four Arms</b> - Wields two sets of weapons. This unit performs a round of attacks with one set of weapons, then a second round of attacks with a second set of weapons. ",,,3,3,3,3,3,,#2b9800,#000000,#2b9800,#2b9800,#000000,#000000,#ffb317,#cf6c23,#000000,#ffffff,gremlins.png,1,6,9.00,6,6,1.00,0.00,4.00,15,FALSE
 L06_3_C,The Warforger,Coppersand The Warforger,TRUE,Coppersand,Leader,Warrior Hero,,3,,5,1,1,4,4,4,5,4,"<b>Mechanics</b> - At the start of your turn, heal 1 wound on an adjacent construct.
@@ -508,6 +508,14 @@ L06_3_E,The Zeppelin,Coppersand The Zeppelin,TRUE,Coppersand,Leader,War Machine 
 <b>Multishot 2</b> - Ranged attacks roll 2 dice.
 <b>Fire on the Move</b> - Can shoot after moving
 <b>Firing platform</b> - This unit can shoot from the front, flank or rear.",,,,,,,,3,#2b9800,#3467FF,#cc0000,#cc0000,#2b9800,#000000,#ffb317,#cf6c23,#000000,#ffffff,gremlins.png,2,8,12.00,3,3,1.00,0.00,1.00,13.5,TRUE
+,Ratbeasts,Disciples Ratbeasts,,Disciples,Mongrels,Chaff,,1,1,,3,1,6,-,3,2,-,Unprotected,,,,,,,,,,,,,,,#5c9667,#004621,#000000,#ffffff,.png,1,6,6.00,3,9,1.00,0.00,1.50,8.25,FALSE
+,Warriors,Disciples Warriors,,Disciples,Mongrels,Warriors,,1,2,,3,1,4,6,2,2,5,<b>Multishot 2</b> - Ranged attacks roll 2 dice.,,,,,,,,,,,,,,,#5c9667,#004621,#000000,#ffffff,.png,1,6,9.00,2,6,1.00,0.00,3.00,13.5,FALSE
+,Spiderbeasts,Disciples Spiderbeasts,,Disciples,Mongrels,Archers,,1,3,,3,1,4,,2,2,5,"<b>Poison</b> - 6s to hit can't be saved
+<b>Multishot 2</b> - Ranged attacks roll 2 dice.",,,,,,,,,,,,,,,#5c9667,#004621,#000000,#ffffff,.png,1,6,9.00,2,6,1.11,0.00,3.33,14,FALSE
+,Quillbeasts,Disciples Quillbeasts,,Disciples,Mongrels,Infantry,,1,2,,3,1,4,,2,2,5,"<b>Vengence</b> - When this unit blocks in combat, it still takes 1 wound. The unit that attacked takes 1 wound as well.",,,,,,,,,,,,,,,#5c9667,#004621,#000000,#ffffff,.png,1,6,6.00,2,6,1.00,0.67,3.67,11.5,FALSE
+,Scalebeasts,Disciples Scalebeasts,,Disciples,Mongrels,Heavy Infantry,,1,2,,3,1,5,,2,2,4,,,,,,,,,,,,,,,,#5c9667,#004621,#000000,#ffffff,.png,1,6,12.00,2,6,1.00,0.00,2.00,15,FALSE
+,Skybeasts,Disciples Skybeasts,,Disciples,Mongrels,Warriors,,1,3,,3,2,4,,2,2,5,Flap,,,,,,,,,,,,,,,#5c9667,#004621,#000000,#ffffff,.png,2,6,9.00,2,6,1.00,0.00,3.00,13.5,FALSE
+,Cyclops,Disciples Cyclops,,Disciples,Behemoth,,5,2,,,1,1,3,3,4,5,5,"<b>Rock Lobber</b> - Ranged Weapon - Range 4, AP -2, Multiwound 3. ",,,,,,,,,,,,,,,#5c9667,#004621,#000000,#ffffff,.png,1,5,7.50,4,4,1.00,0.00,2.67,11.5,FALSE
 ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,#N/A,#N/A,#N/A,#N/A,#N/A,0,0,0.00,,0,1.00,0.00,0.00,0,FALSE
 ,,Slimes ,,Slimes,,,,,,,,,,,,,,"<b>Unstable</b> - Instead of rolling to flee, lose 1 extra wound
 
@@ -515,25 +523,17 @@ L06_3_E,The Zeppelin,Coppersand The Zeppelin,TRUE,Coppersand,Leader,War Machine 
 
 <b>Slow</b> - Don't roll a bonus charge dice ",,,,,,,,,#000000,#000000,#000000,#000000,#000000,#000000,#00ffff,#ff00ee,#000000,#ffffff,slimes.png,0,0,0.00,,0,1.00,0.00,0.00,0,FALSE
 ,Deserters,Castaways Deserters,,Castaways,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,#000000,#ffffff,.png,0,0,0.00,,0,1.00,0.00,0.00,0,FALSE
-,Warriors,Disciples Warriors,,Disciples,Mongrels,Warriors,,1,2,,3,1,4,6,2,2,5,<b>Multishot 2</b> - Ranged attacks roll 2 dice.,,,,,,,,,,,,,,,#5c9667,#004621,#000000,#ffffff,.png,1,6,9.00,2,6,1.00,0.00,3.00,13.5,FALSE
-,Ratbeasts,Disciples Ratbeasts,,Disciples,Mongrels,Chaff,,1,1,,3,1,6,-,3,2,-,Unprotected,,,,,,,,,,,,,,,#5c9667,#004621,#000000,#ffffff,.png,#N/A,6,6.00,3,9,1.00,0.00,1.50,8.25,FALSE
-,Spiderbeasts,Disciples Spiderbeasts,,Disciples,Mongrels,Archers,,1,3,,3,1,4,,2,2,5,"<b>Poison</b> - 6s to hit can't be saved
-<b>Multishot 2</b> - Ranged attacks roll 2 dice.",,,,,,,,,,,,,,,#5c9667,#004621,#000000,#ffffff,.png,#N/A,6,9.00,2,6,1.11,0.00,3.33,14,FALSE
-,Quillbeasts,Disciples Quillbeasts,,Disciples,Mongrels,Infantry,,1,2,,3,1,4,,2,2,5,"<b>Vengence</b> - When this unit blocks in combat, it still takes 1 wound. The unit that attacked takes 1 wound as well.",,,,,,,,,,,,,,,#5c9667,#004621,#000000,#ffffff,.png,#N/A,6,6.00,2,6,1.00,0.67,3.67,11.5,FALSE
-,Scalebeasts,Disciples Scalebeasts,,Disciples,Mongrels,Heavy Infantry,,1,2,,3,1,5,,2,2,4,,,,,,,,,,,,,,,,#5c9667,#004621,#000000,#ffffff,.png,#N/A,6,12.00,2,6,1.00,0.00,2.00,15,FALSE
-,Skybeasts,Disciples Skybeasts,,Disciples,Mongrels,Warriors,,1,3,,3,2,4,,2,2,5,Flap,,,,,,,,,,,,,,,#5c9667,#004621,#000000,#ffffff,.png,#N/A,6,9.00,2,6,1.00,0.00,3.00,13.5,FALSE
 ,,Disciples ,,Disciples,Amalgam,,,2,,,,,,,,,,Virulent,,,,,,,,,,,,,,,#5c9667,#004621,#000000,#ffffff,.png,0,0,0.00,,0,1.00,0.00,0.00,0,FALSE
-,,Disciples ,,Disciples,Amalgam,,,2,,,,,,,,,,,,,,,,,,,,,,,,,#5c9667,#004621,#000000,#ffffff,.png,#N/A,0,0.00,,0,1.00,0.00,0.00,0,FALSE
+,,Disciples ,,Disciples,Amalgam,,,2,,,,,,,,,,,,,,,,,,,,,,,,,#5c9667,#004621,#000000,#ffffff,.png,0,0,0.00,,0,1.00,0.00,0.00,0,FALSE
 ,,Disciples ,,Disciples,Amalgam,,,2,,,,,,,,,,"
 
-<b>Maneouverable</b> - May turn once at any point during a move or hustle.",,,,,,,,,,,,,,,#5c9667,#004621,#000000,#ffffff,.png,#N/A,0,0.00,,0,1.00,0.00,0.00,0,FALSE
-,Cyclops,Disciples Cyclops,,Disciples,Behemoth,,5,2,,,1,1,3,3,4,5,5,"<b>Rock Lobber</b> - Ranged Weapon - Range 4, AP -2, Multiwound 3. ",,,,,,,,,,,,,,,#5c9667,#004621,#000000,#ffffff,.png,1,5,7.50,4,4,1.00,0.00,2.67,11.5,FALSE
+<b>Maneouverable</b> - May turn once at any point during a move or hustle.",,,,,,,,,,,,,,,#5c9667,#004621,#000000,#ffffff,.png,0,0,0.00,,0,1.00,0.00,0.00,0,FALSE
 ,,Disciples ,,Disciples,Behemoth,,,2,,,,,,,,,,"
 
-<b>Maneouverable</b> - May turn once at any point during a move or hustle.",,,,,,,,,,,,,,,#5c9667,#004621,#000000,#ffffff,.png,#N/A,0,0.00,,0,1.00,0.00,0.00,0,FALSE
-,,Disciples ,,Disciples,Behemoth,,,2,,,,,,,,,,,,,,,,,,,,,,,,,#5c9667,#004621,#000000,#ffffff,.png,#N/A,0,0.00,,0,1.00,0.00,0.00,0,FALSE
+<b>Maneouverable</b> - May turn once at any point during a move or hustle.",,,,,,,,,,,,,,,#5c9667,#004621,#000000,#ffffff,.png,0,0,0.00,,0,1.00,0.00,0.00,0,FALSE
+,,Disciples ,,Disciples,Behemoth,,,2,,,,,,,,,,,,,,,,,,,,,,,,,#5c9667,#004621,#000000,#ffffff,.png,0,0,0.00,,0,1.00,0.00,0.00,0,FALSE
 ,,Disciples ,,Disciples,Grafter,,,2,,,,,,,,,,,2,,,,,,,,,,,,,,#5c9667,#004621,#000000,#ffffff,.png,0,0,0.00,,0,1.00,0.00,0.00,0,FALSE
-,,Disciples ,,Disciples,Grafter,,,2,,,,,,,,,,,2,,,,,,,,,,,,,,#5c9667,#004621,#000000,#ffffff,.png,#N/A,0,0.00,,0,1.00,0.00,0.00,0,FALSE
-,,Disciples ,,Disciples,Grafter,,,2,,,,,,,,,,,2,,,,,,,,,,,,,,#5c9667,#004621,#000000,#ffffff,.png,#N/A,0,0.00,,0,1.00,0.00,0.00,0,FALSE
+,,Disciples ,,Disciples,Grafter,,,2,,,,,,,,,,,2,,,,,,,,,,,,,,#5c9667,#004621,#000000,#ffffff,.png,0,0,0.00,,0,1.00,0.00,0.00,0,FALSE
+,,Disciples ,,Disciples,Grafter,,,2,,,,,,,,,,,2,,,,,,,,,,,,,,#5c9667,#004621,#000000,#ffffff,.png,0,0,0.00,,0,1.00,0.00,0.00,0,FALSE
 ,,Disciples ,,Disciples,,,,,,,,,,,,,,,,,,,,,,,,,,,,,#5c9667,#004621,#000000,#ffffff,.png,0,0,0.00,,0,1.00,0.00,0.00,0,FALSE
 ,,Disciples ,,Disciples,,,,,,,,,,,,,,,,,,,,,,,,,,,,,#5c9667,#004621,#000000,#ffffff,.png,0,0,0.00,,0,1.00,0.00,0.00,0,FALSE

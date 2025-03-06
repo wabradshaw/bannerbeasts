@@ -27,6 +27,7 @@ FACTION_TEXT = 11 * SCALE
 UNIT_TEXT = 18 * SCALE
 TYPE_TEXT = 16 * SCALE
 BAR_TEXT = 12 * SCALE
+SMALL_BAR_TEXT = 9 * SCALE
 POWERS_TEXT = 10 * SCALE
 WEAPON_TEXT = 8 * SCALE
 
@@ -93,6 +94,9 @@ equip_range = data['Equips'].each_with_index.select{ |t, i| t != nil}.map {|t, i
 factions = data['Faction Icon'].map {|t| t != nil && t != '.png' ? './assets/factions/' + t.to_s : ''}
 summaries = data['Faction'].zip(data['Class']).map { |a| a.join(' - ') }
 
+simple_attacks_range = data['Attacks'].each_with_index.select{ |t, i| t.to_s.length <= 2}.map {|t, i| i}.select{|i| i < MAX_CARD_COUNT}
+complex_attacks_range = data['Attacks'].each_with_index.select{ |t, i| t.to_s.length > 2}.map {|t, i| i}.select{|i| i < MAX_CARD_COUNT}
+
 melees = data['Melee Hit'].map {|t| t != nil && t != '-' ? t.to_s + '+' : '-'}
 ranges = data['Ranged Hit'].map {|t| t != nil && t != '-' ? t.to_s + '+' : '-'}
 blocks = data['Block'].map {|t| t != nil && t != '-' ? t.to_s + '+' : '-'}
@@ -142,7 +146,8 @@ Squib::Deck.new(cards: MAX_CARD_COUNT, width: FULL_CARD_WIDTH, height: FULL_CARD
 
   text str: data['Movement'], color: data['Move Colour'], x: ICON_X_PAD + ICON_SIZE, y: ICON_Y_PAD + (1 * BAR_BOX_H), width: ICON_SIZE, height: ICON_SIZE, align: 'center', valign: 'middle', font_size: BAR_TEXT, font: 'Atkinson Hyperlegible Bold'  
   text str: data['HP'], color: data['HP Colour'], x: ICON_X_PAD + ICON_SIZE, y: ICON_Y_PAD + (2 * BAR_BOX_H), width: ICON_SIZE, height: ICON_SIZE, align: 'center', valign: 'middle', font_size: BAR_TEXT, font: 'Atkinson Hyperlegible Bold'  
-  text str: data['Attacks'], color: data['Attacks Colour'], x: ICON_X_PAD + ICON_SIZE, y: ICON_Y_PAD + (3 * BAR_BOX_H), width: ICON_SIZE, height: ICON_SIZE, align: 'center', valign: 'middle', font_size: BAR_TEXT, font: 'Atkinson Hyperlegible Bold'  
+  text str: data['Attacks'], range: simple_attacks_range, color: data['Attacks Colour'], x: ICON_X_PAD + ICON_SIZE, y: ICON_Y_PAD + (3 * BAR_BOX_H), width: ICON_SIZE, height: ICON_SIZE, align: 'center', valign: 'middle', font_size: BAR_TEXT, font: 'Atkinson Hyperlegible Bold'  
+  text str: data['Attacks'], range: complex_attacks_range, color: data['Attacks Colour'], x: ICON_X_PAD + ICON_SIZE, y: ICON_Y_PAD + (3 * BAR_BOX_H), width: ICON_SIZE, height: ICON_SIZE, align: 'center', valign: 'middle', font_size: SMALL_BAR_TEXT, font: 'Atkinson Hyperlegible Bold'  
   text str: melees, color: data['Melee Colour'], x: ICON_X_PAD + ICON_SIZE, y: ICON_Y_PAD + (4 * BAR_BOX_H), width: ICON_SIZE, height: ICON_SIZE, align: 'center', valign: 'middle', font_size: BAR_TEXT, font: 'Atkinson Hyperlegible Bold'  
   text str: ranges, color: data['Ranged Colour'], x: ICON_X_PAD + ICON_SIZE, y: ICON_Y_PAD + (5 * BAR_BOX_H), width: ICON_SIZE, height: ICON_SIZE, align: 'center', valign: 'middle', font_size: BAR_TEXT, font: 'Atkinson Hyperlegible Bold'  
   text str: blocks, color: data['Block Colour'], x: ICON_X_PAD + ICON_SIZE, y: ICON_Y_PAD + (6 * BAR_BOX_H), width: ICON_SIZE, height: ICON_SIZE, align: 'center', valign: 'middle', font_size: BAR_TEXT, font: 'Atkinson Hyperlegible Bold'    
