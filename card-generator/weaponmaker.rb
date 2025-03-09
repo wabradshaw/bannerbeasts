@@ -4,7 +4,7 @@ require 'squib'
 # Config
 
 FILE_NAME = 'Bannerbeasts Roller - Weapons.csv'
-MAX_CARD_COUNT = 153
+MAX_CARD_COUNT = 178
 
 MM_TOTAL_CARD_WIDTH = 88.8
 MM_TOTAL_CARD_HEIGHT = 63.5 
@@ -70,7 +70,7 @@ puts "Start";
 
 data = Squib.csv file: FILE_NAME
 
-factions = ['Gobbo', 'Ratkin', 'Silk Court', 'Boneborn', 'Redspines', 'Coppersand']
+factions = ['Gobbo', 'Ratkin', 'Silk Court', 'Boneborn', 'Redspines', 'Coppersand', 'Scaled Empire']
 
 # Map each faction to its respective id prefix
 faction_ids = {
@@ -79,7 +79,8 @@ faction_ids = {
   'Boneborn'   => '03',
   'Silk Court' => '04',
   'Redspines'  => '05',
-  'Coppersand' => '06'
+  'Coppersand' => '06',
+  'Scaled Empire' => '07'
 }
 
 # Initialize a new hash of arrays for expanded data

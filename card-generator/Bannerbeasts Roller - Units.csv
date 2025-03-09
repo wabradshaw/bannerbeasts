@@ -35,7 +35,7 @@ Id,Name,Unit,Include,Faction,Class,Comparison Class,Base Block,Tier,Cost,Equips,
 
 <b>Chariot</b> - Can't sidestep",,,2,2,2,2,2,2,#2b9800,#000000,#000000,#cc0000,#2b9800,#000000,#00dd28,#00941A,#000000,#ffffff,gobbos.png,2,8,12.00,2,4,1.00,0.00,1.33,14,FALSE
 01_2B_1,Starchucker,Gobbo Starchucker,TRUE,Gobbo,Hurtbox,War Machine,6,2,,,1,1,6,3,2,3,6,"<b>War Machine</b> - Dies if it flees. Can't move into combat.
-<b>Razorstar</b> - Ranged weapon. Range d6+1. The first unit in that range gets one attack that hits on 3+, AP -3, and does 3 wounds. If it hits, the next unit takes a 4+, AP -2, 2 wound attack. If that hits, the third unit takes a 5+, AP -1, 1 wound attack. This shot can't pass through terrain.
+<b>Razorstar</b> - Ranged weapon. Range d6+1. The first unit in that range gets one attack that hits on 3+, AP -3. If it hits, the next unit takes a 4+, AP -2. If that hits, the third unit takes a 5+, AP -1. Each hit does d6 wounds to a single model. This shot can't pass through terrain.
 <b>Friendly Fire</b> - Can shoot into combat and into friendly units.",,,,,,,,,#000000,#000000,#000000,#000000,#3467FF,#000000,#00dd28,#00941A,#000000,#ffffff,gobbos.png,1,3,3.60,2,2,1.00,0.00,0.33,4.1,TRUE
 01_2B_2,Boombox,Gobbo Boombox,TRUE,Gobbo,Hurtbox,War Machine,6,2,,,1,1,6,-,2,3,6,"<small><b>War Machine</b> - Dies if it flees. Can't move into combat.
 <b>The Big Guns</b> - Pick a target square within 6 and roll a die.
@@ -261,7 +261,7 @@ Place a web in the target square. Units that move into those spaces end their tu
 
 <b>Uncanny Protection</b> - Block may not be reduced beneath 5.
 
-<b>Protective Markings</b> - When this unit blocks due to Vengence, it does not take a wound.",,,2,2,2,,,,#2b9800,#000000,#000000,#000000,#000000,#000000,#e78e7e,#cf0000,#000000,#ffffff,redspines.png,2,6,6.00,2,6,1.00,0.67,3.67,11.5,FALSE
+<b>Protective Markings</b> - When this unit blocks due to Vengence, it does not take a wound.",,,2,2,2,,,,#2b9800,#000000,#000000,#000000,#000000,#000000,#e78e7e,#cf0000,#000000,#ffffff,redspines.png,2,6,9.00,2,6,1.00,0.67,3.67,14.5,FALSE
 05_2B_3,Screamers,Redspines Screamers,TRUE,Redspines,Boar Riders,Light Cavalry,6,2,,,3,2,4,-,3,2,6,"<b>Vengence</b> - When this unit blocks in combat, it still takes 1 wound. The unit that attacked takes 1 wound as well.
 
 <b>Bloodlust</b> - While this unit has one or more wounds, each model has an extra attack.
@@ -279,7 +279,7 @@ Place a web in the target square. Units that move into those spaces end their tu
 
 <b>Bloodspells</b> - While this unit is wounded, gain +1 to casting.
 
-<b>Prepared</b> - Equip this unit with one free uncommon spell.",2,,,,,1,,,#000000,#2b9800,#000000,#000000,#000000,#2b9800,#e78e7e,#cf0000,#000000,#ffffff,redspines.png,1,9,9.00,2,6,1.00,1.00,4.00,15,TRUE
+<b>Prepared Spell</b> - Equip this unit with one free uncommon spell.",2,,,,,1,,,#000000,#2b9800,#000000,#000000,#000000,#2b9800,#e78e7e,#cf0000,#000000,#ffffff,redspines.png,1,9,9.00,2,6,1.00,1.00,4.00,15,TRUE
 06_1_1,Warriors,Coppersand Warriors,TRUE,Coppersand,Mechanics,Warriors,6,1,2,,5,1,4,6,1,1,5,"<b>Mechanics</b> - At the start of your turn, heal 1 wound on an adjacent construct.",,,1,1,1,1,1,1,#000000,#000000,#000000,#000000,#000000,#000000,#ffb317,#cf6c23,#000000,#ffffff,gremlins.png,1,5,7.50,1,5,1.00,0.00,2.50,11.25,FALSE
 06_1_2,Gunners,Coppersand Gunners,TRUE,Coppersand,Mechanics,Archers,6,1,2,,5,1,5,4,1,1,6,"<b>Mechanics</b> - At the start of your turn, heal 1 wound on an adjacent construct.",,,1,1,1,1,1,1,#000000,#000000,#000000,#cc0000,#2b9800,#cc0000,#ffb317,#cf6c23,#000000,#ffffff,gremlins.png,1,5,6.00,1,5,1.00,0.00,1.67,8.5,FALSE
 06_1_3,Sappers,Coppersand Sappers,TRUE,Coppersand,Mechanics,Unique,6,1,2,,5,1,6,5,1,1,6,"<b>Mechanics</b> - At the start of your turn, heal 1 wound on an adjacent construct.
@@ -290,9 +290,9 @@ Place a web in the target square. Units that move into those spaces end their tu
 <b>Meatshields</b> - When an adjacent friendly construct is attacked, before rolling to block, you may redirect all of the attacks to this unit. Any wounds taken count towards combat resolution.
 
 <b>Unprotected</b> - Reveal this unit when an attack hits it, rather than using the default block. ",,,1,,,,1,,#000000,#000000,#000000,#cc0000,#000000,#cc0000,#ffb317,#cf6c23,#000000,#ffffff,gremlins.png,1,5,5.00,1,5,1.00,0.00,1.67,7.5,FALSE
-06_1_5,Artificers,Coppersand Artificers,TRUE,Coppersand,Mechanics,Infantry,6,1,3,2,5,1,4,5,1,1,5,"<b>Mechanics</b> - At the start of your turn, heal 1 wound on an adjacent construct
+06_1_5,Artificers,Coppersand Artificers,TRUE,Coppersand,Mechanics,Infantry,6,1,3,,5,1,4,5,1,1,5,"<b>Mechanics</b> - At the start of your turn, heal 1 wound on an adjacent construct
 
-<b>Well Equipped 2</b> - Equip with 2 points of equipment while building the army list. Show these when revealing this as a possible unit or distraction.
+<b>Prepared Equipment</b> - Equip this unit with one piece of free uncommon equipment, or two pieces of common equipment.
 
 <b>Equippable</b> - Able to equip uncommon equipment",,,2,2,2,2,2,2,#000000,#000000,#000000,#000000,#2b9800,#000000,#ffb317,#cf6c23,#000000,#ffffff,gremlins.png,1,5,7.50,1,5,1.00,0.00,2.50,11.25,FALSE
 06_1_6,Snipers,Coppersand Snipers,TRUE,Coppersand,Mechanics,Archers,6,1,3,,5,1,5,4,1,1,5,"<b>Mechanics</b> - At the start of your turn, heal 1 wound on an adjacent construct.
@@ -307,18 +307,18 @@ Place a web in the target square. Units that move into those spaces end their tu
 
 <b>AP 1</b> - Reduce block rolls by 1.
 ",,,,3,3,,,,#000000,#000000,#2b9800,#000000,#000000,#000000,#ffb317,#cf6c23,#000000,#ffffff,gremlins.png,1,6,9.00,3,9,1.00,0.00,4.50,15.75,FALSE
-06_2A_3,Bladestorms,Coppersand Bladestorms,TRUE,Coppersand,Golems,Attack Infantry,5,2,,2,3,1,5,-,2x2,2,5,"<b>Construct</b> - Immune to fear checks while adjacent to a mechanic. Dies if it flees.
+06_2A_3,Bladestorms,Coppersand Bladestorms,TRUE,Coppersand,Golems,Attack Infantry,5,2,,,3,1,5,-,2x2,2,5,"<b>Construct</b> - Immune to fear checks while adjacent to a mechanic. Dies if it flees.
 
 <b>Four Arms</b> - Wields two sets of weapons. This unit performs a round of attacks with one set of weapons, then a second round of attacks with a second set of weapons. 
 
-<b>Well Equipped 2</b> - Equip with 2 points of equipment while building the army list. Show these when revealing this as a possible unit or distraction.",,,2,2,2,2,,,#000000,#000000,#3467FF,#cc0000,#000000,#000000,#ffb317,#cf6c23,#000000,#ffffff,gremlins.png,1,6,9.00,4,12,1.00,0.00,4.00,15,FALSE
+<b>Prepared Weapons</b> - Equip this unit with one free uncommon weapon, or two free common weapons.",,,2,2,2,2,,,#000000,#000000,#3467FF,#cc0000,#000000,#000000,#ffb317,#cf6c23,#000000,#ffffff,gremlins.png,1,6,9.00,4,12,1.00,0.00,4.00,15,FALSE
 06_2B_1,Juggernaut,Coppersand Juggernaut,TRUE,Coppersand,Colossus,Monster,5,2,,,1,2,3,-,5,5,4,"<b>Construct</b> - Immune to fear checks while adjacent to a mechanic. Dies if it flees.
 
 <b>Trample</b> - Action: Move forward 1. If there is a model in that space, it attempts to move backwards 1 unless it is blocked. Roll an attack against each model in the unit, hitting on 6+ or 4+ if the unit was blocked. These do not count for combat resolution. Can be used to move out of combat.",,,2,2,2,2,,,#2b9800,#000000,#2b9800,#2b9800,#000000,#2b9800,#ffb317,#cf6c23,#000000,#ffffff,gremlins.png,1,5,10.00,5,5,1.00,0.00,3.33,15,FALSE
-06_2B_2,Overseer,Coppersand Overseer,TRUE,Coppersand,Colossus,Monster,5,2,,2,1,2,4,4,4,5,5,"<b>Construct</b> - Immune to fear checks while adjacent to a mechanic. Dies if it flees.
+06_2B_2,Overseer,Coppersand Overseer,TRUE,Coppersand,Colossus,Monster,5,2,,,1,2,4,4,4,5,5,"<b>Construct</b> - Immune to fear checks while adjacent to a mechanic. Dies if it flees.
 <b>Multishot 3</b> - Ranged attacks roll 3 dice.
 <b>Overwatch</b> - During your opponent's turn, fire a round of shooting at the first enemy unit to become a new valid shooting target. Has no effect on units that were already valid shooting targets. This can take effect because of units fleeing combat or getting wiped out.
-<b>Well Equipped 2</b> - Equip with 2 points of equipment while building the army list. Show these when revealing this as a possible unit or distraction.",,,,,,,1,2,#2b9800,#000000,#000000,#000000,#2b9800,#000000,#ffb317,#cf6c23,#000000,#ffffff,gremlins.png,1,5,7.50,4,4,1.00,0.00,2.00,10.5,FALSE
+<b>Prepared Ranged Weapon</b> - Equip this unit with one free common or uncommon ranged weapon.",,,,,,,1,2,#2b9800,#000000,#000000,#000000,#2b9800,#000000,#ffb317,#cf6c23,#000000,#ffffff,gremlins.png,1,5,7.50,4,4,1.00,0.00,2.00,10.5,FALSE
 06_2B_3,Warcrane,Coppersand Warcrane,TRUE,Coppersand,Colossus,Monster,5,2,,,1,1,5,-,5,5,3,"<b>Construct</b> - Immune to fear checks while adjacent to a mechanic. Dies if it flees.
 
 <b>Lift and Shift</b> - Action: Rotate an adjacent unit 90 degrees around this unit. You may rotate this unit in the same direction. May not move units off the board. The unit counts as having moved for the purpose of rules like Entrenched.",,,,,,,,,#000000,#000000,#2b9800,#cc0000,#000000,#3467FF,#ffb317,#cf6c23,#000000,#ffffff,gremlins.png,1,5,15.00,5,5,1.00,0.00,1.67,17.5,FALSE
@@ -341,6 +341,74 @@ Any unit in the hit square takes 3X attacks hitting on 3+ with AP X. Lose all po
 <b>War Machine</b> - Dies if it flees. Can't move into combat.
 
 <b>Surpression Cannon</b> - Target a square in shooting range 5. Each unit in that firing line at the start of your next turn takes 5 ranged attacks hitting on 3+ with AP3. May not target a firing line that includes a friendly unit, but will hit them if they move in before your turn ends.",,,,,,,,,#000000,#000000,#000000,#000000,#000000,#000000,#ffb317,#cf6c23,#000000,#ffffff,gremlins.png,1,4,4.80,2,2,1.00,0.00,0.33,5.3,TRUE
+07_1_1,Warriors,Scaled Empire Warriors,TRUE,Scaled Empire,Infantry,Warriors,6,1,2,,6,1,4,6,1,1,5,"<b>Detachment</b> - Gains +1 to leadership rolls while adjacent to a regiment or officer. If no regiments or officers are adjacent to this unit, fails flee rolls on a 2.",,,1,1,1,1,1,1,#000000,#000000,#000000,#000000,#000000,#000000,#c9daf8,#00399e,#000000,#ffffff,empire.png,1,6,9.00,1,6,1.00,0.00,3.00,13.5,FALSE
+07_1_2,Militia,Scaled Empire Militia,TRUE,Scaled Empire,Infantry,Chaff,6,1,1,,6,1,5,-,1,1,6,"<b>Detachment</b> - Gains +1 to leadership rolls while adjacent to a regiment or officer. If no regiments or officers are adjacent to this unit, fails flee rolls on a 2.
+
+<b>Disorganised</b> - Automatically fails fear checks if at or below 50% unit strength.",,,1,,,,1,,#000000,#000000,#000000,#cc0000,#000000,#000000,#c9daf8,#00399e,#000000,#ffffff,empire.png,1,6,7.20,1,6,1.00,0.00,2.00,10.2,FALSE
+07_1_3,Firepowder Corps,Scaled Empire Firepowder Corps,TRUE,Scaled Empire,Infantry,Archers,6,1,2,,6,1,5,4,1,1,6,"<b>Detachment</b> - Gains +1 to leadership rolls while adjacent to a regiment or officer. If no regiments or officers are adjacent to this unit, fails flee rolls on a 2.",,,,,,,,1,#000000,#000000,#000000,#cc0000,#000000,#2b9800,#c9daf8,#00399e,#000000,#ffffff,empire.png,1,6,7.20,1,6,1.00,0.00,2.00,10.2,FALSE
+07_1_4,Scout Corps,Scaled Empire Scout Corps,TRUE,Scaled Empire,Infantry,Archers,6,1,3,,6,1,5,4,1,1,6,"<b>Detachment</b> - Gains +1 to leadership rolls while adjacent to a regiment or officer. If no regiments or officers are adjacent to this unit, fails flee rolls on a 2.
+
+<b>Self Sufficient Bows</b> - Ranged Weapon. Range 3. 
+
+<b>Maneouverable</b> - May turn once at any point during a move or hustle.
+
+<b>Fire on the Move</b> - Can shoot after moving
+
+<b>Tactical Retreat</b> - Can choose to flee before combat starts",,,1,1,1,1,,,#000000,#000000,#000000,#cc0000,#000000,#2b9800,#c9daf8,#00399e,#000000,#ffffff,empire.png,1,6,7.20,1,6,1.00,0.00,2.00,10.2,FALSE
+07_1_5,Scalewall,Scaled Empire Scalewall,TRUE,Scaled Empire,Infantry,Heavy Infantry,6,1,3,,6,1,4,-,1,1,4,"<b>Detachment</b> - Gains +1 to leadership rolls while adjacent to a regiment or officer. If no regiments or officers are adjacent to this unit, fails flee rolls on a 2.
+
+<b>Shieldwall</b> - Improve block by 1 against ranged attacks 
+
+<b>Slow</b> - Can't hustle",,,1,,,,1,,#000000,#000000,#000000,#000000,#000000,#000000,#c9daf8,#00399e,#000000,#ffffff,empire.png,1,6,12.00,1,6,1.00,0.00,3.00,16.5,FALSE
+07_1_6,Horsebreakers,Scaled Empire Horsebreakers,TRUE,Scaled Empire,Infantry,Infantry,6,1,3,,6,1,4,-,1,1,5,"<b>Detachment</b> - Gains +1 to leadership rolls while adjacent to a regiment or officer. If no regiments or officers are adjacent to this unit, fails flee rolls on a 2.
+
+<b>Pike Square</b> - Opponents do not get bonuses for attacking this unit in the flank and this unit treats its flanks as the front of the unit. 
+
+<b>Cavalrybane</b> - Gains +1 to hit, AP1, and +1 to block in combat against units with 2 or more movement.",,,1,,,,1,,#000000,#000000,#000000,#000000,#000000,#000000,#c9daf8,#00399e,#000000,#ffffff,empire.png,1,6,9.00,1,6,1.00,0.00,3.00,13.5,FALSE
+07_2A_1,Cannonade,Scaled Empire Cannonade,TRUE,Scaled Empire,Firepower,War Machine,6,2,,,1,1,6,-,2,3,6,"<b>War Machine</b> - Dies if it flees. Can't move into combat.
+
+<b>Cannons</b> - Ranged weapon. Range 5. The first unit in that range gets 3 attacks that hit on 5+, AP -2, Multiwound 2.
+
+<b>Foe Piercing</b> - May also attack a unit within range directly behind the target, hitting with a -1 penalty.",,,,,,,,,#000000,#000000,#000000,#000000,#000000,#000000,#c9daf8,#00399e,#000000,#ffffff,empire.png,1,3,3.60,2,2,1.00,0.00,0.33,4.1,TRUE
+07_2A_2,Mortar Company,Scaled Empire Mortar Company,TRUE,Scaled Empire,Firepower,War Machine,6,2,,,1,1,6,-,2,3,6,"<b>War Machine</b> - Dies if it flees. Can't move into combat.
+
+<b>Storm Mortar</b> - Pick a target square within 6 and roll a die. Can't target a unit in combat.
+4, 5 or 6 - Direct hit
+3 - Off by one, your choice
+2 - Miss
+1 - Off by up to two, opponent's choice 
+Roll an attack for each model in the target square, hitting on 4+ with AP1.",,,,,,,,,#000000,#000000,#000000,#000000,#000000,#000000,#c9daf8,#00399e,#000000,#ffffff,empire.png,1,3,3.60,2,2,1.00,0.00,0.33,4.1,TRUE
+07_2A_3,War Organ,Scaled Empire War Organ,TRUE,Scaled Empire,Firepower,War Machine,6,2,,,1,1,6,-,2,3,6,"<b>War Machine</b> - Dies if it flees. Can't move into combat.
+
+<b>Organ Gun</b> - Ranged Weapon. Range 4. Roll 3d6 and take a wound for each 1 rolled. Take the two highest dice and fire that many shots. Shots are fired even if this unit is destroyed.",,,,,,,,,#000000,#000000,#000000,#000000,#000000,#000000,#c9daf8,#00399e,#000000,#ffffff,empire.png,1,3,3.60,2,2,1.00,0.00,0.33,4.1,TRUE
+07_2B_1,Outriders,Scaled Empire Outriders,TRUE,Scaled Empire,Cavalry,Light Cavalry,6,2,,,4,2,5,4,1,1,5,"<b>Regiment</b> - Gains +1 to leadership rolls while adjacent to a detachment.
+
+<b>Maneouverable</b> - May turn once at any point during a move or hustle
+
+<b>Multishot 2</b> - Ranged attacks roll 2 dice.
+
+<b>Fire on the Move</b> - Can shoot after moving
+
+<b>Tactical Retreat</b> - Can choose to flee before combat starts",,,,2,2,,2,2,#2b9800,#000000,#000000,#cc0000,#000000,#2b9800,#c9daf8,#00399e,#000000,#ffffff,empire.png,2,4,6.00,1,4,1.00,0.00,1.33,8,FALSE
+07_2B_2,Wyrmknights,Scaled Empire Wyrmknights,TRUE,Scaled Empire,Cavalry,Flyer,6,2,,,4,3,5,5,2,2,6,"<b>Regiment</b> - Gains +1 to leadership rolls while adjacent to a detachment.
+
+<b>Flying</b> - This unit can move over other units and obstacles
+
+<b>Maneouverable</b> - May turn once at any point during a move or hustle",,,,,,1,1,,#3467FF,#2b9800,#2b9800,#cc0000,#000000,#000000,#c9daf8,#00399e,#000000,#ffffff,empire.png,2,8,9.60,2,8,1.00,0.00,2.67,13.6,FALSE
+07_2B_3,Dragoons,Scaled Empire Dragoons,TRUE,Scaled Empire,Cavalry,Heavy Cavalry,6,2,,,4,2,5,-,2,2,4,"<b>Regiment</b> - Gains +1 to leadership rolls while adjacent to a detachment.
+
+<b>Impact Hits d3</b> - If you get a charge bonus, do d3 attacks per model hitting on 4+. These count towards who won combat.",,,2,2,2,,2,,#2b9800,#2b9800,#2b9800,#cc0000,#000000,#000000,#c9daf8,#00399e,#000000,#ffffff,empire.png,2,8,16.00,2,8,1.00,0.00,2.67,20,FALSE
+07_2C_1,Twohanders,Scaled Empire Twohanders,TRUE,Scaled Empire,Veterans,Infantry,5,2,,,6,1,4,-,1,1,5,"<b>Regiment</b> - Gains +1 to leadership rolls while adjacent to a detachment.
+
+<b>Unbreakable</b> - Can't flee
+
+<b>Cleave</b> - Each hit does 2 wounds that can be split across multiple models.",,,,2,2,,,,#000000,#000000,#000000,#000000,#000000,#000000,#c9daf8,#00399e,#000000,#ffffff,empire.png,1,6,9.00,1,6,1.00,0.00,3.00,13.5,FALSE
+07_2C_2,Bluemasks,Scaled Empire Bluemasks,TRUE,Scaled Empire,Veterans,Heavy Infantry,5,2,,,6,1,5,-,1,1,4,"<b>Regiment</b> - Gains +1 to leadership rolls while adjacent to a detachment.
+
+<b>Fearful Presence</b> - Enemy units in range 2 subtract one from rolls to flee. Natural 6s still always pass.",,,2,2,2,2,2,2,#000000,#000000,#000000,#000000,#000000,#000000,#c9daf8,#00399e,#000000,#ffffff,empire.png,1,6,12.00,1,6,1.00,0.00,2.00,15,FALSE
+07_2C_3,Jetbreaths,Scaled Empire Jetbreaths,TRUE,Scaled Empire,Veterans,Attack Infantry,5,2,,,6,1,5,5,1,1,5,"<b>Regiment</b> - Gains +1 to leadership rolls while adjacent to a detachment.
+
+<b>Breath Weapons</b> - Special attack: Once per battle, instead of attacking as normal this unit may use a breath weapon. Each model in this unit rolls an attack for every 2 models in the enemy unit (rounded up), hitting on 6s. ",,,2,2,2,2,2,1,#000000,#000000,#000000,#000000,#000000,#2b9800,#c9daf8,#00399e,#000000,#ffffff,empire.png,1,6,9.00,1,6,1.00,0.00,2.00,12,FALSE
 L01_3_A,Boomshaman,Gobbo Boomshaman,TRUE,Gobbo,Leader,Hybrid Mage Hero,,3,,2,1,1,2,-,d6,4,-,"<b>Master of Munitions</b> - Explosive units and direct hits by Boomboxes gain splash. For every wound dealt, all adjacent units take a hit on a 5+, AP1. 
 
 <b>Explosive</b> - Dies after combat.
@@ -451,14 +519,14 @@ L05_3_A,Crowcaller,Redspines Crowcaller,TRUE,Redspines,Leader,Mage Hero,,3,,3,1,
 
 <b>Uncanny Protection</b> - Block may not be reduced beneath 5.
 
-<b>Protective Markings</b> - When this unit blocks due to Vengence, it does not take a wound.",3,,3,3,3,3,,,#000000,#000000,#cc0000,#000000,#000000,#000000,#e78e7e,#cf0000,#000000,#ffffff,redspines.png,1,5,5.00,3,3,1.00,0.67,2.17,8.25,TRUE
+<b>Protective Markings</b> - When this unit blocks due to Vengence, it does not take a wound.",3,,3,3,3,3,,,#000000,#000000,#cc0000,#000000,#000000,#000000,#e78e7e,#cf0000,#000000,#ffffff,redspines.png,1,5,7.50,3,3,1.00,0.67,2.17,10.75,TRUE
 L05_3_B,The Brewer,Redspines The Brewer,TRUE,Redspines,Leader,Mage Hero,,3,,3,1,1,5,-,3,4,5,"<b>Vengence</b> - When this unit blocks in combat, it still takes 1 wound. The unit that attacked takes 1 wound as well.
 
 <b>Cauldron</b> - When Vengence triggers on an adjacent friendly unit, it does 2 wounds per block rolled.
 
 <b>Uncanny Protection</b> - Block may not be reduced beneath 5.
 
-<b>Protective Markings</b> - When this unit blocks due to Vengence, it does not take a wound.",3,,,,,3,,,#000000,#cc0000,#cc0000,#cc0000,#000000,#000000,#e78e7e,#cf0000,#000000,#ffffff,redspines.png,1,4,4.00,3,3,1.00,0.67,1.67,6.5,TRUE
+<b>Protective Markings</b> - When this unit blocks due to Vengence, it does not take a wound.",3,,,,,3,,,#000000,#cc0000,#cc0000,#cc0000,#000000,#000000,#e78e7e,#cf0000,#000000,#ffffff,redspines.png,1,4,6.00,3,3,1.00,0.67,1.67,8.5,TRUE
 L05_3_C,Executioner,Redspines Executioner,TRUE,Redspines,Leader,Warrior Hero,,3,,3,1,1,3,5,6,7,5,"<b>Vengence</b> - When this unit blocks in combat, it still takes 1 wound. The unit that attacked takes 1 wound as well.
 
 <b>Multiwound 2</b> - Each hit does 2 wounds to a single model.
@@ -507,22 +575,64 @@ L06_3_E,The Zeppelin,Coppersand The Zeppelin,TRUE,Coppersand,Leader,War Machine 
 
 <b>Multishot 2</b> - Ranged attacks roll 2 dice.
 <b>Fire on the Move</b> - Can shoot after moving
-<b>Firing platform</b> - This unit can shoot from the front, flank or rear.",,,,,,,,3,#2b9800,#3467FF,#cc0000,#cc0000,#2b9800,#000000,#ffb317,#cf6c23,#000000,#ffffff,gremlins.png,2,8,12.00,3,3,1.00,0.00,1.00,13.5,TRUE
+<b>Firing platform</b> - This unit can shoot from the front, flank or rear.",,,,,,,,3,#2b9800,#3467FF,#cc0000,#cc0000,#2b9800,#000000,#ffb317,#cf6c23,#000000,#ffffff,gremlins.png,1,8,12.00,3,3,1.00,0.00,1.00,13.5,TRUE
+L07_3_A,The General,Scaled Empire The General,TRUE,Scaled Empire,Leader,Hybrid Mage Hero,,3,,4,1,1,4,5,4,5,4,"<b>Officer</b> - When a ranged attack targets this unit, you may nominate an adjacent friendly regiment as the target instead. 
+
+<b>General's Banner</b> - All friendly units get a bonus of 1 towards who won combat.
+
+<b>General's Spirit</b> - Other friendly units in the same combat as the general get a +1 bonus to melee attacks.",2,,3,3,3,3,3,3,#000000,#000000,#000000,#000000,#000000,#2b9800,#c9daf8,#00399e,#000000,#ffffff,empire.png,1,5,10.00,4,4,1.00,0.00,2.00,13,TRUE
+L07_3_B,Commando,Scaled Empire Commando,TRUE,Scaled Empire,Leader,Warrior Hero,,3,,4,1,1,3,4,5,6,4,"<b>Officer</b> - When a ranged attack targets this unit, you may nominate an adjacent friendly regiment as the target instead. 
+
+<b>Fearful Presence</b> - Enemy units in range 2 subtract one from rolls to flee. Natural 6s still always pass.
+
+<b>Multishot 3</b> - Ranged attacks roll 3 dice per model.",,,3,3,3,3,3,3,#000000,#000000,#000000,#2b9800,#2b9800,#2b9800,#c9daf8,#00399e,#000000,#ffffff,empire.png,1,6,12.00,5,5,1.00,0.00,3.33,17,FALSE
+L07_3_C,Archmage,Scaled Empire Archmage,TRUE,Scaled Empire,Leader,Mage Hero,,3,,3,1,1,4,-,3,4,5,"<b>Officer</b> - When a ranged attack targets this unit, you may nominate an adjacent friendly regiment as the target instead. 
+
+<b>Uncanny Protection</b> - Block may not be reduced beneath 5.
+
+<b>Mage</b> - Can cast two spells a turn
+
+<b>Old Knowledge</b> - The first spell cast each turn gets +1 to cast",3,,,,,,,,#000000,#000000,#000000,#000000,#000000,#000000,#c9daf8,#00399e,#000000,#ffffff,empire.png,1,4,6.00,3,3,1.00,0.00,1.50,8.25,TRUE
+L07_3_D,Wyrm Prince,Scaled Empire Wyrm Prince,TRUE,Scaled Empire,Leader,Monster Hero,,3,,0,1,3,3,-,3,8,5,"<b>Officer</b> - When a ranged attack targets this unit, you may nominate an adjacent friendly regiment as the target instead. 
+
+<b>Flying</b> - This unit can move over other units and obstacles
+
+<b>Maneouverable</b> - May turn once at any point during a move or hustle
+
+<b>Natural Breath Weapon</b> - Bonus attack: Once per battle, before attacking as normal this unit may use a breath weapon. This unit rolls an attack for every model in the enemy unit, hitting on 5s. ",,,,,,,,,#3467FF,#3467FF,#000000,#2b9800,#000000,#000000,#c9daf8,#00399e,#000000,#ffffff,empire.png,1,8,12.00,3,3,1.00,0.00,2.00,15,FALSE
+L07_3_E,Sharpshooter,Scaled Empire Sharpshooter,TRUE,Scaled Empire,Leader,Archer Hero,,3,,3,1,1,4,2,4,5,5,"<b>Officer</b> - When a ranged attack targets this unit, you may nominate an adjacent friendly regiment as the target instead. 
+
+<b>Spotter</b> - Once per turn, reroll a friendly unit's missed ranged attack dice, or a friendly warmachine's special attack dice.
+
+<b>Multishot 2</b> - Ranged attacks roll 2 dice.
+
+<b>Long Range</b> - This unit's ranged weapons gain 1 range.",,,2,,,,,3,#000000,#000000,#000000,#000000,#3467FF,#000000,#c9daf8,#00399e,#000000,#ffffff,empire.png,1,5,7.50,4,4,1.00,0.00,2.00,10.5,FALSE
+,Cyclops,Disciples Cyclops,,Disciples,Behemoth,,5,2,,,1,1,3,3,4,5,5,"<b>Rock Lobber</b> - Ranged Weapon - Range 4, AP -2, Multiwound 3. ",,,,,,,,,,,,,,,#5c9667,#004621,#000000,#ffffff,.png,1,5,7.50,4,4,1.00,0.00,2.67,11.5,FALSE
+,Deserters,Castaways Deserters,,Castaways,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,#000000,#ffffff,.png,0,0,0.00,,0,1.00,0.00,0.00,0,FALSE
+,Quillbeasts,Disciples Quillbeasts,,Disciples,Mongrels,Infantry,,1,2,,3,1,4,,2,2,5,"<b>Vengence</b> - When this unit blocks in combat, it still takes 1 wound. The unit that attacked takes 1 wound as well.",,,,,,,,,,,,,,,#5c9667,#004621,#000000,#ffffff,.png,1,6,6.00,2,6,1.00,0.67,3.67,11.5,FALSE
 ,Ratbeasts,Disciples Ratbeasts,,Disciples,Mongrels,Chaff,,1,1,,3,1,6,-,3,2,-,Unprotected,,,,,,,,,,,,,,,#5c9667,#004621,#000000,#ffffff,.png,1,6,6.00,3,9,1.00,0.00,1.50,8.25,FALSE
-,Warriors,Disciples Warriors,,Disciples,Mongrels,Warriors,,1,2,,3,1,4,6,2,2,5,<b>Multishot 2</b> - Ranged attacks roll 2 dice.,,,,,,,,,,,,,,,#5c9667,#004621,#000000,#ffffff,.png,1,6,9.00,2,6,1.00,0.00,3.00,13.5,FALSE
+,Scalebeasts,Disciples Scalebeasts,,Disciples,Mongrels,Heavy Infantry,,1,2,,3,1,5,,2,2,4,,,,,,,,,,,,,,,,#5c9667,#004621,#000000,#ffffff,.png,1,6,12.00,2,6,1.00,0.00,2.00,15,FALSE
+,Skybeasts,Disciples Skybeasts,,Disciples,Mongrels,Warriors,,1,3,,3,2,4,,2,2,5,Flap,,,,,,,,,,,,,,,#5c9667,#004621,#000000,#ffffff,.png,1,6,9.00,2,6,1.00,0.00,3.00,13.5,FALSE
 ,Spiderbeasts,Disciples Spiderbeasts,,Disciples,Mongrels,Archers,,1,3,,3,1,4,,2,2,5,"<b>Poison</b> - 6s to hit can't be saved
 <b>Multishot 2</b> - Ranged attacks roll 2 dice.",,,,,,,,,,,,,,,#5c9667,#004621,#000000,#ffffff,.png,1,6,9.00,2,6,1.11,0.00,3.33,14,FALSE
-,Quillbeasts,Disciples Quillbeasts,,Disciples,Mongrels,Infantry,,1,2,,3,1,4,,2,2,5,"<b>Vengence</b> - When this unit blocks in combat, it still takes 1 wound. The unit that attacked takes 1 wound as well.",,,,,,,,,,,,,,,#5c9667,#004621,#000000,#ffffff,.png,1,6,6.00,2,6,1.00,0.67,3.67,11.5,FALSE
-,Scalebeasts,Disciples Scalebeasts,,Disciples,Mongrels,Heavy Infantry,,1,2,,3,1,5,,2,2,4,,,,,,,,,,,,,,,,#5c9667,#004621,#000000,#ffffff,.png,1,6,12.00,2,6,1.00,0.00,2.00,15,FALSE
-,Skybeasts,Disciples Skybeasts,,Disciples,Mongrels,Warriors,,1,3,,3,2,4,,2,2,5,Flap,,,,,,,,,,,,,,,#5c9667,#004621,#000000,#ffffff,.png,2,6,9.00,2,6,1.00,0.00,3.00,13.5,FALSE
-,Cyclops,Disciples Cyclops,,Disciples,Behemoth,,5,2,,,1,1,3,3,4,5,5,"<b>Rock Lobber</b> - Ranged Weapon - Range 4, AP -2, Multiwound 3. ",,,,,,,,,,,,,,,#5c9667,#004621,#000000,#ffffff,.png,1,5,7.50,4,4,1.00,0.00,2.67,11.5,FALSE
-,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,#N/A,#N/A,#N/A,#N/A,#N/A,0,0,0.00,,0,1.00,0.00,0.00,0,FALSE
+,Warriors,Disciples Warriors,,Disciples,Mongrels,Warriors,,1,2,,3,1,4,6,2,2,5,<b>Multishot 2</b> - Ranged attacks roll 2 dice.,,,,,,,,,,,,,,,#5c9667,#004621,#000000,#ffffff,.png,1,6,9.00,2,6,1.00,0.00,3.00,13.5,FALSE
+,, ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,#N/A,#N/A,#N/A,#N/A,#N/A,0,0,0.00,0,0,1.00,0.00,0.00,0,FALSE
+,, ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,#N/A,#N/A,#N/A,#N/A,#N/A,0,0,0.00,0,0,1.00,0.00,0.00,0,FALSE
+,, ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,#N/A,#N/A,#N/A,#N/A,#N/A,0,0,0.00,0,0,1.00,0.00,0.00,0,FALSE
+,, ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,#N/A,#N/A,#N/A,#N/A,#N/A,0,0,0.00,0,0,1.00,0.00,0.00,0,FALSE
+,, ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,#N/A,#N/A,#N/A,#N/A,#N/A,0,0,0.00,0,0,1.00,0.00,0.00,0,FALSE
+,, ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,#N/A,#N/A,#N/A,#N/A,#N/A,0,0,0.00,0,0,1.00,0.00,0.00,0,FALSE
+,, ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,#N/A,#N/A,#N/A,#N/A,#N/A,0,0,0.00,0,0,1.00,0.00,0.00,0,FALSE
+,, ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,#N/A,#N/A,#N/A,#N/A,#N/A,0,0,0.00,0,0,1.00,0.00,0.00,0,FALSE
+,, ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,#N/A,#N/A,#N/A,#N/A,#N/A,0,0,0.00,0,0,1.00,0.00,0.00,0,FALSE
+,, ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,#N/A,#N/A,#N/A,#N/A,#N/A,0,0,0.00,0,0,1.00,0.00,0.00,0,FALSE
+,, ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,#N/A,#N/A,#N/A,#N/A,#N/A,0,0,0.00,0,0,1.00,0.00,0.00,0,FALSE
+,, ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,#N/A,#N/A,#N/A,#N/A,#N/A,0,0,0.00,0,0,1.00,0.00,0.00,0,FALSE
 ,,Slimes ,,Slimes,,,,,,,,,,,,,,"<b>Unstable</b> - Instead of rolling to flee, lose 1 extra wound
 
 <b>Perpetual</b> - After the unit is wiped out, leave their card face down. At the start of each turn, if the space is unoccupied you may roll a die. On a 4+, bring the unit back to life with full wounds, facing a direction of your choice 
 
-<b>Slow</b> - Don't roll a bonus charge dice ",,,,,,,,,#000000,#000000,#000000,#000000,#000000,#000000,#00ffff,#ff00ee,#000000,#ffffff,slimes.png,0,0,0.00,,0,1.00,0.00,0.00,0,FALSE
-,Deserters,Castaways Deserters,,Castaways,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,#000000,#ffffff,.png,0,0,0.00,,0,1.00,0.00,0.00,0,FALSE
+<b>Slow</b> - Don't roll a bonus charge dice ",,,,,,,,,#000000,#000000,#000000,#000000,#000000,#000000,#00ffff,#ff00ee,#000000,#ffffff,slimes.png,0,0,0.00,0,0,1.00,0.00,0.00,0,FALSE
 ,,Disciples ,,Disciples,Amalgam,,,2,,,,,,,,,,Virulent,,,,,,,,,,,,,,,#5c9667,#004621,#000000,#ffffff,.png,0,0,0.00,,0,1.00,0.00,0.00,0,FALSE
 ,,Disciples ,,Disciples,Amalgam,,,2,,,,,,,,,,,,,,,,,,,,,,,,,#5c9667,#004621,#000000,#ffffff,.png,0,0,0.00,,0,1.00,0.00,0.00,0,FALSE
 ,,Disciples ,,Disciples,Amalgam,,,2,,,,,,,,,,"
