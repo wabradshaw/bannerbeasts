@@ -1,0 +1,1325 @@
+Gobbo - Warriors - L1 C:2 - Goblins
+N6 S1 H1 A1 M4 R6 B5
+
+-------
+
+Gobbo - Bomb Squad - L1 C:3 - Goblins
+N6 S1 H1 A2 M2 R- B-
+<b><b>AP 4</b> - Reduce block rolls by 4.
+
+<b>Explosive</b> - Dies after combat.
+
+<b>Unprotected</b> - Reveal this unit when an attack hits it, rather than using the default block.</b>
+-------
+
+Gobbo - Beserkers - L1 C:3 - Goblins
+N6 Sd3 H1 A1 M4 R- B5
+<b><b>Random mover d3</b> - Roll a die for movement each turn. Movement is d3 spaces.
+
+<b>Eager to Fight.</b> - You must move the full distance, or collide with something. If the unit moves off the board, it is lost.
+
+<b>Maneouverable</b> - May turn once at any point during a move or hustle.</b>
+-------
+
+Gobbo - Archers - L1 C:2 - Goblins
+N6 S1 H1 A1 M5 R4 B6
+
+-------
+
+Gobbo - Goblings - L1 C:1 - Goblins
+N6 S1 H1 A1 M5 R- B6
+<b><b>Chaff</b> - Subtract 1 from leadership rolls. 6s still auto-succeed.</b>
+-------
+
+Gobbo - Poppers - L1 C:2 - Goblins
+N6 S1 H1 A1 M5 R- B6
+<b><b>Burst</b> - For each model that dies in combat, make an attack hitting on 4+ with AP1 against the unit that dealt the wound.</b>
+-------
+
+Gobbo - Wolfcarts - L2 - Chariots
+N2 S2 H4 A4 M4 R5 B5
+<b><b>Impact Hits d3</b> - If you get a charge bonus, do d3 attacks per model hitting on 4+. These count towards who won combat.
+
+<b>Chariot</b> - Can't sidestep</b>
+-------
+
+Gobbo - Bangwagons - L2 - Chariots
+N2 S2 H2 A2d6 M2 R- B-
+<b><b>Explosive</b> - Dies after combat.
+
+<b>Giant Powder Keg</b> - 2d6 attacks per model
+
+<b>AP 4</b> - Reduce block rolls by 4.
+
+<b>Fast</b> - Rolls two hustle die, so it can travel up to two extra squares.
+
+<b>Unprotected</b> - Reveal this unit when an attack hits it, rather than using the default block.
+
+<b>Chariot</b> - Can't sidestep</b>
+-------
+
+Gobbo - Hunting Party - L2 - Chariots
+N2 S2 H4 A2 M5 R4 B5
+<b><b>Fire on the Move</b> - Can use ranged attacks after moving
+
+<b>Multishot 3</b> - Ranged attacks roll 3 dice per model
+
+<b>Maneouverable</b> - May turn once at any point during a move or hustle
+
+<b>Chariot</b> - Can't sidestep</b>
+-------
+
+Gobbo - Starchucker - L2 - Hurtbox
+N1 S1 H3 A2 M6 R3 B6
+<b><b>War Machine</b> - Dies if it flees. Can't move into combat.
+<b>Razorstar</b> - Ranged weapon. Range d6+1. The first unit in that range gets one attack that hits on 3+, AP -3. If it hits, the next unit takes a 4+, AP -2. If that hits, the third unit takes a 5+, AP -1. Each hit does d6 wounds to a single model. This shot can't pass through terrain.
+<b>Friendly Fire</b> - Can shoot into combat and into friendly units.</b>
+-------
+
+Gobbo - Boombox - L2 - Hurtbox
+N1 S1 H3 A2 M6 R- B6
+<b><small><b>War Machine</b> - Dies if it flees. Can't move into combat.
+<b>The Big Guns</b> - Pick a target square within 6 and roll a die.
+6 - Direct hit. 
+5 - Off by one, your choice. 
+4 - Off by one, towards the opponents board edge. 
+3 - Off by one, towards your board edge. 
+2 - Off by two, opponent's choice where. 
+1 - Hit yourself. 
+The central tile takes d6 attacks, 3+ AP -1. The four adjacent tiles take 1 hit each, 4+ AP0.
+<b>Friendly Fire</b> - Can shoot into combat and into friendly units.</small></b>
+-------
+
+Gobbo - Firetruck - L2 - Hurtbox
+N1 S1 H6 A2 M4 R- B4
+<b><small><b>Flamethrower</b> - Special action. Can be used instead of attacking in combat or as a ranged attack. Roll a die for range. 
+6 - Range 3
+5/4 - Range 2
+3 - Range 1
+2 - Take 1 wound
+1 - Opponent turns you 90 degrees. Range 2. 
+Hits all tiles in range across all three ranged attack columns. Each unit that is hit rolls a die for each model in the unit. Models are hit on a 5, AP1. 
+
+<b>Friendly Fire</b> - Can shoot into combat and into friendly units.
+
+<b>Chariot</b> - Can't sidestep</small></b>
+-------
+
+Gobbo - Flagellants - L2 - Priests
+N6 S1 H1 A3 M4 R- B-
+<b><b>Unbreakable</b> - Can't flee
+
+<b>Rabid</b> - Must charge if able to
+
+<b>Unprotected</b> - Reveal this unit when an attack hits it, rather than using the default block.</b>
+-------
+
+Gobbo - Tincans - L2 - Priests
+N6 S1 H1 A1 M4 R6 B3
+<b><b>Stalwart</b> - Add 1 to leadership rolls
+
+<b>Slow</b> - Can't hustle</b>
+-------
+
+Gobbo - Skypriests - L2 - Priests
+N6 S1 H1 A1 M4 R- B5
+<b><b>"Jetpacks"</b> - Action: Roll 2d6. Move a number of tiles at least equal to the lower die, and up to the higher die. You can fly over other units. After landing, this unit may face any direction. If you choose to land on a unit, each model makes 2 attacks hitting at 4+ with AP 2, then this unit dies [explosive]. If this unit moves off the board, it dies.</b>
+-------
+
+Ratkin - Warriors - L1 C:2 - Rats
+N9 S1 H1 A1 M5 R6 B6
+
+-------
+
+Ratkin - Skitterers - L1 C:3 - Rats
+N9 S2 H1 A1 M5 R5 B6
+<b><b>Maneouverable</b> - May turn once at any point during a move or hustle</b>
+-------
+
+Ratkin - Pelters - L1 C:2 - Rats
+N9 S1 H1 A1 M5 R5 B-
+
+-------
+
+Ratkin - Horde - L1 C:1 - Rats
+N9 S1 H1 A1 M6 R- B-
+<b><b>Chaff</b> - Subtract 1 from leadership rolls. 6s still auto-succeed.</b>
+-------
+
+Ratkin - Assasslings - L1 C:3 - Rats
+N9 S1 H1 A1 M5 R6 B-
+<b><b>Poison</b> - 6s to hit can't be saved</b>
+-------
+
+Ratkin - Peltlings - L1 C:1 - Rats
+N9 S1 H1 A1 M6 R5 B-
+<b><b>Cowards</b> - Always loses combat
+
+<b>Chaff</b> - Subtract 1 from leadership rolls. 6s still auto-succeed.</b>
+-------
+
+Ratkin - Ninjas - L2 - Elites
+N9 S2 H1 A1 M4 R5 B-
+<b><b>Elusive 1</b> - All to-hit rolls targetting this unit suffer a -1 penalty.
+
+<b>Smoke Bombs</b> - Once per game before combat, move this unit forward 2. This can go through any unit but must end in an unoccupied space. This can bring the unit into a new combat.
+
+<b>Unprotected</b> - Reveal this unit when an attack hits it, rather than using the default block.</b>
+-------
+
+Ratkin - Heavies - L2 - Elites
+N9 S1 H1 A1 M5 R6 B4
+<b><b>Stalwart</b> - Add 1 to leadership rolls</b>
+-------
+
+Ratkin - Throatnicks - L2 - Elites
+N9 S1 H1 A1 M4 R5 B6
+<b><b>Poison</b> - 6s to hit can't be saved
+
+<b>Lethal</b> - 6s to hit do two wounds to a model</b>
+-------
+
+Ratkin - Fearaltar - L2 - Rataltar
+N1 S1 H3 A5 M4 R- B5
+<b><b>Sacrifice</b> - Action: Target friendly common unit takes a wound. It may then take an action.</b>
+-------
+
+Ratkin - Swarmaltar - L2 - Rataltar
+N1 S1 H3 A4 M5 R- B5
+<b><b>Call the Swarm</b> - Free action: Revive d6 rats in a common unit. Limited to the starting number of rats.</b>
+-------
+
+Ratkin - Feastaltar - L2 - Rataltar
+N1 S1 H3 A5 M5 R- B5
+<b><b>Aura of Power</b> - Adjacent rats gain +1 to hit in melee</b>
+-------
+
+Ratkin - Chumpwagon - L2 - Ratwagons
+N1 S2 H4 A6 M5 R- B6
+<b><b>Trojan Rats</b> - When this unit is wiped out, place a unit of Ratkin Warriors either in the same cell, or one of the four adjacent cells. You choose which direction they are facing.</b>
+-------
+
+Ratkin - Battering-Rat - L2 - Ratwagons
+N1 S2 H4 A6 M5 R- B5
+<b><b>Impact Hits d6+1</b> - If you get a charge bonus, do d6+1 attacks hitting on a 4+. These count towards who won combat.
+
+<b>Push</b> - If you charge an opponent without using your whole movement allowance, you can push them back. Move them back one and move into their original square. This can't push opponents off the board or into occupied squares. This counts for charge distance. 
+
+<b>Chariot</b> - Can't sidestep</b>
+-------
+
+Ratkin - Thiefwagon - L2 - Ratwagons
+N1 S2 H5 A6 M5 R5 B5
+<b><b>Thieves</b> - At the start of combat, if this unit is in the flank or rear of an enemy unit, steal an equipment card from it and equip this unit. 
+
+<b>Maneouverable</b> - May turn once at any point during a move or hustle
+
+<b>Chariot</b> - Can't sidestep</b>
+-------
+
+Boneborn - Warriors - L1 C:2 - Skeletons
+N6 S1 H1 A1 M4 R- B5
+<b><b>Unstable</b> - Instead of rolling to flee, lose 1 extra wound</b>
+-------
+
+Boneborn - Archers - L1 C:2 - Skeletons
+N6 S1 H1 A1 M5 R4 B6
+<b><b>Unstable</b> - Instead of rolling to flee, lose 1 extra wound</b>
+-------
+
+Boneborn - Revenants - L1 C:3 - Skeletons
+N6 S1 H1 A1 M5 R- B5
+<b><b>Unstable</b> - Instead of rolling to flee, lose 1 extra wound
+
+<b>Revenants</b> - After combat, add a new model for each enemy model that died. Limited to the starting size.</b>
+-------
+
+Boneborn - Wights - L1 C:3 - Skeletons
+N6 S1 H1 A1 M5 R- B4
+<b><b>Unstable</b> - Instead of rolling to flee, lose 1 extra wound
+
+<b>Terrifying</b> - At the start of each round of combat, all enemy units in combat with it must roll to flee. If they flee out of combat, no combat takes place.</b>
+-------
+
+Boneborn - Fodder - L1 C:1 - Skeletons
+N6 S1 H1 A1 M6 R- B6
+<b><b>Unstable</b> - Instead of rolling to flee, lose 1 extra wound</b>
+-------
+
+Boneborn - Shieldbearers - L1 C:2 - Skeletons
+N6 S1 H1 A1 M5 R- B4
+<b><b>Unstable</b> - Instead of rolling to flee, lose 1 extra wound</b>
+-------
+
+Boneborn - Tomb Titan - L2 - Bonegiant
+N1 S1 H5 A5 M3 R- B4
+<b><b>Unstable</b> - Instead of rolling to flee, lose 1 extra wound
+
+<b>Mighty Cleave</b> - In combat this unit makes its attacks against all adjacent enemy units. Roll separately for each. If they are not in combat, they take damage but are not included in combat resolution and do not strike back.
+
+<b>Well Prepared</b> - Equipment costs 1 less.</b>
+-------
+
+Boneborn - Grave Beast - L2 - Bonegiant
+N1 S1 H5 A4 M4 R B5
+<b><b>Unstable</b> - Instead of rolling to flee, lose 1 extra wound
+
+<b>Revenants</b> - After combat, add a new wound for each enemy that died. Limited to the starting size.
+
+<b>Terrifying</b> - At the start of each round of combat, all enemy units in combat with it must roll to flee. If they flee out of combat, no combat takes place.</b>
+-------
+
+Boneborn - Skullclops - L2 - Bonegiant
+N1 S1 H5 A4 M3 R3 B5
+<b><b>Unstable</b> - Instead of rolling to flee, lose 1 extra wound
+
+<b>Rock Lobber</b> - Ranged Weapon - Range 4, AP -2, Multiwound 3.</b>
+-------
+
+Boneborn - Necromancers - L2 - Liches
+N3 S1 H2 A1 M2 R- B6
+<b><b>Unstable</b> - Instead of rolling to flee, lose 1 extra wound
+
+<b>Raise the Dead 1</b> - Free action: Choose an undead unit and heal 1 wound per Necromancer. This can resurrect models. Limited to the starting number of units/wounds.
+
+<b>Stabalizer</b> - Units affected by Raise the Dead do not lose wounds due to unstable this turn.</b>
+-------
+
+Boneborn - Terrormancers - L2 - Liches
+N3 S1 H2 A2 M4 R4 B5
+<b><b>Unstable</b> - Instead of rolling to flee, lose 1 extra wound
+
+<b>Bone Spurs</b> - Ranged weapon. Can target any unit adjacent to a friendly Boneborn unit. Can fire into combat. Units wounded by this attack must immediately roll to flee.</b>
+-------
+
+Boneborn - Blood Mages - L2 - Liches
+N3 S1 H2 A3 M3 R- B5
+<b><b>Unstable</b> - Instead of rolling to flee, lose 1 extra wound
+
+<b>Blood Rites</b> - After combat, roll an extra attack for each wound this unit dealt in combat. This can damage a unit that has fled from it.</b>
+-------
+
+Boneborn - Wall of Flesh - L2 - Zombies
+N6 S1 H2 A1 M5 R- B5
+<b><b>Unstable</b> - Instead of rolling to flee, lose 1 extra wound
+
+<b>Spongey 2</b> - Ignore 2 damage every round of combat or when hit by a ranged attack.
+
+<b>Slow</b> - Can't hustle</b>
+-------
+
+Boneborn - Ghouls - L2 - Zombies
+N6 S1 H2 A1 M4 R- B6
+<b><b>Unstable</b> - Instead of rolling to flee, lose 1 extra wound
+
+<b>Fresh Revenants</b> - After combat, add a new ghoul with full health for each enemy that died. Limited to the starting size.
+
+<b>Fast</b> - Rolls two hustle die, so it can travel up to two extra squares.</b>
+-------
+
+Boneborn - Rotting Dead - L2 - Zombies
+N6 S1 H2 A1 M5 R- B5
+<b><b>Unstable</b> - Instead of rolling to flee, lose 1 extra wound
+
+<b>Poison</b> - 6s to hit can't be saved
+
+<b>Plague</b> - At the end of each player's turn, units adjacent to this unit suffer a wound on a 4+ with no armour saves allowed. Does not affect Boneborn units.</b>
+-------
+
+Silk Court - Warriors - L1 C:2 - Spiderlings
+N5 S1 H1 A1 M4 R6 B5
+<b><b>Poison</b> - 6s to hit can't be saved</b>
+-------
+
+Silk Court - Webspitters - L1 C:3 - Spiderlings
+N5 S1 H1 A1 M4 R5 B5
+<b><b>Poison</b> - 6s to hit can't be saved
+
+<b>Spit Webs</b> - Opponents that start a combat with this unit gain strikes last for the turn.</b>
+-------
+
+Silk Court - Trappers - L1 C:3 - Spiderlings
+N5 S1 H1 A1 M4 R- B5
+<b><b>Poison</b> - 6s to hit can't be saved
+
+<b>Web Traps</b> - Enemies can't flee from this unit or turn after combat. Instead of rolling to flee, they lose extra wounds for every point they lost combat.</b>
+-------
+
+Silk Court - Huntsmen - L1 C:2 - Spiderlings
+N5 S1 H1 A1 M5 R4 B6
+<b><b>Poison</b> - 6s to hit can't be saved</b>
+-------
+
+Silk Court - Trapdoors - L1 C:3 - Spiderlings
+N5 S1 H1 A1 M4 R5 B6
+<b><b>Poison</b> - 6s to hit can't be saved
+
+<b>Ambush</b> - Action: Remove this unit from the board. On your next turn, place it on an empty space along any board edge (facing away from the board edge) as its action for the turn</b>
+-------
+
+Silk Court - Squires - L1 C:2 - Spiderlings
+N5 S1 H1 A1 M6 R- B4
+<b><b>Poison</b> - 6s to hit can't be saved</b>
+-------
+
+Silk Court - Jumpers - L2 - Knights
+N5 S2 H1 A1 M5 R4 B6
+<b><b>Poison</b> - 6s to hit can't be saved
+
+<b>Tactical Retreat</b> - Can choose to flee before combat starts
+
+<b>Jumping</b> - Can jump over units and obstacles while moving and hustling. Doing so increases the max movement distance by 1. Must end their turn in an empty square.
+
+<b>Maneouverable</b> - May turn once at any point during a move or hustle</b>
+-------
+
+Silk Court - Tarantulas - L2 - Knights
+N5 S2 H2 A1 M4 R- B5
+<b><b>Poison</b> - 6s to hit can't be saved
+
+<b>Virulent 2+</b> - Any unit wounded by this unit becomes Poisoned. At the end of each of the controlling players turns, Poisoned units take a wound on a 2+ with no armour saves allowed.</b>
+-------
+
+Silk Court - Widowmakers - L2 - Knights
+N5 S2 H2 A1 M5 R5 B6
+<b><b>Aggressive Poison</b> - 5s and 6s to hit can't be saved. Has no affect if the attack misses.
+
+<b>Maneouverable</b> - May turn once at any point during a move or hustle</b>
+-------
+
+Silk Court - Shimmerwebs - L2 - Shifters
+N5 S1 H1 A1 M5 R6 B-
+<b><b>Poison</b> - 6s to hit can't be saved
+
+<b>Evasive</b> - Enemy attacks only hit this unit on 6s.
+
+<b>Cloaked 4+</b> - Block is higher before this unit is revealed</b>
+-------
+
+Silk Court - Webdancers - L2 - Shifters
+N5 S1 H1 A1 M4 R5 B5
+<b><b>Poison</b> - 6s to hit can't be saved
+
+<b>Shifting</b> - When this unit is revealed, you may immediately move it to any empty adjacent square. This can be used before combat starts.
+
+<b>Flexible</b> - Turn to face any direction at the start of your turn
+
+<b>Cloaked 4+</b> - Block is higher before this unit is revealed</b>
+-------
+
+Silk Court - Mimics - L2 - Shifters
+N5 S1 H1 A1 M3 R4 B5
+<b><b>Poison</b> - 6s to hit can't be saved
+
+<b>Cunning Disguises</b> - Free action: Swap this unit with a friendly facedown unit.
+
+<b>Cloaked 4+</b> - Block is higher before this unit is revealed</b>
+-------
+
+Silk Court - Cocoon Cannon - L2 - Webcannon
+N1 S1 H3 A2 M5 R- B6
+<b><b>War Machine</b> - Dies if it flees. Can't move into combat.
+
+<b>Poison</b> - 6s to hit can't be saved
+
+<b>Cocoon Cannon</b> - Pick a target square within 6 and roll a die. Can't target a unit in combat.
+5 or 6 - Direct hit
+4 - Off by one, your choice
+2 or 3 - Miss
+1 - Off by one, opponent's choice 
+The target tile takes 3 attacks hitting on 4+ with poison. The unit may not move on its next turn.</b>
+-------
+
+Silk Court - Spitter - L2 - Webcannon
+N1 S1 H3 A2 M5 R4 B6
+<b><b>War Machine</b> - Dies if it flees. Can't move into combat.
+
+<b>Poison</b> - 6s to hit can't be saved
+
+<b>Virulent 4+</b> - Any unit wounded by this unit becomes Poisoned. At the end of each of the controlling players turns, Poisoned units take a wound on a 4+ with no armour saves allowed.
+
+<b>Spitter Cannon</b> - Ranged weapon. Range 5. Fires 4 shots. Can shoot over friendly units.</b>
+-------
+
+Silk Court - Weblayer - L2 - Webcannon
+N1 S1 H3 A2 M5 R- B6
+<b><small><b>War Machine</b> - Dies if it flees. Can't move into combat.
+
+<b>Poison</b> - 6s to hit can't be saved
+
+<b>Web Layer</b> - Pick a target square within 6 and roll a die. 
+4, 5 or 6 - Direct hit
+3 - Off by one, your choice
+2 - Miss
+1 - Off by up to two, opponent's choice 
+Place a web in the target square. Units that move into those spaces end their turns and can't fight in combat. If this hits a unit directly, it can't fight in combat this turn. Webs are removed once stepped in.
+
+<b>Friendly Fire</b> - Can shoot into combat and into friendly units.</small></b>
+-------
+
+Redspines - Warriors - L1 C:2 - Warband
+N6 S1 H1 A1 M4 R6 B5
+<b><b>Vengence</b> - When this unit blocks in combat, it still takes 1 wound. The unit that attacked takes 1 wound as well.</b>
+-------
+
+Redspines - Archers - L1 C:2 - Warband
+N6 S1 H1 A1 M5 R4 B5
+<b><b>Vengence</b> - When this unit blocks in combat, it still takes 1 wound. The unit that attacked takes 1 wound as well.
+
+<b>Fragile Spikes</b> - This unit's block only applies in combat. Ranged hits may not be blocked after the unit is revealed.</b>
+-------
+
+Redspines - Beserks - L1 C:3 - Warband
+N6 Sd3 H1 A1 M4 R- B5
+<b><b>Vengence</b> - When this unit blocks in combat, it still takes 1 wound. The unit that attacked takes 1 wound as well.
+
+<b>Random mover d3</b> - Roll a die for movement each turn. Movement is d3 spaces.
+
+<b>Eager to Fight.</b> - You must move the full distance, or collide with something. If the unit moves off the board, it is lost.
+
+<b>Maneouverable</b> - May turn once at any point during a move or hustle.</b>
+-------
+
+Redspines - Crowseekers - L1 C:2 - Warband
+N6 S1 H1 A1 M5 R- B5
+<b><b>Vengence</b> - When this unit blocks in combat, it still takes 1 wound. The unit that attacked takes 1 wound as well.
+
+<b>Bloodlust</b> - While this unit has one or more wounds, each model has an extra attack.</b>
+-------
+
+Redspines - Relentless - L1 C:3 - Warband
+N6 S1 H1 A1 M4 R- B5
+<b><b>Vengence</b> - When this unit blocks in combat, it still takes 1 wound. The unit that attacked takes 1 wound as well.
+
+<b>Relentless</b> - If this unit defeats a unit in combat, it may move forward 1. If it enters a new combat, this unit can attack again. New opponents may not counterattack this unit.</b>
+-------
+
+Redspines - Pincushions - L1 C:3 - Warband
+N6 S1 H1 A1 M4 R5 B5
+<b><b>Vengence</b> - When this unit blocks in combat, it still takes 1 wound. The unit that attacked takes 1 wound as well.
+
+<b>Circle of Spikes</b> - Opponents do not get bonuses for attacking this unit in the flank or rear. Strikes first against attacks from the flank or rear.</b>
+-------
+
+Redspines - Meatwads - L2 - Huskarls
+N5 S1 H2 A1 M5 R- B4
+<b><b>Vengence</b> - When this unit blocks in combat, it still takes 1 wound. The unit that attacked takes 1 wound as well.
+
+<b>Retribution</b> - Wounds dealt from Vengence count double to combat resolution.</b>
+-------
+
+Redspines - Blood-dancers - L2 - Huskarls
+N5 S1 H2 A1 M3 R5 B5
+<b><b>Vengence</b> - When this unit blocks in combat, it still takes 1 wound. The unit that attacked takes 1 wound as well.
+
+<b>Blood Dance</b> - Once per turn, after this unit takes a wound, it may move or sidestep. This may take it out of combat.
+
+<b>Maneouverable</b> - May turn once at any point during a move or hustle.</b>
+-------
+
+Redspines - Quillsprays - L2 - Huskarls
+N5 S1 H2 A1 M5 R5 B5
+<b><b>Vengence</b> - When this unit blocks in combat, it still takes 1 wound. The unit that attacked takes 1 wound as well.
+
+<b>About Face</b> - May turn exactly 180 after moving. 
+
+<b>Quill Spray</b> - Special action. Can be used instead of attacking in combat or as a ranged attack. Each model shoots each enemy unit adjacent to the flank or rear of this unit, using this unit's ranged stat. This can shoot units in combat. Counts towards combat resolution. 
+ 
+<b>Circle of Spikes</b> - Opponents do not get bonuses for attacking this unit in the flank or rear. Strikes first against attacks from the flank or rear.</b>
+-------
+
+Redspines - Raiders - L2 - Boar Riders
+N3 S2 H2 A2 M4 R5 B5
+<b><b>Vengence</b> - When this unit blocks in combat, it still takes 1 wound. The unit that attacked takes 1 wound as well.
+
+<b>Flanking Ambush</b> - This unit may be deployed off the board. If they are, on any turn you may use this unit's action to place them on either flank board edge (facing away from it). This counts as their action for the turn.</b>
+-------
+
+Redspines - Woedriders - L2 - Boar Riders
+N3 S2 H2 A2 M4 R- B5
+<b><b>Vengence</b> - When this unit blocks in combat, it still takes 1 wound. The unit that attacked takes 1 wound as well.
+
+<b>Uncanny Protection</b> - Block may not be reduced beneath 5.
+
+<b>Protective Markings</b> - When this unit blocks due to Vengence, it does not take a wound.</b>
+-------
+
+Redspines - Screamers - L2 - Boar Riders
+N3 S2 H2 A3 M4 R- B6
+<b><b>Vengence</b> - When this unit blocks in combat, it still takes 1 wound. The unit that attacked takes 1 wound as well.
+
+<b>Bloodlust</b> - While this unit has one or more wounds, each model has an extra attack.
+
+<b>Relentless</b> - If this unit defeats a unit in combat, it may move forward 1. If it enters a new combat, this unit can attack again. New opponents may not counterattack this unit.
+
+<b>Maneouverable</b> - May turn once at any point during a move or hustle.</b>
+-------
+
+Redspines - Valkryies - L2 - Warwitches
+N3 S1 H2 A2 M4 R- B6
+<b><b>Vengence</b> - When this unit blocks in combat, it still takes 1 wound. The unit that attacked takes 1 wound as well.
+
+<b>Battlefield Salves</b> - Free action: Heal an adjacent unit by 1. Until the end of turn, it heals 1 every time it deals a wound. This can ressurect models.</b>
+-------
+
+Redspines - Furies - L2 - Warwitches
+N3 S1 H2 A2 M3 R- B5
+<b><b>Vengence</b> - When this unit blocks in combat, it still takes 1 wound. The unit that attacked takes 1 wound as well.
+
+<b>Revels</b> - When this unit takes or deals a wound, heal an adjacent friendly unit by 1. This can ressurect models.</b>
+-------
+
+Redspines - Harvesters - L2 - Warwitches
+N3 S1 H3 A2 M4 R- B4
+<b><b>Vengence</b> - When this unit blocks in combat, it still takes 1 wound. The unit that attacked takes 1 wound as well.
+
+<b>Bloodspells</b> - While this unit is wounded, gain +1 to casting.
+
+<b>Prepared Spell</b> - Equip this unit with one free uncommon spell.</b>
+-------
+
+Coppersand - Warriors - L1 C:2 - Mechanics
+N5 S1 H1 A1 M4 R6 B5
+<b><b>Mechanics</b> - At the start of your turn, heal 1 wound on an adjacent construct.</b>
+-------
+
+Coppersand - Gunners - L1 C:2 - Mechanics
+N5 S1 H1 A1 M5 R4 B6
+<b><b>Mechanics</b> - At the start of your turn, heal 1 wound on an adjacent construct.</b>
+-------
+
+Coppersand - Sappers - L1 C:2 - Mechanics
+N5 S1 H1 A1 M6 R5 B6
+<b><b>Mechanics</b> - At the start of your turn, heal 1 wound on an adjacent construct.
+
+<b>Entrench</b> - Units that move adjacent to this unit are disrupted. Each model in the unit takes a wound, hitting on that unit's block score. This affects friendly units as well.</b>
+-------
+
+Coppersand - Supplicants - L1 C:2 - Mechanics
+N5 S1 H1 A1 M5 R- B-
+<b><b>Mechanics</b> - At the start of your turn, heal 1 wound on an adjacent construct.
+
+<b>Meatshields</b> - When an adjacent friendly construct is attacked, before rolling to block, you may redirect all of the attacks to this unit. Any wounds taken count towards combat resolution.
+
+<b>Unprotected</b> - Reveal this unit when an attack hits it, rather than using the default block.</b>
+-------
+
+Coppersand - Artificers - L1 C:3 - Mechanics
+N5 S1 H1 A1 M4 R5 B5
+<b><b>Mechanics</b> - At the start of your turn, heal 1 wound on an adjacent construct
+
+<b>Prepared Equipment</b> - Equip this unit with one piece of free uncommon equipment, or two pieces of common equipment.
+
+<b>Equippable</b> - Able to equip uncommon equipment</b>
+-------
+
+Coppersand - Snipers - L1 C:3 - Mechanics
+N5 S1 H1 A1 M5 R4 B5
+<b><b>Mechanics</b> - At the start of your turn, heal 1 wound on an adjacent construct.
+
+<b>Long Range</b> - This unit's ranged weapons gain 1 range.</b>
+-------
+
+Coppersand - Clay Golems - L2 - Golems
+N3 S1 H3 A2 M4 R- B5
+<b><b>Construct</b> - Immune to fear checks while adjacent to a mechanic. Dies if it flees.
+
+<b>Regenerative Clay</b> - At the end of each player's turn, each model heals to full. This does not ressurect dead models.</b>
+-------
+
+Coppersand - Minetomatons - L2 - Golems
+N3 S1 H2 A3 M4 R- B5
+<b><b>Construct</b> - Immune to fear checks while adjacent to a mechanic. Dies if it flees.
+
+<b>Ambush</b> - Action: Remove this unit from the board. On your next turn, place it on an empty space along any board edge (facing away from the board edge) as its action for the turn
+
+<b>AP 1</b> - Reduce block rolls by 1.</b>
+-------
+
+Coppersand - Bladestorms - L2 - Golems
+N3 S1 H2 A2x2 M5 R- B5
+<b><b>Construct</b> - Immune to fear checks while adjacent to a mechanic. Dies if it flees.
+
+<b>Four Arms</b> - Wields two sets of weapons. This unit performs a round of attacks with one set of weapons, then a second round of attacks with a second set of weapons. 
+
+<b>Prepared Weapons</b> - Equip this unit with one free uncommon weapon, or two free common weapons.</b>
+-------
+
+Coppersand - Juggernaut - L2 - Colossus
+N1 S2 H5 A5 M3 R- B4
+<b><b>Construct</b> - Immune to fear checks while adjacent to a mechanic. Dies if it flees.
+
+<b>Trample</b> - Action: Move forward 1. If there is a model in that space, it attempts to move backwards 1 unless it is blocked. Roll an attack against each model in the unit, hitting on 6+ or 4+ if the unit was blocked. These do not count for combat resolution. Can be used to move out of combat.</b>
+-------
+
+Coppersand - Overseer - L2 - Colossus
+N1 S2 H5 A4 M4 R4 B5
+<b><b>Construct</b> - Immune to fear checks while adjacent to a mechanic. Dies if it flees.
+<b>Multishot 3</b> - Ranged attacks roll 3 dice.
+<b>Overwatch</b> - During your opponent's turn, fire a round of shooting at the first enemy unit to become a new valid shooting target. Has no effect on units that were already valid shooting targets. This can take effect because of units fleeing combat or getting wiped out.
+<b>Prepared Ranged Weapon</b> - Equip this unit with one free common or uncommon ranged weapon.</b>
+-------
+
+Coppersand - Warcrane - L2 - Colossus
+N1 S1 H5 A5 M5 R- B3
+<b><b>Construct</b> - Immune to fear checks while adjacent to a mechanic. Dies if it flees.
+
+<b>Lift and Shift</b> - Action: Rotate an adjacent unit 90 degrees around this unit. You may rotate this unit in the same direction. May not move units off the board. The unit counts as having moved for the purpose of rules like Entrenched.</b>
+-------
+
+Coppersand - Grand Bombard - L2 - Artillery
+N1 S1 H3 A2 M6 R- B6
+<b><b>Construct</b> - Immune to fear checks while adjacent to a mechanic. Dies if it flees.
+<b>War Machine</b> - Dies if it flees. Can't move into combat.
+<b>Primed</b> - Place 2 powder tokens on this when it is revealed.
+<b>Reloading</b> - Place a powder tokens on this unit at the end of your turn.
+<b>Bombard</b> - Action: Uses all powder tokens as X. Pick a target square within 2 + X, roll a die and add X.
+7+ - Direct hit. 
+5-6 - Off by one towards your board edge.
+4 or less - Miss. Keep all powder tokens.
+Any unit in the hit square takes 3X attacks hitting on 3+ with AP X. Lose all powder tokens.</b>
+-------
+
+Coppersand - Hookshot - L2 - Artillery
+N1 S1 H3 A2 M6 R4 B6
+<b><b>Construct</b> - Immune to fear checks while adjacent to a mechanic. Dies if it flees.
+
+<b>War Machine</b> - Dies if it flees. Can't move into combat.
+
+<b>Hookshot</b> - Ranged Weapon. Range 5. Fires 4 shots. If any shots hit (they can be blocked), move the target unit one square towards this unit.</b>
+-------
+
+Coppersand - Surpressor - L2 - Artillery
+N1 S1 H4 A2 M6 R- B6
+<b><b>Construct</b> - Immune to fear checks while adjacent to a mechanic. Dies if it flees.
+
+<b>War Machine</b> - Dies if it flees. Can't move into combat.
+
+<b>Surpression Cannon</b> - Target a square in shooting range 5. Each unit in that firing line at the start of your next turn takes 5 ranged attacks hitting on 3+ with AP3. May not target a firing line that includes a friendly unit, but will hit them if they move in before your turn ends.</b>
+-------
+
+Scaled Empire - Warriors - L1 C:2 - Infantry
+N6 S1 H1 A1 M4 R6 B5
+<b><b>Detachment</b> - Gains +1 to leadership rolls while adjacent to a regiment or officer. If no regiments or officers are adjacent to this unit, fails flee rolls on a 2.</b>
+-------
+
+Scaled Empire - Militia - L1 C:1 - Infantry
+N6 S1 H1 A1 M5 R- B6
+<b><b>Detachment</b> - Gains +1 to leadership rolls while adjacent to a regiment or officer. If no regiments or officers are adjacent to this unit, fails flee rolls on a 2.
+
+<b>Disorganised</b> - Automatically fails fear checks if at or below 50% unit strength.</b>
+-------
+
+Scaled Empire - Firepowder Corps - L1 C:2 - Infantry
+N6 S1 H1 A1 M5 R4 B6
+<b><b>Detachment</b> - Gains +1 to leadership rolls while adjacent to a regiment or officer. If no regiments or officers are adjacent to this unit, fails flee rolls on a 2.</b>
+-------
+
+Scaled Empire - Scout Corps - L1 C:3 - Infantry
+N6 S1 H1 A1 M5 R4 B6
+<b><b>Detachment</b> - Gains +1 to leadership rolls while adjacent to a regiment or officer. If no regiments or officers are adjacent to this unit, fails flee rolls on a 2.
+
+<b>Self Sufficient Bows</b> - Ranged Weapon. Range 3. 
+
+<b>Maneouverable</b> - May turn once at any point during a move or hustle.
+
+<b>Fire on the Move</b> - Can shoot after moving
+
+<b>Tactical Retreat</b> - Can choose to flee before combat starts</b>
+-------
+
+Scaled Empire - Scalewall - L1 C:3 - Infantry
+N6 S1 H1 A1 M4 R- B4
+<b><b>Detachment</b> - Gains +1 to leadership rolls while adjacent to a regiment or officer. If no regiments or officers are adjacent to this unit, fails flee rolls on a 2.
+
+<b>Shieldwall</b> - Improve block by 1 against ranged attacks 
+
+<b>Slow</b> - Can't hustle</b>
+-------
+
+Scaled Empire - Horsebreakers - L1 C:3 - Infantry
+N6 S1 H1 A1 M4 R- B5
+<b><b>Detachment</b> - Gains +1 to leadership rolls while adjacent to a regiment or officer. If no regiments or officers are adjacent to this unit, fails flee rolls on a 2.
+
+<b>Pike Square</b> - Opponents do not get bonuses for attacking this unit in the flank and this unit treats its flanks as the front of the unit. 
+
+<b>Cavalrybane</b> - Gains +1 to hit, AP1, and +1 to block in combat against units with 2 or more movement.</b>
+-------
+
+Scaled Empire - Cannonade - L2 - Firepower
+N1 S1 H3 A2 M6 R- B6
+<b><b>War Machine</b> - Dies if it flees. Can't move into combat.
+
+<b>Cannons</b> - Ranged weapon. Range 5. The first unit in that range gets 3 attacks that hit on 5+, AP -2, Multiwound 2.
+
+<b>Foe Piercing</b> - May also attack a unit within range directly behind the target, hitting with a -1 penalty.</b>
+-------
+
+Scaled Empire - Mortar Company - L2 - Firepower
+N1 S1 H3 A2 M6 R- B6
+<b><b>War Machine</b> - Dies if it flees. Can't move into combat.
+
+<b>Storm Mortar</b> - Pick a target square within 6 and roll a die. Can't target a unit in combat.
+4, 5 or 6 - Direct hit
+3 - Off by one, your choice
+2 - Miss
+1 - Off by up to two, opponent's choice 
+Roll an attack for each model in the target square, hitting on 4+ with AP1.</b>
+-------
+
+Scaled Empire - War Organ - L2 - Firepower
+N1 S1 H3 A2 M6 R- B6
+<b><b>War Machine</b> - Dies if it flees. Can't move into combat.
+
+<b>Organ Gun</b> - Ranged Weapon. Range 4. Roll 3d6 and take a wound for each 1 rolled. Take the two highest dice and fire that many shots. Shots are fired even if this unit is destroyed.</b>
+-------
+
+Scaled Empire - Outriders - L2 - Cavalry
+N4 S2 H1 A1 M5 R4 B5
+<b><b>Regiment</b> - Gains +1 to leadership rolls while adjacent to a detachment.
+
+<b>Maneouverable</b> - May turn once at any point during a move or hustle
+
+<b>Multishot 2</b> - Ranged attacks roll 2 dice.
+
+<b>Fire on the Move</b> - Can shoot after moving
+
+<b>Tactical Retreat</b> - Can choose to flee before combat starts</b>
+-------
+
+Scaled Empire - Wyrmknights - L2 - Cavalry
+N4 S3 H2 A2 M5 R5 B6
+<b><b>Regiment</b> - Gains +1 to leadership rolls while adjacent to a detachment.
+
+<b>Flying</b> - This unit can move over other units and obstacles
+
+<b>Maneouverable</b> - May turn once at any point during a move or hustle</b>
+-------
+
+Scaled Empire - Dragoons - L2 - Cavalry
+N4 S2 H2 A2 M5 R- B4
+<b><b>Regiment</b> - Gains +1 to leadership rolls while adjacent to a detachment.
+
+<b>Impact Hits d3</b> - If you get a charge bonus, do d3 attacks per model hitting on 4+. These count towards who won combat.</b>
+-------
+
+Scaled Empire - Twohanders - L2 - Veterans
+N6 S1 H1 A1 M4 R- B5
+<b><b>Regiment</b> - Gains +1 to leadership rolls while adjacent to a detachment.
+
+<b>Unbreakable</b> - Can't flee
+
+<b>Cleave</b> - Each hit does 2 wounds that can be split across multiple models.</b>
+-------
+
+Scaled Empire - Bluemasks - L2 - Veterans
+N6 S1 H1 A1 M5 R- B4
+<b><b>Regiment</b> - Gains +1 to leadership rolls while adjacent to a detachment.
+
+<b>Fearful Presence</b> - Enemy units in range 2 subtract one from rolls to flee. Natural 6s still always pass.</b>
+-------
+
+Scaled Empire - Jetbreaths - L2 - Veterans
+N6 S1 H1 A1 M5 R5 B5
+<b><b>Regiment</b> - Gains +1 to leadership rolls while adjacent to a detachment.
+
+<b>Breath Weapons</b> - Special attack: Once per battle, instead of attacking as normal this unit may use a breath weapon. Each model in this unit rolls an attack for every 2 models in the enemy unit (rounded up), hitting on 6s.</b>
+-------
+
+Gobbo - Boomshaman - L3 - Leader
+N1 S1 H4 Ad6 M2 R- B-
+<b><b>Master of Munitions</b> - Explosive units and direct hits by Boomboxes gain splash. For every wound dealt, all adjacent units take a hit on a 5+, AP1. 
+
+<b>Explosive</b> - Dies after combat.
+
+<b>Powder Keg</b> - d6 attacks per model.
+
+<b>AP 4</b> - Reduce block rolls by 4.
+
+<b>Lit Fuses</b> - When this unit dies, all adjacent units take d6 attacks hitting on 4+ with AP2.</b>
+-------
+
+Gobbo - Weirdweaver - L3 - Leader
+N1 S1 H4 A3 M4 R- B5
+<b><b>Chaoscaller</b> - Once per turn, you may reroll a single die, unless it was a 1 or a 6.
+
+<b>Miscasts</b> - Takes 1 damage whenever it rolls a 1 to cast a spell.
+
+<b>Uncanny Protection</b> - Block may not be reduced beneath 5.
+
+<b>Mage</b> - Can cast two spells a turn</b>
+-------
+
+Gobbo - Cap'n Bangtidy - L3 - Leader
+N1 S2 H7 A4 M4 R4 B5
+<b><b>Broadside</b> - Free action: Fire a shot directly left or right. It hits all units directly in range d6. If it's a 1, it does 1 damage to this unit instead. Each shot does 3 attacks per unit, hitting on 4+, with multiwound 2. Can be fired in combat.
+
+<b>Friendly Fire</b> - Can shoot into combat and into friendly units.
+
+<b>Impact Hits d3</b> - If you get a charge bonus, do d3 attacks per model hitting on 4+. These count towards who won combat.
+
+<b>Chariot</b> - Can't sidestep</b>
+-------
+
+Gobbo - Funguspeddler - L3 - Leader
+N1 S1 H6 A9 M3 R- B-
+<b><b>Dose Up</b> - Free action: Select a target friendly unit and roll a die. This turn they hit on that value. If you roll a 1, they hit on 2+, but also die at the end of the turn.</b>
+-------
+
+Gobbo - The Green Wolf - L3 - Leader
+N1 S2 H6 A5 M3 R4 B5
+<b><b>Impact Hits 2</b> - If you get a charge bonus, do 2 attacks  hitting on 4+. These count towards who won combat.
+
+<b>Retreat</b> - After combat, instead of rotating, you may move back 2 spaces. Do not change facing. If this moves the unit off the board, it is lost.</b>
+-------
+
+Ratkin - The Ratking - L3 - Leader
+N1 S1 H3 A9 M4 R- B5
+<b><b>Ring of Rats</b> - When the Ratking dies, each friendly ratkin unit heals by d6.</b>
+-------
+
+Ratkin - The Cabal - L3 - Leader
+N3 S1 H2 A2 M5 R- B5
+<b><b>Tricksie Wizards</b> - Each Cabal member can cast a spell a turn.
+
+<b>Miscasts</b> - Takes 1 damage whenever it rolls a 1 to cast a spell.
+
+<b>Uncanny Protection</b> - Block may not be reduced below 5.</b>
+-------
+
+Ratkin - The Grand Rataltar - L3 - Leader
+N1 S1 H4 A6 M5 R- B5
+<b><b>Sacrificial Altar</b> - Can use one Sacrifice as a free action each turn. It can use a different action as the action for the turn.
+
+<b>Glorious Sacrifice</b> - Action: Target friendly unit  within 1 takes a wound. In combat this turn it gains +1 to hit and AP1.
+
+<b>Occult Sacrifice</b> - Action: Target friendly unit  within 1 takes a wound. Cast a spell with a +1 bonus to casting.
+
+<b>Terrifying Sacrifice</b> - Action: Target friendly unit within 1 takes a wound. The unit that took a wound flees. Any unit it was in combat with rolls to flee with a -1 penalty.</b>
+-------
+
+Ratkin - The Twins - L3 - Leader
+N2 S2 H3 A4 M4 R4 B5
+<b><b>Flanking Attack</b> - While both twins are alive, the twins count as attacking in the flank. If they are already in the flank, they count as attacking the rear.
+
+<b>Cheese it</b> - When the first twin dies, stop taking damage and immediately flee.
+
+<b>Multishot 3</b> - Ranged attacks roll 3 dice per model.</b>
+-------
+
+Ratkin - The Packrat - L3 - Leader
+N1 S2 H5 A5 M4 R4 B4
+<b><b>Packrat</b> - May equip any number of weapons. Before each round of combat, choose which equipment to use.
+
+<b>Filthy Looter</b> - After this unit deals damage, it may steal an item from the target. If this unit already has a weapon of the same class, discard that weapon. The wounded unit gains the discarded weapon.</b>
+-------
+
+Boneborn - Grand Necromancer - L3 - Leader
+N1 S1 H4 A2 M3 R- B5
+<b><b>Unstable</b> - Instead of rolling to flee, lose 1 extra wound
+
+<b>Practiced Necromancy</b> - Unstable units only lose an extra wound if they lose combat by at least 2.
+
+<b>Uncanny Protection</b> - Block may not be reduced beneath 5.
+
+<b>Mage</b> - Can cast two spells a turn</b>
+-------
+
+Boneborn - Banshee Queen - L3 - Leader
+N1 S1 H4 A3 M3 R- B3
+<b><b>Unstable</b> - Instead of rolling to flee, lose 1 extra wound
+
+<b>Fearful Presence</b> - Enemy units in range 2 subtract one from rolls to flee. Natural 6s still always pass.
+
+<b>Ethereal</b> - Ignores Armour Piercing
+
+<b>Terrifying</b> - At the start of each round of combat, all enemy units in combat with it must roll to flee. If they flee out of combat, no combat takes place.</b>
+-------
+
+Boneborn - The Gravedigger - L3 - Leader
+N1 S1 H7 A4 M3 R- B4
+<b><b>Unstable</b> - Instead of rolling to flee, lose 1 extra wound
+
+<b>Corpsefinder</b> - Whenever an enemy unit in range 3 is wiped out, a unit of your choice may regain d6 wounds.</b>
+-------
+
+Boneborn - Dracolich - L3 - Leader
+N1 S3 H8 A5 M3 R- B5
+<b><b>Unstable</b> - Instead of rolling to flee, lose 1 extra wound
+
+<b>Flying</b> - This unit can move over other units and obstacles
+
+<b>Maneouverable</b> - May turn once at any point during a move or hustle</b>
+-------
+
+Boneborn - Archrevenant - L3 - Leader
+N1 S1 H6 A5 M3 R- B5
+<b><b>Unstable</b> - Instead of rolling to flee, lose 1 extra wound
+
+<b>Archrevenant</b> - After combat, heal this unit one wound for each wound dealt in combat. Can resurrect models. Limited to the starting size.</b>
+-------
+
+Silk Court - Huntmistress - L3 - Leader
+N1 S2 H5 A4 M4 R3 B5
+<b><b>Poison</b> - 6s to hit can't be saved
+
+<b>Deceptive Shots</b> - All units in army are able to shoot into flank or rear of units that are in combat. These wounds count towards that unit's combat resolution this turn.
+
+<b>Multishot 3</b> - Ranged attacks roll 3 dice.
+
+<b>Volley Fire</b> - Can fire ranged attacks over other units.
+
+<b>Maneouverable</b> - May turn once at any point during a move or hustle</b>
+-------
+
+Silk Court - Court Poisoner - L3 - Leader
+N1 S1 H5 A4 M4 R4 B5
+<b><b>Wretched Poisons</b> - Units that takes one or more poison wounds from a friendly unit must roll to flee with a -1 penalty. If the unit is in combat, it makes this roll at the end of turn.
+
+<b>Poison</b> - 6s to hit can't be saved
+
+<b>Virulent</b> - Any unit wounded by this unit becomes Poisoned. At the end of each of the controlling players turns, Poisoned units take a wound on a 4+ with no armour saves allowed.</b>
+-------
+
+Silk Court - Mistress of Whispers - L3 - Leader
+N1 S1 H4 A3 M4 R- B5
+<b><b>Poison</b> - 6s to hit can't be saved
+
+<b>Pull Strings</b> - Action: Swap the position of two friendly facedown units
+
+<b>Mage</b> - Can cast two spells a turn</b>
+-------
+
+Silk Court - Handmaid - L3 - Leader
+N1 S1 H4 A3 M4 R- B5
+<b><b>Poison</b> - 6s to hit can't be saved
+
+<b>Another's Bidding</b> - When casting spells, this unit may select any friendly unit as the origin of a spell
+
+<b>Mage</b> - Can cast two spells a turn</b>
+-------
+
+Silk Court - Broodmother - L3 - Leader
+N1 S2 H8 A6 M4 R- B4
+<b><b>Poison</b> - 6s to hit can't be saved
+
+<b>Center of the Web</b> - Gain +1 attack for each adjacent friendly unit
+
+<b>Virulent 4+</b> - Any unit wounded by this unit becomes Poisoned. At the end of each of the controlling players turns, Poisoned units take a wound on a 4+ with no armour saves allowed.</b>
+-------
+
+Redspines - Crowcaller - L3 - Leader
+N1 S1 H5 A3 M4 R- B5
+<b><b>Vengence</b> - When this unit blocks in combat, it still takes 1 wound. The unit that attacked takes 1 wound as well.
+
+<b>Mage</b> - Can cast two spells a turn.
+
+<b>Bloodspells</b> - While this unit is wounded, gain +1 to casting.
+
+<b>Uncanny Protection</b> - Block may not be reduced beneath 5.
+
+<b>Protective Markings</b> - When this unit blocks due to Vengence, it does not take a wound.</b>
+-------
+
+Redspines - The Brewer - L3 - Leader
+N1 S1 H4 A3 M5 R- B5
+<b><b>Vengence</b> - When this unit blocks in combat, it still takes 1 wound. The unit that attacked takes 1 wound as well.
+
+<b>Cauldron</b> - When Vengence triggers on an adjacent friendly unit, it does 2 wounds per block rolled.
+
+<b>Uncanny Protection</b> - Block may not be reduced beneath 5.
+
+<b>Protective Markings</b> - When this unit blocks due to Vengence, it does not take a wound.</b>
+-------
+
+Redspines - Executioner - L3 - Leader
+N1 S1 H7 A6 M3 R5 B5
+<b><b>Vengence</b> - When this unit blocks in combat, it still takes 1 wound. The unit that attacked takes 1 wound as well.
+
+<b>Multiwound 2</b> - Each hit does 2 wounds to a single model.
+
+ <b>Killing Blow</b> - Before each round of combat, you may choose to forfeit any number of attack dice. Each die forfeited increases Multiwound by 1.</b>
+-------
+
+Redspines - Raidleader - L3 - Leader
+N1 S2 H6 A5 M3 R4 B5
+<b><b>Vengence</b> - When this unit blocks in combat, it still takes 1 wound. The unit that attacked takes 1 wound as well.
+
+<b>Aggressive Flanking</b> - When a friendly unit moves into the flank or rear of an enemy, do 1 attack per model hitting on 4+. These count towards who won combat.
+
+<b>Master of Movement</b> - Friendly units may turn 90 degrees after moving.
+
+<b>Uncanny Protection</b> - Block may not be reduced beneath 5.</b>
+-------
+
+Redspines - Battleboar - L3 - Leader
+N1 S2 H9 A5 M4 R- B4
+<b><b>Vengence</b> - When this unit blocks in combat, it still takes 1 wound. The unit that attacked takes 1 wound as well.
+
+<b>Buck Wildly</b> - Whenever this unit deals a wound through vengence, deal it to all adjacent enemy units.
+
+<b>Maneouverable</b> - May turn once at any point during a move or hustle</b>
+-------
+
+Coppersand - Master Sapper - L3 - Leader
+N1 S2 H6 A4 M4 R4 B5
+<b><b>Mechanics</b> - At the start of your turn, heal 1 wound on an adjacent construct.
+<b>Battlefield Prep</b> - During deployment, instead of placing a unit, place a mine on any empty square on the battlefield. The first unit to enter that tile takes d6 attacks hitting on 2+ with AP2. 
+<b>Sensibly Entrenched</b> - Enemy units that move adjacent to this unit are disrupted. Each model in the unit takes a wound, hitting on that unit's block score. 
+<b>Landbreaker</b> - Free Action: Once per game, place an obstacle in range 2 that blocks movement and shooting. 
+<b>Multishot 2</b> - Ranged attacks roll 2 dice.
+<b>Fire on the Move</b> - Can shoot after moving</b>
+-------
+
+Coppersand - Gatebreaker - L3 - Leader
+N1 S2 H6 A2x3 M3 R- B5
+<b><b>Construct</b> - Immune to fear checks while adjacent to a mechanic. Dies if it flees.
+
+<b>Four Arms</b> - Wields two sets of weapons. This unit performs a round of attacks with one set of weapons, then a second round of attacks with a second set of weapons.</b>
+-------
+
+Coppersand - The Warforger - L3 - Leader
+N1 S1 H5 A4 M4 R4 B4
+<b><b>Mechanics</b> - At the start of your turn, heal 1 wound on an adjacent construct.
+
+<b>Coppersmith's Upgrade</b> - After deployment, replace one equipment on any unit with any other piece of equipment of that type. Show your opponent the type. The unit does not need to be able to equip an item of that tier.
+
+<b>Custom Tools</b> - Can equip two weapons. Their effects stack.</b>
+-------
+
+Coppersand - Crackshot - L3 - Leader
+N1 S1 H5 A4 M4 R3 B5
+<b><b>Mechanics</b> - At the start of your turn, heal 1 wound on an adjacent construct.
+
+<b>Riflemaker</b> - All ranged weapons in the army gain AP1.
+
+<b>Entrench</b> - Units that move adjacent to this unit are disrupted. Each model in the unit takes a wound, hitting on that unit's block score. This affects friendly units as well.
+
+<b>Multishot 3</b> - Ranged attacks roll 3 dice.
+
+<b>Long Range</b> - All ranged weapons gain 1 range.</b>
+-------
+
+Coppersand - The Zeppelin - L3 - Leader
+N1 S2 H8 A3 M5 R4 B5
+<b><b>Construct</b> - Immune to fear checks while adjacent to a mechanic. Dies if it flees.
+
+<b>Flying</b> - This unit can move over other units and obstacles. 
+<b>Airborne</b> - Melee attacks against this are at -1. Natural 6s still always hit. This unit may always move out of combat. 
+<b>Bomber</b> - If this unit moves over an enemy unit, do d6+1 attacks hitting on 5+ with AP1.
+
+<b>Multishot 2</b> - Ranged attacks roll 2 dice.
+<b>Fire on the Move</b> - Can shoot after moving
+<b>Firing platform</b> - This unit can shoot from the front, flank or rear.</b>
+-------
+
+Scaled Empire - The General - L3 - Leader
+N1 S1 H5 A4 M4 R5 B4
+<b><b>Officer</b> - When a ranged attack targets this unit, you may nominate an adjacent friendly regiment as the target instead. 
+
+<b>General's Banner</b> - All friendly units get a bonus of 1 towards who won combat.
+
+<b>General's Spirit</b> - Other friendly units in the same combat as the general get a +1 bonus to melee attacks.</b>
+-------
+
+Scaled Empire - Commando - L3 - Leader
+N1 S1 H6 A5 M3 R4 B4
+<b><b>Officer</b> - When a ranged attack targets this unit, you may nominate an adjacent friendly regiment as the target instead. 
+
+<b>Fearful Presence</b> - Enemy units in range 2 subtract one from rolls to flee. Natural 6s still always pass.
+
+<b>Multishot 3</b> - Ranged attacks roll 3 dice per model.</b>
+-------
+
+Scaled Empire - Archmage - L3 - Leader
+N1 S1 H4 A3 M4 R- B5
+<b><b>Officer</b> - When a ranged attack targets this unit, you may nominate an adjacent friendly regiment as the target instead. 
+
+<b>Uncanny Protection</b> - Block may not be reduced beneath 5.
+
+<b>Mage</b> - Can cast two spells a turn
+
+<b>Old Knowledge</b> - The first spell cast each turn gets +1 to cast</b>
+-------
+
+Scaled Empire - Wyrm Prince - L3 - Leader
+N1 S3 H8 A3 M3 R- B5
+<b><b>Officer</b> - When a ranged attack targets this unit, you may nominate an adjacent friendly regiment as the target instead. 
+
+<b>Flying</b> - This unit can move over other units and obstacles
+
+<b>Maneouverable</b> - May turn once at any point during a move or hustle
+
+<b>Natural Breath Weapon</b> - Bonus attack: Once per battle, before attacking as normal this unit may use a breath weapon. This unit rolls an attack for every model in the enemy unit, hitting on 5s.</b>
+-------
+
+Scaled Empire - Sharpshooter - L3 - Leader
+N1 S1 H5 A4 M4 R2 B5
+<b><b>Officer</b> - When a ranged attack targets this unit, you may nominate an adjacent friendly regiment as the target instead. 
+
+<b>Spotter</b> - Once per turn, reroll a friendly unit's missed ranged attack dice, or a friendly warmachine's special attack dice.
+
+<b>Multishot 2</b> - Ranged attacks roll 2 dice.
+
+<b>Long Range</b> - This unit's ranged weapons gain 1 range.</b>
+-------
+
+Disciples - Cyclops - L2 - Behemoth
+N1 S1 H5 A4 M3 R3 B5
+<b><b>Rock Lobber</b> - Ranged Weapon - Range 4, AP -2, Multiwound 3.</b>
+-------
+
+Castaways - Deserters - L - 
+N S H A M R B
+
+-------
+
+Disciples - Quillbeasts - L1 C:2 - Mongrels
+N3 S1 H2 A2 M4 R B5
+<b><b>Vengence</b> - When this unit blocks in combat, it still takes 1 wound. The unit that attacked takes 1 wound as well.</b>
+-------
+
+Disciples - Ratbeasts - L1 C:1 - Mongrels
+N3 S1 H2 A3 M6 R- B-
+<b>Unprotected</b>
+-------
+
+Disciples - Scalebeasts - L1 C:2 - Mongrels
+N3 S1 H2 A2 M5 R B4
+
+-------
+
+Disciples - Skybeasts - L1 C:3 - Mongrels
+N3 S2 H2 A2 M4 R B5
+<b>Flap</b>
+-------
+
+Disciples - Spiderbeasts - L1 C:3 - Mongrels
+N3 S1 H2 A2 M4 R B5
+<b><b>Poison</b> - 6s to hit can't be saved
+<b>Multishot 2</b> - Ranged attacks roll 2 dice.</b>
+-------
+
+Disciples - Warriors - L1 C:2 - Mongrels
+N3 S1 H2 A2 M4 R6 B5
+<b><b>Multishot 2</b> - Ranged attacks roll 2 dice.</b>
+-------
+
+ -  - L - 
+N S H A M R B
+
+-------
+
+ -  - L - 
+N S H A M R B
+
+-------
+
+ -  - L - 
+N S H A M R B
+
+-------
+
+ -  - L - 
+N S H A M R B
+
+-------
+
+ -  - L - 
+N S H A M R B
+
+-------
+
+ -  - L - 
+N S H A M R B
+
+-------
+
+ -  - L - 
+N S H A M R B
+
+-------
+
+ -  - L - 
+N S H A M R B
+
+-------
+
+ -  - L - 
+N S H A M R B
+
+-------
+
+ -  - L - 
+N S H A M R B
+
+-------
+
+ -  - L - 
+N S H A M R B
+
+-------
+
+ -  - L - 
+N S H A M R B
+
+-------
+
+Slimes -  - L - 
+N S H A M R B
+<b><b>Unstable</b> - Instead of rolling to flee, lose 1 extra wound
+
+<b>Perpetual</b> - After the unit is wiped out, leave their card face down. At the start of each turn, if the space is unoccupied you may roll a die. On a 4+, bring the unit back to life with full wounds, facing a direction of your choice 
+
+<b>Slow</b> - Don't roll a bonus charge dice</b>
+-------
+
+Disciples -  - L2 - Amalgam
+N S H A M R B
+<b>Virulent</b>
+-------
+
+Disciples -  - L2 - Amalgam
+N S H A M R B
+
+-------
+
+Disciples -  - L2 - Amalgam
+N S H A M R B
+<b><b>Maneouverable</b> - May turn once at any point during a move or hustle.</b>
+-------
+
+Disciples -  - L2 - Behemoth
+N S H A M R B
+<b><b>Maneouverable</b> - May turn once at any point during a move or hustle.</b>
+-------
+
+Disciples -  - L2 - Behemoth
+N S H A M R B
+
+-------
+
+Disciples -  - L2 - Grafter
+N S H A M R B
+
+-------
+
+Disciples -  - L2 - Grafter
+N S H A M R B
+
+-------
+
+Disciples -  - L2 - Grafter
+N S H A M R B
+
+-------
+
+Disciples -  - L - 
+N S H A M R B
+
+-------
+
+Disciples -  - L - 
+N S H A M R B
+
+-------
