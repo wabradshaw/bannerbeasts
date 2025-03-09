@@ -9,7 +9,7 @@ Id,Name,Unit,Include,Faction,Class,Comparison Class,Base Block,Tier,Cost,Equips,
 
 <b>Eager to Fight.</b> - You must move the full distance, or collide with something. If the unit moves off the board, it is lost.
 
-<b>Maneouverable</b> - May turn once at any point during a move or hustle.",,,,1,1,1,,,#2b9800,#000000,#000000,#000000,#000000,#000000,#00dd28,#00941A,#000000,#ffffff,gobbos.png,1,6,9.00,1,6,1.00,0.00,3.00,13.5,FALSE
+<b>Manoeuvrable</b> - May turn once at any point during a move or hustle.",,,,1,1,1,,,#2b9800,#000000,#000000,#000000,#000000,#000000,#00dd28,#00941A,#000000,#ffffff,gobbos.png,1,6,9.00,1,6,1.00,0.00,3.00,13.5,FALSE
 01_1_4,Archers,Gobbo Archers,TRUE,Gobbo,Goblins,Archers,6,1,2,,6,1,5,4,1,1,6,,,,,,,,,1,#000000,#000000,#000000,#cc0000,#2b9800,#cc0000,#00dd28,#00941A,#000000,#ffffff,gobbos.png,1,6,7.20,1,6,1.00,0.00,2.00,10.2,FALSE
 01_1_5,Goblings,Gobbo Goblings,TRUE,Gobbo,Goblins,Chaff,6,1,1,,6,1,5,-,1,1,6,<b>Chaff</b> - Subtract 1 from leadership rolls. 6s still auto-succeed. ,,,,,,,,,#000000,#000000,#000000,#cc0000,#000000,#cc0000,#00dd28,#00941A,#000000,#ffffff,gobbos.png,1,6,7.20,1,6,1.00,0.00,2.00,10.2,FALSE
 01_1_6,Poppers,Gobbo Poppers,TRUE,Gobbo,Goblins,Infantry,6,1,2,,6,1,5,-,1,1,6,"<b>Burst</b> - For each model that dies in combat, make an attack hitting on 4+ with AP1 against the unit that dealt the wound. ",,,,,,,,,#000000,#000000,#000000,#cc0000,#000000,#cc0000,#00dd28,#00941A,#000000,#ffffff,gobbos.png,1,6,7.20,1,6,1.00,0.00,2.00,10.2,FALSE
@@ -31,7 +31,7 @@ Id,Name,Unit,Include,Faction,Class,Comparison Class,Base Block,Tier,Cost,Equips,
 
 <b>Multishot 3</b> - Ranged attacks roll 3 dice per model
 
-<b>Maneouverable</b> - May turn once at any point during a move or hustle
+<b>Manoeuvrable</b> - May turn once at any point during a move or hustle
 
 <b>Chariot</b> - Can't sidestep",,,2,2,2,2,2,2,#2b9800,#000000,#000000,#cc0000,#2b9800,#000000,#00dd28,#00941A,#000000,#ffffff,gobbos.png,2,8,12.00,2,4,1.00,0.00,1.33,14,FALSE
 01_2B_1,Starchucker,Gobbo Starchucker,TRUE,Gobbo,Hurtbox,War Machine,6,2,,,1,1,6,3,2,3,6,"<b>War Machine</b> - Dies if it flees. Can't move into combat.
@@ -68,7 +68,7 @@ Hits all tiles in range across all three ranged attack columns. Each unit that i
 <b>Slow</b> - Can't hustle",,,2,2,2,2,2,1,#000000,#000000,#000000,#000000,#000000,#3467FF,#00dd28,#00941A,#000000,#ffffff,gobbos.png,1,6,18.00,1,6,1.00,0.00,3.00,22.5,FALSE
 01_2C_3,Skypriests,Gobbo Skypriests,TRUE,Gobbo,Priests,Fast Infantry,6,2,,,6,1,4,-,1,1,5,"<b>""Jetpacks""</b> - Action: Roll 2d6. Move a number of tiles at least equal to the lower die, and up to the higher die. You can fly over other units. After landing, this unit may face any direction. If you choose to land on a unit, each model makes 2 attacks hitting at 4+ with AP 2, then this unit dies [explosive]. If this unit moves off the board, it dies. ",,,2,2,2,2,2,1,#000000,#000000,#000000,#000000,#000000,#000000,#00dd28,#00941A,#000000,#ffffff,gobbos.png,1,6,9.00,1,6,1.00,0.00,3.00,13.5,FALSE
 02_1_1,Warriors,Ratkin Warriors,TRUE,Ratkin,Rats,Warriors,-,1,2,,9,1,5,6,1,1,6,,,,1,1,1,1,1,1,#000000,#000000,#000000,#000000,#000000,#000000,#ffb380,#733d00,#000000,#ffffff,rats.png,1,9,10.80,1,9,1.00,0.00,3.00,15.3,FALSE
-02_1_2,Skitterers,Ratkin Skitterers,TRUE,Ratkin,Rats,Fast Infantry,-,1,3,,9,2,5,5,1,1,6,<b>Maneouverable</b> - May turn once at any point during a move or hustle,,,1,1,1,1,,1,#2b9800,#000000,#000000,#000000,#2b9800,#000000,#ffb380,#733d00,#000000,#ffffff,rats.png,1,9,10.80,1,9,1.00,0.00,3.00,15.3,FALSE
+02_1_2,Skitterers,Ratkin Skitterers,TRUE,Ratkin,Rats,Fast Infantry,-,1,3,,9,2,5,5,1,1,6,<b>Manoeuvrable</b> - May turn once at any point during a move or hustle,,,1,1,1,1,,1,#2b9800,#000000,#000000,#000000,#2b9800,#000000,#ffb380,#733d00,#000000,#ffffff,rats.png,1,9,10.80,1,9,1.00,0.00,3.00,15.3,FALSE
 02_1_3,Pelters,Ratkin Pelters,TRUE,Ratkin,Rats,Archers,-,1,2,,9,1,5,5,1,1,-,,,,,,,,,1,#000000,#000000,#000000,#000000,#2b9800,#cc0000,#ffb380,#733d00,#000000,#ffffff,rats.png,1,9,9.00,1,9,1.00,0.00,3.00,13.5,FALSE
 02_1_4,Horde,Ratkin Horde,TRUE,Ratkin,Rats,Chaff,-,1,1,,9,1,6,-,1,1,-,<b>Chaff</b> - Subtract 1 from leadership rolls. 6s still auto-succeed. ,,,1,,,,1,,#000000,#000000,#000000,#cc0000,#000000,#cc0000,#ffb380,#733d00,#000000,#ffffff,rats.png,1,9,9.00,1,9,1.00,0.00,1.50,11.25,FALSE
 02_1_5,Assasslings,Ratkin Assasslings,TRUE,Ratkin,Rats,Infantry,-,1,3,,9,1,5,6,1,1,-,<b>Poison</b> - 6s to hit can't be saved,,,1,,,,,1,#000000,#000000,#000000,#000000,#000000,#cc0000,#ffb380,#733d00,#000000,#ffffff,rats.png,1,9,9.00,1,9,1.17,0.00,3.50,14.25,FALSE
@@ -95,7 +95,7 @@ Hits all tiles in range across all three ranged attack columns. Each unit that i
 <b>Chariot</b> - Can't sidestep ",,,,,,,,,#2b9800,#000000,#cc0000,#000000,#000000,#000000,#ffb380,#733d00,#000000,#ffffff,rats.png,2,4,6.00,6,6,1.00,0.00,2.00,9,FALSE
 02_2C_3,Thiefwagon,Ratkin Thiefwagon,TRUE,Ratkin,Ratwagons,Chariot,6,2,,,1,2,5,5,6,5,5,"<b>Thieves</b> - At the start of combat, if this unit is in the flank or rear of an enemy unit, steal an equipment card from it and equip this unit. 
 
-<b>Maneouverable</b> - May turn once at any point during a move or hustle
+<b>Manoeuvrable</b> - May turn once at any point during a move or hustle
 
 <b>Chariot</b> - Can't sidestep ",,,,,,,,,#2b9800,#000000,#000000,#000000,#000000,#000000,#ffb380,#733d00,#000000,#ffffff,rats.png,2,5,7.50,6,6,1.00,0.00,2.00,10.5,FALSE
 03_1_1,Warriors,Boneborn Warriors,TRUE,Boneborn,Skeletons,Warriors,6,1,2,,6,1,4,-,1,1,5,"<b>Unstable</b> - Instead of rolling to flee, lose 1 extra wound",,,1,1,1,1,1,,#000000,#000000,#000000,#000000,#000000,#000000,#e0e0d3,#4d4d4d,#000000,#ffffff,skellies.png,1,6,9.00,1,6,1.00,0.00,3.00,13.5,FALSE
@@ -165,13 +165,13 @@ Hits all tiles in range across all three ranged attack columns. Each unit that i
 
 <b>Jumping</b> - Can jump over units and obstacles while moving and hustling. Doing so increases the max movement distance by 1. Must end their turn in an empty square.
 
-<b>Maneouverable</b> - May turn once at any point during a move or hustle",,,1,1,1,1,,2,#2b9800,#000000,#000000,#cc0000,#2b9800,#cc0000,#f1baff,#2d2d2d,#000000,#ffffff,spiders.png,2,5,6.00,1,5,1.17,0.00,1.94,8.916666667,FALSE
+<b>Manoeuvrable</b> - May turn once at any point during a move or hustle",,,1,1,1,1,,2,#2b9800,#000000,#000000,#cc0000,#2b9800,#cc0000,#f1baff,#2d2d2d,#000000,#ffffff,spiders.png,2,5,6.00,1,5,1.17,0.00,1.94,8.916666667,FALSE
 04_2A_2,Tarantulas,Silk Court Tarantulas,TRUE,Silk Court,Knights,Heavy Cavalry,6,2,,,5,2,4,-,1,2,5,"<b>Poison</b> - 6s to hit can't be saved
 
 <b>Virulent 2+</b> - Any unit wounded by this unit becomes Poisoned. At the end of each of the controlling players turns, Poisoned units take a wound on a 2+ with no armour saves allowed.",,,2,2,2,,2,,#2b9800,#2b9800,#000000,#2b9800,#000000,#000000,#f1baff,#2d2d2d,#000000,#ffffff,spiders.png,2,10,15.00,1,5,1.11,0.00,2.78,19.16666667,FALSE
 04_2A_3,Widowmakers,Silk Court Widowmakers,TRUE,Silk Court,Knights,Light Cavalry,6,2,,,5,2,5,5,1,2,6,"<b>Aggressive Poison</b> - 5s and 6s to hit can't be saved. Has no affect if the attack misses.
 
-<b>Maneouverable</b> - May turn once at any point during a move or hustle",,,2,2,2,2,,,#2b9800,#2b9800,#000000,#cc0000,#000000,#cc0000,#f1baff,#2d2d2d,#000000,#ffffff,spiders.png,2,10,12.00,1,5,1.00,0.00,1.67,14.5,FALSE
+<b>Manoeuvrable</b> - May turn once at any point during a move or hustle",,,2,2,2,2,,,#2b9800,#2b9800,#000000,#cc0000,#000000,#cc0000,#f1baff,#2d2d2d,#000000,#ffffff,spiders.png,2,10,12.00,1,5,1.00,0.00,1.67,14.5,FALSE
 04_2B_1,Shimmerwebs,Silk Court Shimmerwebs,TRUE,Silk Court,Shifters,Heavy Infantry,4,2,,,5,1,5,6,1,1,-,"<b>Poison</b> - 6s to hit can't be saved
 
 <b>Evasive</b> - Enemy attacks only hit this unit on 6s.
@@ -229,7 +229,7 @@ Place a web in the target square. Units that move into those spaces end their tu
 
 <b>Eager to Fight.</b> - You must move the full distance, or collide with something. If the unit moves off the board, it is lost.
 
-<b>Maneouverable</b> - May turn once at any point during a move or hustle.",,,,1,1,1,,,#2b9800,#000000,#000000,#000000,#000000,#000000,#e78e7e,#cf0000,#000000,#ffffff,redspines.png,1,6,6.00,1,6,1.00,0.67,3.67,11.5,FALSE
+<b>Manoeuvrable</b> - May turn once at any point during a move or hustle.",,,,1,1,1,,,#2b9800,#000000,#000000,#000000,#000000,#000000,#e78e7e,#cf0000,#000000,#ffffff,redspines.png,1,6,6.00,1,6,1.00,0.67,3.67,11.5,FALSE
 05_1_4,Crowseekers,Redspines Crowseekers,TRUE,Redspines,Warband,Infantry,5,1,2,,6,1,5,-,1,1,5,"<b>Vengence</b> - When this unit blocks in combat, it still takes 1 wound. The unit that attacked takes 1 wound as well.
 
 <b>Bloodlust</b> - While this unit has one or more wounds, each model has an extra attack.",,,1,1,1,,,,#000000,#000000,#000000,#cc0000,#000000,#000000,#e78e7e,#cf0000,#000000,#ffffff,redspines.png,1,6,6.00,1,6,1.00,0.67,2.67,10,FALSE
@@ -246,7 +246,7 @@ Place a web in the target square. Units that move into those spaces end their tu
 
 <b>Blood Dance</b> - Once per turn, after this unit takes a wound, it may move or sidestep. This may take it out of combat.
 
-<b>Maneouverable</b> - May turn once at any point during a move or hustle.",,,2,2,2,2,,2,#000000,#2b9800,#000000,#2b9800,#000000,#000000,#e78e7e,#cf0000,#000000,#ffffff,redspines.png,1,10,10.00,1,5,1.00,0.67,4.00,16,FALSE
+<b>Manoeuvrable</b> - May turn once at any point during a move or hustle.",,,2,2,2,2,,2,#000000,#2b9800,#000000,#2b9800,#000000,#000000,#e78e7e,#cf0000,#000000,#ffffff,redspines.png,1,10,10.00,1,5,1.00,0.67,4.00,16,FALSE
 05_2A_3,Quillsprays,Redspines Quillsprays,TRUE,Redspines,Huskarls,Unique,5,2,,,5,1,5,5,1,2,5,"<b>Vengence</b> - When this unit blocks in combat, it still takes 1 wound. The unit that attacked takes 1 wound as well.
 
 <b>About Face</b> - May turn exactly 180 after moving. 
@@ -268,7 +268,7 @@ Place a web in the target square. Units that move into those spaces end their tu
 
 <b>Relentless</b> - If this unit defeats a unit in combat, it may move forward 1. If it enters a new combat, this unit can attack again. New opponents may not counterattack this unit.
 
-<b>Maneouverable</b> - May turn once at any point during a move or hustle.",,,,2,2,,,,#2b9800,#000000,#2b9800,#000000,#000000,#cc0000,#e78e7e,#cf0000,#000000,#ffffff,redspines.png,2,6,6.00,3,9,1.00,0.33,4.83,13.25,FALSE
+<b>Manoeuvrable</b> - May turn once at any point during a move or hustle.",,,,2,2,,,,#2b9800,#000000,#2b9800,#000000,#000000,#cc0000,#e78e7e,#cf0000,#000000,#ffffff,redspines.png,2,6,6.00,3,9,1.00,0.33,4.83,13.25,FALSE
 05_2C_1,Valkryies,Redspines Valkryies,TRUE,Redspines,Warwitches,Support Mage,6,2,,,3,1,4,-,2,2,6,"<b>Vengence</b> - When this unit blocks in combat, it still takes 1 wound. The unit that attacked takes 1 wound as well.
 
 <b>Battlefield Salves</b> - Free action: Heal an adjacent unit by 1. Until the end of turn, it heals 1 every time it deals a wound. This can ressurect models.",2,,,,,1,,,#000000,#000000,#000000,#000000,#000000,#cc0000,#e78e7e,#cf0000,#000000,#ffffff,redspines.png,1,6,6.00,2,6,1.00,0.33,3.33,11,TRUE
@@ -350,7 +350,7 @@ Any unit in the hit square takes 3X attacks hitting on 3+ with AP X. Lose all po
 
 <b>Self Sufficient Bows</b> - Ranged Weapon. Range 3. 
 
-<b>Maneouverable</b> - May turn once at any point during a move or hustle.
+<b>Manoeuvrable</b> - May turn once at any point during a move or hustle.
 
 <b>Fire on the Move</b> - Can shoot after moving
 
@@ -383,7 +383,7 @@ Roll an attack for each model in the target square, hitting on 4+ with AP1.",,,,
 <b>Organ Gun</b> - Ranged Weapon. Range 4. Roll 3d6 and take a wound for each 1 rolled. Take the two highest dice and fire that many shots. Shots are fired even if this unit is destroyed.",,,,,,,,,#000000,#000000,#000000,#000000,#000000,#000000,#c9daf8,#00399e,#000000,#ffffff,empire.png,1,3,3.60,2,2,1.00,0.00,0.33,4.1,TRUE
 07_2B_1,Outriders,Scaled Empire Outriders,TRUE,Scaled Empire,Cavalry,Light Cavalry,6,2,,,4,2,5,4,1,1,5,"<b>Regiment</b> - Gains +1 to leadership rolls while adjacent to a detachment.
 
-<b>Maneouverable</b> - May turn once at any point during a move or hustle
+<b>Manoeuvrable</b> - May turn once at any point during a move or hustle
 
 <b>Multishot 2</b> - Ranged attacks roll 2 dice.
 
@@ -394,7 +394,7 @@ Roll an attack for each model in the target square, hitting on 4+ with AP1.",,,,
 
 <b>Flying</b> - This unit can move over other units and obstacles
 
-<b>Maneouverable</b> - May turn once at any point during a move or hustle",,,,,,1,1,,#3467FF,#2b9800,#2b9800,#cc0000,#000000,#000000,#c9daf8,#00399e,#000000,#ffffff,empire.png,2,8,9.60,2,8,1.00,0.00,2.67,13.6,FALSE
+<b>Manoeuvrable</b> - May turn once at any point during a move or hustle",,,,,,1,1,,#3467FF,#2b9800,#2b9800,#cc0000,#000000,#000000,#c9daf8,#00399e,#000000,#ffffff,empire.png,2,8,9.60,2,8,1.00,0.00,2.67,13.6,FALSE
 07_2B_3,Dragoons,Scaled Empire Dragoons,TRUE,Scaled Empire,Cavalry,Heavy Cavalry,6,2,,,4,2,5,-,2,2,4,"<b>Regiment</b> - Gains +1 to leadership rolls while adjacent to a detachment.
 
 <b>Impact Hits d3</b> - If you get a charge bonus, do d3 attacks per model hitting on 4+. These count towards who won combat.",,,2,2,2,,2,,#2b9800,#2b9800,#2b9800,#cc0000,#000000,#000000,#c9daf8,#00399e,#000000,#ffffff,empire.png,2,8,16.00,2,8,1.00,0.00,2.67,20,FALSE
@@ -478,7 +478,7 @@ L03_3_D,Dracolich,Boneborn Dracolich,TRUE,Boneborn,Leader,Monster Hero,,3,,0,1,3
 
 <b>Flying</b> - This unit can move over other units and obstacles
 
-<b>Maneouverable</b> - May turn once at any point during a move or hustle",2,,,3,3,3,,,#3467FF,#3467FF,#000000,#2b9800,#000000,#000000,#e0e0d3,#4d4d4d,#000000,#ffffff,skellies.png,1,8,12.00,5,5,1.00,0.00,3.33,17,FALSE
+<b>Manoeuvrable</b> - May turn once at any point during a move or hustle",2,,,3,3,3,,,#3467FF,#3467FF,#000000,#2b9800,#000000,#000000,#e0e0d3,#4d4d4d,#000000,#ffffff,skellies.png,1,8,12.00,5,5,1.00,0.00,3.33,17,FALSE
 L03_3_E,Archrevenant,Boneborn Archrevenant,TRUE,Boneborn,Leader,Warrior Hero,,3,,3,1,1,3,-,5,6,5,"<b>Unstable</b> - Instead of rolling to flee, lose 1 extra wound
 
 <b>Archrevenant</b> - After combat, heal this unit one wound for each wound dealt in combat. Can resurrect models. Limited to the starting size.",,,3,3,3,3,3,,#000000,#000000,#000000,#2b9800,#000000,#000000,#e0e0d3,#4d4d4d,#000000,#ffffff,skellies.png,1,6,9.00,5,5,1.00,0.00,3.33,14,FALSE
@@ -490,7 +490,7 @@ L04_3_A,Huntmistress,Silk Court Huntmistress,TRUE,Silk Court,Leader,Archer Hero,
 
 <b>Volley Fire</b> - Can fire ranged attacks over other units.
 
-<b>Maneouverable</b> - May turn once at any point during a move or hustle",,,3,3,3,3,,3,#2b9800,#000000,#000000,#000000,#3467FF,#000000,#f1baff,#2d2d2d,#000000,#ffffff,spiders.png,1,5,7.50,4,4,1.11,0.00,2.22,10.83333333,FALSE
+<b>Manoeuvrable</b> - May turn once at any point during a move or hustle",,,3,3,3,3,,3,#2b9800,#000000,#000000,#000000,#3467FF,#000000,#f1baff,#2d2d2d,#000000,#ffffff,spiders.png,1,5,7.50,4,4,1.11,0.00,2.22,10.83333333,FALSE
 L04_3_B,Court Poisoner,Silk Court Court Poisoner,TRUE,Silk Court,Leader,Hybrid Mage Hero,,3,,2,1,1,4,4,4,5,5,"<b>Wretched Poisons</b> - Units that takes one or more poison wounds from a friendly unit must roll to flee with a -1 penalty. If the unit is in combat, it makes this roll at the end of turn.
 
 <b>Poison</b> - 6s to hit can't be saved
@@ -543,7 +543,7 @@ L05_3_E,Battleboar,Redspines Battleboar,TRUE,Redspines,Leader,Monster Hero,,3,,0
 
 <b>Buck Wildly</b> - Whenever this unit deals a wound through vengence, deal it to all adjacent enemy units.
 
-<b>Maneouverable</b> - May turn once at any point during a move or hustle",,,,,,,,,#2b9800,#3467FF,#000000,#000000,#000000,#2b9800,#e78e7e,#cf0000,#000000,#ffffff,redspines.png,1,9,9.00,5,5,1.00,1.00,3.50,14.25,FALSE
+<b>Manoeuvrable</b> - May turn once at any point during a move or hustle",,,,,,,,,#2b9800,#3467FF,#000000,#000000,#000000,#2b9800,#e78e7e,#cf0000,#000000,#ffffff,redspines.png,1,9,9.00,5,5,1.00,1.00,3.50,14.25,FALSE
 L06_3_A,Master Sapper,Coppersand Master Sapper,TRUE,Coppersand,Leader,Support Hero,,3,,3,1,2,4,4,4,6,5,"<b>Mechanics</b> - At the start of your turn, heal 1 wound on an adjacent construct.
 <b>Battlefield Prep</b> - During deployment, instead of placing a unit, place a mine on any empty square on the battlefield. The first unit to enter that tile takes d6 attacks hitting on 2+ with AP2. 
 <b>Sensibly Entrenched</b> - Enemy units that move adjacent to this unit are disrupted. Each model in the unit takes a wound, hitting on that unit's block score. 
@@ -597,7 +597,7 @@ L07_3_D,Wyrm Prince,Scaled Empire Wyrm Prince,TRUE,Scaled Empire,Leader,Monster 
 
 <b>Flying</b> - This unit can move over other units and obstacles
 
-<b>Maneouverable</b> - May turn once at any point during a move or hustle
+<b>Manoeuvrable</b> - May turn once at any point during a move or hustle
 
 <b>Natural Breath Weapon</b> - Bonus attack: Once per battle, before attacking as normal this unit may use a breath weapon. This unit rolls an attack for every model in the enemy unit, hitting on 5s. ",,,,,,,,,#3467FF,#3467FF,#000000,#2b9800,#000000,#000000,#c9daf8,#00399e,#000000,#ffffff,empire.png,1,8,12.00,3,3,1.00,0.00,2.00,15,FALSE
 L07_3_E,Sharpshooter,Scaled Empire Sharpshooter,TRUE,Scaled Empire,Leader,Archer Hero,,3,,3,1,1,4,2,4,5,5,"<b>Officer</b> - When a ranged attack targets this unit, you may nominate an adjacent friendly regiment as the target instead. 
@@ -637,10 +637,10 @@ L07_3_E,Sharpshooter,Scaled Empire Sharpshooter,TRUE,Scaled Empire,Leader,Archer
 ,,Disciples ,,Disciples,Amalgam,,,2,,,,,,,,,,,,,,,,,,,,,,,,,#5c9667,#004621,#000000,#ffffff,.png,0,0,0.00,,0,1.00,0.00,0.00,0,FALSE
 ,,Disciples ,,Disciples,Amalgam,,,2,,,,,,,,,,"
 
-<b>Maneouverable</b> - May turn once at any point during a move or hustle.",,,,,,,,,,,,,,,#5c9667,#004621,#000000,#ffffff,.png,0,0,0.00,,0,1.00,0.00,0.00,0,FALSE
+<b>Manoeuvrable</b> - May turn once at any point during a move or hustle.",,,,,,,,,,,,,,,#5c9667,#004621,#000000,#ffffff,.png,0,0,0.00,,0,1.00,0.00,0.00,0,FALSE
 ,,Disciples ,,Disciples,Behemoth,,,2,,,,,,,,,,"
 
-<b>Maneouverable</b> - May turn once at any point during a move or hustle.",,,,,,,,,,,,,,,#5c9667,#004621,#000000,#ffffff,.png,0,0,0.00,,0,1.00,0.00,0.00,0,FALSE
+<b>Manoeuvrable</b> - May turn once at any point during a move or hustle.",,,,,,,,,,,,,,,#5c9667,#004621,#000000,#ffffff,.png,0,0,0.00,,0,1.00,0.00,0.00,0,FALSE
 ,,Disciples ,,Disciples,Behemoth,,,2,,,,,,,,,,,,,,,,,,,,,,,,,#5c9667,#004621,#000000,#ffffff,.png,0,0,0.00,,0,1.00,0.00,0.00,0,FALSE
 ,,Disciples ,,Disciples,Grafter,,,2,,,,,,,,,,,2,,,,,,,,,,,,,,#5c9667,#004621,#000000,#ffffff,.png,0,0,0.00,,0,1.00,0.00,0.00,0,FALSE
 ,,Disciples ,,Disciples,Grafter,,,2,,,,,,,,,,,2,,,,,,,,,,,,,,#5c9667,#004621,#000000,#ffffff,.png,0,0,0.00,,0,1.00,0.00,0.00,0,FALSE
