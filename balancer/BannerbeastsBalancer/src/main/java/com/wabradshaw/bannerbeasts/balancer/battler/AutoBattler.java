@@ -14,255 +14,465 @@ public class AutoBattler {
     public BattleResult battle(Unit unit1, Unit unit2) {
         int rounds = 0;
 
-        UnitPowers unit1Powers = unit1.getDescription().getPowers();
-        UnitPowers unit2Powers = unit2.getDescription().getPowers();
+        UnitPowers unit1Powers = unit1.powers();
+        UnitPowers unit2Powers = unit2.powers();
 
         while (unit1.isAlive() && unit2.isAlive() && rounds < MAX_ROUNDS) {
             rounds++;
 
-            // Terrifying pre-checks
-            if (unit1Powers.isTerrifying()) {
-                if (checkFlee(unit2, 1, 0)) {
-                    return new BattleResult(unit1, unit2, Outcome.WON_FLED, rounds);
-                }
-            }
-            if (unit2Powers.isTerrifying()) {
-                if (checkFlee(unit1, 1, 0)) {
-                    return new BattleResult(unit1, unit2, Outcome.LOST_FLED, rounds);
-                }
-            }
+            if (resolveTerrifying(unit1, unit2))
+                return new BattleResult(unit1, unit2, Outcome.WON_FLED, rounds);
+            if (resolveTerrifying(unit2, unit1))
+                return new BattleResult(unit1, unit2, Outcome.LOST_FLED, rounds);
 
-            // Combat
-            int unit1Attacks = unit1.getCurrentModels() * unit1.getDescription().getAttacks().get();
-            int unit2Attacks = unit2.getCurrentModels() * unit2.getDescription().getAttacks().get();
+            int unit1HpBefore = unit1.getCurrentTotalHp();
+            int unit2HpBefore = unit2.getCurrentTotalHp();
+            int unit1ModelsBefore = unit1.getCurrentModels();
+            int unit2ModelsBefore = unit2.getCurrentModels();
+
+            int unit1AttacksFirst = calculateFirstAttack(unit1, unit2);
 
             int woundsToUnit1 = 0;
             int woundsToUnit2 = 0;
 
-            int unit1ModelsBefore = unit1.getCurrentModels();
-            int unit2ModelsBefore = unit2.getCurrentModels();
-            int unit1HpBefore = unit1.getCurrentTotalHp();
-            int unit2HpBefore = unit2.getCurrentTotalHp();
+            if (unit1AttacksFirst == 0) {
+                int unit1Attacks = calculateTotalAttacks(unit1, unit2);
+                int unit2Attacks = calculateTotalAttacks(unit2, unit1);
+                woundsToUnit1 = performAttacks(unit2, unit1, unit2Attacks);
+                woundsToUnit2 = performAttacks(unit1, unit2, unit1Attacks);
+            } else if (unit1AttacksFirst > 0) {
+                int unit1Attacks = calculateTotalAttacks(unit1, unit2);
+                woundsToUnit2 = performAttacks(unit1, unit2, unit1Attacks);
 
-            for (int i = 0; i < unit1Attacks; i++) {
-                int roll = random.nextInt(6) + 1;
-                int wounds = resolveWoundFromHit(unit1, unit2, roll);
-                woundsToUnit2 += wounds;
-            }
+                int unit2Attacks = calculateTotalAttacks(unit2, unit1);
+                woundsToUnit1 = performAttacks(unit2, unit1, unit2Attacks);
+            } else if (unit1AttacksFirst < 0) {
+                int unit2Attacks = calculateTotalAttacks(unit2, unit1);
+                woundsToUnit1 = performAttacks(unit2, unit1, unit2Attacks);
 
-            for (int i = 0; i < unit2Attacks; i++) {
-                int roll = random.nextInt(6) + 1;
-                int wounds = resolveWoundFromHit(unit2, unit1, roll);
-                woundsToUnit1 += wounds;
-            }
-
-            // Post Combat - counted towards combat res
-            int unit1ModelsLost = unit1ModelsBefore - unit1.getCurrentModels();
-            int unit2ModelsLost = unit2ModelsBefore - unit2.getCurrentModels();
-
-            if (unit1Powers.hasBurst() && unit1ModelsLost > 0) {
-                woundsToUnit2 += resolveBurst(unit1, unit2, unit1ModelsLost);
-            }
-            if (unit2Powers.hasBurst() && unit2ModelsLost > 0) {
-                woundsToUnit1 += resolveBurst(unit2, unit1, unit2ModelsLost);
+                int unit1Attacks = calculateTotalAttacks(unit1, unit2);
+                woundsToUnit2 = performAttacks(unit1, unit2, unit1Attacks);
             }
 
-            if (unit1Powers.isExplosive()) {
-                woundsToUnit1 += unit1.takeWounds(999, 1);
-            }
-            if (unit2Powers.isExplosive()) {
-                woundsToUnit2 += unit2.takeWounds(999, 1);
-            }
+            applyVirulent(unit1Powers, unit2, woundsToUnit2);
+            applyVirulent(unit2Powers, unit1, woundsToUnit1);
 
-            if (unit1.isAlive()) {
-                int reduction = Math.min(woundsToUnit1, unit1Powers.getSpongeyValue().get());
-                unit1.healWounds(reduction, true);
-                woundsToUnit1 -= reduction;
-            }
-            if (unit2.isAlive()) {
-                int reduction = Math.min(woundsToUnit2, unit2Powers.getSpongeyValue().get());
-                unit2.healWounds(reduction, true);
-                woundsToUnit2 -= reduction;
-            }
+            woundsToUnit2 += applyBurst(unit1, unit2, unit1ModelsBefore);
+            woundsToUnit1 += applyBurst(unit2, unit1, unit2ModelsBefore);
 
-            // Post Combat - Excluded from combat res
+            woundsToUnit1 += applyExplosive(unit1);
+            woundsToUnit2 += applyExplosive(unit2);
 
-            if (unit1.isAlive() && unit1Powers.hasRevenants() && unit2ModelsLost > 0) {
-                unit1.healWounds(unit2ModelsLost, true);
-            }
-            if (unit2.isAlive() && unit2Powers.hasRevenants() && unit1ModelsLost > 0) {
-                unit2.healWounds(unit1ModelsLost, true);
-            }
+            applyRevenants(unit1, unit2, unit2ModelsBefore);
+            applyRevenants(unit2, unit1, unit1ModelsBefore);
+            applyArchrevenants(unit1, unit2, woundsToUnit2);
+            applyArchrevenants(unit2, unit1, woundsToUnit1);
 
-            if (unit1.isAlive() && unit1Powers.hasFreshRevenants() && unit2ModelsLost > 0) {
-                unit1.healWounds(unit2ModelsLost * unit1.getDescription().getStartingHp(), true);
-            }
-            
-            if (unit2.isAlive() && unit2Powers.hasFreshRevenants() && unit1ModelsLost > 0) {
-                unit2.healWounds(unit1ModelsLost * unit2.getDescription().getStartingHp(), true);
-            }
+            applyLitFuses(unit1, unit2);
+            applyLitFuses(unit2, unit1);
 
-            if (unit1Powers.hasBloodRites() && woundsToUnit2 > 0 && unit2.isAlive()) {
-                applyBloodRites(unit1, unit2, woundsToUnit2);
-                int newModelsLost = unit2ModelsBefore - (unit2ModelsLost + unit2.getCurrentModels());
-                if (unit2Powers.hasBurst() && newModelsLost > 0) {
-                    resolveBurst(unit2, unit1, newModelsLost);
-                }
-            }
-            if (unit2Powers.hasBloodRites() && woundsToUnit1 > 0 && unit1.isAlive()) {
-                applyBloodRites(unit2, unit1, woundsToUnit1);
-                int newModelsLost = unit1ModelsBefore - (unit1ModelsLost + unit1.getCurrentModels());
-                if (unit1Powers.hasBurst() && newModelsLost > 0) {
-                    resolveBurst(unit1, unit2, newModelsLost);
-                }
-            }
+            woundsToUnit2 += applyBloodRitesAndPostBurst(unit1, unit2, woundsToUnit2, unit2ModelsBefore);
+            woundsToUnit1 += applyBloodRitesAndPostBurst(unit2, unit1, woundsToUnit1, unit1ModelsBefore);
 
-            // Post Combat - Spongey is after all wounds, and can reduce the number of wounds felt in combat
-            if (unit1.isAlive()) {
-                int reduction = Math.min(woundsToUnit1, unit1Powers.getSpongeyValue().get());
-                int maxHealable = unit1HpBefore - unit1.getCurrentTotalHp();
-                int actualHeal = Math.min(reduction, maxHealable);
-            
-                if (actualHeal > 0) {
-                    unit1.healWounds(actualHeal, true);
-                    woundsToUnit1 = Math.max(0, woundsToUnit1 - actualHeal);
-                }
-            }
-            
-            if (unit2.isAlive()) {
-                int reduction = Math.min(woundsToUnit2, unit2Powers.getSpongeyValue().get());
-                int maxHealable = unit2HpBefore - unit2.getCurrentTotalHp();
-                int actualHeal = Math.min(reduction, maxHealable);
-            
-                if (actualHeal > 0) {
-                    unit2.healWounds(actualHeal, true);
-                    woundsToUnit2 = Math.max(0, woundsToUnit2 - actualHeal);
-                }
-            }
+            woundsToUnit1 = applySpongey(unit1, unit1Powers, unit1HpBefore, woundsToUnit1);
+            woundsToUnit2 = applySpongey(unit2, unit2Powers, unit2HpBefore, woundsToUnit2);
 
-            // Combat res flee checks
             if (unit1.isAlive() && unit2.isAlive()) {
-                boolean unit1LostCombat = woundsToUnit1 > woundsToUnit2 || unit1Powers.isCowardly();
-                boolean unit2LostCombat = woundsToUnit2 > woundsToUnit1 || unit2Powers.isCowardly();
-                
-                if (unit1LostCombat) {
-                    if (unit1Powers.isUnstable()) {
-                        unit1.takeWounds(1);
-                    } else if (checkFlee(unit1, woundsToUnit1, woundsToUnit2)) {
-                        return new BattleResult(unit1, unit2, Outcome.LOST_FLED, rounds);
-                    }
+                if (wretchedPoisonFlight(unit1, unit2Powers)){
+                    return new BattleResult(unit1, unit2, Outcome.LOST_FLED, rounds);
                 }
-                
-                if (unit2LostCombat) {
-                    if (unit2Powers.isUnstable()) {
-                        unit2.takeWounds(1);
-                    } else if (checkFlee(unit2, woundsToUnit2, woundsToUnit1)) {
-                        return new BattleResult(unit1, unit2, Outcome.WON_FLED, rounds);
-                    }
+                if (wretchedPoisonFlight(unit2, unit1Powers)){
+                    return new BattleResult(unit2, unit1, Outcome.LOST_FLED, rounds);
+                }
+
+                if (resolveFlee(unit1, unit1Powers, unit2Powers, woundsToUnit1, woundsToUnit2)) {
+                    return new BattleResult(unit1, unit2, Outcome.LOST_FLED, rounds);
+                }
+                if (resolveFlee(unit2, unit2Powers, unit1Powers, woundsToUnit2, woundsToUnit1)) {
+                    return new BattleResult(unit1, unit2, Outcome.WON_FLED, rounds);
                 }
             }
 
-            // Post Combat res stuff
-            if (unit1.isAlive() && unit1Powers.hasPlague() && !unit2.getDescription().getUnitMetadata().getFaction().equalsIgnoreCase("Boneborn")) {
-                if (random.nextInt(6) + 1 >= 4) {
-                    unit2.takeWounds(1);
-                }
-            }
-            
-            if (unit2.isAlive() && unit2Powers.hasPlague() && !unit1.getDescription().getUnitMetadata().getFaction().equalsIgnoreCase("Boneborn")) {
-                if (random.nextInt(6) + 1 >= 4) {
-                    unit1.takeWounds(1);
-                }
-            }
+            applyPlague(unit1, unit2);
+            applyPlague(unit2, unit1);
+
+            applyVirulentDamage(unit1);
+            applyVirulentDamage(unit2);
+
+            applyRegenerativeClay(unit1);
+            applyRegenerativeClay(unit2);
         }
 
         return resolveResult(unit1, unit2, rounds);
     }
 
+    private int calculateFirstAttack(Unit unit1, Unit unit2) {
+        UnitPowers unit1Powers = unit1.powers();
+        UnitPowers unit2Powers = unit2.powers();
+
+        int result = 0;
+
+        if (unit1Powers.isStrikesFirst()) {
+            result++;
+        }
+        if (unit1Powers.isStrikesLast()) {
+            result--;
+        }
+        if (unit1Powers.hasSpitWebs()) {
+            result++;
+        }
+        if (unit1Powers.hasFlankingAttack() && unit1.getCurrentModels() == unit1.getDescription().getStartingNumber()) {
+            result++;
+        }
+        if (unit2Powers.isStrikesFirst()) {
+            result--;
+        }
+        if (unit2Powers.isStrikesLast()) {
+            result++;
+        }
+        if (unit2Powers.hasSpitWebs()) {
+            result--;
+        }
+        if (unit2Powers.hasFlankingAttack() && unit2.getCurrentModels() == unit2.getDescription().getStartingNumber()) {
+            result--;
+        }
+
+        return result;
+    }
+
+    private int calculateTotalAttacks(Unit unit, Unit enemy) {
+        int baseAttacks = unit.getDescription().getAttacks().get();
+        UnitPowers powers = unit.powers();
+
+        int maxHp = unit.getDescription().getStartingHp() * unit.getCurrentModels();
+        boolean isWounded = unit.getCurrentTotalHp() < maxHp;
+
+        if (powers.hasBloodlust() && isWounded) {
+            baseAttacks += 1;
+        }
+
+        if (powers.hasKillingBlow()){
+            if (enemy.getDescription().getStartingHp() > 2 && enemy.getCurrentTotalHp() > 2){
+                baseAttacks -= 2;
+            } else if (enemy.getDescription().getStartingHp() > 1 && enemy.getCurrentTotalHp() > 1){
+                baseAttacks -= 1;
+            }
+        }
+        return unit.getCurrentModels() * baseAttacks;
+    }
+
+    private int performAttacks(Unit attacker, Unit defender, int attacks) {
+        int wounds = 0;
+        for (int i = 0; i < attacks; i++) {
+            int roll = d6();
+            wounds += resolveWoundFromHit(attacker, defender, roll);
+        }
+        return wounds;
+    }
+
+    private boolean isCavalrybaneEffective(Unit source, Unit target) {
+        return source.powers().hasCavalrybane()
+            && target.getDescription().getMovement().get() >= 2;
+    }
+    
+    private int applyBurst(Unit source, Unit target, int modelsBefore) {
+        int modelsLost = modelsBefore - source.getCurrentModels();
+        if (source.powers().hasBurst() && modelsLost > 0) {
+            return resolveBurst(source, target, modelsLost);
+        }
+        return 0;
+    }
+
+    private int applyExplosive(Unit unit) {
+        if (unit.powers().isExplosive()) {
+            return unit.takeWounds(999, 1);
+        }
+        return 0;
+    }
+
+    private void applyRevenants(Unit self, Unit enemy, int enemyModelsBefore) {
+        UnitPowers powers = self.powers();
+        int modelsLost = enemyModelsBefore - enemy.getCurrentModels();
+
+        if (!self.isAlive())
+            return;
+
+        if (powers.hasRevenants() && modelsLost > 0) {
+            self.healWounds(modelsLost, true);
+        } else if (powers.hasFreshRevenants() && modelsLost > 0) {
+            int hp = modelsLost * self.getDescription().getStartingHp();
+            self.healWounds(hp, true);
+        }
+    }
+
+    private void applyArchrevenants(Unit self, Unit enemy, int woundsDealt) {
+        UnitPowers powers = self.powers();
+
+        if (!self.isAlive())
+            return;
+
+        if (powers.hasArchrevenant()) {
+            self.healWounds(woundsDealt, true);
+        }
+    }
+
+    private void applyLitFuses(Unit source, Unit target) {
+        if (source.isAlive() || !source.powers().hasLitFuses() || !target.isAlive()) return;
+    
+        int attacks = d6();
+    
+        for (int i = 0; i < attacks; i++) {
+            int hitRoll = d6();
+            if (hitRoll >= 4) {
+                resolveWoundFromHit(source, target, hitRoll, 2);
+            }
+        }
+    }
+
+    private int applyBloodRitesAndPostBurst(Unit attacker, Unit defender, int woundsDealt, int defenderModelsBefore) {
+        if (!attacker.isAlive() || !defender.isAlive())
+            return 0;
+
+        if (attacker.powers().hasBloodRites()) {
+            int additionalWounds = applyBloodRites(attacker, defender, woundsDealt);
+
+            int newModelsLost = defenderModelsBefore - (defender.getCurrentModels() + additionalWounds);
+            if (defender.powers().hasBurst() && newModelsLost > 0) {
+                resolveBurst(defender, attacker, newModelsLost);
+            }
+        }
+        return 0;
+    }
+
+    private int applySpongey(Unit unit, UnitPowers powers, int hpBefore, int woundsTaken) {
+        if (!unit.isAlive())
+            return woundsTaken;
+
+        int reduction = Math.min(woundsTaken, powers.getSpongeyValue().get());
+        int maxHealable = hpBefore - unit.getCurrentTotalHp();
+        int actualHeal = Math.min(reduction, maxHealable);
+
+        if (actualHeal > 0) {
+            unit.healWounds(actualHeal, true);
+            woundsTaken = Math.max(0, woundsTaken - actualHeal);
+        }
+
+        return woundsTaken;
+    }
+
+    private boolean wretchedPoisonFlight(Unit fleeCandidate, UnitPowers fearCauser){
+        if (fleeCandidate.hasPoisonWound()){
+            fleeCandidate.resetPoisonWound();
+            if(fearCauser.hasWretchedPoisons()){
+                return checkFlee(fleeCandidate, fearCauser);
+            }
+        }
+        return false;
+    }
+
+    private boolean resolveFlee(Unit unit, UnitPowers powers, UnitPowers attackerPowers, int woundsTaken, int woundsDealt) {
+        if (!unit.isAlive())
+            return false;
+
+        int bonus = powers.hasGeneralsBanner() ? 1 : 0;
+        int penalty = attackerPowers.hasGeneralsBanner() ? 1 : 0;
+        int score = (woundsDealt + bonus) - (woundsTaken + penalty);
+
+        if (score >= 0 && !powers.isCowardly())
+            return false;
+
+        if (powers.isUnstable()) {
+            if(powers.hasPracticedNecromancy() && score == 1){
+                return false;
+            }
+            unit.takeWounds(1);
+            return false;
+        }
+
+        return checkFlee(unit, attackerPowers);
+    }
+
+    private void applyPlague(Unit source, Unit target) {
+        if (!source.isAlive() || !target.isAlive())
+            return;
+        if (!source.powers().hasPlague())
+            return;
+        if (target.getDescription().getUnitMetadata().getFaction().equalsIgnoreCase("Boneborn"))
+            return;
+
+        if (d6() >= 4) {
+            target.takeWounds(1);
+        }
+    }
+
+    private void applyVirulent(UnitPowers attacker, Unit defender, int wounds) {
+        if (wounds > 0) {
+            defender.applyPoison(attacker.getVirulentThreshold().get());
+        }
+    }
+
+    private void applyVirulentDamage(Unit unit) {
+        int poisonThreshold = unit.getPoisoned();
+        if (d6() >= poisonThreshold) {
+            unit.takeWounds(1);
+        }
+    }
+
+    private void applyRegenerativeClay(Unit unit) {
+        if (!unit.isAlive())
+            return;
+        if (!unit.powers().hasRegenerativeClay())
+            return;
+
+        unit.healWounds(999, false); // Heals living models only
+    }
+
+    private boolean resolveTerrifying(Unit source, Unit target) {
+        return source.powers().isTerrifying()
+                && checkFlee(target, source.powers());
+    }
+
     private int applyBloodRites(Unit attacker, Unit defender, int attacks) {
         int bonusWoundsDealt = 0;
         for (int i = 0; i < attacks; i++) {
-            int roll = random.nextInt(6) + 1;
-            int wounds = resolveWoundFromHit(attacker, defender, roll);
-            bonusWoundsDealt += wounds;            
+            bonusWoundsDealt += resolveWoundFromHit(attacker, defender, d6());
         }
         return bonusWoundsDealt;
     }
 
+    private int d6() {
+        return random.nextInt(6) + 1;
+    }
+
     private int resolveWoundFromHit(Unit attacker, Unit defender, int roll) {
-        UnitPowers attackerPowers = attacker.getDescription().getPowers();
-        UnitPowers defenderPowers = defender.getDescription().getPowers();
+        return resolveWoundFromHit(attacker, defender, roll, attacker.powers().getApValue().get());
+    }
+
+    private int resolveWoundFromHit(Unit attacker, Unit defender, int roll, int aP) {
+        UnitPowers attackerPowers = attacker.powers();
+        UnitPowers defenderPowers = defender.powers();
 
         int effectiveRoll = roll - defenderPowers.getElusivePenalty().get();
-
         int hitTarget = attacker.getDescription().getMeleeHit().get();
-        int blockTarget = defender.getDescription().getBlock().get() + attackerPowers.getApValue().get();
-        int multiwound = attackerPowers.getMultiwound().get();
+        int rawBlock = defender.getDescription().getBlock().get() + attackerPowers.getApValue().get();
+        int blockTarget = rawBlock;
 
-        if (roll == 1) {
+        if (defenderPowers.isAirborne()) {
+            hitTarget ++;
+        }        
+        if (isCavalrybaneEffective(attacker, defender)){
+            hitTarget --;
+            blockTarget ++; //Effectively +1 AP.
+        }
+        if (isCavalrybaneEffective(defender, attacker)){
+            blockTarget --;
+        }
+
+        if (defenderPowers.hasUncannyProtection()){
+            blockTarget = Math.min(5, blockTarget);
+        }
+
+        if(defenderPowers.isEthereal()){
+            blockTarget = rawBlock;
+        }
+
+        int multiwound = attackerPowers.getMultiwound().get();
+        if (roll == 6 && attackerPowers.isLethal()) {
+            multiwound = Math.max(2, multiwound);
+        }
+        if (attackerPowers.hasKillingBlow()){
+            multiwound += 2;
+        }
+
+        if (roll == 1)
             return 0;
-        } else if (attackerPowers.hasPoison() && roll == 6) {
-            return defender.takeWounds(multiwound, multiwound); // poison auto-wound
-        } else if (roll == 6 || effectiveRoll >= hitTarget) {
-            int blockRoll = random.nextInt(6) + 1;
-            if (blockRoll >= blockTarget && blockRoll != 1) {
-                return 0;
-            } else {
-                if(roll == 6 && attackerPowers.isLethal()){
-                    return defender.takeWounds(multiwound, Math.max(2, multiwound));
-                } else {
-                    return defender.takeWounds(multiwound, multiwound);
-                }
-            }
-        } else {
+
+        if (attackerPowers.hasPoison() && roll == 6) {
+            defender.setPoisonWound();
+            return defender.takeWounds(multiwound, multiwound);
+        }
+
+        if (defenderPowers.isEvasive() && roll != 6) {
             return 0;
         }
+
+        if (attackerPowers.hasAggressivePoison() && roll >= 5 && effectiveRoll >= hitTarget) {
+            defender.setPoisonWound();
+            return defender.takeWounds(multiwound, multiwound);
+        }
+
+        if (roll == 6 || effectiveRoll >= hitTarget) {
+            int blockRoll = d6();
+            boolean wasBlocked = blockRoll >= blockTarget && blockRoll != 1;
+
+            if (wasBlocked) {
+                if (defenderPowers.hasVengeance()) {
+                    int change = -attacker.takeWounds(1);
+                    if (defenderPowers.hasRetribution()) {
+                        change = 2 * change;
+                    }
+                    ;
+                    if (!defenderPowers.hasProtectiveMarkings()) {
+                        change += defender.takeWounds(1);
+                    }
+
+                    return change;
+                } else {
+                    return 0;
+                }
+            }
+            
+            int damage = attackerPowers.hasCleave() ? 2 : 1;
+            return defender.takeWounds(damage, multiwound);
+
+        }
+
+        return 0;
     }
 
     private int resolveBurst(Unit attacker, Unit target, int lostModels) {
         int wounds = 0;
-        int blockTarget = target.getDescription().getBlock().get() + 1; // AP1
-        int multiwound = attacker.getDescription().getPowers().getMultiwound().get();
 
         for (int i = 0; i < lostModels; i++) {
-            int hitRoll = random.nextInt(6) + 1;
-            if (hitRoll >= 4) {
-                int blockRoll = random.nextInt(6) + 1;
-                if (blockRoll < blockTarget || blockRoll == 1) {
-                    wounds += target.takeWounds(1, multiwound);
-                }
+            int hitRoll = d6();
+            if (hitRoll >= 4) {                
+                resolveWoundFromHit(attacker, target, hitRoll, 1);
             }
         }
-
         return wounds;
     }
 
-    private boolean checkFlee(Unit unit, int woundsTaken, int woundsDealt) {
-        UnitPowers powers = unit.getDescription().getPowers();
+    private boolean checkFlee(Unit unit, UnitPowers attackerPowers) {
+        UnitPowers powers = unit.powers();
         if (powers.isUnbreakable())
             return false;
-        if (woundsTaken <= woundsDealt)
-            return false;
+
+        if (powers.isDisorganised()) {
+            int current = unit.getCurrentModels();
+            int starting = unit.getDescription().getStartingNumber();
+            if (current <= starting / 2) {
+                return true; // auto-fails fear check
+            }
+        }
 
         int currentModels = unit.getCurrentModels();
         int startingModels = unit.getDescription().getStartingNumber();
-        int roll = random.nextInt(6) + 1;
+        int roll = d6();
 
-        // Apply modifiers (unless it's a natural 6 or 1)
-        if (roll != 6 && powers.isChaff()) {
+        if (roll != 6 && powers.isChaff())
+            roll--;
+        if (roll != 1 && powers.isStalwart())
+            roll++;
+        if (roll != 6 && attackerPowers.hasFearfulPresence()){
             roll--;
         }
-        if (roll != 1 && powers.isStalwart()) {
-            roll++;
-        }
 
-        if (currentModels <= startingModels / 4) {
+        if (currentModels <= startingModels / 4)
             return roll < 6;
-        } else if (currentModels <= startingModels / 2) {
+        else if (currentModels <= startingModels / 2)
             return roll < 4;
-        } else {
+        else
             return roll < 2;
-        }
     }
 
     private BattleResult resolveResult(Unit unit1, Unit unit2, int rounds) {
@@ -270,15 +480,14 @@ public class AutoBattler {
         boolean u2Alive = unit2.isAlive();
 
         Outcome outcome;
-        if (!u1Alive && !u2Alive) {
+        if (!u1Alive && !u2Alive)
             outcome = Outcome.TOTAL_WIPEOUT;
-        } else if (u1Alive && !u2Alive) {
+        else if (u1Alive && !u2Alive)
             outcome = Outcome.WON_WIPEOUT;
-        } else if (!u1Alive && u2Alive) {
+        else if (!u1Alive && u2Alive)
             outcome = Outcome.LOST_WIPEOUT;
-        } else {
+        else
             outcome = Outcome.TIED;
-        }
 
         return new BattleResult(unit1, unit2, outcome, rounds);
     }

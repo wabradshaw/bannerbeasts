@@ -11,6 +11,8 @@ public class DynamicIntFactory {
             return new StaticInt(base);
         } else if (input.matches("\\d+")) {
             return new StaticInt(Integer.parseInt(input));
+        } else if (input.matches("\\d+\\+?")) {
+            return new StaticInt(Integer.parseInt(input));
         } else if (input.matches(DICE_ROLL_REGEX)) {
             // Matches: d6, 2d6, d3+1, 2d6+2
             Matcher matcher = Pattern.compile(DICE_ROLL_REGEX).matcher(input);

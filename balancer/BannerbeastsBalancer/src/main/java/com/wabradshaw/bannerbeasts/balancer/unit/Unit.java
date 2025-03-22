@@ -8,6 +8,9 @@ public class Unit {
     private int currentTotalHp;
     private boolean alive;
 
+    private int poisoned = 0;
+    private boolean poisonWound = false;
+
     public Unit(UnitDescription description) {
         this.description = description;
         this.currentModels = description.getStartingNumber();
@@ -38,6 +41,14 @@ public class Unit {
         }
     }
 
+    public void setPoisonWound() {
+        this.poisonWound = true;
+    }
+
+    public void resetPoisonWound() {
+        this.poisonWound = false;
+    }
+
     public void healWounds(int wounds, boolean ressurectsModels){
         if(alive) {
             if(ressurectsModels){
@@ -48,6 +59,10 @@ public class Unit {
                 this.currentTotalHp = Math.min(this.currentTotalHp + wounds, maxHpForModels);
             }     
         }
+    }
+
+    public void applyPoison(int threshold){
+        this.poisoned = Math.min(this.poisoned, threshold);
     }
 
     private void refreshModelCount(){
@@ -74,6 +89,14 @@ public class Unit {
         return this.getDescription().getPowers();
     }
 
+    public int getPoisoned() {
+        return poisoned;
+    }
+
+    public boolean hasPoisonWound() {
+        return this.poisonWound;
+    }
+    
     @Override
     public String toString() {
         return this.description.toString();

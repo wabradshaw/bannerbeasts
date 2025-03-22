@@ -21,7 +21,21 @@ public class UnitPowers {
             "Unprotected", "Fire on the Move", "Multishot", "War Machine", "The Big Guns", "Fast", "Razorstar",
             "Friendly Fire", "Rabid", "Slow", "Flamethrower", "\"Jetpacks\"", "Smoke Bombs", "Sacrifice",
             "Call the Swarm", "Aura of Power", "Trojan Rats", "Push", "Thieves", "Mighty Cleave", "Well Prepared",
-            "Rock Lobber", "Raise the Dead", "Stabalizer", "Bone Spurs")
+            "Rock Lobber", "Raise the Dead", "Stabalizer", "Bone Spurs", "Web Traps", "Ambush", "Tactical Retreat",
+            "Jumping", "Shifting", "Flexible", "Cunning Disguises", "Cocoon Cannon", "Spitter Cannon", "Web Layer",
+            "Cloaked", "Fragile Spikes", "Relentless", "Circle of Spikes", "Blood Dance", "About Face", "Quill Spray",
+            "Flanking Ambush", "Battlefield Salves", "Bloodspells", "Revels", "Prepared Spell", "Mechanics", "Entrench",
+            "Meatshields", "Prepared Equipment", "Prepared Weapons", "Equippable", "Long Range", "Construct",
+            "Four Arms", "Trample", "Overwatch", "Prepared Ranged Weapon", "Lift and Shift", "Primed",
+            "Reloading", "Bombard", "Hookshot", "Surpression Cannon", "Detachment", "Self Sufficient Bows",
+            "Shieldwall", "Pike Square", "Cannons", "Foe Piercing", "Storm Mortar", "Organ Gun", "Regiment", "Flying",
+            "Breath Weapons", "Master of Munitions", "Powder Keg", "Chaoscaller", "Miscasts", "Mage", "Broadside",
+            "Dose Up", "Retreat", "Ring of Rats", "Tricksie Wizards", "Sacrificial Altar", "Glorious Sacrifice",
+            "Occult Sacrifice", "Terrifying Sacrifice", "Cheese it", "Packrat", "Filthy Looter", "Corpsefinder",
+            "Deceptive Shots", "Volley Fire", "Pull Strings", "Another's Bidding", "Center of the Web", "Cauldron",
+            "Aggressive Flanking", "Master of Movement", "Buck Wildly", "Battlefield Prep", "Sensibly Entrenched",
+            "Landbreaker", "Coppersmith's Upgrade", "Custom Tools", "Riflemaker", "Bomber", "Firing platform",
+            "Officer", "General's Spirit", "Old Knowledge", "Natural Breath Weapon", "Spotter")
             .collect(Collectors.toCollection(HashSet::new));
 
     private final Set<String> mechanicalPowers;
@@ -32,6 +46,8 @@ public class UnitPowers {
 
     private boolean poison = false;
     private boolean lethal = false;
+    private boolean uncannyProtection = false;
+    private boolean cleave = false;
 
     private boolean chaff = false;
     private boolean stalwart = false;
@@ -40,6 +56,9 @@ public class UnitPowers {
 
     private boolean explosive = false;
     private boolean burst = false;
+    private boolean litFuses = false;
+
+    private boolean flankingAttack = false;
 
     private boolean unstable = false;
     private boolean revenants = false;
@@ -47,12 +66,35 @@ public class UnitPowers {
     private boolean terrifying = false;
     private boolean bloodRites = false;
     private boolean plague = false;
+    private boolean practicedNecromancy = false;
+    private boolean ethereal = false;
+    private boolean archrevenant = false;
+
+    private boolean spitWebs = false;
+    private boolean aggressivePoison = false;
+    private boolean evasive = false;
+    private boolean wretchedPoisons = false;
+
+    private boolean vengeance = false;
+    private boolean bloodlust = false;
+    private boolean retribution = false;
+    private boolean protectiveMarkings = false;
+    private boolean killingBlow = false;
+
+    private boolean regenerativeClay = false;
+    private boolean airborne = false;
+
+    private boolean disorganised = false;
+    private boolean cavalrybane = false;
+    private boolean fearfulPresence = false;
+    private boolean generalsBanner = false;
 
     private DynamicInt apValue = new StaticInt(0);
     private DynamicInt impactHits = new StaticInt(0);
     private DynamicInt multiwound = new StaticInt(1);
     private DynamicInt elusive = new StaticInt(0);
     private DynamicInt spongey = new StaticInt(0);
+    private DynamicInt virulentThreshold = new StaticInt(7);
 
     public UnitPowers(String powers) {
         this.mechanicalPowers = new LinkedHashSet<>();
@@ -68,7 +110,12 @@ public class UnitPowers {
                 String value = null;
                 DynamicInt parsed = null;
 
-                Matcher varMatcher = Pattern.compile("(.+?)\\s+(\\d+|\\d*d\\d+([+-]\\d+)?)$").matcher(power);
+                // Power 3
+                // Power 3+
+                // Power d3
+                // Power 2d3
+                // Power 2d3+1
+                Matcher varMatcher = Pattern.compile("(.+?)\\s+((\\d*d\\d+(?:[+-]\\d+)?|\\d+))\\+?$").matcher(power);
 
                 if (varMatcher.find()) {
                     base = varMatcher.group(1).trim();
@@ -97,6 +144,14 @@ public class UnitPowers {
                         lethal = true;
                         mechanicalPowers.add("Lethal");
                         break;
+                    case "uncanny protection":
+                        uncannyProtection = true;
+                        mechanicalPowers.add("Uncanny Protection");
+                        break;
+                    case "cleave":
+                        cleave = true;
+                        mechanicalPowers.add("Cleave");
+                        break;
                     case "chaff":
                         chaff = true;
                         mechanicalPowers.add("Chaff");
@@ -120,6 +175,14 @@ public class UnitPowers {
                     case "burst":
                         burst = true;
                         mechanicalPowers.add("Burst");
+                        break;
+                    case "lit fuses":
+                        litFuses = true;
+                        mechanicalPowers.add("Lit Fuses");
+                        break;
+                    case "flanking attack":
+                        flankingAttack = true;
+                        mechanicalPowers.add("Flanking Attack");
                         break;
                     case "unstable":
                         unstable = true;
@@ -145,41 +208,120 @@ public class UnitPowers {
                         plague = true;
                         mechanicalPowers.add("Plague");
                         break;
+                    case "practiced necromancy":
+                        practicedNecromancy = true;
+                        mechanicalPowers.add("Practiced Necromancy");
+                        break;
+                    case "ethereal":
+                        ethereal = true;
+                        mechanicalPowers.add("Ethereal");
+                        break;
+                    case "archrevenant":
+                        archrevenant = true;
+                        mechanicalPowers.add("Archrevenant");
+                        break;
+                    case "spit webs":
+                        spitWebs = true;
+                        mechanicalPowers.add("Spit Webs");
+                        break;
+                    case "aggressive poison":
+                        aggressivePoison = true;
+                        mechanicalPowers.add("Aggressive Poison");
+                        break;
+                    case "evasive":
+                        evasive = true;
+                        mechanicalPowers.add("Evasive");
+                        break;
+                    case "wretched poisons":
+                        wretchedPoisons = true;
+                        mechanicalPowers.add("Wretched Poisons");
+                        break;
+                    case "vengence":
+                        vengeance = true;
+                        mechanicalPowers.add("Vengeance");
+                        break;
+                    case "bloodlust":
+                        bloodlust = true;
+                        mechanicalPowers.add("Bloodlust");
+                        break;
+                    case "retribution":
+                        retribution = true;
+                        mechanicalPowers.add("Retribution");
+                        break;
+                    case "protective markings":
+                        protectiveMarkings = true;
+                        mechanicalPowers.add("Protective Markings");
+                        break;
+                    case "killing blow":
+                        killingBlow = true;
+                        mechanicalPowers.add("Killing Blow");
+                        break;
+                    case "regenerative clay":
+                        regenerativeClay = true;
+                        mechanicalPowers.add("Regenerative Clay");
+                        break;
+                    case "airborne":
+                        airborne = true;
+                        mechanicalPowers.add("Airborne");
+                        break;
+                    case "disorganised":
+                        disorganised = true;
+                        mechanicalPowers.add("Disorganised");
+                        break;
+                    case "cavalrybane":
+                        cavalrybane = true;
+                        mechanicalPowers.add("Cavalrybane");
+                        break;
+                    case "fearful presence":
+                        fearfulPresence = true;
+                        mechanicalPowers.add("Fearful Presence");
+                        break;
+                    case "general's banner":
+                    case "generals banner":
+                        generalsBanner = true;
+                        mechanicalPowers.add("General's Banner");
+                        break;
                     case "ap":
                         if (parsed != null) {
                             apValue = parsed;
-                            mechanicalPowers.add("AP");
+                            mechanicalPowers.add("AP " + parsed);
                         }
                         break;
                     case "impact hits":
                         if (parsed != null) {
                             impactHits = parsed;
-                            mechanicalPowers.add("Impact Hits");
+                            mechanicalPowers.add("Impact Hits " + parsed);
                         }
                         break;
                     case "multiwound":
                         if (parsed != null) {
                             multiwound = parsed;
-                            mechanicalPowers.add("Multiwound");
+                            mechanicalPowers.add("Multiwound " + parsed);
                         }
                         break;
                     case "elusive":
                         if (parsed != null) {
                             elusive = parsed;
-                            mechanicalPowers.add("Elusive");
+                            mechanicalPowers.add("Elusive " + parsed);
                         }
                         break;
                     case "spongey":
                         if (parsed != null) {
                             spongey = parsed;
-                            mechanicalPowers.add("Spongey");
+                            mechanicalPowers.add("Spongey " + parsed);
+                        }
+                        break;
+                    case "virulent":
+                        if (parsed != null) {
+                            spongey = parsed;
+                            mechanicalPowers.add("Virulent " + parsed);
                         }
                         break;
                     default:
                         if (!ignoredPowers.contains(base)) {
                             unhandledPowers.add(power);
-                            unhandledUnitPowers.add(power);
                         }
+                        unhandledUnitPowers.add(power);
                         break;
                 }
             }
@@ -189,7 +331,7 @@ public class UnitPowers {
     public boolean isStrikesFirst() {
         return strikesFirst;
     }
-    
+
     public boolean isStrikesLast() {
         return strikesLast;
     }
@@ -200,6 +342,14 @@ public class UnitPowers {
 
     public boolean isLethal() {
         return lethal;
+    }
+
+    public boolean hasUncannyProtection() {
+        return uncannyProtection;
+    }
+
+    public boolean hasCleave() {
+        return cleave;
     }
 
     public boolean isChaff() {
@@ -226,6 +376,14 @@ public class UnitPowers {
         return burst;
     }
 
+    public boolean hasLitFuses() {
+        return litFuses;
+    }
+
+    public boolean hasFlankingAttack() {
+        return flankingAttack;
+    }
+
     public boolean isUnstable() {
         return unstable;
     }
@@ -250,6 +408,78 @@ public class UnitPowers {
         return plague;
     }
 
+    public boolean hasPracticedNecromancy() {
+        return practicedNecromancy;
+    }
+
+    public boolean isEthereal() {
+        return ethereal;
+    }
+
+    public boolean hasArchrevenant() {
+        return archrevenant;
+    }
+
+    public boolean hasSpitWebs() {
+        return spitWebs;
+    }
+
+    public boolean hasAggressivePoison() {
+        return aggressivePoison;
+    }
+
+    public boolean isEvasive() {
+        return evasive;
+    }
+
+    public boolean hasWretchedPoisons() {
+        return wretchedPoisons;
+    }
+
+    public boolean hasVengeance() {
+        return vengeance;
+    }
+
+    public boolean hasBloodlust() {
+        return bloodlust;
+    }
+
+    public boolean hasRetribution() {
+        return retribution;
+    }
+
+    public boolean hasProtectiveMarkings() {
+        return protectiveMarkings;
+    }
+
+    public boolean hasKillingBlow() {
+        return killingBlow;
+    }
+
+    public boolean hasRegenerativeClay() {
+        return regenerativeClay;
+    }
+
+    public boolean isAirborne() {
+        return airborne;
+    }
+
+    public boolean isDisorganised() {
+        return disorganised;
+    }
+
+    public boolean hasCavalrybane() {
+        return cavalrybane;
+    }
+
+    public boolean hasFearfulPresence() {
+        return fearfulPresence;
+    }
+
+    public boolean hasGeneralsBanner() {
+        return generalsBanner;
+    }
+
     public DynamicInt getApValue() {
         return apValue;
     }
@@ -268,6 +498,10 @@ public class UnitPowers {
 
     public DynamicInt getSpongeyValue() {
         return spongey;
+    }
+
+    public DynamicInt getVirulentThreshold() {
+        return virulentThreshold;
     }
 
     @Override
