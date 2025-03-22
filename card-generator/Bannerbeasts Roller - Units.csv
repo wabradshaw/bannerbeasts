@@ -7,12 +7,12 @@ Id,Name,Unit,Include,Faction,Class,Comparison Class,Base Block,Tier,Cost,Equips,
 <b>Unprotected</b> - Reveal this unit when an attack hits it, rather than using the default block. ",,,,,,,,,#000000,#000000,#3467FF,#3467FF,#000000,#cc0000,#00dd28,#00941A,#000000,#ffffff,gobbos.png,1,6,6.00,2,12,1.00,0.00,10.00,21,FALSE
 01_1_3,Beserkers,Gobbo Beserkers,TRUE,Gobbo,Goblins,Fast Infantry,6,1,3,,6,d3,4,-,1,1,5,"<b>Random mover d3</b> - Roll a die for movement each turn. Movement is d3 spaces.
 
-<b>Eager to Fight.</b> - You must move the full distance, or collide with something. If the unit moves off the board, it is lost.
+<b>Eager to Fight</b> - You must move the full distance, or collide with something. If the unit moves off the board, it is lost.
 
 <b>Manoeuvrable</b> - May turn once at any point during a move or hustle.",,,,1,1,1,,,#2b9800,#000000,#000000,#000000,#000000,#000000,#00dd28,#00941A,#000000,#ffffff,gobbos.png,1,6,9.00,1,6,1.00,0.00,3.00,13.5,FALSE
 01_1_4,Archers,Gobbo Archers,TRUE,Gobbo,Goblins,Archers,6,1,2,,6,1,5,4,1,1,6,,,,,,,,,1,#000000,#000000,#000000,#cc0000,#2b9800,#cc0000,#00dd28,#00941A,#000000,#ffffff,gobbos.png,1,6,7.20,1,6,1.00,0.00,2.00,10.2,FALSE
 01_1_5,Goblings,Gobbo Goblings,TRUE,Gobbo,Goblins,Chaff,6,1,1,,6,1,5,-,1,1,6,<b>Chaff</b> - Subtract 1 from leadership rolls. 6s still auto-succeed. ,,,,,,,,,#000000,#000000,#000000,#cc0000,#000000,#cc0000,#00dd28,#00941A,#000000,#ffffff,gobbos.png,1,6,7.20,1,6,1.00,0.00,2.00,10.2,FALSE
-01_1_6,Poppers,Gobbo Poppers,TRUE,Gobbo,Goblins,Infantry,6,1,2,,6,1,5,-,1,1,6,"<b>Burst</b> - For each model that dies in combat, make an attack hitting on 4+ with AP1 against the unit that dealt the wound. ",,,,,,,,,#000000,#000000,#000000,#cc0000,#000000,#cc0000,#00dd28,#00941A,#000000,#ffffff,gobbos.png,1,6,7.20,1,6,1.00,0.00,2.00,10.2,FALSE
+01_1_6,Poppers,Gobbo Poppers,TRUE,Gobbo,Goblins,Infantry,6,1,2,,6,1,5,-,1,1,6,"<b>Burst</b> - For each friendly model that dies in combat, make an attack hitting on 4+ with AP1 against the unit that dealt the wound. ",,,,,,,,,#000000,#000000,#000000,#cc0000,#000000,#cc0000,#00dd28,#00941A,#000000,#ffffff,gobbos.png,1,6,7.20,1,6,1.00,0.00,2.00,10.2,FALSE
 01_2A_1,Wolfcarts,Gobbo Wolfcarts,TRUE,Gobbo,Chariots,Chariot,5,2,,,2,2,4,5,4,4,5,"<b>Impact Hits d3</b> - If you get a charge bonus, do d3 attacks per model hitting on 4+. These count towards who won combat.
 
 <b>Chariot</b> - Can't sidestep",,,2,2,2,2,2,2,#2b9800,#000000,#2b9800,#000000,#000000,#000000,#00dd28,#00941A,#000000,#ffffff,gobbos.png,2,8,12.00,4,8,1.00,0.00,4.00,18,FALSE
@@ -158,7 +158,7 @@ Hits all tiles in range across all three ranged attack columns. Each unit that i
 04_1_5,Trapdoors,Silk Court Trapdoors,TRUE,Silk Court,Spiderlings,Unique,6,1,3,,5,1,4,5,1,1,6,"<b>Poison</b> - 6s to hit can't be saved
 
 <b>Ambush</b> - Action: Remove this unit from the board. On your next turn, place it on an empty space along any board edge (facing away from the board edge) as its action for the turn",,,1,1,1,1,,,#000000,#000000,#000000,#000000,#000000,#cc0000,#f1baff,#2d2d2d,#000000,#ffffff,spiders.png,1,5,6.00,1,5,1.11,0.00,2.78,10.16666667,FALSE
-04_1_6,Squires,Silk Court Squires,TRUE,Silk Court,Spiderlings,Heavy Infantry,6,1,2,,5,1,6,-,1,1,4,<b>Poison</b> - 6s to hit can't be saved,,,1,1,1,1,1,,#000000,#000000,#000000,#cc0000,#000000,#2b9800,#f1baff,#2d2d2d,#000000,#ffffff,spiders.png,1,5,10.00,1,5,1.33,0.00,1.11,11.66666667,FALSE
+04_1_6,Squires,Silk Court Squires,TRUE,Silk Court,Spiderlings,Heavy Infantry,6,1,2,,5,1,6,-,1,1,4,<b>Poison</b> - 6s to hit can't be saved,,,1,1,1,,1,,#000000,#000000,#000000,#cc0000,#000000,#2b9800,#f1baff,#2d2d2d,#000000,#ffffff,spiders.png,1,5,10.00,1,5,1.33,0.00,1.11,11.66666667,FALSE
 04_2A_1,Jumpers,Silk Court Jumpers,TRUE,Silk Court,Knights,Flyer,6,2,,,5,2,5,4,1,1,6,"<b>Poison</b> - 6s to hit can't be saved
 
 <b>Tactical Retreat</b> - Can choose to flee before combat starts
@@ -244,7 +244,7 @@ Place a web in the target square. Units that move into those spaces end their tu
 <b>Retribution</b> - Wounds dealt from Vengence count double to combat resolution.",,,2,2,2,,1,,#000000,#2b9800,#000000,#cc0000,#000000,#2b9800,#e78e7e,#cf0000,#000000,#ffffff,redspines.png,1,10,10.00,1,5,1.00,1.00,2.67,14,FALSE
 05_2A_2,Blood-dancers,Redspines Blood-dancers,TRUE,Redspines,Huskarls,Fast Infantry,5,2,,,5,1,3,5,1,2,5,"<b>Vengence</b> - When this unit blocks in combat, it still takes 1 wound. The unit that attacked takes 1 wound as well.
 
-<b>Blood Dance</b> - Once per turn, after this unit takes a wound, it may move or sidestep. This may take it out of combat.
+<b>Blood Dance</b> - Once per turn, after this unit takes a wound, it may move or sidestep. This may take it out of combat. 
 
 <b>Manoeuvrable</b> - May turn once at any point during a move or hustle.",,,2,2,2,2,,2,#000000,#2b9800,#000000,#2b9800,#000000,#000000,#e78e7e,#cf0000,#000000,#ffffff,redspines.png,1,10,10.00,1,5,1.00,0.67,4.00,16,FALSE
 05_2A_3,Quillsprays,Redspines Quillsprays,TRUE,Redspines,Huskarls,Unique,5,2,,,5,1,5,5,1,2,5,"<b>Vengence</b> - When this unit blocks in combat, it still takes 1 wound. The unit that attacked takes 1 wound as well.
@@ -378,7 +378,7 @@ Any unit in the hit square takes 3X attacks hitting on 3+ with AP X. Lose all po
 2 - Miss
 1 - Off by up to two, opponent's choice 
 Roll an attack for each model in the target square, hitting on 4+ with AP1.",,,,,,,,,#000000,#000000,#000000,#000000,#000000,#000000,#c9daf8,#00399e,#000000,#ffffff,empire.png,1,3,3.60,2,2,1.00,0.00,0.33,4.1,TRUE
-07_2A_3,War Organ,Scaled Empire War Organ,TRUE,Scaled Empire,Firepower,War Machine,6,2,,,1,1,6,-,2,3,6,"<b>War Machine</b> - Dies if it flees. Can't move into combat.
+07_2A_3,War Organ,Scaled Empire War Organ,TRUE,Scaled Empire,Firepower,War Machine,6,2,,,1,1,6,5,2,3,6,"<b>War Machine</b> - Dies if it flees. Can't move into combat.
 
 <b>Organ Gun</b> - Ranged Weapon. Range 4. Roll 3d6 and take a wound for each 1 rolled. Take the two highest dice and fire that many shots. Shots are fired even if this unit is destroyed.",,,,,,,,,#000000,#000000,#000000,#000000,#000000,#000000,#c9daf8,#00399e,#000000,#ffffff,empire.png,1,3,3.60,2,2,1.00,0.00,0.33,4.1,TRUE
 07_2B_1,Outriders,Scaled Empire Outriders,TRUE,Scaled Empire,Cavalry,Light Cavalry,6,2,,,4,2,5,4,1,1,5,"<b>Regiment</b> - Gains +1 to leadership rolls while adjacent to a detachment.
@@ -580,7 +580,7 @@ L07_3_A,The General,Scaled Empire The General,TRUE,Scaled Empire,Leader,Hybrid M
 
 <b>General's Banner</b> - All friendly units get a bonus of 1 towards who won combat.
 
-<b>General's Spirit</b> - Other friendly units in the same combat as the general get a +1 bonus to melee attacks.",2,,3,3,3,3,3,3,#000000,#000000,#000000,#000000,#000000,#2b9800,#c9daf8,#00399e,#000000,#ffffff,empire.png,1,5,10.00,4,4,1.00,0.00,2.00,13,TRUE
+<b>General's Spirit</b> - Other friendly units in the same combat as the general get a +1 bonus to melee attacks.",3,,3,3,3,3,3,3,#000000,#000000,#000000,#000000,#000000,#2b9800,#c9daf8,#00399e,#000000,#ffffff,empire.png,1,5,10.00,4,4,1.00,0.00,2.00,13,TRUE
 L07_3_B,Commando,Scaled Empire Commando,TRUE,Scaled Empire,Leader,Warrior Hero,,3,,4,1,1,3,4,5,6,4,"<b>Officer</b> - When a ranged attack targets this unit, you may nominate an adjacent friendly regiment as the target instead. 
 
 <b>Fearful Presence</b> - Enemy units in range 2 subtract one from rolls to flee. Natural 6s still always pass.
