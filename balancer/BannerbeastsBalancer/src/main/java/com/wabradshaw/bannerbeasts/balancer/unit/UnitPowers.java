@@ -96,6 +96,11 @@ public class UnitPowers {
     private DynamicInt spongey = new StaticInt(0);
     private DynamicInt virulentThreshold = new StaticInt(7);
 
+    private boolean offhand = false;
+    private boolean unwieldy = false;
+    private boolean armourbane = false;
+    private DynamicInt bonusBlock = new StaticInt(0);
+
     public UnitPowers(String powers) {
         this.mechanicalPowers = new LinkedHashSet<>();
         this.unhandledUnitPowers = new LinkedHashSet<>();
@@ -317,6 +322,24 @@ public class UnitPowers {
                             mechanicalPowers.add("Virulent " + parsed);
                         }
                         break;
+                    case "offhand":
+                        offhand = true;
+                        mechanicalPowers.add("Offhand");
+                        break;
+                    case "unwieldy":
+                        unwieldy = true;
+                        mechanicalPowers.add("Unwieldy");
+                        break;
+                        case "armourbane":
+                        armourbane = true;
+                            mechanicalPowers.add("Armourbane");
+                            break;
+                    case "block":
+                        if (parsed != null) {
+                            bonusBlock = parsed;
+                            mechanicalPowers.add("Block " + bonusBlock);
+                        }
+                        break;
                     default:
                         if (!ignoredPowers.contains(base)) {
                             unhandledPowers.add(power);
@@ -502,6 +525,22 @@ public class UnitPowers {
 
     public DynamicInt getVirulentThreshold() {
         return virulentThreshold;
+    }
+
+    public boolean hasOffhand() {
+        return offhand;
+    }
+
+    public boolean isUnwieldy() {
+        return unwieldy;
+    }
+
+    public boolean hasArmourbane() {
+        return armourbane;
+    }
+
+    public DynamicInt getBonusBlock() {
+        return bonusBlock;
     }
 
     @Override

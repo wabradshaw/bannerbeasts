@@ -10,9 +10,10 @@ import com.wabradshaw.bannerbeasts.balancer.unit.UnitMetadata;
 public class BattleSummary {
 
     public static final String[] CSV_HEADERS = new String[] {
-            "Unit1", "Faction1", "Class1", "CompClass1", "Tier1", "Cost1",
-            "Unit2", "Faction2", "Class2", "CompClass2", "Tier2", "Cost2",
-            "Any Wins", "Outright Wins", "Win Through Flee", "Ties", "Lose Through Flee", "Outright Losses", "Any Losses", "Total Destructions",
+            "Unit1", "FullUnit1", "Faction1", "Class1", "CompClass1", "Tier1", "Cost1",
+            "Unit2", "FullUnit2", "Faction2", "Class2", "CompClass2", "Tier2", "Cost2",
+            "Any Wins", "Outright Wins", "Win Through Flee", "Ties", "Total Destructions", "Lose Through Flee",
+            "Outright Losses", "Any Losses", "Ratio",
             "AvgRounds", "AvgUnit1Models", "AvgUnit1Hp", "AvgUnit2Models", "AvgUnit2Hp"
     };
 
@@ -52,7 +53,7 @@ public class BattleSummary {
         this.avgUnit1Hp = size > 0 ? (double) total1Hp / size : 0;
         this.avgUnit1Models = size > 0 ? (double) total1Models / size : 0;
         this.avgUnit2Hp = size > 0 ? (double) total2Hp / size : 0;
-        this.avgUnit2Models = size > 0 ? (double) total2Models / size : 0;        
+        this.avgUnit2Models = size > 0 ? (double) total2Models / size : 0;
     }
 
     public int getUnit1Id() {
@@ -87,21 +88,26 @@ public class BattleSummary {
         UnitMetadata meta1 = unit1.getUnitMetadata();
         UnitMetadata meta2 = unit2.getUnitMetadata();
 
+        int wins = outcomeCounts.getOrDefault(Outcome.WON_WIPEOUT, 0) + outcomeCounts.getOrDefault(Outcome.WON_FLED, 0);
+        int ties = outcomeCounts.getOrDefault(Outcome.TIED, 0) + outcomeCounts.getOrDefault(Outcome.TOTAL_WIPEOUT, 0);
+        int losses = outcomeCounts.getOrDefault(Outcome.LOST_FLED, 0)
+                + outcomeCounts.getOrDefault(Outcome.LOST_WIPEOUT, 0);
         return new String[] {
-                meta1.getUnit(), meta1.getFaction(), meta1.getUnitClass(), meta1.getComparisonClass(),
+                meta1.getUnit(), meta1.toString(), meta1.getFaction(), meta1.getUnitClass(), meta1.getComparisonClass(),
                 String.valueOf(meta1.getTier()), String.valueOf(meta1.getCost()),
 
-                meta2.getUnit(), meta2.getFaction(), meta2.getUnitClass(), meta2.getComparisonClass(),
+                meta2.getUnit(), meta2.toString(), meta2.getFaction(), meta2.getUnitClass(), meta2.getComparisonClass(),
                 String.valueOf(meta2.getTier()), String.valueOf(meta2.getCost()),
 
-                String.valueOf(outcomeCounts.getOrDefault(Outcome.WON_WIPEOUT, 0) + outcomeCounts.getOrDefault(Outcome.WON_FLED, 0)),
+                String.valueOf(wins),
                 String.valueOf(outcomeCounts.getOrDefault(Outcome.WON_WIPEOUT, 0)),
                 String.valueOf(outcomeCounts.getOrDefault(Outcome.WON_FLED, 0)),
                 String.valueOf(outcomeCounts.getOrDefault(Outcome.TIED, 0)),
+                String.valueOf(outcomeCounts.getOrDefault(Outcome.TOTAL_WIPEOUT, 0)),
                 String.valueOf(outcomeCounts.getOrDefault(Outcome.LOST_FLED, 0)),
                 String.valueOf(outcomeCounts.getOrDefault(Outcome.LOST_WIPEOUT, 0)),
-                String.valueOf(outcomeCounts.getOrDefault(Outcome.LOST_FLED, 0) + outcomeCounts.getOrDefault(Outcome.LOST_WIPEOUT, 0)),
-                String.valueOf(outcomeCounts.getOrDefault(Outcome.TOTAL_WIPEOUT, 0)),
+                String.valueOf(losses),
+                String.valueOf((wins + (ties * 0.5))/20),
                 String.format("%.2f", avgRounds),
                 String.format("%.2f", avgUnit1Models),
                 String.format("%.2f", avgUnit1Hp),

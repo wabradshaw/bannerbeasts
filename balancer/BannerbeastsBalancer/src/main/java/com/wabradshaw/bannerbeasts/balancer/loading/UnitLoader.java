@@ -45,7 +45,7 @@ public class UnitLoader {
                     
                     int startingNumber = Integer.parseInt(data.get("Number"));
                     int startingHp = Integer.parseInt(data.get("HP"));
-                    String powers = data.get("Powers");
+                    String powers = data.get("Powers") + data.get("Example Equip Powers");
                     DynamicInt movement = DynamicIntFactory.parse(data.get("Movement"), 0);
                     DynamicInt meleeHit = DynamicIntFactory.parse(data.get("Melee Hit"), 7);
                     DynamicInt rangedHit = DynamicIntFactory.parse(data.get("Ranged Hit"), 7);

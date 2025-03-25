@@ -158,6 +158,10 @@ public class AutoBattler {
                 baseAttacks -= 1;
             }
         }
+
+        if(powers.hasOffhand()){
+            baseAttacks *= 2;
+        }
         return unit.getCurrentModels() * baseAttacks;
     }
 
@@ -354,10 +358,13 @@ public class AutoBattler {
 
         int effectiveRoll = roll - defenderPowers.getElusivePenalty().get();
         int hitTarget = attacker.getDescription().getMeleeHit().get();
-        int rawBlock = defender.getDescription().getBlock().get() + attackerPowers.getApValue().get();
+        int rawBlock = defender.getDescription().getBlock().get() + attackerPowers.getApValue().get() - defenderPowers.getBonusBlock().get();
         int blockTarget = rawBlock;
 
         if (defenderPowers.isAirborne()) {
+            hitTarget ++;
+        }        
+        if (attackerPowers.isUnwieldy()) {
             hitTarget ++;
         }        
         if (isCavalrybaneEffective(attacker, defender)){
@@ -366,6 +373,10 @@ public class AutoBattler {
         }
         if (isCavalrybaneEffective(defender, attacker)){
             blockTarget --;
+        }
+
+        if (attackerPowers.hasArmourbane() && rawBlock >= 5) {
+            hitTarget --;
         }
 
         if (defenderPowers.hasUncannyProtection()){

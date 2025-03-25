@@ -36,7 +36,7 @@ public class App {
 
         // Harness harness = new TestHarness(new int[]{0,15,30,45,60,75,90}, 100);
         // Harness harness = new TestHarness(new int[]{0,3}, 100);
-        Harness harness = new FullHarness(1000);
+        Harness harness = new FullHarness(2000);
         List<BattleResult> results = harness.runSimulation(units);
 
         List<BattleSummary> resultsSummary = summarizeBattles(results);
