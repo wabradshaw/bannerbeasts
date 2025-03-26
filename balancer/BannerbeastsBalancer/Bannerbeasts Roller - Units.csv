@@ -15,7 +15,7 @@ Id,Name,Unit,Include,Faction,Class,Comparison Class,Base Block,Tier,Cost,Equips,
 01_1_6,Poppers,Gobbo Poppers,TRUE,Gobbo,Goblins,Infantry,6,1,2,,6,1,5,-,1,1,6,"<b>Burst</b> - For each friendly model that dies in combat, make an attack hitting on 4+ with AP1 against the unit that dealt the wound. ",4,,,,,,,,,,,#000000,#000000,#000000,#cc0000,#000000,#cc0000,#00dd28,#00941A,#000000,#ffffff,gobbos.png,1,6,7.20,1,6,1.00,0.00,2.00,10.2,FALSE
 01_2A_1,Wolfcarts,Gobbo Wolfcarts,TRUE,Gobbo,Chariots,Chariot,5,2,,,2,2,4,5,4,4,5,"<b>Impact Hits d3</b> - If you get a charge bonus, do d3 attacks per model hitting on 4+. These count towards who won combat.
 
-<b>Chariot</b> - Can't sidestep",4,,,,,2,2,2,2,2,2,#2b9800,#000000,#2b9800,#000000,#000000,#000000,#00dd28,#00941A,#000000,#ffffff,gobbos.png,2,8,12.00,4,8,1.00,0.00,4.00,18,FALSE
+<b>Chariot</b> - Can't sidestep",5.5,,,,,2,2,2,2,2,2,#2b9800,#000000,#2b9800,#000000,#000000,#000000,#00dd28,#00941A,#000000,#ffffff,gobbos.png,2,8,12.00,4,8,1.00,0.00,4.00,18,FALSE
 01_2A_2,Bangwagons,Gobbo Bangwagons,TRUE,Gobbo,Chariots,Unique,5,2,,,2,2,2,-,2d6,2,-,"<b>Explosive</b> - Dies after combat.
 
 <b>Giant Powder Keg</b> - 2d6 attacks per model
@@ -71,7 +71,7 @@ Hits all tiles in range across all three ranged attack columns. Each unit that i
 02_1_2,Skitterers,Ratkin Skitterers,TRUE,Ratkin,Rats,Fast Infantry,-,1,3,,9,2,5,5,1,1,6,"<b>Chaff</b> - Subtract 1 from leadership rolls. 6s still auto-succeed. 
 
 <b>Manoeuvrable</b> - May turn once at any point during a move or hustle",4,,,,,1,1,1,1,,1,#2b9800,#000000,#000000,#000000,#2b9800,#000000,#ffb380,#733d00,#000000,#ffffff,rats.png,1,9,10.80,1,9,1.00,0.00,3.00,15.3,FALSE
-02_1_3,Pelters,Ratkin Pelters,TRUE,Ratkin,Rats,Archers,-,1,2,,9,1,5,5,1,1,-,<b>Chaff</b> - Subtract 1 from leadership rolls. 6s still auto-succeed. ,3,,,,,,,,,,1,#000000,#000000,#000000,#000000,#2b9800,#cc0000,#ffb380,#733d00,#000000,#ffffff,rats.png,1,9,9.00,1,9,1.00,0.00,3.00,13.5,FALSE
+02_1_3,Pelters,Ratkin Pelters,TRUE,Ratkin,Rats,Archers,-,1,2,,9,1,5,5,1,1,-,<b>Chaff</b> - Subtract 1 from leadership rolls. 6s still auto-succeed. ,3.5,,,,,,,,,,1,#000000,#000000,#000000,#000000,#2b9800,#cc0000,#ffb380,#733d00,#000000,#ffffff,rats.png,1,9,9.00,1,9,1.00,0.00,3.00,13.5,FALSE
 02_1_4,Horde,Ratkin Horde,TRUE,Ratkin,Rats,Chaff,-,1,1,,9,1,6,-,1,1,-,<b>Chaff</b> - Subtract 1 from leadership rolls. 6s still auto-succeed. ,3,,,,,1,,,,1,,#000000,#000000,#000000,#cc0000,#000000,#cc0000,#ffb380,#733d00,#000000,#ffffff,rats.png,1,9,9.00,1,9,1.00,0.00,1.50,11.25,FALSE
 02_1_5,Assasslings,Ratkin Assasslings,TRUE,Ratkin,Rats,Infantry,-,1,3,,9,1,5,6,1,1,-,"<b>Chaff</b> - Subtract 1 from leadership rolls. 6s still auto-succeed. 
 
@@ -104,24 +104,24 @@ Hits all tiles in range across all three ranged attack columns. Each unit that i
 <b>Chariot</b> - Can't sidestep ",4,,,,,,,,,,,#2b9800,#000000,#000000,#000000,#000000,#000000,#ffb380,#733d00,#000000,#ffffff,rats.png,2,5,7.50,6,6,1.00,0.00,2.00,10.5,FALSE
 03_1_1,Warriors,Boneborn Warriors,TRUE,Boneborn,Skeletons,Warriors,6,1,2,,6,1,4,-,1,1,5,"<b>Unstable</b> - Instead of rolling to flee, lose 1 extra wound",4,,,,,1,1,1,1,1,,#000000,#000000,#000000,#000000,#000000,#000000,#e0e0d3,#4d4d4d,#000000,#ffffff,skellies.png,1,6,9.00,1,6,1.00,0.00,3.00,13.5,FALSE
 03_1_2,Archers,Boneborn Archers,TRUE,Boneborn,Skeletons,Archers,6,1,2,,6,1,5,4,1,1,6,"<b>Unstable</b> - Instead of rolling to flee, lose 1 extra wound",3,,,,,,,,,,1,#000000,#000000,#000000,#cc0000,#2b9800,#cc0000,#e0e0d3,#4d4d4d,#000000,#ffffff,skellies.png,1,6,7.20,1,6,1.00,0.00,2.00,10.2,FALSE
-03_1_3,Revenants,Boneborn Revenants,TRUE,Boneborn,Skeletons,Infantry,6,1,3,,6,1,5,-,1,1,5,"<b>Unstable</b> - Instead of rolling to flee, lose 1 extra wound
+03_1_3,Revenants,Boneborn Revenants,TRUE,Boneborn,Skeletons,Infantry,6,1,3,,6,1,4,-,1,1,5,"<b>Unstable</b> - Instead of rolling to flee, lose 1 extra wound
 
-<b>Revenants</b> - After combat, add a new model for each enemy model that died. Limited to the starting size.",5,,,,,,1,1,1,1,,#000000,#000000,#000000,#cc0000,#000000,#000000,#e0e0d3,#4d4d4d,#000000,#ffffff,skellies.png,1,6,9.00,1,6,1.00,0.00,2.00,12,FALSE
+<b>Revenants</b> - After combat, add a new model for each enemy model that died. Limited to the starting size.",5,,,,,,1,1,1,1,,#000000,#000000,#000000,#000000,#000000,#000000,#e0e0d3,#4d4d4d,#000000,#ffffff,skellies.png,1,6,9.00,1,6,1.00,0.00,3.00,13.5,FALSE
 03_1_4,Wights,Boneborn Wights,TRUE,Boneborn,Skeletons,Heavy Infantry,6,1,3,,6,1,5,-,1,1,4,"<b>Unstable</b> - Instead of rolling to flee, lose 1 extra wound
 
 <b>Terrifying</b> - At the start of each round of combat, all enemy units in combat with it must roll to flee. If they flee out of combat, no combat takes place. ",5,,,,,1,1,1,1,1,,#000000,#000000,#000000,#cc0000,#000000,#2b9800,#e0e0d3,#4d4d4d,#000000,#ffffff,skellies.png,1,6,12.00,1,6,1.00,0.00,2.00,15,FALSE
-03_1_5,Fodder,Boneborn Fodder,TRUE,Boneborn,Skeletons,Chaff,6,1,1,,6,1,6,-,1,1,6,"<b>Unstable</b> - Instead of rolling to flee, lose 1 extra wound",3,,,,,,,,,,,#000000,#000000,#000000,#cc0000,#000000,#cc0000,#e0e0d3,#4d4d4d,#000000,#ffffff,skellies.png,1,6,7.20,1,6,1.00,0.00,1.00,8.7,FALSE
+03_1_5,Fodder,Boneborn Fodder,TRUE,Boneborn,Skeletons,Chaff,6,1,1,,6,1,6,-,1,1,5,"<b>Unstable</b> - Instead of rolling to flee, lose 1 extra wound",3,,,,,,,,,,,#000000,#000000,#000000,#cc0000,#000000,#000000,#e0e0d3,#4d4d4d,#000000,#ffffff,skellies.png,1,6,9.00,1,6,1.00,0.00,1.00,10.5,FALSE
 03_1_6,Shieldbearers,Boneborn Shieldbearers,TRUE,Boneborn,Skeletons,Heavy Infantry,6,1,2,,6,1,5,-,1,1,4,"<b>Unstable</b> - Instead of rolling to flee, lose 1 extra wound",4,,,,,1,,,,1,,#000000,#000000,#000000,#cc0000,#000000,#2b9800,#e0e0d3,#4d4d4d,#000000,#ffffff,skellies.png,1,6,12.00,1,6,1.00,0.00,2.00,15,FALSE
 03_2A_1,Tomb Titan,Boneborn Tomb Titan,TRUE,Boneborn,Bonegiant,Monster,5,2,,,1,1,3,-,5,5,4,"<b>Unstable</b> - Instead of rolling to flee, lose 1 extra wound
 
 <b>Mighty Cleave</b> - In combat this unit makes its attacks against all adjacent enemy units. Roll separately for each. If they are not in combat, they take damage but are not included in combat resolution and do not strike back.
 
 <b>Well Prepared</b> - Equipment costs 1 less.",6,<b>AP 1</b>,,,,,2,2,,,,#000000,#000000,#2b9800,#2b9800,#000000,#2b9800,#e0e0d3,#4d4d4d,#000000,#ffffff,skellies.png,1,5,10.00,5,5,1.00,0.00,3.33,15,FALSE
-03_2A_2,Grave Beast,Boneborn Grave Beast,TRUE,Boneborn,Bonegiant,Monster,5,2,,,1,1,4,,4,5,5,"<b>Unstable</b> - Instead of rolling to flee, lose 1 extra wound
+03_2A_2,Grave Beast,Boneborn Grave Beast,TRUE,Boneborn,Bonegiant,Monster,5,2,,,1,1,4,-,4,7,5,"<b>Unstable</b> - Instead of rolling to flee, lose 1 extra wound
 
 <b>Revenants</b> - After combat, add a new wound for each enemy that died. Limited to the starting size.
 
-<b>Terrifying</b> - At the start of each round of combat, all enemy units in combat with it must roll to flee. If they flee out of combat, no combat takes place. ",7,,,,,,2,2,2,,,#000000,#000000,#000000,#000000,#000000,#000000,#e0e0d3,#4d4d4d,#000000,#ffffff,skellies.png,1,5,7.50,4,4,1.00,0.00,2.00,10.5,FALSE
+<b>Terrifying</b> - At the start of each round of combat, all enemy units in combat with it must roll to flee. If they flee out of combat, no combat takes place. ",7,,,,,,2,2,2,,,#000000,#000000,#000000,#000000,#000000,#000000,#e0e0d3,#4d4d4d,#000000,#ffffff,skellies.png,1,7,10.50,4,4,1.00,0.00,2.00,13.5,FALSE
 03_2A_3,Skullclops,Boneborn Skullclops,TRUE,Boneborn,Bonegiant,Monster,5,2,,,1,1,3,3,4,5,5,"<b>Unstable</b> - Instead of rolling to flee, lose 1 extra wound
 
 <b>Rock Lobber</b> - Ranged Weapon - Range 4, AP -2, Multiwound 3. ",4,,,,,,2,2,,,,#000000,#000000,#000000,#2b9800,#3467FF,#000000,#e0e0d3,#4d4d4d,#000000,#ffffff,skellies.png,1,5,7.50,4,4,1.00,0.00,2.67,11.5,FALSE
@@ -159,35 +159,37 @@ Hits all tiles in range across all three ranged attack columns. Each unit that i
 
 <b>Web Traps</b> - Enemies can't flee from this unit or turn after combat. Instead of rolling to flee, they lose extra wounds for every point they lost combat.",4.5,,,,,1,1,1,1,1,,#000000,#000000,#000000,#000000,#000000,#000000,#f1baff,#2d2d2d,#000000,#ffffff,spiders.png,1,5,7.50,1,5,1.11,0.00,2.78,11.66666667,FALSE
 04_1_4,Huntsmen,Silk Court Huntsmen,TRUE,Silk Court,Spiderlings,Archers,6,1,2,,5,1,5,4,1,1,6,<b>Poison</b> - 6s to hit can't be saved,3,,,,,,,,1,,1,#000000,#000000,#000000,#cc0000,#2b9800,#cc0000,#f1baff,#2d2d2d,#000000,#ffffff,spiders.png,1,5,6.00,1,5,1.17,0.00,1.94,8.916666667,FALSE
-04_1_5,Trapdoors,Silk Court Trapdoors,TRUE,Silk Court,Spiderlings,Unique,6,1,3,,5,1,4,5,1,1,6,"<b>Poison</b> - 6s to hit can't be saved
+04_1_5,Trapdoors,Silk Court Trapdoors,TRUE,Silk Court,Spiderlings,Unique,6,1,3,,5,1,4,5,1,1,5,"<b>Poison</b> - 6s to hit can't be saved
 
-<b>Ambush</b> - Action: Remove this unit from the board. On your next turn, place it on an empty space along any board edge (facing away from the board edge) as its action for the turn",4,,,,,1,1,1,1,,,#000000,#000000,#000000,#000000,#000000,#cc0000,#f1baff,#2d2d2d,#000000,#ffffff,spiders.png,1,5,6.00,1,5,1.11,0.00,2.78,10.16666667,FALSE
-04_1_6,Squires,Silk Court Squires,TRUE,Silk Court,Spiderlings,Heavy Infantry,6,1,2,,5,1,6,-,1,1,4,<b>Poison</b> - 6s to hit can't be saved,4,,,,,1,1,1,,1,,#000000,#000000,#000000,#cc0000,#000000,#2b9800,#f1baff,#2d2d2d,#000000,#ffffff,spiders.png,1,5,10.00,1,5,1.33,0.00,1.11,11.66666667,FALSE
-04_2A_1,Jumpers,Silk Court Jumpers,TRUE,Silk Court,Knights,Flyer,6,2,,,5,2,5,4,1,1,6,"<b>Poison</b> - 6s to hit can't be saved
+<b>Ambush</b> - Action: Remove this unit from the board. On your next turn, place it on an empty space along any board edge (facing away from the board edge) as its action for the turn",4,,,,,1,1,1,1,,,#000000,#000000,#000000,#000000,#000000,#cc0000,#f1baff,#2d2d2d,#000000,#ffffff,spiders.png,1,5,7.50,1,5,1.11,0.00,2.78,11.66666667,FALSE
+04_1_6,Squires,Silk Court Squires,TRUE,Silk Court,Spiderlings,Heavy Infantry,6,1,2,,5,1,6,-,1,1,4,"<b>Poison</b> - 6s to hit can't be saved
+
+<b>Shieldwall</b> - Improve block by 1 against ranged attacks ",4,,,,,1,1,1,,1,,#000000,#000000,#000000,#cc0000,#000000,#2b9800,#f1baff,#2d2d2d,#000000,#ffffff,spiders.png,1,5,10.00,1,5,1.33,0.00,1.11,11.66666667,FALSE
+04_2A_1,Jumpers,Silk Court Jumpers,TRUE,Silk Court,Knights,Flyer,6,2,,,5,2,5,4,1,1,5,"<b>Poison</b> - 6s to hit can't be saved
 
 <b>Tactical Retreat</b> - Can choose to flee before combat starts
 
 <b>Jumping</b> - Can jump over units and obstacles while moving and hustling. Doing so increases the max movement distance by 1. Must end their turn in an empty square.
 
-<b>Manoeuvrable</b> - May turn once at any point during a move or hustle",4,,,,,1,1,1,1,,2,#2b9800,#000000,#000000,#cc0000,#2b9800,#cc0000,#f1baff,#2d2d2d,#000000,#ffffff,spiders.png,2,5,6.00,1,5,1.17,0.00,1.94,8.916666667,FALSE
+<b>Manoeuvrable</b> - May turn once at any point during a move or hustle",4,,,,,1,1,1,1,,2,#2b9800,#000000,#000000,#cc0000,#2b9800,#cc0000,#f1baff,#2d2d2d,#000000,#ffffff,spiders.png,2,5,7.50,1,5,1.17,0.00,1.94,10.41666667,FALSE
 04_2A_2,Tarantulas,Silk Court Tarantulas,TRUE,Silk Court,Knights,Heavy Cavalry,6,2,,,5,2,4,-,1,2,5,"<b>Poison</b> - 6s to hit can't be saved
 
-<b>Virulent 2+</b> - Any unit wounded by this unit becomes Poisoned. At the end of each of the controlling players turns, Poisoned units take a wound on a 2+ with no armour saves allowed.",6,,,,,2,2,2,,2,,#2b9800,#2b9800,#000000,#2b9800,#000000,#000000,#f1baff,#2d2d2d,#000000,#ffffff,spiders.png,2,10,15.00,1,5,1.11,0.00,2.78,19.16666667,FALSE
+<b>Virulent 3+</b> - Any unit wounded by this unit becomes Poisoned. At the end of each of the controlling players turns, Poisoned units take a wound on a 3+ with no armour saves allowed.",6,,,,,2,2,2,,2,,#2b9800,#2b9800,#000000,#2b9800,#000000,#000000,#f1baff,#2d2d2d,#000000,#ffffff,spiders.png,2,10,15.00,1,5,1.11,0.00,2.78,19.16666667,FALSE
 04_2A_3,Widowmakers,Silk Court Widowmakers,TRUE,Silk Court,Knights,Light Cavalry,6,2,,,5,2,5,5,1,2,6,"<b>Aggressive Poison</b> - 5s and 6s to hit can't be saved. Has no affect if the attack misses.
 
 <b>Manoeuvrable</b> - May turn once at any point during a move or hustle",6,,,,,2,2,2,2,,,#2b9800,#2b9800,#000000,#cc0000,#000000,#cc0000,#f1baff,#2d2d2d,#000000,#ffffff,spiders.png,2,10,12.00,1,5,1.00,0.00,1.67,14.5,FALSE
-04_2B_1,Shimmerwebs,Silk Court Shimmerwebs,TRUE,Silk Court,Shifters,Heavy Infantry,4,2,,,5,1,5,6,1,1,-,"<b>Poison</b> - 6s to hit can't be saved
+04_2B_1,Shimmerwebs,Silk Court Shimmerwebs,TRUE,Silk Court,Shifters,Heavy Infantry,4,2,,,5,1,4,6,1,1,6,"<b>Poison</b> - 6s to hit can't be saved
 
 <b>Evasive</b> - Enemy attacks only hit this unit on 6s.
 
-<b>Cloaked 4+</b> - Block is higher before this unit is revealed",7,,,,,2,2,2,2,,1,#000000,#000000,#000000,#cc0000,#000000,#cc0000,#f1baff,#2d2d2d,#000000,#ffffff,spiders.png,1,5,5.00,1,5,1.17,0.00,1.94,7.916666667,FALSE
-04_2B_2,Webdancers,Silk Court Webdancers,TRUE,Silk Court,Shifters,Unique,4,2,,,5,1,4,5,1,1,5,"<b>Poison</b> - 6s to hit can't be saved
+<b>Cloaked 4+</b> - Block is higher before this unit is revealed",7,,,,,2,2,2,2,,1,#000000,#000000,#000000,#cc0000,#000000,#cc0000,#f1baff,#2d2d2d,#000000,#ffffff,spiders.png,1,5,6.00,1,5,1.11,0.00,2.78,10.16666667,FALSE
+04_2B_2,Webdancers,Silk Court Webdancers,TRUE,Silk Court,Shifters,Unique,4,2,,,5,1,4,5,2,1,5,"<b>Poison</b> - 6s to hit can't be saved
 
 <b>Shifting</b> - When this unit is revealed, you may immediately move it to any empty adjacent square. This can be used before combat starts.
 
 <b>Flexible</b> - Turn to face any direction at the start of your turn
 
-<b>Cloaked 4+</b> - Block is higher before this unit is revealed",6,,,,,2,2,2,2,2,2,#000000,#000000,#000000,#000000,#000000,#000000,#f1baff,#2d2d2d,#000000,#ffffff,spiders.png,1,5,7.50,1,5,1.11,0.00,2.78,11.66666667,FALSE
+<b>Cloaked 4+</b> - Block is higher before this unit is revealed",6,,,,,2,2,2,1,2,2,#000000,#000000,#000000,#000000,#000000,#000000,#f1baff,#2d2d2d,#000000,#ffffff,spiders.png,1,5,7.50,2,10,1.11,0.00,5.56,15.83333333,FALSE
 04_2B_3,Mimics,Silk Court Mimics,TRUE,Silk Court,Shifters,Unique,4,2,,,5,1,3,4,1,1,5,"<b>Poison</b> - 6s to hit can't be saved
 
 <b>Cunning Disguises</b> - Free action: Swap this unit with a friendly facedown unit.
@@ -204,13 +206,13 @@ Hits all tiles in range across all three ranged attack columns. Each unit that i
 1 - Off by one, opponent's choice 
 The target tile takes 3 attacks hitting on 4+ with poison. The unit may not move on its next turn.
 ",1,,,,,,,,,,,#000000,#000000,#000000,#000000,#000000,#cc0000,#f1baff,#2d2d2d,#000000,#ffffff,spiders.png,1,3,3.60,2,2,1.17,0.00,0.78,4.766666667,TRUE
-04_2C_2,Spitter,Silk Court Spitter,TRUE,Silk Court,Webcannon,War Machine,6,2,,,1,1,5,4,2,3,6,"<b>War Machine</b> - Dies if it flees. Can't move into combat.
+04_2C_2,Spitter,Silk Court Spitter,TRUE,Silk Court,Webcannon,War Machine,6,2,,,1,1,6,4,2,3,6,"<b>War Machine</b> - Dies if it flees. Can't move into combat.
 
 <b>Poison</b> - 6s to hit can't be saved
 
 <b>Virulent 4+</b> - Any unit wounded by this unit becomes Poisoned. At the end of each of the controlling players turns, Poisoned units take a wound on a 4+ with no armour saves allowed.
 
-<b>Spitter Cannon</b> - Ranged weapon. Range 5. Fires 4 shots. Can shoot over friendly units.",1,,,,,,,,,,,#000000,#000000,#000000,#000000,#2b9800,#cc0000,#f1baff,#2d2d2d,#000000,#ffffff,spiders.png,1,3,3.60,2,2,1.17,0.00,0.78,4.766666667,TRUE
+<b>Spitter Cannon</b> - Ranged weapon. Range 5. Fires 4 shots. Can shoot over friendly units.",1,,,,,,,,,,,#000000,#000000,#000000,#000000,#2b9800,#cc0000,#f1baff,#2d2d2d,#000000,#ffffff,spiders.png,1,3,3.60,2,2,1.33,0.00,0.44,4.266666667,TRUE
 04_2C_3,Weblayer,Silk Court Weblayer,TRUE,Silk Court,Webcannon,War Machine,6,2,,,1,1,5,-,2,3,6,"<small><b>War Machine</b> - Dies if it flees. Can't move into combat.
 
 <b>Poison</b> - 6s to hit can't be saved
@@ -279,11 +281,11 @@ Place a web in the target square. Units that move into those spaces end their tu
 05_2C_2,Furies,Redspines Furies,TRUE,Redspines,Warwitches,Attack Mage,6,2,,,3,1,3,-,2,2,5,"<b>Vengence</b> - When this unit blocks in combat, it still takes 1 wound. The unit that attacked takes 1 wound as well.
 
 <b>Revels</b> - When this unit takes or deals a wound, heal an adjacent friendly unit by 1. This can ressurect models.",5,,,2,,,1,,1,,,#000000,#000000,#000000,#2b9800,#000000,#000000,#e78e7e,#cf0000,#000000,#ffffff,redspines.png,1,6,6.00,2,6,1.00,0.67,4.67,13,TRUE
-05_2C_3,Harvesters,Redspines Harvesters,TRUE,Redspines,Warwitches,Support Mage,6,2,,,3,1,4,-,2,3,4,"<b>Vengence</b> - When this unit blocks in combat, it still takes 1 wound. The unit that attacked takes 1 wound as well.
+05_2C_3,Harvesters,Redspines Harvesters,TRUE,Redspines,Warwitches,Support Mage,6,2,,,3,1,6,-,2,3,4,"<b>Vengence</b> - When this unit blocks in combat, it still takes 1 wound. The unit that attacked takes 1 wound as well.
 
 <b>Bloodspells</b> - While this unit is wounded, gain +1 to casting.
 
-<b>Prepared Spell</b> - Equip this unit with one free uncommon spell.",3,,,2,,,,,1,,,#000000,#2b9800,#000000,#000000,#000000,#2b9800,#e78e7e,#cf0000,#000000,#ffffff,redspines.png,1,9,9.00,2,6,1.00,1.00,4.00,15,TRUE
+<b>Prepared Spell</b> - Equip this unit with one free uncommon spell.",4,,,2,,,,,1,,,#000000,#2b9800,#000000,#cc0000,#000000,#2b9800,#e78e7e,#cf0000,#000000,#ffffff,redspines.png,1,9,9.00,2,6,1.00,1.00,2.00,12,TRUE
 06_1_1,Warriors,Coppersand Warriors,TRUE,Coppersand,Mechanics,Warriors,6,1,2,,5,1,4,6,1,1,5,"<b>Mechanics</b> - At the start of your turn, heal 1 wound on an adjacent construct.",3.5,,,,,1,1,1,1,1,1,#000000,#000000,#000000,#000000,#000000,#000000,#ffb317,#cf6c23,#000000,#ffffff,gremlins.png,1,5,7.50,1,5,1.00,0.00,2.50,11.25,FALSE
 06_1_2,Gunners,Coppersand Gunners,TRUE,Coppersand,Mechanics,Archers,6,1,2,,5,1,5,4,1,1,6,"<b>Mechanics</b> - At the start of your turn, heal 1 wound on an adjacent construct.",2.5,,,,,1,1,1,1,1,1,#000000,#000000,#000000,#cc0000,#2b9800,#cc0000,#ffb317,#cf6c23,#000000,#ffffff,gremlins.png,1,5,6.00,1,5,1.00,0.00,1.67,8.5,FALSE
 06_1_3,Sappers,Coppersand Sappers,TRUE,Coppersand,Mechanics,Unique,6,1,2,,5,1,6,5,1,1,6,"<b>Mechanics</b> - At the start of your turn, heal 1 wound on an adjacent construct.
@@ -304,7 +306,10 @@ Place a web in the target square. Units that move into those spaces end their tu
 <b>Long Range</b> - This unit's ranged weapons gain 1 range.",2.5,,,,,1,1,1,1,1,1,#000000,#cc0000,#2b9800,#cc0000,#2b9800,#000000,#ffb317,#cf6c23,#000000,#ffffff,gremlins.png,1,5,7.50,1,5,1.00,0.00,1.67,10,FALSE
 06_2A_1,Clay Golems,Coppersand Clay Golems,TRUE,Coppersand,Golems,Heavy Infantry,5,2,,,3,1,4,-,2,3,5,"<b>Construct</b> - Immune to fear checks while adjacent to a mechanic. Dies if it flees.
 
-<b>Regenerative Clay</b> - At the end of each player's turn, each model heals to full. This does not ressurect dead models.",7.25,,,,,,,3,,2,,#000000,#2b9800,#000000,#000000,#000000,#000000,#ffb317,#cf6c23,#000000,#ffffff,gremlins.png,1,9,13.50,2,6,1.00,0.00,3.00,18,FALSE
+<b>Regenerative Clay</b> - At the end of each player's turn, each model heals to full. This does not ressurect dead models.
+
+<b>Multiwound 2</b> - Each hit does 2 wounds to a single model.
+",7.25,,,,,,,3,,2,,#000000,#2b9800,#000000,#000000,#000000,#000000,#ffb317,#cf6c23,#000000,#ffffff,gremlins.png,1,9,13.50,2,6,1.00,0.00,3.00,18,FALSE
 06_2A_2,Minetomatons,Coppersand Minetomatons,TRUE,Coppersand,Golems,Unique,5,2,,,3,1,4,-,3,2,5,"<b>Construct</b> - Immune to fear checks while adjacent to a mechanic. Dies if it flees.
 
 <b>Ambush</b> - Action: Remove this unit from the board. On your next turn, place it on an empty space along any board edge (facing away from the board edge) as its action for the turn
@@ -323,9 +328,9 @@ Place a web in the target square. Units that move into those spaces end their tu
 <b>Multishot 3</b> - Ranged attacks roll 3 dice.
 <b>Overwatch</b> - During your opponent's turn, fire a round of shooting at the first enemy unit to become a new valid shooting target. Has no effect on units that were already valid shooting targets. This can take effect because of units fleeing combat or getting wiped out.
 <b>Prepared Ranged Weapon</b> - Equip this unit with one free common or uncommon ranged weapon.",3.25,,,,,,,,,1,2,#2b9800,#000000,#000000,#000000,#2b9800,#000000,#ffb317,#cf6c23,#000000,#ffffff,gremlins.png,1,5,7.50,4,4,1.00,0.00,2.00,10.5,FALSE
-06_2B_3,Warcrane,Coppersand Warcrane,TRUE,Coppersand,Colossus,Monster,5,2,,,1,1,5,-,5,5,3,"<b>Construct</b> - Immune to fear checks while adjacent to a mechanic. Dies if it flees.
+06_2B_3,Warcrane,Coppersand Warcrane,TRUE,Coppersand,Colossus,Monster,5,2,,,1,1,5,-,5,7,3,"<b>Construct</b> - Immune to fear checks while adjacent to a mechanic. Dies if it flees.
 
-<b>Lift and Shift</b> - Action: Rotate an adjacent unit 90 degrees around this unit. You may rotate this unit in the same direction. May not move units off the board. The unit counts as having moved for the purpose of rules like Entrenched.",6,,,,,,,,,,,#000000,#000000,#2b9800,#cc0000,#000000,#3467FF,#ffb317,#cf6c23,#000000,#ffffff,gremlins.png,1,5,15.00,5,5,1.00,0.00,1.67,17.5,FALSE
+<b>Lift and Shift</b> - Action: Rotate an adjacent unit 90 degrees around this unit. You may rotate this unit in the same direction. May not move units off the board. The unit counts as having moved for the purpose of rules like Entrenched.",6,,,,,,,,,,,#000000,#000000,#2b9800,#cc0000,#000000,#3467FF,#ffb317,#cf6c23,#000000,#ffffff,gremlins.png,1,7,21.00,5,5,1.00,0.00,1.67,23.5,FALSE
 06_2C_1,Grand Bombard,Coppersand Grand Bombard,TRUE,Coppersand,Artillery,War Machine,6,2,,,1,1,6,-,2,3,6,"<b>Construct</b> - Immune to fear checks while adjacent to a mechanic. Dies if it flees.
 <b>War Machine</b> - Dies if it flees. Can't move into combat.
 <b>Primed</b> - Place 2 powder tokens on this when it is revealed.
@@ -335,11 +340,11 @@ Place a web in the target square. Units that move into those spaces end their tu
 5-6 - Off by one towards your board edge.
 4 or less - Miss. Keep all powder tokens.
 Any unit in the hit square takes 3X attacks hitting on 3+ with AP X. Lose all powder tokens.",1,,,,,,,,,,,#000000,#000000,#000000,#000000,#000000,#000000,#ffb317,#cf6c23,#000000,#ffffff,gremlins.png,1,3,3.60,2,2,1.00,0.00,0.33,4.1,TRUE
-06_2C_2,Hookshot,Coppersand Hookshot,TRUE,Coppersand,Artillery,War Machine,6,2,,,1,1,6,4,2,3,6,"<b>Construct</b> - Immune to fear checks while adjacent to a mechanic. Dies if it flees.
+06_2C_2,Hookshot,Coppersand Hookshot,TRUE,Coppersand,Artillery,War Machine,6,2,,,1,1,5,4,2,3,4,"<b>Construct</b> - Immune to fear checks while adjacent to a mechanic. Dies if it flees.
 
 <b>War Machine</b> - Dies if it flees. Can't move into combat.
 
-<b>Hookshot</b> - Ranged Weapon. Range 5. Fires 4 shots. If any shots hit (they can be blocked), move the target unit one square towards this unit. ",2,,,,,,,,,,,#000000,#000000,#000000,#000000,#2b9800,#000000,#ffb317,#cf6c23,#000000,#ffffff,gremlins.png,1,3,3.60,2,2,1.00,0.00,0.33,4.1,TRUE
+<b>Hookshot</b> - Ranged Weapon. Range 5. Fires 4 shots. If any shots hit (they can be blocked), move the target unit one square towards this unit. ",2,,,,,,,,,,,#000000,#000000,#000000,#000000,#2b9800,#2b9800,#ffb317,#cf6c23,#000000,#ffffff,gremlins.png,1,3,6.00,2,2,1.00,0.00,0.67,7,TRUE
 06_2C_3,Surpressor,Coppersand Surpressor,TRUE,Coppersand,Artillery,War Machine,6,2,,,1,1,6,-,2,4,6,"<b>Construct</b> - Immune to fear checks while adjacent to a mechanic. Dies if it flees.
 
 <b>War Machine</b> - Dies if it flees. Can't move into combat.
@@ -399,17 +404,17 @@ Roll an attack for each model in the target square, hitting on 4+ with AP1.",1,,
 <b>Flying</b> - This unit can move over other units and obstacles
 
 <b>Manoeuvrable</b> - May turn once at any point during a move or hustle",4,,,,,,,,1,1,,#3467FF,#2b9800,#2b9800,#cc0000,#000000,#000000,#c9daf8,#00399e,#000000,#ffffff,empire.png,2,8,9.60,2,8,1.00,0.00,2.67,13.6,FALSE
-07_2B_3,Dragoons,Scaled Empire Dragoons,TRUE,Scaled Empire,Cavalry,Heavy Cavalry,6,2,,,4,2,5,-,2,2,4,"<b>Regiment</b> - Gains +1 to leadership rolls while adjacent to a detachment.
+07_2B_3,Dragoons,Scaled Empire Dragoons,TRUE,Scaled Empire,Cavalry,Heavy Cavalry,6,2,,,4,2,4,-,2,2,5,"<b>Regiment</b> - Gains +1 to leadership rolls while adjacent to a detachment.
 
-<b>Impact Hits d3</b> - If you get a charge bonus, do d3 attacks per model hitting on 4+. These count towards who won combat.",4,,,,,2,2,2,,2,,#2b9800,#2b9800,#2b9800,#cc0000,#000000,#000000,#c9daf8,#00399e,#000000,#ffffff,empire.png,2,8,16.00,2,8,1.00,0.00,2.67,20,FALSE
+<b>Impact Hits 1</b> - If you get a charge bonus, do 1 attack per model hitting on 4+. These count towards who won combat.",5.5,,,,,2,2,2,,2,,#2b9800,#2b9800,#2b9800,#cc0000,#000000,#000000,#c9daf8,#00399e,#000000,#ffffff,empire.png,2,8,12.00,2,8,1.00,0.00,4.00,18,FALSE
 07_2C_1,Twohanders,Scaled Empire Twohanders,TRUE,Scaled Empire,Veterans,Infantry,5,2,,,6,1,4,-,1,1,5,"<b>Regiment</b> - Gains +1 to leadership rolls while adjacent to a detachment.
 
 <b>Unbreakable</b> - Can't flee
 
 <b>Cleave</b> - Each hit does 2 wounds that can be split across multiple models.",7,,,,,,2,2,,,,#000000,#000000,#000000,#000000,#000000,#000000,#c9daf8,#00399e,#000000,#ffffff,empire.png,1,6,9.00,1,6,1.00,0.00,3.00,13.5,FALSE
-07_2C_2,Bluemasks,Scaled Empire Bluemasks,TRUE,Scaled Empire,Veterans,Heavy Infantry,5,2,,,6,1,5,-,1,1,4,"<b>Regiment</b> - Gains +1 to leadership rolls while adjacent to a detachment.
+07_2C_2,Bluemasks,Scaled Empire Bluemasks,TRUE,Scaled Empire,Veterans,Heavy Infantry,5,2,,,6,1,4,-,1,1,4,"<b>Regiment</b> - Gains +1 to leadership rolls while adjacent to a detachment.
 
-<b>Fearful Presence</b> - Enemy units in range 2 subtract one from rolls to flee. Natural 6s still always pass.",6,,,,,2,2,2,2,2,2,#000000,#000000,#000000,#000000,#000000,#000000,#c9daf8,#00399e,#000000,#ffffff,empire.png,1,6,12.00,1,6,1.00,0.00,2.00,15,FALSE
+<b>Fearful Presence</b> - Enemy units in range 2 subtract one from rolls to flee. Natural 6s still always pass.",6,,,,,2,2,2,2,2,2,#000000,#000000,#000000,#000000,#000000,#000000,#c9daf8,#00399e,#000000,#ffffff,empire.png,1,6,12.00,1,6,1.00,0.00,3.00,16.5,FALSE
 07_2C_3,Jetbreaths,Scaled Empire Jetbreaths,TRUE,Scaled Empire,Veterans,Attack Infantry,5,2,,,6,1,5,5,1,1,5,"<b>Regiment</b> - Gains +1 to leadership rolls while adjacent to a detachment.
 
 <b>Breath Weapons</b> - Special attack: Once per battle, instead of attacking as normal this unit may use a breath weapon. Each model in this unit rolls an attack for every 2 models in the enemy unit (rounded up), hitting on 6s. ",0,,,,,2,2,2,2,2,1,#000000,#000000,#000000,#000000,#000000,#2b9800,#c9daf8,#00399e,#000000,#ffffff,empire.png,1,6,9.00,1,6,1.00,0.00,2.00,12,FALSE
@@ -457,7 +462,7 @@ L02_3_D,The Twins,Ratkin The Twins,TRUE,Ratkin,Leader,Warrior Hero,,3,,3,2,2,4,4
 
 <b>Cheese it</b> - When the first twin dies, stop taking damage and immediately flee.
 
-<b>Multishot 3</b> - Ranged attacks roll 3 dice per model.",6,<b>Offhand</b> - Double the number of attacks. Can't equip a shield,,,,,3,,3,,3,#2b9800,#000000,#2b9800,#000000,#2b9800,#000000,#ffb380,#733d00,#000000,#ffffff,rats.png,1,6,9.00,4,8,1.00,0.00,4.00,15,FALSE
+<b>Multishot 2</b> - Ranged attacks roll 2 dice per model.",6.5,<b>Offhand</b> - Double the number of attacks. Can't equip a shield,,,,,3,,3,,3,#2b9800,#000000,#2b9800,#000000,#2b9800,#000000,#ffb380,#733d00,#000000,#ffffff,rats.png,1,6,9.00,4,8,1.00,0.00,4.00,15,FALSE
 L02_3_E,The Packrat,Ratkin The Packrat,TRUE,Ratkin,Leader,Warrior Hero,,3,,5,1,2,4,4,5,5,4,"<b>Packrat</b> - May equip any number of weapons. Before each round of combat, choose which equipment to use.
 
 <b>Filthy Looter</b> - After this unit deals damage, it may steal an item from the target. If this unit already has a weapon of the same class, discard that weapon. The wounded unit gains the discarded weapon.",5,<b>Offhand</b> - Double the number of attacks. Can't equip a shield,,,,3,3,3,3,3,3,#000000,#000000,#000000,#000000,#2b9800,#2b9800,#ffb380,#733d00,#000000,#ffffff,rats.png,1,5,10.00,5,5,1.00,0.00,2.50,13.75,FALSE
@@ -475,11 +480,11 @@ L03_3_B,Banshee Queen,Boneborn Banshee Queen,TRUE,Boneborn,Leader,Hybrid Mage He
 <b>Ethereal</b> - Ignores Armour Piercing
 
 <b>Terrifying</b> - At the start of each round of combat, all enemy units in combat with it must roll to flee. If they flee out of combat, no combat takes place. ",7,,,2,,,,,,,,#000000,#cc0000,#cc0000,#2b9800,#000000,#3467FF,#e0e0d3,#4d4d4d,#000000,#ffffff,skellies.png,1,4,12.00,3,3,1.00,0.00,2.00,15,TRUE
-L03_3_C,The Gravedigger,Boneborn The Gravedigger,TRUE,Boneborn,Leader,Warrior Hero,,3,,4,1,1,3,-,4,7,4,"<b>Unstable</b> - Instead of rolling to flee, lose 1 extra wound
+L03_3_C,The Gravedigger,Boneborn The Gravedigger,TRUE,Boneborn,Leader,Warrior Hero,,3,,3,1,1,3,-,4,6,4,"<b>Unstable</b> - Instead of rolling to flee, lose 1 extra wound
 
-<b>Corpsefinder</b> - Whenever an enemy unit in range 3 is wiped out, a unit of your choice may regain d6 wounds.",5,"<b>AP 2</b> - Reduce block rolls by 2.
+<b>Corpsefinder</b> - Whenever an enemy unit in range 3 is wiped out, a unit of your choice may regain d6 wounds.",5,"<b>AP 1</b> - Reduce block rolls by 1.
 ""<b>Block 2</b> - Improve the model's block by 2
-<b>Unwieldy</b> - Your rolls to hit in melee are reduced by 1""",,,,3,3,3,3,3,,#000000,#2b9800,#000000,#2b9800,#000000,#2b9800,#e0e0d3,#4d4d4d,#000000,#ffffff,skellies.png,1,7,14.00,4,4,1.00,0.00,2.67,18,FALSE
+<b>Unwieldy</b> - Your rolls to hit in melee are reduced by 1""",,,,3,3,3,3,3,,#000000,#2b9800,#000000,#2b9800,#000000,#2b9800,#e0e0d3,#4d4d4d,#000000,#ffffff,skellies.png,1,6,12.00,4,4,1.00,0.00,2.67,16,FALSE
 L03_3_D,Dracolich,Boneborn Dracolich,TRUE,Boneborn,Leader,Monster Hero,,3,,0,1,3,3,-,5,8,5,"<b>Unstable</b> - Instead of rolling to flee, lose 1 extra wound
 
 <b>Flying</b> - This unit can move over other units and obstacles
@@ -500,11 +505,11 @@ L04_3_A,Huntmistress,Silk Court Huntmistress,TRUE,Silk Court,Leader,Archer Hero,
 <b>Volley Fire</b> - Can fire ranged attacks over other units.
 
 <b>Manoeuvrable</b> - May turn once at any point during a move or hustle",4,,,,,3,3,3,3,,3,#2b9800,#000000,#000000,#000000,#3467FF,#000000,#f1baff,#2d2d2d,#000000,#ffffff,spiders.png,1,5,7.50,4,4,1.11,0.00,2.22,10.83333333,FALSE
-L04_3_B,Court Poisoner,Silk Court Court Poisoner,TRUE,Silk Court,Leader,Hybrid Mage Hero,,3,,2,1,1,4,4,4,5,5,"<b>Wretched Poisons</b> - Units that takes one or more poison wounds from a friendly unit must roll to flee with a -1 penalty. If the unit is in combat, it makes this roll at the end of turn.
+L04_3_B,Royal Poisoner,Silk Court Royal Poisoner,TRUE,Silk Court,Leader,Hybrid Mage Hero,,3,,3,1,1,4,4,5,5,5,"<b>Wretched Poisons</b> - Units that takes one or more poison wounds from a friendly unit must roll to flee with a -1 penalty. If the unit is in combat, it makes this roll at the end of turn.
 
 <b>Poison</b> - 6s to hit can't be saved
 
-<b>Virulent</b> - Any unit wounded by this unit becomes Poisoned. At the end of each of the controlling players turns, Poisoned units take a wound on a 4+ with no armour saves allowed.",5,<b>AP 1</b>,,2,,,,,3,,3,#000000,#000000,#000000,#000000,#2b9800,#000000,#f1baff,#2d2d2d,#000000,#ffffff,spiders.png,1,5,7.50,4,4,1.11,0.00,2.22,10.83333333,TRUE
+<b>Virulent 3+</b> - Any unit wounded by this unit becomes Poisoned. At the end of each of the controlling players turns, Poisoned units take a wound on a 3+ with no armour saves allowed.",5,<b>AP 1</b>,,2,,,,,3,,3,#000000,#000000,#000000,#000000,#2b9800,#000000,#f1baff,#2d2d2d,#000000,#ffffff,spiders.png,1,5,7.50,5,5,1.11,0.00,2.78,11.66666667,TRUE
 L04_3_C,Mistress of Whispers,Silk Court Mistress of Whispers,TRUE,Silk Court,Leader,Mage Hero,,3,,2,1,1,4,-,3,4,5,"<b>Poison</b> - 6s to hit can't be saved
 
 <b>Pull Strings</b> - Action: Swap the position of two friendly facedown units
@@ -515,11 +520,11 @@ L04_3_D,Handmaid,Silk Court Handmaid,TRUE,Silk Court,Leader,Mage Hero,,3,,4,1,1,
 <b>Another's Bidding</b> - When casting spells, this unit may select any friendly unit as the origin of a spell
 
 <b>Mage</b> - Can cast two spells a turn",3,,,3,,,,,3,,,#000000,#cc0000,#cc0000,#000000,#000000,#000000,#f1baff,#2d2d2d,#000000,#ffffff,spiders.png,1,4,6.00,3,3,1.11,0.00,1.67,8.5,TRUE
-L04_3_E,Broodmother,Silk Court Broodmother,TRUE,Silk Court,Leader,Monster Hero,,3,,0,1,2,4,-,6,8,4,"<b>Poison</b> - 6s to hit can't be saved
+L04_3_E,Broodmother,Silk Court Broodmother,TRUE,Silk Court,Leader,Monster Hero,,3,,0,1,2,4,-,5,8,4,"<b>Poison</b> - 6s to hit can't be saved
 
 <b>Center of the Web</b> - Gain +1 attack for each adjacent friendly unit
 
-<b>Virulent 4+</b> - Any unit wounded by this unit becomes Poisoned. At the end of each of the controlling players turns, Poisoned units take a wound on a 4+ with no armour saves allowed.",7,,,,,3,3,3,,,,#2b9800,#3467FF,#2b9800,#000000,#000000,#2b9800,#f1baff,#2d2d2d,#000000,#ffffff,spiders.png,1,8,16.00,6,6,1.11,0.00,3.33,21,FALSE
+<b>Virulent 4+</b> - Any unit wounded by this unit becomes Poisoned. At the end of each of the controlling players turns, Poisoned units take a wound on a 4+ with no armour saves allowed.",7,,,,,3,3,3,,,,#2b9800,#3467FF,#2b9800,#000000,#000000,#2b9800,#f1baff,#2d2d2d,#000000,#ffffff,spiders.png,1,8,16.00,5,5,1.11,0.00,2.78,20.16666667,FALSE
 L05_3_A,Crowcaller,Redspines Crowcaller,TRUE,Redspines,Leader,Mage Hero,,3,,3,1,1,4,-,3,5,5,"<b>Vengence</b> - When this unit blocks in combat, it still takes 1 wound. The unit that attacked takes 1 wound as well.
 
 <b>Mage</b> - Can cast two spells a turn.
@@ -541,14 +546,14 @@ L05_3_C,Executioner,Redspines Executioner,TRUE,Redspines,Leader,Warrior Hero,,3,
 <b>Multiwound 2</b> - Each hit does 2 wounds to a single model.
 
  <b>Killing Blow</b> - Before each round of combat, you may choose to forfeit any number of attack dice. Each die forfeited increases Multiwound by 1.",8,<b>Cleave</b> - Each hit does 2 wounds that can be split across multiple models.,,,,,3,,,1,3,#000000,#2b9800,#2b9800,#2b9800,#000000,#000000,#e78e7e,#cf0000,#000000,#ffffff,redspines.png,1,7,7.00,6,6,1.00,0.67,4.67,14,FALSE
-L05_3_D,Raidleader,Redspines Raidleader,TRUE,Redspines,Leader,Cav Hero,,3,,3,1,2,3,4,5,6,5,"<b>Vengence</b> - When this unit blocks in combat, it still takes 1 wound. The unit that attacked takes 1 wound as well.
+L05_3_D,Raidleader,Redspines Raidleader,TRUE,Redspines,Leader,Cav Hero,,3,,3,1,2,3,4,4,6,5,"<b>Vengence</b> - When this unit blocks in combat, it still takes 1 wound. The unit that attacked takes 1 wound as well.
 
 <b>Aggressive Flanking</b> - When a friendly unit moves into the flank or rear of an enemy, do 1 attack per model hitting on 4+. These count towards who won combat.
 
 <b>Master of Movement</b> - Friendly units may turn 90 degrees after moving.
 
 <b>Uncanny Protection</b> - Block may not be reduced beneath 5.",5,"<b>Multiwound 3</b> - Each hit does 2 wounds to a single model.
-<b>Block 1</b> - Improve the model's block by 1",,,,3,3,3,3,3,3,#2b9800,#000000,#000000,#2b9800,#2b9800,#000000,#e78e7e,#cf0000,#000000,#ffffff,redspines.png,1,6,6.00,5,5,1.00,0.67,4.00,12,FALSE
+<b>Block 1</b> - Improve the model's block by 1",,,,3,3,3,3,3,3,#2b9800,#000000,#000000,#2b9800,#2b9800,#000000,#e78e7e,#cf0000,#000000,#ffffff,redspines.png,1,6,6.00,4,4,1.00,0.67,3.33,11,FALSE
 L05_3_E,Battleboar,Redspines Battleboar,TRUE,Redspines,Leader,Monster Hero,,3,,0,1,2,4,-,5,9,4,"<b>Vengence</b> - When this unit blocks in combat, it still takes 1 wound. The unit that attacked takes 1 wound as well.
 
 <b>Buck Wildly</b> - Whenever this unit deals a wound through vengence, deal it to all adjacent enemy units.
@@ -568,8 +573,8 @@ L06_3_C,The Warforger,Coppersand The Warforger,TRUE,Coppersand,Leader,Warrior He
 
 <b>Coppersmith's Upgrade</b> - After deployment, replace one equipment on any unit with any other piece of equipment of that type. Show your opponent the type. The unit does not need to be able to equip an item of that tier.
 
-<b>Custom Tools</b> - Can equip two weapons. Their effects stack. ",5,"<b>AP 2</b>
-<b>Multiwound 3</b>",,,,3,3,3,3,3,3,#000000,#000000,#000000,#000000,#2b9800,#2b9800,#ffb317,#cf6c23,#000000,#ffffff,gremlins.png,1,5,10.00,4,4,1.00,0.00,2.00,13,FALSE
+<b>Custom Tools</b> - Can equip two weapons. Their effects stack. ",5,"<b>AP 6</b> - Reduce block rolls by 6.
+<b>Multiwound 2</b>",,,,3,3,3,3,3,3,#000000,#000000,#000000,#000000,#2b9800,#2b9800,#ffb317,#cf6c23,#000000,#ffffff,gremlins.png,1,5,10.00,4,4,1.00,0.00,2.00,13,FALSE
 L06_3_D,Crackshot,Coppersand Crackshot,TRUE,Coppersand,Leader,Archer Hero,,3,,4,1,1,4,3,4,5,5,"<b>Mechanics</b> - At the start of your turn, heal 1 wound on an adjacent construct.
 
 <b>Riflemaker</b> - All ranged weapons in the army gain AP1.

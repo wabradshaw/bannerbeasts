@@ -9,10 +9,10 @@ public class UnitMetadata {
     private final String comparisonClass;
     private final int tier;
     private final Integer cost;
+    private final Double targetCombatRanking;
 
     public UnitMetadata(String id, String name, String unit, String faction, String unitClass, String comparisonClass,
-            int tier,
-            Integer cost) {
+            int tier, Integer cost, Double targetCombatRanking) {
         this.id = id;
         this.name = name;
         this.unit = unit;
@@ -21,6 +21,7 @@ public class UnitMetadata {
         this.comparisonClass = comparisonClass;
         this.tier = tier;
         this.cost = cost;
+        this.targetCombatRanking = targetCombatRanking;
     }
 
     public String getId() {
@@ -55,8 +56,12 @@ public class UnitMetadata {
         return cost;
     }
 
+    public Double getTargetCombatRanking() {
+        return targetCombatRanking;
+    }
+
     @Override
     public String toString() {
-        return String.format("%s %s - T%d %s", id, unit, tier, (cost != null && cost >= 0 ? "[" + cost + "]" : ""));
+        return String.format("%s %s - T%d %s %s", id, unit, tier, (cost != null && cost >= 0 ? "[" + cost + "]" : ""), targetCombatRanking);
     }
 }

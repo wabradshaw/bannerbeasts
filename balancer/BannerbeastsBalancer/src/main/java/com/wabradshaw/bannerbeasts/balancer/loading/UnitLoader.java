@@ -40,7 +40,8 @@ public class UnitLoader {
                         data.get("Class"),
                         data.get("Comparison Class"),
                         Integer.parseInt(data.get("Tier")),
-                        data.containsKey("Cost") && !data.get("Cost").isEmpty() ? Integer.parseInt(data.get("Cost")) : 0
+                        data.containsKey("Cost") && !data.get("Cost").isEmpty() ? Integer.parseInt(data.get("Cost")) : 0,
+                        data.containsKey("TCR") && !data.get("TCR").isEmpty() ? Double.parseDouble(data.get("TCR")) : 0.0
                     );
                     
                     int startingNumber = Integer.parseInt(data.get("Number"));

@@ -10,8 +10,8 @@ import com.wabradshaw.bannerbeasts.balancer.unit.UnitMetadata;
 public class BattleSummary {
 
     public static final String[] CSV_HEADERS = new String[] {
-            "Unit1", "FullUnit1", "Faction1", "Class1", "CompClass1", "Tier1", "Cost1",
-            "Unit2", "FullUnit2", "Faction2", "Class2", "CompClass2", "Tier2", "Cost2",
+            "Unit1", "FullUnit1", "Faction1", "Class1", "CompClass1", "Tier1", "Cost1", "TCR1",
+            "Unit2", "FullUnit2", "Faction2", "Class2", "CompClass2", "Tier2", "Cost2", "TCR2",
             "Any Wins", "Outright Wins", "Win Through Flee", "Ties", "Total Destructions", "Lose Through Flee",
             "Outright Losses", "Any Losses", "Ratio",
             "AvgRounds", "AvgUnit1Models", "AvgUnit1Hp", "AvgUnit2Models", "AvgUnit2Hp"
@@ -94,10 +94,10 @@ public class BattleSummary {
                 + outcomeCounts.getOrDefault(Outcome.LOST_WIPEOUT, 0);
         return new String[] {
                 meta1.getUnit(), meta1.toString(), meta1.getFaction(), meta1.getUnitClass(), meta1.getComparisonClass(),
-                String.valueOf(meta1.getTier()), String.valueOf(meta1.getCost()),
+                String.valueOf(meta1.getTier()), String.valueOf(meta1.getCost()), String.valueOf(meta1.getTargetCombatRanking()),
 
                 meta2.getUnit(), meta2.toString(), meta2.getFaction(), meta2.getUnitClass(), meta2.getComparisonClass(),
-                String.valueOf(meta2.getTier()), String.valueOf(meta2.getCost()),
+                String.valueOf(meta2.getTier()), String.valueOf(meta2.getCost()), String.valueOf(meta2.getTargetCombatRanking()),
 
                 String.valueOf(wins),
                 String.valueOf(outcomeCounts.getOrDefault(Outcome.WON_WIPEOUT, 0)),
