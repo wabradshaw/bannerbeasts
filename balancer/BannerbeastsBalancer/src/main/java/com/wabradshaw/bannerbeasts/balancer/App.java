@@ -2,12 +2,16 @@ package com.wabradshaw.bannerbeasts.balancer;
 
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.AbstractMap;
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
 import java.util.TreeSet;
+import java.util.function.Function;
 import java.util.stream.Collectors;
 
 import com.opencsv.CSVWriter;
@@ -17,6 +21,7 @@ import com.wabradshaw.bannerbeasts.balancer.harness.TestHarness;
 import com.wabradshaw.bannerbeasts.balancer.loading.UnitLoader;
 import com.wabradshaw.bannerbeasts.balancer.results.BattleResult;
 import com.wabradshaw.bannerbeasts.balancer.results.BattleSummary;
+import com.wabradshaw.bannerbeasts.balancer.results.RankResult;
 import com.wabradshaw.bannerbeasts.balancer.unit.UnitDescription;
 import com.wabradshaw.bannerbeasts.balancer.unit.UnitPowers;
 
@@ -49,7 +54,20 @@ public class App {
             for (BattleSummary result : resultsSummary) {
                 writer.writeNext(result.toCsvRow());
             }
-            System.out.println("CSV Saved");
+            System.out.println("Summary CSV Saved");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        List<RankResult> ranks = calculateRankResults(resultsSummary);
+
+        String rankResultsFile = "./OutputRank.csv";
+        try (CSVWriter writer = new CSVWriter(new FileWriter(rankResultsFile))) {
+            writer.writeNext(RankResult.CSV_HEADERS);
+            for (RankResult result : ranks) {
+                writer.writeNext(result.toCsvRow());
+            }
+            System.out.println("Rank CSV Saved");
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -139,6 +157,42 @@ public class App {
             }
             System.out.println("|-");
         }
+    }
+
+    private static double averageResultsRatios(List<BattleSummary> results) {
+        return results.stream().collect(Collectors.averagingDouble(e -> e.getRatio()));
+    }
+
+    private  static List<RankResult> calculateRankResults(List<BattleSummary> summaries) {
+        Map<UnitDescription, List<BattleSummary>> unitResults = summaries.stream()
+                .filter(s -> s.getUnit1().getUnitMetadata().getTargetCombatRanking() > 0)
+                .collect(Collectors.groupingBy(BattleSummary::getUnit1));
+
+        List<Double> expectedRanksByPerformance  = unitResults.keySet().stream()
+                .map(u -> u.getUnitMetadata().getTargetCombatRanking())
+                .sorted(Comparator.reverseOrder())
+                .toList();
+        
+        Map<UnitDescription, Double> unitRatios = unitResults.entrySet().stream()
+                .collect(Collectors.toMap(
+                    Map.Entry::getKey,
+                    e -> averageResultsRatios(e.getValue()))); 
+
+        List<Map.Entry<UnitDescription, Double>> sortedUnits = unitRatios.entrySet().stream()
+                    .sorted(Map.Entry.<UnitDescription, Double>comparingByValue().reversed())
+                    .toList();
+
+        List<RankResult> rankResults = new ArrayList<>();
+
+        for(int i = 0; i < unitResults.size(); i++){
+            UnitDescription unit = sortedUnits.get(i).getKey();
+            double avgRatio = sortedUnits.get(i).getValue();            
+            rankResults.add(new RankResult(unit, avgRatio, expectedRanksByPerformance .get(i))); 
+        }
+
+        rankResults.sort(Comparator.comparingDouble(r -> r.getRankDiff()));
+        
+        return rankResults;
     }
 
 }

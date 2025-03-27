@@ -29,6 +29,11 @@ public class BattleSummary {
     private final double avgUnit2Hp;
     private final double avgUnit2Models;
 
+    private final int wins;
+    private final int ties;
+    private final int losses;
+    private final double ratio;
+
     public BattleSummary(int unit1Id, int unit2Id, List<BattleResult> results) {
         this.unit1Id = unit1Id;
         this.unit2Id = unit2Id;
@@ -54,6 +59,13 @@ public class BattleSummary {
         this.avgUnit1Models = size > 0 ? (double) total1Models / size : 0;
         this.avgUnit2Hp = size > 0 ? (double) total2Hp / size : 0;
         this.avgUnit2Models = size > 0 ? (double) total2Models / size : 0;
+
+        this.wins = outcomeCounts.getOrDefault(Outcome.WON_WIPEOUT, 0) + outcomeCounts.getOrDefault(Outcome.WON_FLED, 0);
+        this.ties = outcomeCounts.getOrDefault(Outcome.TIED, 0) + outcomeCounts.getOrDefault(Outcome.TOTAL_WIPEOUT, 0);
+        this.losses = outcomeCounts.getOrDefault(Outcome.LOST_FLED, 0)
+                + outcomeCounts.getOrDefault(Outcome.LOST_WIPEOUT, 0);
+
+        this.ratio = (this.wins + (this.ties * 0.5)) * 100 / results.size();
     }
 
     public int getUnit1Id() {
@@ -84,14 +96,39 @@ public class BattleSummary {
         return avgUnit2Models;
     }
 
+    public UnitDescription getUnit1() {
+        return unit1;
+    }
+
+    public UnitDescription getUnit2() {
+        return unit2;
+    }
+
+    public double getAvgRounds() {
+        return avgRounds;
+    }
+
+    public int getWins() {
+        return wins;
+    }
+
+    public int getTies() {
+        return ties;
+    }
+
+    public int getLosses() {
+        return losses;
+    }
+
+    public double getRatio() {
+        return ratio;
+    }
+
+    
     public String[] toCsvRow() {
         UnitMetadata meta1 = unit1.getUnitMetadata();
         UnitMetadata meta2 = unit2.getUnitMetadata();
 
-        int wins = outcomeCounts.getOrDefault(Outcome.WON_WIPEOUT, 0) + outcomeCounts.getOrDefault(Outcome.WON_FLED, 0);
-        int ties = outcomeCounts.getOrDefault(Outcome.TIED, 0) + outcomeCounts.getOrDefault(Outcome.TOTAL_WIPEOUT, 0);
-        int losses = outcomeCounts.getOrDefault(Outcome.LOST_FLED, 0)
-                + outcomeCounts.getOrDefault(Outcome.LOST_WIPEOUT, 0);
         return new String[] {
                 meta1.getUnit(), meta1.toString(), meta1.getFaction(), meta1.getUnitClass(), meta1.getComparisonClass(),
                 String.valueOf(meta1.getTier()), String.valueOf(meta1.getCost()), String.valueOf(meta1.getTargetCombatRanking()),
@@ -99,15 +136,15 @@ public class BattleSummary {
                 meta2.getUnit(), meta2.toString(), meta2.getFaction(), meta2.getUnitClass(), meta2.getComparisonClass(),
                 String.valueOf(meta2.getTier()), String.valueOf(meta2.getCost()), String.valueOf(meta2.getTargetCombatRanking()),
 
-                String.valueOf(wins),
+                String.valueOf(this.wins),
                 String.valueOf(outcomeCounts.getOrDefault(Outcome.WON_WIPEOUT, 0)),
                 String.valueOf(outcomeCounts.getOrDefault(Outcome.WON_FLED, 0)),
                 String.valueOf(outcomeCounts.getOrDefault(Outcome.TIED, 0)),
                 String.valueOf(outcomeCounts.getOrDefault(Outcome.TOTAL_WIPEOUT, 0)),
                 String.valueOf(outcomeCounts.getOrDefault(Outcome.LOST_FLED, 0)),
                 String.valueOf(outcomeCounts.getOrDefault(Outcome.LOST_WIPEOUT, 0)),
-                String.valueOf(losses),
-                String.valueOf((wins + (ties * 0.5))/20),
+                String.valueOf(this.losses),
+                String.valueOf(this.ratio),
                 String.format("%.2f", avgRounds),
                 String.format("%.2f", avgUnit1Models),
                 String.format("%.2f", avgUnit1Hp),
