@@ -2,7 +2,7 @@
 * Nerfed Harvesters: -Hit
 * Nerfed Spitter: -Hit
 * Nerfed Broodmother: -1 attack, -2 equips
-* Nerfed Gravedigger: -1HP, -1 Equip
+* Nerfed Gravedigger: -1HP, -1 Equip, -1Hit
 * Nerfed Raidleader: -1 attack
 * Nerfed The Twins: -1 Multishot
 * Nerfed Tarantulas: -1 Virulent
