@@ -146,8 +146,8 @@ Id,Partial_Id,Name,Tier,Class,Faction,Cost,Casting Value,Spell Type,Range,Power,
 <b>AP 2</b> - Reduce block rolls by 2",./assets/weapons/2/ranged.png
 07-1-1-2-2,2,Imperial Pistols,2,Ranged,Scaled Empire,2,,,2,"<b>Range 2</b> - Hits targets up to 2 squares away
 <b>Quickfire</b> - Can be fired while in combat. Wounds done this way contribute to who won combat.",./assets/weapons/2/ranged.png
-07-1-8-3-1,1,Shooting Star,3,Spell,Scaled Empire,1,4+,Attack,3,"<b>Spell</b> - Target an enemy unit within 3. It takes 3 attacks hitting on 4+ with AP 1. This can't target a unit in combat.
-<b>Ranged Spell</b> - Can't be cast while in combat.",./assets/weapons/3/spell.png
+07-1-8-2-1,1,Shooting Star,2,Spell,Scaled Empire,1,4+,Attack,3,"<b>Spell</b> - Target an enemy unit within 3. It takes 3 attacks hitting on 4+ with AP 1. This can't target a unit in combat.
+<b>Ranged Spell</b> - Can't be cast while in combat.",./assets/weapons/2/spell.png
 07-1-8-3-2,2,Fireball,3,Spell,Scaled Empire,3,4+,Attack,6,"<b>Spell</b> - Pick a target square within 6 and roll a die. 
 4, 5 or 6 - Direct hit
 3 - Off by one, your choice
@@ -155,7 +155,31 @@ Id,Partial_Id,Name,Tier,Class,Faction,Cost,Casting Value,Spell Type,Range,Power,
 1 - Off by up to two, opponent's choice 
 5 attacks on 4+, AP 1
 <b>Ranged Spell</b> - Can't be cast while in combat.",./assets/weapons/3/spell.png
-07-1-8-3-3,3,Wind Shield,3,Spell,Scaled Empire,1,4+,Buff,3,<b>Spell</b> - Target a friendly unit within 3. That unit and any friendly units in its flanks gain a +2 bonus to block against ranged weapons.,./assets/weapons/3/spell.png
-07-1-8-3-4,4,Radiant Bolt,3,Spell,Scaled Empire,2,2+,Attack,4,<b>Spell</b> - Target an enemy unit within 4. It takes 1 hit with no armour saves allowed. Can't target a unit in combat.,./assets/weapons/3/spell.png
+07-1-8-2-3,3,Wind Shield,2,Spell,Scaled Empire,1,4+,Buff,3,<b>Spell</b> - Target a friendly unit within 3. That unit and any friendly units in its flanks gain a +2 bonus to block against ranged weapons.,./assets/weapons/2/spell.png
+07-1-8-2-4,4,Radiant Bolt,2,Spell,Scaled Empire,2,2+,Attack,4,<b>Spell</b> - Target an enemy unit within 4. It takes 1 hit with no armour saves allowed. Can't target a unit in combat.,./assets/weapons/2/spell.png
 07-1-8-3-5,5,Elder's Glory,3,Spell,Scaled Empire,2,4+,Buff,2,"<b>Spell</b> - Target a friendly unit within 2. Until your next turn, it can reroll missed hits in melee.",./assets/weapons/3/spell.png
 07-1-8-3-6,6,Convocation,3,Spell,Scaled Empire,3,5+,Move,Infinite,<b>Spell</b> - Each friendly unit may immediately move one square towards the caster without changing their facing. This can cause them to move backwards or sidestep. This can cause them to leave combat.,./assets/weapons/3/spell.png
+08-1-1-1-1,1,Heavy Bow,1,Ranged,Disciples,0,,,3,<b>Range 3</b> - Hits targets up to 3 squares away,./assets/weapons/1/ranged.png
+08-1-1-1-2,2,Spare Bow,1,Ranged,Disciples,1,,,3,<b>Range 3</b> - Hits targets up to 3 squares away,./assets/weapons/1/ranged.png
+08-1-1-2-1,1,Greatbow,2,Ranged,Disciples,2,,,3,"<b>Range 3</b> - Hits targets up to 3 squares away
+<b>Multiwound 2</b> - Each hit does 2 wounds to a single model",./assets/weapons/2/ranged.png
+08-1-1-2-2,2,Snares,2,Ranged,Disciples,2,,,2,"<b>Range 2</b> - Hits targets up to 2 squares away
+<b>Snare</b> - Targets that take 1 or more wounds may not move on their next turn. They may still turn and act.",./assets/weapons/2/ranged.png
+08-1-8-2-1,1,Slimeblooded,2,Spell,Disciples,1,3+,Buff,2,"<b>Spell</b> - Target a friendly unit within range 2. Until your next turn, it gains <b>Eager Regeneration 2</b> - Heal 2 at the start of each player's turn. This may not ressurect models.
+
+<b>Graft</b> - If this is successfully cast again, it is removed from the effected unit.",./assets/weapons/2/spell.png
+08-1-8-2-2,2,Scaly Skin,2,Spell,Disciples,1,3+,Buff,2,"<b>Spell</b> - Target a friendly unit within range 2. Until your next turn, it ignores Multiwound. Improve block by 1.
+
+<b>Graft</b> - If this is successfully cast again, it is removed from the effected unit.",./assets/weapons/2/spell.png
+08-1-8-2-3,3,Scything Claws,2,Spell,Disciples,1,3+,Buff,2,"<b>Spell</b> - Target a friendly unit within range 2. Until your next turn, it gains <b>Multiwound 2</b> - Each hit does 2 wounds to a single model, and <b>AP 1</b> - Reduce block rolls by 1.
+
+<b>Graft</b> - If this is successfully cast again, it is removed from the effected unit.",./assets/weapons/2/spell.png
+08-1-8-3-4,4,Rearm,3,Spell,Disciples,2,4+,Buff,2,"<b>Spell</b> - Target a friendly unit within range 2. Until your next turn, it makes a total of 9 attacks in combat, which can't be changed. The unit automatically flees from combat.
+
+<b>Graft</b> - If this is successfully cast again, it is removed from the effected unit.",./assets/weapons/3/spell.png
+08-1-8-3-5,5,Envenom,3,Spell,Disciples,2,4+,Buff,2,"<b>Spell</b> - Target a friendly unit within range 2. Until your next turn, it gains <b>Aggressive Poison</b> - 5s and 6s to hit can't be saved. Has no affect if the attack misses.
+
+<b>Graft</b> - If this is successfully cast again, it is removed from the effected unit.",./assets/weapons/3/spell.png
+08-1-8-3-6,6,Vilespines,3,Spell,Disciples,3,4+,Buff,2,"<b>Spell</b> - Target a friendly unit within range 2. Until your next turn, when this unit blocks in combat, the unit that attacked it takes the wounds instead.
+
+<b>Graft</b> - If this is successfully cast again, it is removed from the effected unit.",./assets/weapons/3/spell.png

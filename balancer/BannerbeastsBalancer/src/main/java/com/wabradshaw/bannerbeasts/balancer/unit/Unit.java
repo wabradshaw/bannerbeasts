@@ -7,9 +7,16 @@ public class Unit {
     private int maxTotalHp;
     private int currentTotalHp;
     private boolean alive;
+    private boolean silenced;
 
     private int poisoned = 0;
     private boolean poisonWound = false;
+
+    private int movementMod = 0;
+    private int meleeHitMod = 0;
+    private int attacksMod = 0;
+    private int blockMod = 0;
+    private boolean poisonMod = false;
 
     public Unit(UnitDescription description) {
         this.description = description;
@@ -17,6 +24,7 @@ public class Unit {
         this.maxTotalHp = description.getStartingHp() * this.currentModels;
         this.currentTotalHp = this.maxTotalHp;
         this.alive = true;
+        this.silenced = false;
     }
 
     public int takeWounds(int count) {
@@ -86,7 +94,11 @@ public class Unit {
     }
 
     public UnitPowers powers() {
-        return this.getDescription().getPowers();
+        if(this.silenced){
+            return new UnitPowers("");
+        } else {
+            return this.getDescription().getPowers();
+        }
     }
 
     public int getPoisoned() {
@@ -95,6 +107,50 @@ public class Unit {
 
     public boolean hasPoisonWound() {
         return this.poisonWound;
+    }
+
+    public void silence(){
+        this.silenced = true;
+    }
+    
+    public void grantMovement(int amount){
+        this.movementMod += amount;
+    }
+
+    public void grantAttacks(int amount){
+        this.attacksMod += amount;
+    }
+
+    public void grantMeleeHit(int amount){
+        this.meleeHitMod += amount;
+    }
+
+    public void grantBlock(int amount){
+        this.blockMod += amount;
+    }
+
+    public void grantPoisonous(){
+        this.poisonMod = true;
+    }
+
+    public int getMovement(){
+        return this.description.getMovement().get() + movementMod;
+    }
+
+    public int getAttacks(){
+        return this.description.getAttacks().get() + attacksMod;
+    }
+
+    public int getMeleeHit(){
+        return this.description.getMeleeHit().get() - meleeHitMod;
+    }
+
+    public int getBlock(){
+        return this.description.getBlock().get() - blockMod;
+    }
+
+    public boolean isTemporarilyPoisonous(){
+        return this.poisonMod;
     }
     
     @Override

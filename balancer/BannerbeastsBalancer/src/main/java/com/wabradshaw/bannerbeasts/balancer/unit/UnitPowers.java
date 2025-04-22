@@ -35,7 +35,9 @@ public class UnitPowers {
             "Deceptive Shots", "Volley Fire", "Pull Strings", "Another's Bidding", "Center of the Web", "Cauldron",
             "Aggressive Flanking", "Master of Movement", "Buck Wildly", "Battlefield Prep", "Sensibly Entrenched",
             "Landbreaker", "Coppersmith's Upgrade", "Custom Tools", "Riflemaker", "Bomber", "Firing platform",
-            "Officer", "General's Spirit", "Old Knowledge", "Natural Breath Weapon", "Spotter")
+            "Officer", "General's Spirit", "Old Knowledge", "Natural Breath Weapon", "Spotter", "Flap", "Infuse",
+            "Silencing Shots", "Permanent Grafts", "Innovator", "Appeal to the Masses", "Crack the Whip",
+            "Widespread Carnage", "Beasts Unleashed")
             .collect(Collectors.toCollection(HashSet::new));
 
     private final Set<String> mechanicalPowers;
@@ -89,12 +91,17 @@ public class UnitPowers {
     private boolean fearfulPresence = false;
     private boolean generalsBanner = false;
 
+    private boolean petrifying = false;
+    private boolean silencer = false;
+    private boolean adaptive = false;
+
     private DynamicInt apValue = new StaticInt(0);
     private DynamicInt impactHits = new StaticInt(0);
     private DynamicInt multiwound = new StaticInt(1);
     private DynamicInt elusive = new StaticInt(0);
     private DynamicInt spongey = new StaticInt(0);
     private DynamicInt virulentThreshold = new StaticInt(7);
+    private DynamicInt regeneration = new StaticInt(0);
 
     private boolean offhand = false;
     private boolean unwieldy = false;
@@ -286,6 +293,18 @@ public class UnitPowers {
                         generalsBanner = true;
                         mechanicalPowers.add("General's Banner");
                         break;
+                    case "petrifying gaze":
+                        petrifying = true;
+                        mechanicalPowers.add("Petrifying Gaze");
+                        break;
+                    case "silence":
+                        silencer = true;
+                        mechanicalPowers.add("Silence");
+                        break;
+                    case "adaptive":
+                        adaptive = true;
+                        mechanicalPowers.add("Adaptive");
+                        break;
                     case "ap":
                         if (parsed != null) {
                             apValue = parsed;
@@ -322,6 +341,12 @@ public class UnitPowers {
                             mechanicalPowers.add("Virulent " + parsed);
                         }
                         break;
+                    case "regeneration":
+                        if (parsed != null) {
+                            regeneration = parsed;
+                            mechanicalPowers.add("Regeneration " + parsed);
+                        }
+                        break;
                     case "offhand":
                         offhand = true;
                         mechanicalPowers.add("Offhand");
@@ -330,10 +355,10 @@ public class UnitPowers {
                         unwieldy = true;
                         mechanicalPowers.add("Unwieldy");
                         break;
-                        case "armourbane":
+                    case "armourbane":
                         armourbane = true;
-                            mechanicalPowers.add("Armourbane");
-                            break;
+                        mechanicalPowers.add("Armourbane");
+                        break;
                     case "block":
                         if (parsed != null) {
                             bonusBlock = parsed;
@@ -503,6 +528,18 @@ public class UnitPowers {
         return generalsBanner;
     }
 
+    public boolean isPetrifying() {
+        return petrifying;
+    }
+
+    public boolean isSilencer() {
+        return silencer;
+    }
+
+    public boolean isAdaptive() {
+        return adaptive;
+    }
+
     public DynamicInt getApValue() {
         return apValue;
     }
@@ -525,6 +562,10 @@ public class UnitPowers {
 
     public DynamicInt getVirulentThreshold() {
         return virulentThreshold;
+    }
+
+    public DynamicInt getRegeneration() {
+        return regeneration;
     }
 
     public boolean hasOffhand() {

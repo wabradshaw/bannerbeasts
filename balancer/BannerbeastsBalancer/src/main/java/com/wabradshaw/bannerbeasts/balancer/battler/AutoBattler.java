@@ -14,8 +14,13 @@ public class AutoBattler {
     public BattleResult battle(Unit unit1, Unit unit2) {
         int rounds = 0;
 
+        applySilences(unit1, unit2);
+
         UnitPowers unit1Powers = unit1.powers();
         UnitPowers unit2Powers = unit2.powers();
+
+        applyAdaptive(unit1, 2 + random.nextInt(4));
+        applyAdaptive(unit2, 2 + random.nextInt(4));
 
         while (unit1.isAlive() && unit2.isAlive() && rounds < MAX_ROUNDS) {
             rounds++;
@@ -24,6 +29,9 @@ public class AutoBattler {
                 return new BattleResult(unit1, unit2, Outcome.WON_FLED, rounds);
             if (resolveTerrifying(unit2, unit1))
                 return new BattleResult(unit1, unit2, Outcome.LOST_FLED, rounds);
+
+            applyAdaptive(unit1, 1);
+            applyAdaptive(unit2, 1);
 
             int unit1HpBefore = unit1.getCurrentTotalHp();
             int unit2HpBefore = unit2.getCurrentTotalHp();
@@ -35,27 +43,37 @@ public class AutoBattler {
             int woundsToUnit1 = 0;
             int woundsToUnit2 = 0;
 
+            int unit1Attacks;
+            int unit2Attacks;
+
             if (unit1AttacksFirst == 0) {
-                int unit1Attacks = calculateTotalAttacks(unit1, unit2);
-                int unit2Attacks = calculateTotalAttacks(unit2, unit1);
+                unit1Attacks = calculateTotalAttacks(unit1, unit2);
+                unit2Attacks = calculateTotalAttacks(unit2, unit1);
                 woundsToUnit1 = performAttacks(unit2, unit1, unit2Attacks);
                 woundsToUnit2 = performAttacks(unit1, unit2, unit1Attacks);
             } else if (unit1AttacksFirst > 0) {
-                int unit1Attacks = calculateTotalAttacks(unit1, unit2);
+                unit1Attacks = calculateTotalAttacks(unit1, unit2);
                 woundsToUnit2 = performAttacks(unit1, unit2, unit1Attacks);
 
-                int unit2Attacks = calculateTotalAttacks(unit2, unit1);
+                unit2Attacks = calculateTotalAttacks(unit2, unit1);
                 woundsToUnit1 = performAttacks(unit2, unit1, unit2Attacks);
-            } else if (unit1AttacksFirst < 0) {
-                int unit2Attacks = calculateTotalAttacks(unit2, unit1);
+            } else {
+                unit2Attacks = calculateTotalAttacks(unit2, unit1);
                 woundsToUnit1 = performAttacks(unit2, unit1, unit2Attacks);
 
-                int unit1Attacks = calculateTotalAttacks(unit1, unit2);
+                unit1Attacks = calculateTotalAttacks(unit1, unit2);
                 woundsToUnit2 = performAttacks(unit1, unit2, unit1Attacks);
             }
 
-            applyVirulent(unit1Powers, unit2, woundsToUnit2);
-            applyVirulent(unit2Powers, unit1, woundsToUnit1);
+            if (rounds % 2 == 0) {
+                applyVirulent(unit1Powers, unit2, woundsToUnit2);
+            }
+            if (rounds % 2 == 1) {
+                applyVirulent(unit2Powers, unit1, woundsToUnit1);
+            }
+
+            woundsToUnit1 += applyPetrify(unit1, unit2, unit2Attacks);
+            woundsToUnit2 += applyPetrify(unit2, unit1, unit1Attacks);
 
             woundsToUnit2 += applyBurst(unit1, unit2, unit1ModelsBefore);
             woundsToUnit1 += applyBurst(unit2, unit1, unit2ModelsBefore);
@@ -78,10 +96,10 @@ public class AutoBattler {
             woundsToUnit2 = applySpongey(unit2, unit2Powers, unit2HpBefore, woundsToUnit2);
 
             if (unit1.isAlive() && unit2.isAlive()) {
-                if (wretchedPoisonFlight(unit1, unit2Powers)){
+                if (wretchedPoisonFlight(unit1, unit2Powers)) {
                     return new BattleResult(unit1, unit2, Outcome.LOST_FLED, rounds);
                 }
-                if (wretchedPoisonFlight(unit2, unit1Powers)){
+                if (wretchedPoisonFlight(unit2, unit1Powers)) {
                     return new BattleResult(unit2, unit1, Outcome.LOST_FLED, rounds);
                 }
 
@@ -101,9 +119,50 @@ public class AutoBattler {
 
             applyRegenerativeClay(unit1);
             applyRegenerativeClay(unit2);
+
+            applyRegeneration(unit1);
+            applyRegeneration(unit2);
         }
 
-        return resolveResult(unit1, unit2, rounds);
+        return
+
+        resolveResult(unit1, unit2, rounds);
+    }
+
+    private void applyAdaptive(Unit unit, int times) {
+        if (unit.powers().isAdaptive()) {
+            for (int i = 0; i < times; i++) {
+                int roll = d6();
+                switch (roll) {
+                    case 2:
+                        unit.grantMovement(1);
+                        break;
+                    case 3:
+                        unit.grantMeleeHit(1);
+                        break;
+                    case 4:
+                        unit.grantBlock(1);
+                        break;
+                    case 5:
+                        unit.grantAttacks(1);
+                        break;
+                    case 6:
+                        unit.grantPoisonous();
+                        break;
+                }
+            }
+        }
+    }
+
+    private void applySilences(Unit unit1, Unit unit2) {
+        boolean silence1 = unit2.powers().isSilencer();
+        boolean silence2 = unit1.powers().isSilencer();
+        if (silence1) {
+            unit1.silence();
+        }
+        if (silence2) {
+            unit2.silence();
+        }
     }
 
     private int calculateFirstAttack(Unit unit1, Unit unit2) {
@@ -141,7 +200,7 @@ public class AutoBattler {
     }
 
     private int calculateTotalAttacks(Unit unit, Unit enemy) {
-        int baseAttacks = unit.getDescription().getAttacks().get();
+        int baseAttacks = unit.getAttacks();
         UnitPowers powers = unit.powers();
 
         int maxHp = unit.getDescription().getStartingHp() * unit.getCurrentModels();
@@ -151,15 +210,15 @@ public class AutoBattler {
             baseAttacks += 1;
         }
 
-        if (powers.hasKillingBlow()){
-            if (enemy.getDescription().getStartingHp() > 2 && enemy.getCurrentTotalHp() > 2){
+        if (powers.hasKillingBlow()) {
+            if (enemy.getDescription().getStartingHp() > 2 && enemy.getCurrentTotalHp() > 2) {
                 baseAttacks -= 2;
-            } else if (enemy.getDescription().getStartingHp() > 1 && enemy.getCurrentTotalHp() > 1){
+            } else if (enemy.getDescription().getStartingHp() > 1 && enemy.getCurrentTotalHp() > 1) {
                 baseAttacks -= 1;
             }
         }
 
-        if(powers.hasOffhand()){
+        if (powers.hasOffhand()) {
             baseAttacks *= 2;
         }
         return unit.getCurrentModels() * baseAttacks;
@@ -176,9 +235,9 @@ public class AutoBattler {
 
     private boolean isCavalrybaneEffective(Unit source, Unit target) {
         return source.powers().hasCavalrybane()
-            && target.getDescription().getMovement().get() >= 2;
+                && target.getMovement() >= 2;
     }
-    
+
     private int applyBurst(Unit source, Unit target, int modelsBefore) {
         int modelsLost = modelsBefore - source.getCurrentModels();
         if (source.powers().hasBurst() && modelsLost > 0) {
@@ -221,10 +280,11 @@ public class AutoBattler {
     }
 
     private void applyLitFuses(Unit source, Unit target) {
-        if (source.isAlive() || !source.powers().hasLitFuses() || !target.isAlive()) return;
-    
+        if (source.isAlive() || !source.powers().hasLitFuses() || !target.isAlive())
+            return;
+
         int attacks = d6();
-    
+
         for (int i = 0; i < attacks; i++) {
             int hitRoll = d6();
             if (hitRoll >= 4) {
@@ -264,17 +324,18 @@ public class AutoBattler {
         return woundsTaken;
     }
 
-    private boolean wretchedPoisonFlight(Unit fleeCandidate, UnitPowers fearCauser){
-        if (fleeCandidate.hasPoisonWound()){
+    private boolean wretchedPoisonFlight(Unit fleeCandidate, UnitPowers fearCauser) {
+        if (fleeCandidate.hasPoisonWound()) {
             fleeCandidate.resetPoisonWound();
-            if(fearCauser.hasWretchedPoisons()){
+            if (fearCauser.hasWretchedPoisons()) {
                 return checkFlee(fleeCandidate, fearCauser);
             }
         }
         return false;
     }
 
-    private boolean resolveFlee(Unit unit, UnitPowers powers, UnitPowers attackerPowers, int woundsTaken, int woundsDealt) {
+    private boolean resolveFlee(Unit unit, UnitPowers powers, UnitPowers attackerPowers, int woundsTaken,
+            int woundsDealt) {
         if (!unit.isAlive())
             return false;
 
@@ -286,7 +347,7 @@ public class AutoBattler {
             return false;
 
         if (powers.isUnstable()) {
-            if(powers.hasPracticedNecromancy() && score == 1){
+            if (powers.hasPracticedNecromancy() && score == 1) {
                 return false;
             }
             unit.takeWounds(1);
@@ -322,6 +383,18 @@ public class AutoBattler {
         }
     }
 
+    private int applyPetrify(Unit defender, Unit attacker, int attacks) {
+        int wounds = 0;
+        if (defender.powers().isPetrifying()) {
+            for (int i = 0; i < attacks; i++) {
+                if (d6() == 6) {
+                    wounds += resolveWoundFromHit(defender, attacker, 6, 99);
+                }
+            }
+        }
+        return wounds;
+    }
+
     private void applyRegenerativeClay(Unit unit) {
         if (!unit.isAlive())
             return;
@@ -329,6 +402,12 @@ public class AutoBattler {
             return;
 
         unit.healWounds(999, false); // Heals living models only
+    }
+
+    private void applyRegeneration(Unit unit) {
+        if (!unit.isAlive())
+            return;
+        unit.healWounds(unit.powers().getRegeneration().get(), true);
     }
 
     private boolean resolveTerrifying(Unit source, Unit target) {
@@ -352,38 +431,39 @@ public class AutoBattler {
         return resolveWoundFromHit(attacker, defender, roll, attacker.powers().getApValue().get());
     }
 
-    private int resolveWoundFromHit(Unit attacker, Unit defender, int roll, int aP) {
+    private int resolveWoundFromHit(Unit attacker, Unit defender, int roll, int ap) {
         UnitPowers attackerPowers = attacker.powers();
         UnitPowers defenderPowers = defender.powers();
 
         int effectiveRoll = roll - defenderPowers.getElusivePenalty().get();
-        int hitTarget = attacker.getDescription().getMeleeHit().get();
-        int rawBlock = defender.getDescription().getBlock().get() + attackerPowers.getApValue().get() - defenderPowers.getBonusBlock().get();
+        int hitTarget = attacker.getMeleeHit();
+        int rawBlock = defender.getBlock() + attackerPowers.getApValue().get() + ap
+                - defenderPowers.getBonusBlock().get();
         int blockTarget = rawBlock;
 
         if (defenderPowers.isAirborne()) {
-            hitTarget ++;
-        }        
-        if (attackerPowers.isUnwieldy()) {
-            hitTarget ++;
-        }        
-        if (isCavalrybaneEffective(attacker, defender)){
-            hitTarget --;
-            blockTarget ++; //Effectively +1 AP.
+            hitTarget++;
         }
-        if (isCavalrybaneEffective(defender, attacker)){
-            blockTarget --;
+        if (attackerPowers.isUnwieldy()) {
+            hitTarget++;
+        }
+        if (isCavalrybaneEffective(attacker, defender)) {
+            hitTarget--;
+            blockTarget++; // Effectively +1 AP.
+        }
+        if (isCavalrybaneEffective(defender, attacker)) {
+            blockTarget--;
         }
 
         if (attackerPowers.hasArmourbane() && rawBlock >= 5) {
-            hitTarget --;
+            hitTarget--;
         }
 
-        if (defenderPowers.hasUncannyProtection()){
+        if (defenderPowers.hasUncannyProtection()) {
             blockTarget = Math.min(5, blockTarget);
         }
 
-        if(defenderPowers.isEthereal()){
+        if (defenderPowers.isEthereal()) {
             blockTarget = rawBlock;
         }
 
@@ -391,7 +471,7 @@ public class AutoBattler {
         if (roll == 6 && attackerPowers.isLethal()) {
             multiwound = Math.max(2, multiwound);
         }
-        if (attackerPowers.hasKillingBlow()){
+        if (attackerPowers.hasKillingBlow()) {
             multiwound += 2;
         }
 
@@ -432,7 +512,7 @@ public class AutoBattler {
                     return 0;
                 }
             }
-            
+
             int damage = attackerPowers.hasCleave() ? 2 : 1;
             return defender.takeWounds(damage, multiwound);
 
@@ -446,7 +526,7 @@ public class AutoBattler {
 
         for (int i = 0; i < lostModels; i++) {
             int hitRoll = d6();
-            if (hitRoll >= 4) {                
+            if (hitRoll >= 4) {
                 resolveWoundFromHit(attacker, target, hitRoll, 1);
             }
         }
@@ -474,7 +554,7 @@ public class AutoBattler {
             roll--;
         if (roll != 1 && powers.isStalwart())
             roll++;
-        if (roll != 6 && attackerPowers.hasFearfulPresence()){
+        if (roll != 6 && attackerPowers.hasFearfulPresence()) {
             roll--;
         }
 

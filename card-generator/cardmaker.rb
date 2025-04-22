@@ -4,7 +4,7 @@ require 'squib'
 # Config
 
 FILE_NAME = 'Bannerbeasts Roller - Units.csv'
-MAX_CARD_COUNT = 140
+MAX_CARD_COUNT = 160
 
 MM_TOTAL_CARD_WIDTH = 125 
 MM_TOTAL_CARD_HEIGHT = 78
