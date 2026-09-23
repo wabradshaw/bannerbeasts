@@ -25,12 +25,17 @@ A4 pages as needed, packed as tight as the 60x15mm chit size allows.
 """
 import argparse
 import base64
+import io
 import re
 import sys
 import warnings
 from pathlib import Path
 
+import fitz  # PyMuPDF
+import numpy as np
 import openpyxl
+from PIL import Image, ImageChops, ImageDraw
+from svgelements import Path as SvgPath
 
 ROOT_DIR = Path(__file__).parent.parent
 ICONS_DIR = ROOT_DIR
@@ -134,6 +139,118 @@ SHEET_MARGIN_Y = (A4_H - SHEET_ROWS * CHIT_H) / 2
 CHITS_PER_SHEET = SHEET_COLS * SHEET_ROWS
 
 
+def apply_color_matrix(img: Image.Image, values: list[float]) -> Image.Image:
+    """Apply an SVG feColorMatrix (type="matrix", 20 values) to an RGBA
+    image, per spec: operates on non-premultiplied [0,1] channel values,
+    output = M * [R,G,B,A,1]."""
+    arr = np.asarray(img.convert("RGBA"), dtype=np.float64) / 255.0
+    h, w, _ = arr.shape
+    m = np.array(values, dtype=np.float64).reshape(4, 5)
+    src = np.hstack([arr.reshape(-1, 4), np.ones((h * w, 1))])
+    out = np.clip(src @ m.T, 0, 1).reshape(h, w, 4)
+    return Image.fromarray((out * 255).astype(np.uint8), "RGBA")
+
+
+def bake_recolor_filters(inner: str) -> str:
+    """Icons can recolour their shared grayscale glyph two different ways,
+    both via Inkscape filters browsers render fine but our PDF export
+    path (MuPDF's SVG converter) doesn't support at all:
+
+    - Two-tone icons (e.g. Slow, -G-Rabid) overlay two copies of the
+      glyph: a colour-themed copy on the bottom, and a purple copy on
+      top clipped to part of the shape via clip-path. Each copy's colour
+      itself comes from a "flood + composite-in" filter chain. A filtered
+      <image> that MuPDF can't handle drops entirely (leaving just its
+      background rect visible), and an unsupported clip-path is ignored
+      so the top layer paints over the whole icon instead of its wedge.
+    - Some single-colour icons (e.g. Spear: "a coloured icon, then
+      recoloured in Inkscape") instead apply one direct feColorMatrix to
+      shift the glyph's original colour to the intended one - no flood,
+      no clip.
+
+    Since all of this is genuinely part of the icon's design, not
+    decoration, bake it into the PNG pixels here instead: flood-recolour
+    via the source alpha as a mask, clip via a rasterised polygon from
+    the clipPath's own path data, and apply direct matrices with numpy -
+    so nothing needs filter or clip-path support at render time at all."""
+    filter_colors: dict[str, tuple[int, int, int]] = {}
+    filter_matrices: dict[str, list[float]] = {}
+    for fid, body in re.findall(r'<filter[^>]*\bid="([^"]+)"[^>]*>(.*?)</filter>', inner, re.S):
+        flood_m = re.search(r'<feFlood[^>]*flood-color="rgb\(([^)]+)\)"', body)
+        if flood_m:
+            filter_colors[fid] = tuple(int(v.strip()) for v in flood_m.group(1).split(","))
+            continue
+        matrices = re.findall(r'<feColorMatrix\b[^>]*\bvalues="([^"]+)"', body)
+        values = [float(v) for v in matrices[0].split()] if matrices else []
+        if len(matrices) == 1 and len(values) == 20 and not re.search(r"<fe(Flood|Composite|Blend)\b", body):
+            filter_matrices[fid] = values
+
+    clip_paths = dict(re.findall(r'<clipPath[^>]*\bid="([^"]+)"[^>]*>.*?<path[^>]*\bd="([^"]+)"', inner, re.S))
+    if not filter_colors and not filter_matrices and not clip_paths:
+        return inner
+
+    def attr(tag: str, name: str) -> str | None:
+        m = re.search(rf'\b{name}="([^"]*)"', tag)
+        return m.group(1) if m else None
+
+    def process(m: re.Match) -> str:
+        tag = m.group(0)
+        href = attr(tag, "xlink:href")
+        if not href or not href.startswith("data:image/png;base64,"):
+            return tag
+        b64 = href[len("data:image/png;base64,"):]
+        img = Image.open(io.BytesIO(base64.b64decode(re.sub(r"\s+", "", b64)))).convert("RGBA")
+        changed = False
+
+        style = attr(tag, "style") or ""
+        filt_id = re.search(r"filter:url\(#([^)]+)\)", style)
+        if filt_id and filt_id.group(1) in filter_colors:
+            r, g, b = filter_colors[filt_id.group(1)]
+            solid = Image.new("RGBA", img.size, (r, g, b, 255))
+            solid.putalpha(img.getchannel("A"))
+            img = solid
+            new_style = re.sub(r"filter:url\([^)]*\);?", "", style)
+            tag = tag.replace(f'style="{style}"', f'style="{new_style}"', 1)
+            changed = True
+        elif filt_id and filt_id.group(1) in filter_matrices:
+            img = apply_color_matrix(img, filter_matrices[filt_id.group(1)])
+            new_style = re.sub(r"filter:url\([^)]*\);?", "", style)
+            tag = tag.replace(f'style="{style}"', f'style="{new_style}"', 1)
+            changed = True
+
+        clip_id_m = re.search(r'clip-path="url\(#([^)]+)\)"', tag)
+        if clip_id_m and clip_id_m.group(1) in clip_paths:
+            # clip-path is evaluated in the image's own local coordinate
+            # system (same one its x/y/width/height are in) - the image's
+            # own transform, if any, only places the already-clipped
+            # result into the parent, so it plays no part in this mapping
+            x, y = float(attr(tag, "x")), float(attr(tag, "y"))
+            w, h = float(attr(tag, "width")), float(attr(tag, "height"))
+            pts, last = [], None
+            for pt in SvgPath(clip_paths[clip_id_m.group(1)]).as_points():
+                if pt is None:
+                    continue
+                local = ((pt.x - x) / w * img.width, (pt.y - y) / h * img.height)
+                if local != last:
+                    pts.append(local)
+                    last = local
+            if len(pts) >= 3:
+                mask = Image.new("L", img.size, 0)
+                ImageDraw.Draw(mask).polygon(pts, fill=255)
+                img = img.copy()
+                img.putalpha(ImageChops.multiply(img.getchannel("A"), mask))
+                changed = True
+            tag = re.sub(r'\s*clip-path="url\([^)]*\)"', "", tag)
+
+        if not changed:
+            return m.group(0)
+        buf = io.BytesIO()
+        img.save(buf, format="PNG")
+        return tag.replace(b64, base64.b64encode(buf.getvalue()).decode("ascii"))
+
+    return re.sub(r"<image\b[^>]*/>", process, inner)
+
+
 def strip_editor_metadata(inner: str) -> str:
     """Drop Inkscape/Sodipodi editor metadata (namedview blocks and
     inkscape:*/sodipodi:* attributes) - it's invisible but uses namespace
@@ -141,20 +258,40 @@ def strip_editor_metadata(inner: str) -> str:
     readers reject as unbound prefixes."""
     inner = re.sub(r"<(sodipodi|inkscape):[\w-]+\b[^>]*?(?:/>|>.*?</\1:[\w-]+>)", "", inner, flags=re.S)
     inner = re.sub(r'\s+(?:sodipodi|inkscape):[\w-]+="[^"]*"', "", inner)
+    inner = bake_recolor_filters(inner)
+    # any remaining filter reference (not the recolor pattern above) is
+    # assumed decorative (e.g. a shadow) and dropped rather than risk
+    # MuPDF rendering the element solid black.
+    inner = re.sub(r"filter:url\([^)]*\);?", "", inner)
     return inner
+
+
+def embed_as_group(text: str, x: float, y: float, target_w: float, target_h: float, uid: str | None = None) -> str:
+    """Embed another SVG's content at (x,y) scaled to (target_w,target_h),
+    using a <g transform="translate(...) scale(...)"> wrapper rather than
+    a nested <svg x y width height viewBox>. Browsers render both the
+    same, but MuPDF's SVG-to-PDF converter (used for combined PDF export)
+    mishandles nested <svg> positioning/scaling - it silently drops or
+    mis-places that content. <g transform> is honoured correctly, so this
+    is the only technique used anywhere content gets embedded, even
+    though nested <svg> would look identical on screen."""
+    open_tag_end = text.index(">", text.index("<svg")) + 1
+    close_tag_start = text.rindex("</svg>")
+    inner = text[open_tag_end:close_tag_start]
+    inner = strip_editor_metadata(inner)
+    if uid is not None:
+        inner = re.sub(r'id="([^"]+)"', lambda m: f'id="{m.group(1)}_{uid}"', inner)
+        inner = re.sub(r"url\(#([^)]+)\)", lambda m: f"url(#{m.group(1)}_{uid})", inner)
+    vb = re.search(r'viewBox="([^"]+)"', text).group(1)
+    _, _, vb_w, vb_h = (float(v) for v in vb.split())
+    sx, sy = target_w / vb_w, target_h / vb_h
+    return f'<g transform="translate({x},{y}) scale({sx},{sy})">{inner}</g>'
 
 
 def load_icon_fragment(icon_filename: str, x: float, y: float, size: float, uid: str) -> str:
     path = ICONS_DIR / icon_filename
     text = path.read_text(encoding="utf-8")
-    viewbox = re.search(r'viewBox="([^"]+)"', text).group(1)
-    open_tag_end = text.index(">", text.index("<svg")) + 1
-    close_tag_start = text.rindex("</svg>")
-    inner = text[open_tag_end:close_tag_start]
-    inner = strip_editor_metadata(inner)
-    inner = re.sub(r'id="([^"]+)"', lambda m: f'id="{m.group(1)}_{uid}"', inner)
-    inner = re.sub(r"url\(#([^)]+)\)", lambda m: f"url(#{m.group(1)}_{uid})", inner)
-    return f'<svg x="{x}" y="{y}" width="{size}" height="{size}" viewBox="{viewbox}">{inner}</svg>'
+    return embed_as_group(text, x, y, size, size, uid)
 
 
 def parse_slots(raw_values: list) -> list[tuple[str, float | None]]:
@@ -306,9 +443,11 @@ def load_units(faction_names: set[str] | None, tier_copies: dict[int, int] | Non
             continue
         copies = tier_copies[tier] if tier_copies is not None else 1
         raw_slots = [values[idx[c]] for c in ("S1", "S2", "S3", "S4") if c in idx]
+        weapon = values[idx["Weapon"]] if "Weapon" in idx else None
+        armour = values[idx["Armour"]] if "Armour" in idx else None
         units.append({
             "faction": faction, "unit": unit, "tier": tier, "raw_slots": raw_slots,
-            "row": row[0].row, "copies": copies,
+            "row": row[0].row, "copies": copies, "weapon": weapon, "armour": armour,
         })
 
     # tier 0 isn't a real row in the sheet - it's a blank chit, one per
@@ -319,7 +458,7 @@ def load_units(faction_names: set[str] | None, tier_copies: dict[int, int] | Non
                 continue
             units.append({
                 "faction": faction, "unit": None, "tier": 0, "raw_slots": [None] * 4,
-                "row": None, "copies": tier_copies[0],
+                "row": None, "copies": tier_copies[0], "weapon": None, "armour": None,
             })
 
     return units
@@ -368,10 +507,7 @@ def get_faction_icon_b64(faction: str, icon_names: dict[str, str]) -> str | None
 
 
 def embed_svg(text: str, x: float, y: float, w: float, h: float) -> str:
-    open_tag_end = text.index(">", text.index("<svg")) + 1
-    close_tag_start = text.rindex("</svg>")
-    inner = text[open_tag_end:close_tag_start]
-    return f'<svg x="{x}" y="{y}" width="{w}" height="{h}" viewBox="0 0 {CHIT_W} {CHIT_H}">{inner}</svg>'
+    return embed_as_group(text, x, y, w, h)
 
 
 def render_sheet_page(chunk: list[Path]) -> str:
@@ -414,6 +550,18 @@ def build_sheets(chits: list[tuple[Path, str]], label: str = "sheet") -> list[Pa
             out_path.write_text(render_sheet_page(chunk), encoding="utf-8")
             pages.append(out_path)
     return pages
+
+
+def build_combined_pdf(sheet_paths: list[Path], out_path: Path) -> None:
+    """Concatenate full-page sheet SVGs (already A4-sized) into a single
+    print-ready PDF, one sheet per page, in the given order."""
+    combined = fitz.open()
+    for path in sheet_paths:
+        page_doc = fitz.open(str(path))
+        pdf_bytes = page_doc.convert_to_pdf()
+        page_pdf = fitz.open("pdf", pdf_bytes)
+        combined.insert_pdf(page_pdf)
+    combined.save(str(out_path))
 
 
 def build_preview_html(svg_paths: list[Path], out_path: Path) -> None:
@@ -537,6 +685,10 @@ def main():
         back_sheets = build_sheets(back_chits, label="sheet-back")
         for s in back_sheets:
             print(f"wrote {s}")
+
+        pdf_path = OUTPUT_DIR / "chits.pdf"
+        build_combined_pdf(sheets + back_sheets, pdf_path)
+        print(f"wrote {pdf_path}")
 
 
 if __name__ == "__main__":
