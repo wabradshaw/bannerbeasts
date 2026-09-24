@@ -1,0 +1,1673 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="297mm" height="210mm" viewBox="0 0 297 210"><rect width="297" height="210" fill="white"/><g transform="translate(0.5,0) scale(1.0,1.0)"><rect x="0" y="0" width="148.0" height="210.0" fill="white"/><rect x="0.25" y="0.25" width="147.5" height="209.5" fill="none" stroke="black" stroke-width="0.5"/><text x="6.0" y="11.0" font-size="5.5" font-family="sans-serif" font-weight="bold" fill="black">Core Reference</text><line x1="6.0" y1="14.0" x2="142.0" y2="14.0" stroke="black" stroke-width="0.3"/><text x="6.0" y="20.0" font-size="3.6" font-family="sans-serif" font-weight="bold" fill="black">Weapons &amp; Armour</text><line x1="6.0" y1="20.8" x2="142.0" y2="20.8" stroke="#999999" stroke-width="0.2"/><g transform="translate(6.0,22.0) scale(0.5000000937500175,0.5)"><defs
+     id="defs2_core_armour_0" /><g
+     id="layer1_core_armour_0"
+     transform="translate(-4.05223,-132.17828)"><rect
+       style="fill:#6666ff;fill-opacity:1;stroke-width:0.233098;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:0;paint-order:markers stroke fill"
+       id="rect234-2-6-9-1_core_armour_0"
+       width="15.999999"
+       height="15.999999"
+       x="4.0522299"
+       y="132.17828"
+       rx="3.4285712"
+       ry="3.4285712" /><image
+       width="13.999998"
+       height="13.999998"
+       preserveAspectRatio="none"
+       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAE
+nklEQVR4nO2Za4hVVRTHf6NZVqaV41QEM5X2rsEeVtDrg1AUMkkYVFB96fGphB4EJVHY40MFGUQP
+S8WsrEYTqumDTQ+YokaspheGmUFUSmr2Ukdn5sSC/4XNnr2P+95zZu5FXLDg3rPXXmv/92OttdeG
+/bTvUjswF1gEfApsALYAe4AM2AX8AnwCvATcAZxGA9GRwFoNthZeAxxebxCHOSC2Ai8DtwKXAm3A
+EcBY4AD9blPbbZLd6oAxXXWj45yZ/QNoraJvm7Zepb/pGhU6GLgWWAr0AYfom7tNvgUmJ+gyme+8
+vqbLdH4BPAdcodUsjUz5A97sGZ+o9s3e93XAKTn6TgV+8PpsUtvJ3veN2oaFAZ0H/BQ5pDdKZmmg
+bSewABjn6BqnbzsD8oslc0vEVi9wQq0gZsllxrxNl+TOAAYiMh2Ovo6IzB6tktGHOfa2ATOqBTFj
+LyCMB4GzJf9wRGalo3NlROYhtV+c4Kr/BKalgjgQWJ8YA9ZKfkxkoP3AFHF/oL1Tfe2gf59os1d9
+9kqXa7ZTA9pCoEmxYkmgfa7Y/75Ifazvq1XYy4DLUldlKvBsFYCe1ICaFBD/dtq+FFf+/wXcLDs2
+s88k2hjSmCz+JNFE5/ecnIPs8/NOPwtub3oTYb/f8AbyQqLuQeB6p1+r5xGH0UxgN/Ci9q3RvERj
+V0t+gqPPPNpy8enO9wqYKxNX/RHJ25heU59r8oCsdjq/om8HKWvNM/SgZE8CtiuPsuAWiksfAf9I
+Fm2zvFXfDkyS7DLne3cMxDTtQ1eJJXhGj0aMmCe63dmSXzltAwJkMeIC4D2vb5+T9V4H7IjYeFwy
+5wTOTGiyuDMn4s4KtK3WHcSoWXeQrEr+DGiRDhvUOwEZs42yAr/t7hCQroDg12o7RrlWj/brdKff
+hbpEZTWy5VOXOPrOVIDtkU2zHYv6tsrD6MeAoLnKGLUrz/K3Yy08pG3YnmPPTzQzjXkY/RsQNG+D
+LkXnArOBx3QRKjr4GKA1WvWrlAJVLlzzA/L/hYAsD8yuLTNKC7I68dvOOXTzP3MOT8eWr0VFgc0a
+fGoyN5I85GTHdo5/Bm4AxpNAzY7rfarOQDInTk33Am5V1NMAQD6gIDXJc9UbyKaiQJobAESmLKFw
+8S1rAN5VFMiEBgCRKcksfEZiydxo8gZKoHUNAKS7DCBvNQCQBWUAuacBgMwpA0h7nUHs8OoIhai7
+jnnWPEqkMYEyz0jzFud2WDq1qYoxMMKrsAw4dqRAtHqFioUJ9eFq2CbndeAsx05SabQaOl4Vk1XO
+ZQvN2qqCg/8cuMtbgUP1JtOnsmpptNgxbsWxFc595Xyn7V2VTztVIVmvi9BGFTJ6tG3u11XWfwSd
+omrO747Om8oCcXTOmbCntl+d/xNrfBHrUDW/P2Djm7KAjNe7XspW6dJT2Uw9zU3Ws8NYFTDsnF2k
+164ngI8Tztn7lEiTdEsbLdebOSBKC4YVslm9r2RPFeN+2Sr1VTcUS5ZE9nNR3i3do/bmbnQUcK/c
+ZzUvXD4PSofpMp11pRa50/nyPr1yods00AH9/k1uuVOPoB1yuftpn6P/AcwC1HbjMZkWAAAAAElF
+TkSuQmCC
+"
+       id="image37970_core_armour_0"
+       x="5.0522304"
+       y="133.17828"
+       style="stroke-width:1.25992" /></g></g><text x="15.5" y="24.9" font-size="2.9" font-family="sans-serif" font-weight="bold" fill="black">Heavy</text><text x="15.5" y="28.2" font-size="2.5" font-family="sans-serif" fill="#222222">4+ armour save</text><g transform="translate(6.0,38.7) scale(0.5000000625000078,0.5)"><defs
+     id="defs2_core_armour_1" /><g
+     id="layer1_core_armour_1"
+     transform="translate(-20.872855,-132.17828)"><rect
+       style="fill:#6666ff;fill-opacity:1;stroke-width:0.233098;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:0;paint-order:markers stroke fill"
+       id="rect234-2-6-0-5_core_armour_1"
+       width="15.999999"
+       height="15.999999"
+       x="20.872856"
+       y="132.17828"
+       rx="3.4285712"
+       ry="3.4285712" /><image
+       width="14"
+       height="14"
+       preserveAspectRatio="none"
+       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAF
+WUlEQVR4nO2aa4hVVRTHfzblo8x8ZA1+EDMlqympCCWLshdED+yBZSWNGtrLsAe9DEooJ79YgtHL
+rAkqqOlhVFZmWZgRfYgpGC2dovJBKabiY8ycEwv+OxZnzr33zD1nzoT4hwPn7rX3Wmvvs/fa/732
+hYM4cHESMBNYBKwEWoGtwD6gDdissi+A54DbgRP5H6EW+B6IqnyapaPbO7HaOWWjPgs4HxgFHAv0
+BHqr7gmSzVLd0G51d3am1nViHbBX7/ekaHuv6u5V20I7MwCYATQBa4DdMQfu0u/9wC1l9NyqOpG+
+jB+Q3dLdJFv98+7AAmBXiTle5+o+4cqXAKc4mb2/5+QNMVmSbrP5lHzIhIuAP6S0HVgK1AMjgA9V
+flOszWTXZhtwpJ7tKjPZjbE20yR7X7qnyFa7a3NhtZ0w5f9I0YrY6CJnIk2FmpjMHP9G8il6IpWZ
+zONQYK3k18Zkp8p2JF9MT6dwuevEXOCQhDrm/I+q80iCPDi/wjmT5MjjkrUkDAiy3eA6c1naTth8
+3KSGT1aoe642PFu818RkfYGdmh7terey+Fe1tn8DZ1WwtUA+bUq7Zh51I2R7QCXc50Zrakz2slu4
+9u5xm4ted6aw08tFt6QZ0AGtqjyH9JjtHG50YXO8K7d3w0DgdRdA0uw7AXPcvlUWPRRpwn7wAOnx
+kHP6N02bw4DP9PRUxNvg6t3dCf0Pui+4Tb6WxFWOauzSiF2Zwogt0i/Vdqdz9CeF53q3g/s6y0oE
+kjiudvtKoDYTKIPgzMPApXrfoJEtBQufr7pPPkjz33OpyO0H04HBwK8qe7FEtAqwL7lRdS+Rb5FY
+dCJGqYJR7mNUFnbiiSXa9APeVZ0twGgnOwK4Q/vMGtH2w538TOAvtX0jIaIFXKc6Zgf51qYyI6El
+iVxoYLheZc8nfIXJWgshJHqqkhanAX9Kxy+yF/86iyS3DgUsKbfGlkpoZC1guMq+02jbXrEQ+N1N
+F5uOw6geRkm+jgWKhbI1Wrat/LgY8bSyD5IUBpowJjY9Sh2I1uqrpFmslVCjXb+1jD3zJWCsCyYd
+ECLJYn3ygOXu7LBcDHdcpfBXJXoA5wDzFLLDGedTV+d04CUX/Tqg0cXpdkWio4BJLlQWjWWyPUmb
+7GuOEe9PYAv/YZCiy3o3fUJUmk/xmO8CUJj66xXezdeKGKhTmp+jnabQOWBazIc3qzlk2Xx9xSmx
+uF80xsQ4XNXrsrc72fnwVxSOl+3tYr+ZEEik0YqiUSvbxgAyY4+UeXpRFPo6spgZgQ9lzmRUgcGO
+x2XGz1LWHXnaOtm2HT8zPpeyCygeF8u27fKZ8bSU2QmwaMyWbSORmREoyscUj08SKHzVOFoHGUv7
+DKU4DHV3K6noSBo0JuRruxrzZNOYbm44wyXZbLftaoxwyT2j7bniWY3QDzo5dhWGyUYkm7ljqiNw
+O4D7yyQMqkEfRcYdzk48c5kZPmP+lTvcbNYFaBaMBB5zKZ8IWOXOQ2Y7N9THrhDG6+Y2UmQxlozu
+MG4GztP0G6CcWC9Fv+GSWfLgGZ25/XnjW228NbIVyXZuaJHS+OiP0+VmQKD8nXm26Mh6dkz3TMnN
+dm4In9oI5BVl6k2UUyuVp9qqK4M25a/WSfaC7hzHlsgyTnBk1Wznhv4unWrP2/qDQN442eUIQlo0
+1wtRNM8btCZCpsWSejckXKd1Bv2k4yMXRPbpJivzqbAcLPv3lksdBcPNSm9OV27KRneIwmofvddJ
+NkN1m90VX0jxNOnusDCM1MWL/+dDtU+LbspG0M0YIoZqF6fvaIG2aG/Yo2ejylapzlzd4lrbgzjg
+8C9RoBFyBAFz6gAAAABJRU5ErkJggg==
+"
+       id="image38050_core_armour_1"
+       x="21.872856"
+       y="133.17828"
+       style="stroke-width:1.25992" /></g></g><text x="15.5" y="41.6" font-size="2.9" font-family="sans-serif" font-weight="bold" fill="black">Medium</text><text x="15.5" y="44.9" font-size="2.5" font-family="sans-serif" fill="#222222">5+ armour save</text><g transform="translate(6.0,55.4) scale(0.5,0.5)"><defs
+     id="defs2_core_armour_2" /><g
+     id="layer1_core_armour_2"
+     transform="translate(-37.693478,-132.17828)"><rect
+       style="fill:#6666ff;fill-opacity:1;stroke-width:0.233098;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:0;paint-order:markers stroke fill"
+       id="rect234-2-6-6-8_core_armour_2"
+       width="15.999999"
+       height="15.999999"
+       x="37.693481"
+       y="132.17828"
+       rx="3.4285712"
+       ry="3.4285712" /><image
+       width="13.999998"
+       height="13.999998"
+       preserveAspectRatio="none"
+       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAB
+OUlEQVR4nO2ZXUrDQBCAv2PoS38e9R4t9aHX0+YQguAF9M3eomlO0Cr+EYgEJiDBpNOSuLPpfDCE
+nYfNfJvsZiDgnA8TIAEy4FuuK8lHwxzYA8UfUeZnRMC0RaKKHTDGOMkBiSruME6mFEkxzpdS5BPj
+bJUiG4yzUorcYpyJ8tQaEQEzKbZJIorvSMVYjthUDoBUXqconsSg+qpcudlza/3XXLG5D0Xw/mva
+gYSJ/ivpSCJ4/5V1LJKGEtFubG3koUSKHiIIgxUZHVn00qoIJ6y+i3SJi+Ai/eAiuEg/DEYk+1XA
+tkWk6YvfNMe/cyM3L2MhOe3KFy1zmOBYEbMULmIMF7GGi1jDRazhItb4qBX7Jvn3Wr4cm+a5VvCD
+5O9r+SeMcw2s5XfDI3Ap+QsZvwIvwFXgOh365AevGVvHGeSiQgAAAABJRU5ErkJggg==
+"
+       id="image38062_core_armour_2"
+       x="38.693481"
+       y="133.17828"
+       style="stroke-width:1.25992" /></g></g><text x="15.5" y="58.3" font-size="2.9" font-family="sans-serif" font-weight="bold" fill="black">Light</text><text x="15.5" y="61.599999999999994" font-size="2.5" font-family="sans-serif" fill="#222222">6+ armour save</text><g transform="translate(6.0,72.1) scale(0.5,0.5)"><defs
+     id="defs2_core_armour_3" /><g
+     id="layer1_core_armour_3"
+     transform="translate(-54.514108,-132.17828)"><rect
+       style="fill:#6666ff;fill-opacity:1;stroke-width:0.233098;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:0;paint-order:markers stroke fill"
+       id="rect234-2-6-3-4_core_armour_3"
+       width="15.999999"
+       height="15.999999"
+       x="54.514107"
+       y="132.17828"
+       rx="3.4285712"
+       ry="3.4285712" /></g></g><text x="15.5" y="75.0" font-size="2.9" font-family="sans-serif" font-weight="bold" fill="black">Unarmoured</text><text x="15.5" y="78.3" font-size="2.5" font-family="sans-serif" fill="#222222">No armour save</text><g transform="translate(52.333333333333336,22.0) scale(0.5000000937500175,0.5)"><defs
+     id="defs2_core_weapon1_0" /><g
+     id="layer1_core_weapon1_0"
+     transform="translate(-4.05223,-115.11998)"><rect
+       style="fill:#ff0000;stroke-width:0.233098;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:0;paint-order:markers stroke fill"
+       id="rect234-2-6-9_core_weapon1_0"
+       width="15.999999"
+       height="15.999999"
+       x="4.0522299"
+       y="115.11997"
+       rx="3.4285712"
+       ry="3.4285712" /><image
+       width="13.999996"
+       height="13.999996"
+       preserveAspectRatio="none"
+       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAC
+JklEQVR4nO2az0tUURSAP5IIskUWTSZESJtK21m0lCJo3iLEkFm0a9d/0l/RKnHl1oXrQHdBhjFi
+SjoGViKSkDCDNy6cB4/HvTnvjrx3zzAfnMXD+XG/uefcc+9FGDCgL5gBdiXqKKUBtAEjYWXUSxhg
+mz6QMEATqKGEOY9EGl+BWyiXMBpkGl1K2DgBntEHEom872lMNTMTKJHI85dYZHZ7kEj/FoXMTo8S
+JhaZFzIrW9InQiRMLDIpdhBrgRImttUslQmRSGJbzWoymBCJRJ7XYpFB0iREwkhEI1OTAu5lNWsC
+34G9qs8zPpmiNWSqOs9cAd4Dtx0yIRJGelapXANW5cs3czKhEm3ZDpXGmCOV7MyErGYmI2E3pqVx
+Vzp8dhCrkmZFVzNTlcQDoOXYclx3vPYG8LkLiQ7wukyJR8Cv3CC+SZr5OEumU7bEc+A4N4gfkmZn
+YWumGUM6vXLk+gHwsIdjQLtsiTcy/dlB2Jl5UvBzWlVKvAVOHZ3apllR6tKxd8ruE5Z7UgfZwrRX
+QSq4ALwDJuR5EtiXmbFppoKLwIL8+vs5GZtmKrgMLOXq4WfBlalyrgIfPQ3LppkKbgKfPBKLwBAK
+uANseCSWgUso4P5/bg9XgGEUMOXY/KVhN3gjKGAaOPJI2FPeKAp4Cfz1SNjbi3EUkDg2f2n8zjS/
+6Fn3SPwBHqOIo9gvk7tl3nHEnEUhI8AH4FAuC9T+m8WAAZwP/wAoqq51Isc3HQAAAABJRU5ErkJg
+gg==
+"
+       id="image38018_core_weapon1_0"
+       x="5.0522313"
+       y="116.11997"
+       style="stroke-width:1.25992" /></g></g><text x="61.833333333333336" y="24.9" font-size="2.9" font-family="sans-serif" font-weight="bold" fill="black">Blunt</text><text x="61.833333333333336" y="28.2" font-size="2.5" font-family="sans-serif" fill="#222222">Good against Heavy. All</text><text x="61.833333333333336" y="31.099999999999998" font-size="2.5" font-family="sans-serif" fill="#222222">attacks are blocked on 6s</text><text x="61.833333333333336" y="34.0" font-size="2.5" font-family="sans-serif" fill="#222222">exclusively.</text><g transform="translate(52.333333333333336,38.7) scale(0.5000000625000078,0.5)"><defs
+     id="defs2_core_weapon1_1" /><g
+     id="layer1_core_weapon1_1"
+     transform="translate(-20.872855,-115.11998)"><rect
+       style="fill:#ff0000;stroke-width:0.233098;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:0;paint-order:markers stroke fill"
+       id="rect234-2-6-0_core_weapon1_1"
+       width="15.999999"
+       height="15.999999"
+       x="20.872856"
+       y="115.11997"
+       rx="3.4285712"
+       ry="3.4285712" /><image
+       width="13.999996"
+       height="13.999996"
+       preserveAspectRatio="none"
+       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAC
+qElEQVR4nNWZSWgUQRRAX0c0KkbE5aRoUC8uEQWXg6i4BMQJ4kUQEUE8CIIgnnMQVIg7EhC8efLg
+ehQCIQjmoMGDiBuKSwzqxYWYoFFjS8EPFMN0uruK6fr9oBjoLuj/un7/WgbKSQSsBc4Ab4D7lDD4
+s8BbILbaa0rAMuA48KoqeLudRiktwHng3TjB282MlDq2ASMZBWJJM5N2qlgHDOWQiOWDV8VS4EtO
+CdPWoIh5wHsHiX5NaTULeOYgEUspVsFUoNdRItZSrSYCdz0k+jWklQngqodEDJxDAZc8JX7LpBmU
+dk+JYaASWmI/8M9D4iuwPrTETuCPh8RHYEVoiU3ATw+J58D80BItkhKuEg+BOaElFgKfPCS6gabQ
+EuYtvvSQuAU0hpaYDjzykOgEGkJLTAK6PCQ6UMAE4IajwF/gEErodJT4BexGCScdJX4ArSjhsKPE
+Z2BVvYNrkH10WvXYA4w6SJhDtUX1lmgEbsoDe2Viq8UWye+8Ek+AufWWmAL0VD34G7C3qt9qye+8
+Ej0yz9SdDeMEcQ2YIf1mA7cdZuvJFLgNvZyyV95s9T+YcWSuyDxTKFGKzKgcxYythRanHDKfKFog
+j4xpj4Hl0t9UoMEawkdQQJRBZtjauR2wro9IaVZDlGHp8VSqneG6HERvRyFRhpG5YFUzU5pVsQQ4
+laMAbEUhTZIyJsiLIpKWZgPATBQRWUuUOKeMmfTU0J4QZFaZfSigVXZrsYfMd6A5tMgC4CjwYRyZ
+LAXgnoYDhLF/krprBPhCqhkZZFZSMG1yojckvxVrThiwAruTsASvJdNV9CKxLeFt7pL7x+QEvSMl
+VexvxmzGplEwfQkiD+R+c47lhpHZaC1XCmUwQcRcLxV9KSNSGioJIjsoIRUZAbNlNb+lk/gPDBCA
+Hz13VO0AAAAASUVORK5CYII=
+"
+       id="image37994_core_weapon1_1"
+       x="21.872858"
+       y="116.11997"
+       style="stroke-width:1.25992" /></g></g><text x="61.833333333333336" y="41.6" font-size="2.9" font-family="sans-serif" font-weight="bold" fill="black">Sword</text><text x="61.833333333333336" y="44.9" font-size="2.5" font-family="sans-serif" fill="#222222">Good against Medium.</text><g transform="translate(52.333333333333336,55.4) scale(0.5,0.5)"><defs
+     id="defs2_core_weapon1_2" /><g
+     id="layer1_core_weapon1_2"
+     transform="translate(-37.693478,-115.11998)"><rect
+       style="fill:#ff0000;stroke-width:0.233098;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:0;paint-order:markers stroke fill"
+       id="rect234-2-6-6_core_weapon1_2"
+       width="15.999999"
+       height="15.999999"
+       x="37.693481"
+       y="115.11997"
+       rx="3.4285712"
+       ry="3.4285712" /><image
+       width="14"
+       height="14"
+       preserveAspectRatio="none"
+       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAC
+qklEQVR4nO2a24tNURjAfwdjiEFMhpKMB9EUuRR5UsYLCpGUy0Qe5kF4ERr5G8adV7cX82rOg9xD
+ueVByKWkPCC3ch0ztlZ9anXa55y19jrr7E/51VdzmrP2Xr896/J9aw/8J5gxwAjr53vAc2Ax/xBb
+gc/Aa2AecAFIJPqBPUAB5ey3Om1ioORzItEDDEcpO8p0ulxcl2GniqUVnn6leAC0oIRW4GMGiUTi
+ITAKBfQGSCQSi/KWmFkDiV5gcN4iGwIlHgFNKMA8yeMBIj9k31HD7sC/zAlgaJ4C7dYuvRP4HSBz
+F5iTh8R0oA84DTRYc6YvQKYfOAZMqqdIt9WBopUkrgyUSYDvIjQttoQZz+9Kbn4LGCu/XytPN3Rp
+HgCOxhRZVebG94Fx8p2NGdOWpCQ+xRS5WiV/apbvba6BTE8sifkON79tzZl9gSLLYkiYpfayYwfO
+A0OkzcmMEleIxKYMG51hmJS7Pm1/ArNjSEwE3nh2Zq/VfgbwzaPtthgSZohc85Qww6mULse2h6jD
+5ucSN4DGlOs0As+qtD0ADIohsd1T4iUwvsL1VleYE2YO1pxCyqlItXgPtDlc+1JKwjg3hoQpds55
+SnwFFjpevw14JUOwI1aFaG7yxFPiF7AcRawDvnhKmBpkC0poyLAyJZLhdqKE0cDFDBJmTqxACRMk
+W/WVeAssQAnNcsrnK3EHmIISmqRDvhLdVn2eOwUpVnwEzPuONSijy1PiseNuXVeWeB4KnLIqPTVM
+Bj44Cpg6exdKKXpscutRSofHcFKTbpTSIum1i8RBFHPYUcK8Th6JUlql8nIRMUWUWo54pOJq0o40
+XjiKPEU5RUcRU9aqZpZjxWcWBPW0O+zoaveOtNXrTJkj/puaUnMcmSr//HJWjmLMq+W/b5nU8gct
+yNI4XzyMxgAAAABJRU5ErkJggg==
+"
+       id="image38006_core_weapon1_2"
+       x="38.693481"
+       y="116.11997"
+       style="stroke-width:1.25992" /></g></g><text x="61.833333333333336" y="58.3" font-size="2.9" font-family="sans-serif" font-weight="bold" fill="black">Axe</text><text x="61.833333333333336" y="61.599999999999994" font-size="2.5" font-family="sans-serif" fill="#222222">Good against Light.</text><g transform="translate(52.333333333333336,72.1) scale(0.5,0.5)"><defs
+     id="defs2_core_weapon1_3" /><g
+     id="layer1_core_weapon1_3"
+     transform="translate(-54.514108,-115.11998)"><rect
+       style="fill:#ff0000;stroke-width:0.233098;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:0;paint-order:markers stroke fill"
+       id="rect234-2-6-3_core_weapon1_3"
+       width="15.999999"
+       height="15.999999"
+       x="54.514107"
+       y="115.11997"
+       rx="3.4285712"
+       ry="3.4285712" /><image
+       width="13.999998"
+       height="13.999998"
+       preserveAspectRatio="none"
+       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAE
+EklEQVR4nO1aWUhVURRdZZONRgVREYXRTAN9NFDQTH6IGYREg2BZ1E9zEfRTRlEfRUVgBFGG0oCl
+NkEDUglFpFEfQhZZkTZYNFq9phcbtnE83nvOvve9l9dqwQLxrLvP3vfes8/e5z7gP/5e9AawDEAr
+NGGMBfAGQBhAikXbBkAmgJ4IGLoDeM5BENcYtM0AFLHuGAKGfUoQtkBmKrpaAC0QELQF8EULZLFB
+f0XTJiIgmKw5Rlzpou0I4KumHYWAZKlSh0AeuOjXOWgHoZHRC8AjB8eIIU2bAKDQRTvckBQWAugU
+yyBokmIXx4iVWqrV14XKXS5zzOXxw7EMZJHBMeIlRXvAoi1zmaOUx7/y2oo66A7XWJzbz9phAH5Y
+tGRLxwBNMzUSh2fxGuih/X+exTHiCtbmCbSfHObeoGnm+w2CnH/HRjK0sfMC55JY+0yg/ajYngbg
+DAenatL8BrJXMZKljUmcq9sbdIecWM7JY5dBM8FPEK0BfFCM7NHGPwuc68PaCoGWypv1Fs12P4Es
+14ycA9BcGS8XONeetRcE2lTBzSnzGsRWF0PZima3ZdIninatRXsSwGZBsNVeghgP4KfBGI0T+jvU
+Syq3KTa7aq+pyhfcj9z0mdlckWsxdkjRrnbR3FFeqzpkOuheAxjN43XZ0cR3Dv525RKmQRvw2GKM
+Fq6KOQDucglPJckOQ12Uzte/BXBcK91NTzfMpKemgtbsNR5bok8WshijJigWqBIEkqVdk6Ylo3p4
+ZTFGdy4WOGWZN8Ttgoqryvg93WCxh2ykozOXJSWso8lfAjhhKNPrkGKZdxPrOgDYCOCWlpToidbD
+KovBfMPpyVPDdd8B7AQQZwgm3+XaI7weRvINEqXmBM4mpo1Lx2iulcICFnLl7FZNbOEbUgvgulIo
+Jlr8Umu730jlO6gLi7geUjFEsK50Fng8NWmmZCcTaetoAKpAb3DZUMk7L90xFUOF2caJOVrJY0KS
+0OZ9+MB05UTRL7OFweQK7dFeJkZfXnymMsYLqa8ZaJnzsdDWN5vz8dwRXha0rH74g7tIOpFxQkho
+56EpiEkRrAOvpNJlgYMPNcLr6YDDEf08pNVokrpEdb8pEFxDr/oI6aH0n+RRJZiJgjXpdi4m7gJj
+yRxl39pk0B207UvvGzmQMPfx6tFUCTdYNZzxkiGA/pmgMfgdwBhEiMoABBIGcNtSbFpxNgBBhA3F
+qhjpAQggzDwdSSDxXIiFA8AqRIiJHkqEWPILooDkAGSwakQJg7Vm3y8lB9pOpD0jqpjAh3TVgsk/
+sgOr+KNNS7bRhRu3PA/V9FLEEFR2TwEwm08SM/jvGfwEJb9FGSfYryoBtEMTQDcAF12CqAnKN3gp
+4vj7+0M+J6jgipZ+3/Jv4hfiO4ws1suK0QAAAABJRU5ErkJggg==
+"
+       id="image38038_core_weapon1_3"
+       x="55.514107"
+       y="116.11997"
+       style="stroke-width:1.25992" /></g></g><text x="61.833333333333336" y="75.0" font-size="2.9" font-family="sans-serif" font-weight="bold" fill="black">Claw</text><text x="61.833333333333336" y="78.3" font-size="2.5" font-family="sans-serif" fill="#222222">Automatically hits</text><text x="61.833333333333336" y="81.2" font-size="2.5" font-family="sans-serif" fill="#222222">Unarmoured.</text><g transform="translate(98.66666666666667,22.0) scale(0.5,0.5)"><defs
+     id="defs2_core_weapon2_0"><filter
+       style="color-interpolation-filters:sRGB"
+       id="filter38028_core_weapon2_0"
+       x="0"
+       y="0"
+       width="1"
+       height="1"><feColorMatrix
+         values="8.76358 0 0 -4.88179 -3.88179 0 8.76358 0 -4.88179 -3.88179 0 0 8.76358 -4.88179 -3.88179 0 0 0 1 0"
+         id="feColorMatrix38026_core_weapon2_0" /></filter></defs><g
+     id="layer1_core_weapon2_0"
+     transform="translate(-71.334726,-115.11998)"><rect
+       style="fill:#ff0000;stroke-width:0.233098;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:0;paint-order:markers stroke fill"
+       id="rect234-2-6-30_core_weapon2_0"
+       width="15.999999"
+       height="15.999999"
+       x="71.334732"
+       y="115.11997"
+       rx="3.4285712"
+       ry="3.4285712" /><image
+       width="13.999998"
+       height="13.999998"
+       preserveAspectRatio="none"
+       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAB5ElEQVR4nO2aMUtCURiGH5UcrIZoKNqiNRqCgv5BQUi1Ry1BpAVC/ZJorD9Q0NRQ4FZ7W4PQEg2BURAOlmhD92Jg5r3i+d6S88AHVy/c83zv8R4O1wtacsCO2EHGNFAHGsCM2EXCCV/NN4BjsYs540CVZgDV4DtzkopBgV0g/e1zGsiLXMzJAGWasx/WMzAk9DIjT2vzYeWEXu4pUEgCJdoHcA+kZIIGrNG++bBWZXYG3NA5gGuZnWPm6Nx8WAsiR6ecET2AU5GjMyaBGtEDqAFTFmJWG6EC8Vb3FLDnyMWcEeCN6LMfVgUYdS1n8QvYprsdXgbY6rGLOQPAA/FnP6xHWE+3Xvb/sEn3zYe1YS3dS6JsfKQbI9drwO0fuYaMQeCO7me/BAybW/eYWeCd+M1/APMCXyccED+AfYmpIxLABdGbvwqeHfQVY8ATnZsvAxMiR+cs0fwv4KeqA1mZnRFF2gdQtJZR3GeVLs85oe8Wmrj4ANQCanwAagE1PgC1gBofgFpAjQ9ALaDGB6AWUOMDUAuo8QGoBdT4ANQCanwAagE1PgC1gBofgFpAjQ9ALaDGB6AWUOMDUAuo8QEIxnz95dyLlYSSLO1fkVkWeplyRGvzhwqRhGLQgEVgJTg+By4VEp+KDvtz/EjymwAAAABJRU5ErkJggg=="
+       id="image37982_core_weapon2_0"
+       x="72.334732"
+       y="116.11997"
+       style="stroke-width:1.6127;" /></g></g><text x="108.16666666666667" y="24.9" font-size="2.9" font-family="sans-serif" font-weight="bold" fill="black">Spear</text><text x="108.16666666666667" y="28.2" font-size="2.5" font-family="sans-serif" fill="#222222">Good against charges.</text><text x="108.16666666666667" y="31.099999999999998" font-size="2.5" font-family="sans-serif" fill="#222222">Strikes first against</text><text x="108.16666666666667" y="34.0" font-size="2.5" font-family="sans-serif" fill="#222222">charges or opponents</text><text x="108.16666666666667" y="36.9" font-size="2.5" font-family="sans-serif" fill="#222222">moving at least 2</text><g transform="translate(98.66666666666667,38.7) scale(0.5,0.5)"><defs
+     id="defs2_core_weapon2_1" /><g
+     id="layer1_core_weapon2_1"
+     transform="translate(-88.155359,-115.11998)"><rect
+       style="fill:#ff0000;stroke-width:0.233098;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:0;paint-order:markers stroke fill"
+       id="rect234-2-6-37_core_weapon2_1"
+       width="15.999999"
+       height="15.999999"
+       x="88.155357"
+       y="115.11997"
+       rx="3.4285712"
+       ry="3.4285712" /></g></g><text x="108.16666666666667" y="41.6" font-size="2.9" font-family="sans-serif" font-weight="bold" fill="black">Blank</text><text x="108.16666666666667" y="44.9" font-size="2.5" font-family="sans-serif" fill="#222222">No special effect.</text><polygon points="48.33,27.40 45.93,27.40 45.93,30.00 40.33,26.00 45.93,22.00 45.93,24.60 48.33,24.60" fill="#444444"/><polygon points="48.33,44.10 45.93,44.10 45.93,46.70 40.33,42.70 45.93,38.70 45.93,41.30 48.33,41.30" fill="#444444"/><polygon points="48.33,60.80 45.93,60.80 45.93,63.40 40.33,59.40 45.93,55.40 45.93,58.00 48.33,58.00" fill="#444444"/><polygon points="48.33,77.50 45.93,77.50 45.93,80.10 40.33,76.10 45.93,72.10 45.93,74.70 48.33,74.70" fill="#444444"/><text x="6.0" y="95.8" font-size="3.6" font-family="sans-serif" font-weight="bold" fill="black">Abilities</text><line x1="6.0" y1="96.6" x2="142.0" y2="96.6" stroke="#999999" stroke-width="0.2"/><g transform="translate(6.0,97.8) scale(0.5714285714285714,0.5714285306122479)"><defs
+     id="defs2_core_skill_97.8_0" /><g
+     id="layer1_core_skill_97.8_0"
+     transform="translate(-39.826756,-14.415789)"><rect
+       style="fill:#ff0000;stroke-width:0.233098;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:0;paint-order:markers stroke fill"
+       id="rect234-9_core_skill_97.8_0"
+       width="14"
+       height="14"
+       x="39.826756"
+       y="14.41579"
+       rx="3"
+       ry="3" /><image
+       width="10"
+       height="9.9741955"
+       preserveAspectRatio="none"
+       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAC
+iklEQVR4nO2aTYhOURjHf6/P2WBQvjdKI58LJKVeG0XZkF4lTMrHAjVsSBaKlCxoFpRSmLITyUT5
+WJAM05SFj1BjQT7KAs0YGmOurp5br9v7Xue8c58z58S//st7zvO7H895znMu/JeR6oA24DZQIGCt
+ByJxkYB1owzkLIFqGtBXBtINjCZAHSyDSLyVwFQAOiuA3CcwLa8AkXg2AelCBsgxAtEY4GsGyAdg
+OAFoZwZE4tUEoA4DkCt4rnkGELF/AJPxWM2GILH34qlGAB8tQF74Wkius4BIvBQPdb0GkDOug6yX
+InAWsFhW7rXAZmAXcCBVIJq6C9gH7AAagTUy9iJgJjDVptDcBrQAl4Cbkj6fA2+BLzUEp+XPwBvg
+GdAusV4EzgElpLyOAndnDLJSaAc7mIE8qRXJ6zUDeOpBUJGlX8p3+4dGAZc9CC4y9DVJQhVVkCzy
+04NAoyruB44CQ0wyWcnTJPAN2Iil5gOvPAg+Er8GFlKjxgO3PIC4C0xggBom7+RgQZzOe0e5Aehx
+CPAd2IKSFsi7qg3xDliCsqZIraMF0S5zONEJRZDjONQTRZDHriAmyeqqBdLvqjHR6OBj3+QCpMUB
+yHltiIKkRm2Q99odlrkOICLxHE2Q3Q5BmjRBWi2D6QWOiHstr23V7CR2WQTyKFV2x33hhxbXdwMj
+NUCWGQbQI7vMoRXGiHd12y1uSFED5LDBxHeABoOxpqeOrqv5kAbIg4wJP8mdtk2Zpb80vtvyhqjP
+aIleldZmrZqYscj2AWNz5Pjdk620aMX937y0qspeJ9djulOpoi6+g+PQOUhtTrWjTuY5wb2ywxkX
+P8cUZa7cfzKIB94vvy25Uh2wR9L+v6NfqcfPxTBhRuQAAAAASUVORK5CYII=
+"
+       id="image890_core_skill_97.8_0"
+       x="41.826756"
+       y="16.428692"
+       style="stroke-width:1.76617" /></g></g><text x="15.5" y="100.7" font-size="2.9" font-family="sans-serif" font-weight="bold" fill="black">Veteran</text><text x="15.5" y="104.0" font-size="2.5" font-family="sans-serif" fill="#222222">+1 to hit</text><g transform="translate(52.333333333333336,97.8) scale(0.5714287346939242,0.5714285306122479)"><defs
+     id="defs2_core_skill_97.8_1" /><g
+     id="layer1_core_skill_97.8_1"
+     transform="translate(-54.355924,-14.415789)"><rect
+       style="fill:#ff0000;stroke-width:0.233098;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:0;paint-order:markers stroke fill"
+       id="rect234-90_core_skill_97.8_1"
+       width="14"
+       height="14"
+       x="54.355923"
+       y="14.41579"
+       rx="3"
+       ry="3" /><image
+       width="10"
+       height="10"
+       preserveAspectRatio="none"
+       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAD
+kElEQVR4nO2YO2hUQRSGvzUPHzEQwUQLQTCoiI1EIQlYaaGJKBaChbIJiI0pQgo7BTujkmiEgJWI
+jYIgCiKChVHwtYqFUaKJEl1dQWxEEY2PrBw4F4abu3dn7t59FPvDYWF35j/nn3Nm5sxCFVVUERX3
+gPfAMNAJJCg9Eup7WGO5G4VkGsgali6RqIQRfNoXg8TkjGEfiWkfgBFgc4yi1gPHgDchfoeiEHeG
+EJqWApoKENCkHDa+JCZnyEq/s3TwEFgUwccC3Ys2PtKFZD+svPx2Hahx4J4HXHHgH6IA2JaXZ+cc
+uEccuTsKEeJSXp4dseA96siZjuNQcSkvsVngQAjffh2TLVVZRS0vsb/AbuZiB/AnAl8HMSDhcDya
+9gNoN3ja9TtXnlScF7Cc9WMRgvgCrFWOrcCM4/yxAu+oQMwHLkUQI13ACuXYC/yznHcVWEiRICk+
+GUHMc2NlD1mMP6v3TNHR77Cynt3RrApO5Rgzq/1WSbEH+Oko5rKutGT2gu832T/7KBO2AF8dxYzq
+3Drgln73HdhOmbEB+OQo5rDObQRuKEdFYCUw4SBE9kIvFYolDi252O9KKCc/FuunnPvXHMR8AzZS
+IVgFZPR+QN8ko463/5oya2Ap8NoIasToi/oduty3wLJiBdmiDdsrIBnw+pNyehIQ1HmgVsf0OnS7
+wuWVqIda9S2L9RhojiLkqc/RpE+Q3AMHA/42ErsJNOi4Lr0nwkRMK1edT8Ckb1wqDiF+Qd6qi/OB
+gM42pVkVbAI+B3DN6Nx8ArKFCJEgxkNW0S9owPf7FNBq8LXqd+aYAUsBWY0lUmnZiBG7r4HUGWVm
+ZsPP5z3SpnVOrXKE+ShIhIdmbcPDHMlqonV+W1uPXGjQtkTGCnrycE8Ay4kJNmXmZcUrtTCYY4tW
+TlEz42XFBT2lyoR3F3RbZMbLii3CsjFuZKIrjgZztfZDckzusshMMoZsTBiZ2KaPN/n3ZV1UEfIs
+feY783fmETNlmZUa7RhsRGSNLMmf3s44k+MCyycmGTEbYSI8O+0qojtHw/cL6DPGBe2ZFxb8L/Oc
+Tn3qy+9/1tivOVEPnAh5tsrGbAuY5xfzwELII4sjti3kMJBnw6DGPAeDIUfhxTyXXIt2rynLc992
+fKP6zhWXxDwHmRypjHI/xI1kjlKXmK2EfKRykLGNL6i0jlM5GLSNr14HZ/JtpjKhvsLjq6IKKhn/
+AWy6B8aPMpT5AAAAAElFTkSuQmCC
+"
+       id="image926_core_skill_97.8_1"
+       x="56.355923"
+       y="16.415791"
+       style="stroke-width:1.76389" /></g></g><text x="61.833333333333336" y="100.7" font-size="2.9" font-family="sans-serif" font-weight="bold" fill="black">Multistrike</text><text x="61.833333333333336" y="104.0" font-size="2.5" font-family="sans-serif" fill="#222222">This many attacks per</text><text x="61.833333333333336" y="106.9" font-size="2.5" font-family="sans-serif" fill="#222222">model</text><g transform="translate(98.66666666666667,97.8) scale(0.5714285714285714,0.5714285306122479)"><defs
+     id="defs2_core_skill_97.8_2" /><g
+     id="layer1_core_skill_97.8_2"
+     transform="translate(-68.885095,-14.415789)"><rect
+       style="fill:#ff0000;stroke-width:0.233098;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:0;paint-order:markers stroke fill"
+       id="rect234-9-1_core_skill_97.8_2"
+       width="14"
+       height="14"
+       x="68.885094"
+       y="14.41579"
+       rx="3"
+       ry="3" /><image
+       width="10.000001"
+       height="10.000001"
+       preserveAspectRatio="none"
+       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAF
+GElEQVR4nO2ZeYhXVRTHP78ZJ81pwRYr26xsMdtoKrHICqOSCIwiotVoMcjqj2xhStocWsgmcBpK
+hELaKYnoH6moyBZNK0O0jbTFstGidMqxxn5x5Hvj8ubd+97v/X6zRV84OL537vmdc5dzvuc++B8V
+4zhgOfA20MAgQB0wAtgbOBWYAbwJ/A2UJdcyAPGO52BMvgGagS3Ar8ARDPBANgO/AF8CrwKzgDOB
+euk3S28tMIFBjlYF8ydwP7AbgxhXA50KaBMwHzgPGMkAxBBJCPsBj2o7+tvzZ2CZMtxrwHvAaukt
+6kP/t52JD7R1upW1xkf0dwYuAp4CVgB/RZKGBdTrsNmfnUi1TrqAU3La2Q7YHTgYOAwYDVwnO229
+HAPDgYUZKXglUCpov002zqcPYDM5KaO2jJFuE7BDBbYXa/xB1Tq5D3AhcDNwL9AC3ApMB84BDvcO
+dr10tqYEcox0Vilb3Zjz9zdovK18YcwJOJWU34BbvO1zBvCT994c315ca6P33CYjC1t09owCFcKV
+OSmIL68Au2j8KOAtPbcqbzg9oW9MYFiGH+ul6+xWhJGa5XIBWQOc4G21S/RvXeAMxdIzSuflCjJf
+KpUoKrYdrk/YbAnonpjhy0PSu6vSICyP/15lIE5eAHaSXasLnyfe23lpzNHPmO53GWyhB+6pURBO
+vvCou5HEJd67O/R8ggINYZH0b8gbRKP4TpZzRtVnAi8B63Lo28xP0W/sLwrzsLKcnR+rFd97q5dE
+kyhPp6p+JhwdiInxoaMT46zYXQF8HRm31XPC9SMWyDxPZ1rEt1nS+QrYKyuQVTkCsZl0M5s0OBbo
+CIzrUCvsYNX9+YROW8Q3y3oLpBdlwk05grADt6P0jV/dqb+NnpzkBbMyMW6dl5JDOmVltjy1bWlM
+aUaOQMyQ4QL931bQsK+ohDuwQ9Qs3Q1cJbqON3ZTwP7xEf/qvax3diyQZ3MEMlsrt9Z7Zrcmhs/k
+ZAi2Yk9HbLdKb0Sg2p8lvffJwEcF06v9AMpgbuY/BNqB24BHgE8zksBMHfySzo0FnMSD0jfCGkTJ
+66MrlWtko9VL4XnHrhfBdFun3Xt3KOm1JLb9tu3xckFxRapFmagkMpg1bol6d4OxidcT7y9N+Lha
+z6OXFElWWolMlY029ezu79iYx4Ch0rVs9m2KTvK8ORLbUG0hDMlE2ViglIzOytIUXeNwl3u/O009
+fTmFdO6R8NExCJf+U+HvzUpko9e5/aBnztGh6gIXiorP8baSNVlPROw2p/jo6k70ytUncpXIkxp/
+ZILCWA8SwthIhuyOZKWXpXNxyPCwwPJmiTk8TjbmJt7ZBZthVzVE1q+fq1XoilCYSZEJuD1BkXpg
+SsHVcBT8wJQbQ0chDshpa7EyZ56+xEhjKp4pEESn8r7Ju4FD3ahUnHboQxksC59o5XpkrnEZ15Qx
+aVcHmFUoxwe41R9e6i4pdWd90RqeYND/YnnBIPJIh+7EEJl8DvhRH36Mghyid5ZO52Z0iJlY1ouB
+uDY35qCl0o+B06gStkxv9HIwXaohVjj3VN9+sramfYqbTI3QkJI++0I26KNpzXFTzuvRWsiKWlxK
+xzC5ihvGPGJ3uI/nuMuqCY5SZql1EGtqcagrxSh1ebUIwOrFfZE7q16HFZ8Xqwhgs5KIqyX9ijrN
+Zl7nu0UYp4cqcH9jqpqd0NYxin1Z0W8YfY2J3mewsgJ7QFR90GGMaI0x2mP72xn+S/gHDyPEL0+f
+CwYAAAAASUVORK5CYII=
+"
+       id="image818_core_skill_97.8_2"
+       x="70.885094"
+       y="16.415789"
+       style="stroke-width:1.76389" /></g></g><text x="108.16666666666667" y="100.7" font-size="2.9" font-family="sans-serif" font-weight="bold" fill="black">Extra wound</text><text x="108.16666666666667" y="104.0" font-size="2.5" font-family="sans-serif" fill="#222222">Additional wounds against</text><text x="108.16666666666667" y="106.9" font-size="2.5" font-family="sans-serif" fill="#222222">multiwound models</text><g transform="translate(6.0,114.5) scale(0.5714285714285714,0.5714285714285714)"><defs
+     id="defs2_core_skill_114.5_0" /><g
+     id="layer1_core_skill_114.5_0"
+     transform="translate(-39.826756,-28.944957)"><rect
+       style="fill:#6666ff;fill-opacity:1;stroke-width:0.233098;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:0;paint-order:markers stroke fill"
+       id="rect234-1-0_core_skill_114.5_0"
+       width="14"
+       height="14"
+       x="39.826756"
+       y="28.944958"
+       rx="3"
+       ry="3" /><image
+       width="10"
+       height="10"
+       preserveAspectRatio="none"
+       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAC
+SUlEQVR4nNWZO2sVQRiGH8FCES9gISgYRQ1IELw01iKoRMsQlVQWsbIKAbEQtbBSkhQKahovjY0W
+CqL5AdoEFUMMBGKhkkBEUBQviflkYAJhyc5+5+zO7HceeOA0y77v7pzd2RmIQxtwBRgFvnnd78vA
+VlqAbcAQ8BuQHP8C94B2DLIDuAvMBQpknfPHuGNrZxcw7K+ytsByd+gOsLOOAgf88JgvUSDrP+AJ
+cDh2+C1AH/CmwvB5vvbn2lxVeDd+zwIj/opJYueBF0Bvo/+lTUC3H7NTNQSXAqd8tm6fNRdpMXP5
+YyCcKP2VXwO+GggoSmdDRT4aCChKP4SKTBgIKErHQkVGDQQUpa9CRUYMBBSlT0NFbhsIKEoHQ0XO
+GwgoSs+FinQZCChKj4WK7DcQUJQGP8zWVjw1j+V3YCUFpJiml/U5Cm4YCCoFXtQUOW0gqBR4SLuU
+I8ZnvWtQMmYgsOT4mAa4ZCCw5OiGvpoOA4FlGd3C3zoaZNxAcMn4iCboNxBcmnlaZdkA/DAQXrzv
+gBU0yU0DBcR7hhLsrmlhTjJ+AlZRkvutfjeWvulD+x2xfa+Z6Wq5VmORTirEPcE+11DiIRHoTFzi
+S9FCdRkeJCxykoi4ITaZoMQtErAH+BmxxFtgNYnoARYilJgBtpOYCxWXcHf5IDUxVFEJ98I9So24
+2ehAyRJul+wERrhaYqHtCMY41eDTzO2O7cMoe/2WWFGJlzHf2lXhAj7LKbDgVzJLf1ukpMvvvC6W
+mAaO06JsBK77z4D1Mc/0Hy0q2f7FWAa8AAAAAElFTkSuQmCC
+"
+       id="image641_core_skill_114.5_0"
+       x="41.826756"
+       y="30.944958"
+       style="stroke-width:1.76389" /></g></g><text x="15.5" y="117.4" font-size="2.9" font-family="sans-serif" font-weight="bold" fill="black">Shield</text><text x="15.5" y="120.7" font-size="2.5" font-family="sans-serif" fill="#222222">Reroll failed blocks</text><g transform="translate(52.333333333333336,114.5) scale(0.5714287346939242,0.5714285714285714)"><defs
+     id="defs2_core_skill_114.5_1" /><g
+     id="layer1_core_skill_114.5_1"
+     transform="translate(-54.355924,-28.944957)"><rect
+       style="fill:#6666ff;fill-opacity:1;stroke-width:0.233098;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:0;paint-order:markers stroke fill"
+       id="rect234-1-85_core_skill_114.5_1"
+       width="14"
+       height="14"
+       x="54.355923"
+       y="28.944958"
+       rx="3"
+       ry="3" /><image
+       width="10.000001"
+       height="10.000001"
+       preserveAspectRatio="none"
+       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAD
+GUlEQVR4nO2Z3YtNURjGf8yIoeTk24WLkZLciCtGZFy4RSJjxiiSXPgX3Bs1CsUYNPwBcyVMISQX
+Spnx0ZmERiNGGHFhGpbeeletdnvtM+fstfc5k/PUU2evj/fdz15rvWu960Ad/x+alNMarUBRuZ1p
+iCXAdcA4/Av0AYuZBpgBdABjEREuvwEngZnUKFYBDxMERPkAaKbGcBj4UYYIS+nTSQ1gNnCpAgFR
+9lUzshWARwFEWIotsZkrlgLPAoqwfAGsyEtEQR2ajDgELMhaxCxgIEMRRnlf119mOJODCKM8nZWI
+TcBkjkL+AFtCi5Bd+GWOIoyzXoKeAPZUQYRR7gop5EmMA5lqLWU+by7j2SjFdxCs9HypFp3DWT0b
+h/IOqXGsitPKKI+EEHKjBoT0hRDyOMGBJEsXgfW6gS0DDpTY+QeBfXrMmQNsAHrVlkk4h6XGaIKI
+Nk+fucCdmD63Ek657QliPoQQ8tNjvEfr5wPXgO/AW80QBYuAz057+b3QyV/ea7bYqzYElz2+xkMI
++eUxLlNCcDVmpOTSQXDcKZffaF30y1/Ruo0JCVhqjHuM2yny1bMjNyqHYp6j7cWGoMnjy9anQtFj
+XBar4J2n/oTW71SiZXFt32j9ck/9qxBC7nmM79f6Ts8i/RLJ+ApaFhc0ZKEL2jy+7oYQcsFjfEij
+k533gzFtuh073Z5QbC/u5iUcTM9lvbPfdiJRoy5o905rAlijnHDKx7St9LERLi5cWx4NIWRdggMb
+VkVsg7aXNLUL+K31N5VGy7qcVLZB+7ph2sRwbajbw48lHAmfO2FXsDqmjZRZtGqfUnZH9R3Icp3E
+sd/pF62z6C/D3nkCYlsZjt0Xnmp5EreGFNJeRSEHQ4mQBfm6ikKKTnRLhY4yHYcWYpwNM9fRyELI
+cNpROVSB0yyEGCc9KBuN+iXSCClEmEbIcKWjIrnBSEohPlRic0TfqWI0639+A86xIw8hk8BT4JQm
+ccF2d3tC3QGc1VQ1tJBPemOyN4+/FqYyWqWQy1evFHKBsNu5lEhCj7a1lw511FFHHUwJ/wDqTK0s
+vD7kEgAAAABJRU5ErkJggg==
+"
+       id="image1001_core_skill_114.5_1"
+       x="56.355923"
+       y="30.944958"
+       style="stroke-width:1.76389" /></g></g><text x="61.833333333333336" y="117.4" font-size="2.9" font-family="sans-serif" font-weight="bold" fill="black">Armour</text><text x="61.833333333333336" y="120.7" font-size="2.5" font-family="sans-serif" fill="#222222">+1 to block</text><g transform="translate(98.66666666666667,114.5) scale(0.5714285714285714,0.5714285714285714)"><defs
+     id="defs2_core_skill_114.5_2" /><g
+     id="layer1_core_skill_114.5_2"
+     transform="translate(-68.885095,-28.944957)"><rect
+       style="fill:#6666ff;fill-opacity:1;stroke-width:0.233098;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:0;paint-order:markers stroke fill"
+       id="rect234-1-0-2_core_skill_114.5_2"
+       width="14"
+       height="14"
+       x="68.885094"
+       y="28.944958"
+       rx="3"
+       ry="3" /><image
+       width="10.000001"
+       height="10.000001"
+       preserveAspectRatio="none"
+       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAB
+5UlEQVR4nO2ZT0rDQBSHv42XUGirIHgCT2BFbaXewJ1X8AIW3brR9hQeQLBdCKKewIVg2xPYito/
+OBKYgoRk+pK0zYvkB4/AZPJmvkzz5pcUcuUKUgloAj1gZI8N254Z7QJ9wASE114mA1p3QBgb70AR
+5WrOgDA2rlGunhCkg3INhSDfKFdXCPKGcjWEIFcoV0lYtQpkQGU72TCITOwjUxVtie3YAtCxP6dM
+rMS/8lUT4cM+0ea/XL5KGqn7L4mvMsJI1X9JfZXR7r+kvsoswn9VgSfgwx4rCUCkD7aJUADEEEEJ
+jmKCmAWESM8hFz+SMZB+yMX9OYEUIk76QOuKEOPumzggFcedyRTIFMZbgYE9xoVIHWSeWjpIDWjb
+vSMoodfeAg41g1xETF7XCFKLmHgaVW0g7Zggd9pABjFB+nMG+UkK8rfD5ozJ+89Hdb9dB8iaAyQo
+hxMkbJCw8xLt28G92HOM4WoPyrF0kFljSkAiJ81BNIAMfV++Z4H4+6sBqdsSfCYE8fdXA+JX0nKr
+EsRTDuJQDpIWyCqwA5wAl8At8KoVZAXYsC9cp/YT6X0MM7pUkG3gGDgHboAXYBxxwkHxZcca+do/
+k4D4NzzpX8mLiFYSEP+GV08BZgw8AFtJQHKRgn4BzwiUMAnYkY0AAAAASUVORK5CYII=
+"
+       id="image1013_core_skill_114.5_2"
+       x="-80.885094"
+       y="30.944958"
+       style="stroke-width:1.76389"
+       transform="scale(-1,1)" /></g></g><text x="108.16666666666667" y="117.4" font-size="2.9" font-family="sans-serif" font-weight="bold" fill="black">Dodge</text><text x="108.16666666666667" y="120.7" font-size="2.5" font-family="sans-serif" fill="#222222">-1 to be hit</text><g transform="translate(6.0,131.2) scale(0.5714285714285714,0.571428408163312)"><defs
+     id="defs2_core_skill_131.2_0" /><g
+     id="layer1_core_skill_131.2_0"
+     transform="translate(-39.826756,-58.00329)"><rect
+       style="fill:#ff6600;stroke-width:0.233098;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:0;paint-order:markers stroke fill"
+       id="rect234-1-8-1-2_core_skill_131.2_0"
+       width="14"
+       height="14"
+       x="39.826756"
+       y="58.003292"
+       rx="3"
+       ry="3" /><image
+       width="10"
+       height="10"
+       preserveAspectRatio="none"
+       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAE
+D0lEQVR4nO2ZXYhWRRjHfy5lYGsIJpbkjaAXanbRhS2GaVSYIuF6pyjBigRuhrDeLnqjl9pFukSZ
+QhF5o64fkYuiqKCimJUaih+htheCXZit1VbywH9iOJwz58z7Me9e+IOB5d155jz/88x5ZuYZeMLI
+ZQPwAPgKGMvI5SmgC7gKHM7r8Dvwn9pdYCOwCHgDeAt4D1ij3z8GdgF7gWPA98B1tWvAaeAg8CnQ
+A7wDtNcpoA1YofGdn7/kdfzC69CM9jdwAvgImBQpYjpwMmfMtXmdRwHrgeEmC3KidgNzKohYDPyZ
+M8ZN4JmQ4Xl1vAz8CtzXt3MHuAB8Kyes7QN+yEzL2HYImBnw50iB3ftlb2C3Oi4nPvzdwP6CNxhq
+j4APNSuy9Of0P6tvJshmde6ldp6XY1ciBX2ecfCFnDFs6r9axYkuGVhWqhdzaok3Xau0Hk/EZf32
+E3Bc09j8q8Q8GVuWaBQudd6uIOQ+MNmLhKX28bU8dLIGGKTxPAtsBf4pEXO3XhHu7Q0B/zZgESui
+Q4tnSMwt4MV6H+Tm5is0j+e0HQqJ+U3fTGmGKsKlvE6aT4e2MiFBn9U6+FYNYCt9s5morFSWBGyf
+F023jPtoLv46YR/2tpJFc0bsA96V8QDpRNgi2lESFdtRRzHN25ilEuH4ukRMlY3m/4zWVmBYfzfr
+m8iKMMaVLJzfEMkNGVp0UkTCZ6HWsTwhf8WuLwMytO8lRSSy9AWiYhvSyriBLIOlioRPe2CK2Qay
+MutltIW0kfBZGZheY6jIEhnZQSllJHzaAkeAN6nILBnYvit1JHyWFgixIkYl2pU5hmrYtNUbCZ+2
+gpPmdiIYlJGdUVohwrE2R4htbCvjakl2akw5nbKMzylonCKCnTJa1aJI+OzPCPmRCHpltKlFkQhN
+r0tEsExGVutqVSQcMzJCfiaC2TKyXN5KEah499ATUuRTLlMzBehPgNUSOCWhCId/kjxKRcyxiwWL
+kdV6F6gum0qEccDzYQ8NEDFX/V4DXiYdezw/7BokyISACJuj870tzD1dBqVin+fLlkZEwolIVWlx
+fOf5Y1eFDYmE+98O0nHBe+4HRZ1OR0bCNbNLxR3vuXanmcuhGkS41HxeRYFNKvvP00Yz7+KmHv6o
+eh6xS8q3gXUqU5aJKGtDOs/06+PsVg1gWo3VmSFv7NdjjUMiLmrRnK2rul5dEJ30jgBFbViVmgHV
+ByxpdKpwXnQL4I9p61gUmwMiLEGEaJdjnXK0T47fqHB7PKgXsksvaFnmgBV9NdhVo4gynlY0F6hA
+bVOvX7tafwoVtdux9zdzmyCijFHAS0oaXUoilkzOKbk4X76MGXRSRkSqfVURPZ4/lsWi3o6l1zMj
+QITzZ7uWBrvHeQIjkcd2zYuJqoPueQAAAABJRU5ErkJggg==
+"
+       id="image707_core_skill_131.2_0"
+       x="41.826756"
+       y="60.003292"
+       style="stroke-width:1.76389" /></g></g><text x="15.5" y="134.1" font-size="2.9" font-family="sans-serif" font-weight="bold" fill="black">Shoot</text><text x="15.5" y="137.4" font-size="2.5" font-family="sans-serif" fill="#222222">May shoot this many times</text><text x="15.5" y="140.3" font-size="2.5" font-family="sans-serif" fill="#222222">per turn</text><g transform="translate(52.333333333333336,131.2) scale(0.5714287346939242,0.571428408163312)"><defs
+     id="defs2_core_skill_131.2_1" /><g
+     id="layer1_core_skill_131.2_1"
+     transform="translate(-54.355924,-58.00329)"><rect
+       style="fill:#ff6600;stroke-width:0.233098;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:0;paint-order:markers stroke fill"
+       id="rect234-1-8-1-3_core_skill_131.2_1"
+       width="14"
+       height="14"
+       x="54.355923"
+       y="58.003292"
+       rx="3"
+       ry="3" /><image
+       width="10"
+       height="10"
+       preserveAspectRatio="none"
+       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAD
+6UlEQVR4nO2Z34tVVRTHP6LNlJAp6FydygR1oP4CHcuHNPVCpU816btvolhDgxDok4zTiyDhj9ce
+kiLUNPUh6Rc0VA/W5PxQn7TpJQs10a46Hlmwrlxu+8c65+5zGcIvLHC8Z629v2fv9V1r3QuP8f/F
+PGATMAScAsaBv4EacBu4CvwCnAZ2AxuAZ5gm6AS2AGeB+0CW0+4Cx4GNwBORtYR8cjwF7AQmC2ze
+Z38AW4GZHhLyTFJUgcsJCTTbb8CLDhLJiDwJfFQigbp9AsxykEhCpAL83AYSWYBEs+XOmSXApTaR
+yBrWTUqi0mYS/xqI7C6SE3mvk0jwN6poK4AulVVRueeAlfqZ1Jl7Tb53VEhQvyQkyJnYUvD2Agty
+xF+kG/vHQWIkFYlqDhJHgWcpjm6g10FiRP9uhAjBS3mq9YSBwAN9SzNIAznNXzX2GLCw6XMplB/r
+Z3VlC2KngcQU8Bbp4DuJqgpA8/rSAURPw9J2DLSJxB3P+pOxU9lizIkYXgOOaAd8C7ihrcehhnwI
+kegNkKjbm6ENnDWoUyixe1R+Q3Wiakjsbn0Bob0cC80TsVZcJNaH1Tp/tEqijj2GEcA5z2yKON4P
+1ImexCTqp9JcNJttPQ58GHGSK+NDiuvkwqnInpxF8mTESWTZl9itkKg2CUAj3ovs6UscuBhxkt7J
+hSMtkpDnDnpir4rs6bzL6VrEyZcf457n3zeSyLSiu/B8ZE/yhcZ/UIs4dXgWu+l5XppCwU8REmLX
+PbFnG8pB24j8oONAqO2QGC505phfSrtarjbG1zuNBga7LGB/upxiHa8MRS4c9jxf0zzpVhvwkMha
+SPaxIvL7rmextRE/i73qid0f8TvhchqKOH2LH1+3QOKrQNzvI76DLqeNhhbFV4mXA38VICF5uTSQ
+H1MR/9ddjnMNTaPzDSheyUlGSLwciDdkaBrn+JzPGHRbipQPy4BzxuvkOwnBYsM8IjntxWbDJj41
+zOlrdIga1W9JxC6oOvkSuw6J/blhH32hIFKAfjcE2UV5+MCw/tVAgX6EHYZAkoRvl0Ciz5DgYtss
+wToD1bqsr4NmaPGcMqx7Ufdowvoc6vNZRABiWGzMiUxfnhTgXDiQg4wozD7VfisqKrExdcoabD8F
+IMf3Y45F6rnznU52vbrZDrWK/l+/VmzLNcoabNiS4D7MN+ZL2XY552l7f+iJjcFl2gTwAonQVeCa
+pbDhnD9VmHNmvypHO0gcyiOzRbCu5Ks2XkRii0Le1HZtFVIRuKIVu9RTCBF6x/OboMXuaRfb14q0
+pobMBm9oYfxC5+lrOrvX9N+jOp4O6lD0dPJdPAbTAw8BPC+D2Br7TnMAAAAASUVORK5CYII=
+"
+       id="image830_core_skill_131.2_1"
+       x="56.355923"
+       y="60.003292"
+       style="stroke-width:1.76389" /></g></g><text x="61.833333333333336" y="134.1" font-size="2.9" font-family="sans-serif" font-weight="bold" fill="black">Accuracy</text><text x="61.833333333333336" y="137.4" font-size="2.5" font-family="sans-serif" fill="#222222">Shots hit on</text><g transform="translate(98.66666666666667,131.2) scale(0.5714285714285714,0.571428408163312)"><defs
+     id="defs2_core_skill_131.2_2" /><g
+     id="layer1_core_skill_131.2_2"
+     transform="translate(-68.885095,-58.00329)"><rect
+       style="fill:#ff6600;stroke-width:0.233098;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:0;paint-order:markers stroke fill"
+       id="rect234-1-8-1-2-1_core_skill_131.2_2"
+       width="14"
+       height="14"
+       x="68.885094"
+       y="58.003292"
+       rx="3"
+       ry="3" /><image
+       width="10.000001"
+       height="10.000001"
+       preserveAspectRatio="none"
+       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAC
+0klEQVR4nO2Zy04UQRSGvyGgM/GyZiks1REjK4eFBl5BDV6eQV4AMxsvo6zVxLDRyIYQBIkv4C0m
+RjfiA0BwgTIYtmhsU8khmZxUzVT3VF9G509qQ/e5/F1zTp36gXQRqdWziPpECoaeJHIImALqwCrw
+1ULE/G1F3pkEhigQzgLzwK4l8U7L2DwBxvIkcAZ4lSB511oDqlkSKANzwO+AJA7WL6AhMVLFMPCh
+TSJN4ClwE6hZntfk2TN51+XnMzCa5k9pwxH4NTANHI7RtcxXvwq8cfj8DoynQWLPEswQuxSg/V4B
+Ni3v74UkM+zYiUXgSKggwFFgybEzI906rzhq4i5QIjwGpNh1vE/dNoA5i9M7pI/7lrj3kjobs7TY
+xZR2wrYzy5bWfDqJM33YbQSuiU44BmypHF4mGTv01rbrTmlh2pKH6aDemLecE3nhrcrlsa/hkGUA
+NF8mL9xQuewAgz6GUxZDfWJniYrlw170MawrIzMX5Y3nKqdZH6NVZWSGvLwxo3J64WOkb3bnyR81
+ldO67aUoxsoaUZzc+kQyQPRfEulU7KbQ8saET7H/s+23XsADcSHJgTipjJpZyDMdRpSfKqcLvkNj
+s8BD4w/foRGRMVuNjWSTB0rAO5XLozgOzJXyj3JwmexxzdJmY8uqa8rBpkg2WeE48E3lYJT82KjK
+hb/V0ZIIA2ljQJJujb0PnEzqsBFSlomBB5a4t7txWBZBWTttpLQzAw4SH0PcUkdFttTOl0WyCVkT
+K5Y428CJUEHGHSL2VoczxmfoLIkqrws7kpjnQpFoJWPbmUh6/XXLBNCOSEUOu/cOn9tpkDjAiAjK
+rlF6V4SCGcc/eibk2YJl7NA1Eezn5EJZOpduzSHWvojkmcpPp0SLDUXCFHricyIEqiJj7iRI3gyA
+D+WjFAaDogDekovPuiXxL9K2Z2UU955i84ZP++0JRH0iBUNmRP4C/plMJPSk960AAAAASUVORK5C
+YII=
+"
+       id="image854_core_skill_131.2_2"
+       x="70.885094"
+       y="60.003292"
+       style="stroke-width:1.76389" /></g></g><text x="108.16666666666667" y="134.1" font-size="2.9" font-family="sans-serif" font-weight="bold" fill="black">Range</text><text x="108.16666666666667" y="137.4" font-size="2.5" font-family="sans-serif" fill="#222222">Range is</text><g transform="translate(6.0,147.89999999999998) scale(0.5714285714285714,0.5714285714285714)"><defs
+     id="defs2_core_skill_147.9_0" /><g
+     id="layer1_core_skill_147.9_0"
+     transform="translate(-39.826756,-43.474127)"><rect
+       style="fill:#00ff00;stroke-width:0.233098;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:0;paint-order:markers stroke fill"
+       id="rect234-1-8-8_core_skill_147.9_0"
+       width="14"
+       height="14"
+       x="39.826756"
+       y="43.474125"
+       rx="3"
+       ry="3" /><image
+       width="10"
+       height="10"
+       preserveAspectRatio="none"
+       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAD
+WElEQVR4nO2Za2jPURjHP3ML26IQxlKWFLmEbeTS3HIrL2lN2lIKL+TFkuKNXJIUmuIV9kqUXKcW
+LeMFLygh2uSWS7nMFraY9tOp51enf7//+f/Of7/f+f9i33renOvzPed5nnPOc6AP/x/GAuuA40Aj
+8AJoA7qBhyQY/YAK4BTQAngGaSeBmAwcAN5kUF6XByQIs4B64I8FAV/OkQAsAm5nobwu+3NtQud7
+ScCXmlwQKACOSLTxIhK1q06xytKJw0qRKwKDgWNATwwkfgJ5rojcC6lUKVBuSeQRDtEdUqkyYK4l
+kYsuifyIwaR8OeSSyJcYiWwmx2iKyEeW5JpIRUQ+MiGJRDxL+Q30T6JpeZbS6lrpTyEVs/UR9cBy
+ivaQitn6iHp0OUVnTKF3p0sSA2K6YylZ75LIKAvFbH1koesHlBeTj0wiAWiKwLTUI41/4UAcQUKJ
+lFr6yEoSalpllj6ikhfO8Dim0OtJWHcSuYpiPEN8cZL33W6pVDbvkQ8uiNyxVMrWRy5Llj52XIvJ
+nL4CG7R5qoGDwDJJPcXyNbAYOBthAuISMEbzQX+x1MV0HzBMm39Q9JSgUHK0zWkUvA6MF2kIqFcp
+pSptvI3y0ePJp890rW4BcEaSdy+Bk8AKWdisMA44LSHSzwbmpUmbKgI+igPqVcYe2Y0rWnmLljKd
+ksEv6+U2bo2tKRP6q3Y4CyK1UndCK+sASqR8OfA9DYEuYJM2vrrajLQhcjVlwDopnx0wWYMQUHLD
+cNN9rZVVStkcMaMgEp0SBBTyJSgows9TFs+IVBP6DAyRuvsWDn5T+szTylQ+GbkBtxr6Vmtm/jTg
+y87Xx4iugIG3aasYVJ8qavWmSp8LWvlqKdudIcL5O5FKwhf1X5kRQYp+E/Px/0s6DIq0aZnENVr5
+RwkaQ2WXg/r2ADOkb51hjl9h/lfepun8BBitPYWV3b7X6t8BR7VTuzwlE6NCq8Jag4LN0qZYlDXt
++l5bZ9dF+c/SgLNGf/WpuL8lwJErQ6z0LmlTG0WirybEILfEIUvE8QrEJHYAz9L0mRYiYMyXNo0h
+dFAy00SkMKa/keEy/itDm4kh2uiirjdG7ImByEAZ27RI+SHa6KKimhHqNno3YiI+etvGCzir+kCS
+8BcdYANtt0XBEAAAAABJRU5ErkJggg==
+"
+       id="image719_core_skill_147.9_0"
+       x="27.167509"
+       y="55.873917"
+       style="stroke-width:1.76389"
+       transform="rotate(-15)" /></g></g><text x="15.5" y="150.79999999999998" font-size="2.9" font-family="sans-serif" font-weight="bold" fill="black">Move</text><text x="15.5" y="154.1" font-size="2.5" font-family="sans-serif" fill="#222222">Extra moves per action</text><g transform="translate(52.333333333333336,147.89999999999998) scale(0.5714285714285714,0.5714285714285714)"><defs
+     id="defs2_core_skill_147.9_1" /><g
+     id="layer1_core_skill_147.9_1"
+     transform="translate(-68.885095,-43.474127)"><rect
+       style="fill:#00ff00;stroke-width:0.233098;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:0;paint-order:markers stroke fill"
+       id="rect234-1-8-8-7_core_skill_147.9_1"
+       width="14"
+       height="14"
+       x="68.885094"
+       y="43.474125"
+       rx="3"
+       ry="3" /><image
+       width="10"
+       height="10"
+       preserveAspectRatio="none"
+       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAC
+JElEQVR4nO3ZS6hNURzH8Q9CUd4hyUQmSgbyKCOvMFBSJsYMlJIMPDJQd2AsA5nJzISoWxS6AxIz
+IZKUKLo3A6/rcbG1a9067c657j5nr3P3yvnWb7p+69f67/96bHr06PHfMDcoeX4hw3yJMxyCbJc4
+QyHIGYnzOAR5ickS5mYIkmubhDnXEOSKhDnQEOQ31kqU9Q1Bct3DlIh+S2MNPA1fCmFORu6SO2MN
+3l8I8hM7InmNlnBfjJU/XAiS6zPWVW1U8LiDxVUOvgJ/moT5FKElFz3eYVOVBgNNTHL9CCs2qSKf
+Zh75ee9UVRvyvhYmo8o3zmUV+IzlcQMLOjWYjsF/GOWrcwELIwXJ8AYbOw1zehxGuT7iPNZECJKF
+rnm0k3KejQ/jNBvVo3By3hJWtYogWdC1Ti59B0uaNeorHuIijmN3KJOVWIIZbYz5qt1jU9457ncQ
+Joa+41A7YZaH7yCrma5iTtkwe1tskhOtF1hdNsyxGkw8a6JvYZMuRV8NJp610CXMLBPmSE3LLMPT
+0BXHzVa8r8HEs4KeYVU7t7v+lEuryC48n8AAw9ivIvKNcw/uptB+y2ygJ/AAIxFDXMYsXSKv2c3h
+9JqfkG/hCd42eeSIfkSJSdkQr7FBDSkT4jrmqSnjCTASLnm1flTvylW3G4wV4jYWSYRWz0G1L6Ui
+xRCDqf6XyRo0EO7ySZKFK8FZTJUwQzF/K3STaD96evRQPX8B35aYEN0P6OAAAAAASUVORK5CYII=
+"
+       id="image989_core_skill_147.9_1"
+       x="70.885094"
+       y="-55.474125"
+       style="stroke-width:1.76389"
+       transform="scale(1,-1)" /></g></g><text x="61.833333333333336" y="150.79999999999998" font-size="2.9" font-family="sans-serif" font-weight="bold" fill="black">Turn</text><text x="61.833333333333336" y="154.1" font-size="2.5" font-family="sans-serif" fill="#222222">Extra turns per action</text><g transform="translate(98.66666666666667,147.89999999999998) scale(0.5714287346939242,0.5714285714285714)"><defs
+     id="defs2_core_skill_147.9_2" /><g
+     id="layer1_core_skill_147.9_2"
+     transform="translate(-54.355924,-43.474127)"><rect
+       style="fill:#00ff00;stroke-width:0.233098;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:0;paint-order:markers stroke fill"
+       id="rect234-1-8-81_core_skill_147.9_2"
+       width="14"
+       height="14"
+       x="54.355923"
+       y="43.474125"
+       rx="3"
+       ry="3" /><image
+       width="10"
+       height="10.000001"
+       preserveAspectRatio="none"
+       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAC
+6ElEQVR4nN2ZSWgUQRSGv4zRSdxwD24XLyLiRW8u4AIiiCgiGhEU3OIxBlxAXNDDKEZjctGTejCg
+KIK45OASPKgRUQQVAiIeoolGDyIxKi6RgjfQNHTP656Z6mp/KGiqitfvq/X1a9ApC3QCAyGlF5iL
+48oCbwqAmNIHLMFxTQReKmB+AqtxXBOA5wqY38BGHNco4KESZiuOaxhwRwHzF2jAcQ0F2hQwphzF
+cQ0BLithjgEVOKxBwDklzGkgg8OqAJqVMK1AJY7DHFfCXJNL1mntUcLcAqpxUBlgAdACfFfCtAMj
+cMT5+bI/3iud95cOYHTSzr+L6by/vABqbDk/DzhVQufzpQtoBGaUE2AmcEgZwkd1vllmNuPK6TMQ
+wfkm+fiyfsPn0jTypYZxynm/mpQQ510PDKPA1KMLNKeTgmW2t4CdbcBBElauSJjhQDdwEweUKwLm
+sLR9dmU/5WLATJLcV75tGik9AM766msV7xgMXLHx3a+FaZEUkbfupML+Lun7GAvSwvjLgwJ2qyWn
+bPouw5LiwPTL0gnSCulnsptWFQdmdoi9RuljInBch9kRYuuC9FlLQmqNAGJOskKDsgnLqpEk3K8I
+IK9C7NVKn4s288D7gK8x9sgfYGSA3SzQI8nwleUEyMi0d8U8fvNlccg7lgusmeXN5YAYD9woEkAT
+LVcBz6TfJ8qosfLfcKcks58CPyKCXA2wPcbzU+kLsArLqpQMzHqJkdoKJPBMm18mMr7ryXs5E2Aa
+jQuZvSm+vuukvsdW8q5Us2eWkVf5/We+JlOtt3JaOZHkLka9wEf+A72Wr8nUaCqwHTgC7AYWyU/W
+67JHJifpnLks6+RkMnfECWCpL9lgwpozsg/8x3Ef8EGeDaR1Vcm90R9wX5j7YJakhDqk7htwCTgA
+7Bf4bsVlWVa1ewJB88NziyyVDcA9z2g/kuf7AUsnA6wBbid1/Jqk2xNgTkB7vWekO2VmUqsGCf4W
+ltLqPyJcWoaOzUjLAAAAAElFTkSuQmCC
+"
+       id="image914_core_skill_147.9_2"
+       x="56.355923"
+       y="-55.474125"
+       transform="scale(1,-1)"
+       style="stroke-width:1.76389" /></g></g><text x="108.16666666666667" y="150.79999999999998" font-size="2.9" font-family="sans-serif" font-weight="bold" fill="black">Charge</text><text x="108.16666666666667" y="154.1" font-size="2.5" font-family="sans-serif" fill="#222222">May move 1 extra into</text><text x="108.16666666666667" y="157.0" font-size="2.5" font-family="sans-serif" fill="#222222">combat. Strike first if</text><text x="108.16666666666667" y="159.9" font-size="2.5" font-family="sans-serif" fill="#222222">moving at least 2.</text><g transform="translate(6.0,164.59999999999997) scale(0.5714285714285714,0.5714288979593702)"><defs
+     id="defs2_core_skill_164.6_0" /><g
+     id="layer1_core_skill_164.6_0"
+     transform="translate(-39.826756,-72.532469)"><rect
+       style="fill:#ffff00;stroke-width:0.233098;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:0;paint-order:markers stroke fill"
+       id="rect234-1-8-1-1-2_core_skill_164.6_0"
+       width="14"
+       height="14"
+       x="39.826756"
+       y="72.532463"
+       rx="3"
+       ry="3" /><image
+       width="10"
+       height="10"
+       preserveAspectRatio="none"
+       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAD
+SklEQVR4nO2ZTWxNURDHf2l4vqKCxvdXxEK0QSNEG2JdCxISRMRXQ0IkQmhFYuEjZaMabdkQsWFn
+a4GSltiQkFcLVpU2RCIaLaVon0wzL7lu78e57937epr4J7O5d86Z+d8zM2fOuZAMyoAGoB34ptKu
+z+Sd9UgBzcAAkPGRP0Cj6lqJFPAogIBbHtpKpjkCiaxcxTKUachEJSJjSrEIDR5O9gM1wByVWn3m
+1qvHIrzxcFAcd6PWQy+NRej1cHC2h94sD70eLEKPh4MSTm7M9dD7yigMrVO2h9YVn2SvNUj2y1iE
+0jzK7zIsQ2MORKRsW4eUth2mJB4AY7EUKW07gsLst66EtSTcOVOvFalXJa2JbV1O/IeNeJZDpfKT
+pyNJJBOzxIbpwEVgOzDeQiKTgN3AXWCln9IEV6h80fPEOAuIpIATQLdD950SG4azPpO/Bcp9DLTF
+SKI14PTZ7jPmult5JvA9wMhPYBfmiCsXtgJ9AfMMAkudA2oMjMugIwUkst+wEf1nVdKGyy/3VTsK
+QGRLhG5aLv+KZdC8iLEsZ4oNCRJZr6EcxacqGbgzh8T8mP0KMRMpBj7k4M8FGXzJ52WHlmCvdz+A
++QkQWRCwGp+BTp93cnzgvseLFmCyTi6htxyoBCqAVUBJgqFVojYqVMr00kIwDXjpMZ/cGQx9eefD
+O7o5CsaEGE2CSBimeuxfEupDYZLRXbPaMeC4Vo4u4IU2dY+BpgIQaVJbbWr7vVYnqWbZD3wO+KXz
+SThSB1wDZqjSROBGiCMHEiRyMKT8y55XpLqLgZvKYRhaDRyR3XZFAkTKHRESJPcwQLVhyfvkbg/y
+JLIkQumVVQtFUYQDU4eWzHyJLNQ8yBjIc0dohWJRwB7ilk4tk7kSqQzYHzIu6da8iIRNIf8C3W3L
+UceXMiEiuscclSdMxJfN5IhDhkay8grYa6C3D3gdce7D5ImT2sJnRkgG1YdYsM2wLMYt/XpGjxXr
+PNqZJKVDW/pEMAW4lXCoDaoNsZU4VgNPEiDRonMXHGuB2yEXBGHSpyuwBgsgjeZG/dnTZeB8l+pW
+OY4M1kH+e5zxySPZ1E6Pln8jWexxdQYDEe/GrEKdg8h5RjFSesqTM06i4fQXRNOlYAKsKHQAAAAA
+SUVORK5CYII=
+"
+       id="image902_core_skill_164.6_0"
+       x="41.826756"
+       y="74.532463"
+       style="stroke-width:1.76389" /></g></g><text x="15.5" y="167.49999999999997" font-size="2.9" font-family="sans-serif" font-weight="bold" fill="black">Unbreakable</text><text x="15.5" y="170.79999999999998" font-size="2.5" font-family="sans-serif" fill="#222222">Ignores all leadership</text><text x="15.5" y="173.7" font-size="2.5" font-family="sans-serif" fill="#222222">saves</text><g transform="translate(52.333333333333336,164.59999999999997) scale(0.5714287346939242,0.5714288979593702)"><defs
+     id="defs2_core_skill_164.6_1" /><g
+     id="layer1_core_skill_164.6_1"
+     transform="translate(-54.355924,-72.532469)"><rect
+       style="fill:#ffff00;stroke-width:0.233098;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:0;paint-order:markers stroke fill"
+       id="rect234-1-8-1-1-6_core_skill_164.6_1"
+       width="14"
+       height="14"
+       x="54.355923"
+       y="72.532463"
+       rx="3"
+       ry="3" /><image
+       width="10"
+       height="10"
+       preserveAspectRatio="none"
+       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAB
+lUlEQVR4nO2XvUrEQBRGj+s+h4os/hWCooggLIKllrba+T6WKoiNFiKIbGkhC4JYLFooIgv6GIo/
+UYQrhEmyM9nM7GbhHrhNmJnkzDc3JKAoiqIoiqIoJaAqNbBUgE3gGXgFdgZNqCICT8CPUS8iNEyJ
+GQI2gLsUAbMega0yCq0BLQcBsx4kvb9N6CvrDgKfUp3GtGStviRwa3m4b+AUmADGgD0HoXtJKDgr
+wFUOARNXoRvpN+/UgabDEToCarF5NblmXh8HDoEPy5pNuXdhloFGFwmk7fz/uMnYuFFgF3i33OMa
+WO1GYMmjQNa8qS6F6i4Cs3KTKICAT6FLYDFL4sIi0KkH8giY9QUcA9PGxhxYeiiSZ04QQqANbEu1
+HRI6AWYMoX2LkFWkyBFK+0iMf0TahBrAXGzuiBy5tzwivgVMXIUiEZq3CCUILRBKKEGRHijyn1F1
+7KEIOJM3a1wolZAJ+E5oIWuhXiXgM6HztAV6nYCvhBKURSCvUIKyCbgKJSirgE0oQegmDvVSUBRF
+URRFUQjLL3HhxnaitKueAAAAAElFTkSuQmCC
+"
+       id="image878_core_skill_164.6_1"
+       x="56.355923"
+       y="74.532463"
+       style="stroke-width:1.76389" /></g></g><text x="61.833333333333336" y="167.49999999999997" font-size="2.9" font-family="sans-serif" font-weight="bold" fill="black">Brave</text><text x="61.833333333333336" y="170.79999999999998" font-size="2.5" font-family="sans-serif" fill="#222222">Roll an extra leadership</text><text x="61.833333333333336" y="173.7" font-size="2.5" font-family="sans-serif" fill="#222222">die, and drop the highest</text><g transform="translate(98.66666666666667,164.59999999999997) scale(0.5714285714285714,0.5714288979593702)"><defs
+     id="defs2_core_skill_164.6_2"><filter
+       style="color-interpolation-filters:sRGB"
+       id="filter33837_core_skill_164.6_2"
+       x="0"
+       y="0"
+       width="1"
+       height="1"><feColorMatrix
+         type="hueRotate"
+         values="180"
+         result="color1"
+         id="feColorMatrix33833_core_skill_164.6_2" /><feColorMatrix
+         values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 -0.21 -0.72 -0.07 2 0 "
+         result="fbSourceGraphic"
+         id="feColorMatrix33835_core_skill_164.6_2" /><feColorMatrix
+         result="fbSourceGraphicAlpha"
+         in="fbSourceGraphic"
+         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+         id="feColorMatrix33839_core_skill_164.6_2" /><feFlood
+         id="feFlood33841_core_skill_164.6_2"
+         result="flood1"
+         flood-color="rgb(255,255,0)"
+         flood-opacity="1"
+         in="fbSourceGraphic" /><feBlend
+         in2="fbSourceGraphic"
+         id="feBlend33843_core_skill_164.6_2"
+         result="blend1"
+         in="flood1"
+         mode="normal" /><feComposite
+         in2="fbSourceGraphic"
+         id="feComposite33845_core_skill_164.6_2"
+         operator="in"
+         in="blend1" /></filter></defs><g
+     id="layer1_core_skill_164.6_2"
+     transform="translate(-68.885095,-72.532469)"><rect
+       style="fill:#000000;fill-opacity:1;stroke-width:0.233098;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:0;paint-order:markers stroke fill"
+       id="rect234-1-8-1-1-2-5_core_skill_164.6_2"
+       width="14"
+       height="14"
+       x="68.885094"
+       y="72.532463"
+       rx="3"
+       ry="3" /><image
+       width="10"
+       height="10"
+       preserveAspectRatio="none"
+       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAB50lEQVR4nO3YQUsbQRjG8Scxn8OKiNoeBIsiBUEEj/Xotb35fTxqofRiD0WQ4tGDCIJ4kPZQkRJoP0ZLrfl72Akss2tmNplJhjAPvJdlZ2Z/++4sm7RAU5H2pC8gVDIktWRIasmQ1JIhqSVDUkuGNEjHVNTEhLQl7Um6k9SVtK+YIAhebdAe6B6EVb9A+6CZ0OuGnKwF2gV9qwHYdQd6FxIUCrEDuvUA2PXDdK81achbD8CDqUHn3Jq5xg7ZAd04Lu4R9AW0CJoDHXqAvpsORYdsgi4aAOzxvqBriv0WHLIFunQs/gD6BFoojVswx+zj86CPoH+OOS/N2iND3oDOhuhA3Z3vn7dUOu8F6AD017HGFWh7GMhGQMBz45aHBNV2yD6wYhbpRQCEBJ2D1p+DfHUABu2BJgC7/oOOQS+tG/OBwXuoZ665AokB6ILem+p6dOgz6JUFOnKAnJBRHqHfFN9UndLY/jfYTw/QGWi1NHaW4pH70wQSGmCXL6hnQK8doAokNiAWqAIZZQ80AdjVwW8P9UAnFG/WMqgCid2B0B1aK48vTzSuDoTs0GkdZNwdCNUhL8gkAE1BAyEpAHxBtZAUAS5QBRJ7E4eu/ktBoOJH/zQk/2WaWjIktWRIasmQ1JIhqWVqIE9Zbr4phyxX2QAAAABJRU5ErkJggg=="
+       id="image878-0_core_skill_164.6_2"
+       x="71.073685"
+       y="91.221054"
+       style="stroke-width:1.76389;"
+       transform="matrix(1,0,0,-1,-0.188591,175.75352)" /></g></g><text x="108.16666666666667" y="167.49999999999997" font-size="2.9" font-family="sans-serif" font-weight="bold" fill="black">Cowardly</text><text x="108.16666666666667" y="170.79999999999998" font-size="2.5" font-family="sans-serif" fill="#222222">Roll an extra leadership</text><text x="108.16666666666667" y="173.7" font-size="2.5" font-family="sans-serif" fill="#222222">die, and drop the lowest</text></g><g transform="translate(148.5,0) scale(1.0,1.0)"><rect x="0" y="0" width="148.0" height="210.0" fill="white"/><rect x="0.25" y="0.25" width="147.5" height="209.5" fill="none" stroke="black" stroke-width="0.5"/><text x="6.0" y="11.0" font-size="5.5" font-family="sans-serif" font-weight="bold" fill="black">Core Reference</text><line x1="6.0" y1="14.0" x2="142.0" y2="14.0" stroke="black" stroke-width="0.3"/><text x="6.0" y="20.0" font-size="3.6" font-family="sans-serif" font-weight="bold" fill="black">Weapons &amp; Armour</text><line x1="6.0" y1="20.8" x2="142.0" y2="20.8" stroke="#999999" stroke-width="0.2"/><g transform="translate(6.0,22.0) scale(0.5000000937500175,0.5)"><defs
+     id="defs2_core_armour_0" /><g
+     id="layer1_core_armour_0"
+     transform="translate(-4.05223,-132.17828)"><rect
+       style="fill:#6666ff;fill-opacity:1;stroke-width:0.233098;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:0;paint-order:markers stroke fill"
+       id="rect234-2-6-9-1_core_armour_0"
+       width="15.999999"
+       height="15.999999"
+       x="4.0522299"
+       y="132.17828"
+       rx="3.4285712"
+       ry="3.4285712" /><image
+       width="13.999998"
+       height="13.999998"
+       preserveAspectRatio="none"
+       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAE
+nklEQVR4nO2Za4hVVRTHf6NZVqaV41QEM5X2rsEeVtDrg1AUMkkYVFB96fGphB4EJVHY40MFGUQP
+S8WsrEYTqumDTQ+YokaspheGmUFUSmr2Ukdn5sSC/4XNnr2P+95zZu5FXLDg3rPXXmv/92OttdeG
+/bTvUjswF1gEfApsALYAe4AM2AX8AnwCvATcAZxGA9GRwFoNthZeAxxebxCHOSC2Ai8DtwKXAm3A
+EcBY4AD9blPbbZLd6oAxXXWj45yZ/QNoraJvm7Zepb/pGhU6GLgWWAr0AYfom7tNvgUmJ+gyme+8
+vqbLdH4BPAdcodUsjUz5A97sGZ+o9s3e93XAKTn6TgV+8PpsUtvJ3veN2oaFAZ0H/BQ5pDdKZmmg
+bSewABjn6BqnbzsD8oslc0vEVi9wQq0gZsllxrxNl+TOAAYiMh2Ovo6IzB6tktGHOfa2ATOqBTFj
+LyCMB4GzJf9wRGalo3NlROYhtV+c4Kr/BKalgjgQWJ8YA9ZKfkxkoP3AFHF/oL1Tfe2gf59os1d9
+9kqXa7ZTA9pCoEmxYkmgfa7Y/75Ifazvq1XYy4DLUldlKvBsFYCe1ICaFBD/dtq+FFf+/wXcLDs2
+s88k2hjSmCz+JNFE5/ecnIPs8/NOPwtub3oTYb/f8AbyQqLuQeB6p1+r5xGH0UxgN/Ci9q3RvERj
+V0t+gqPPPNpy8enO9wqYKxNX/RHJ25heU59r8oCsdjq/om8HKWvNM/SgZE8CtiuPsuAWiksfAf9I
+Fm2zvFXfDkyS7DLne3cMxDTtQ1eJJXhGj0aMmCe63dmSXzltAwJkMeIC4D2vb5+T9V4H7IjYeFwy
+5wTOTGiyuDMn4s4KtK3WHcSoWXeQrEr+DGiRDhvUOwEZs42yAr/t7hCQroDg12o7RrlWj/brdKff
+hbpEZTWy5VOXOPrOVIDtkU2zHYv6tsrD6MeAoLnKGLUrz/K3Yy08pG3YnmPPTzQzjXkY/RsQNG+D
+LkXnArOBx3QRKjr4GKA1WvWrlAJVLlzzA/L/hYAsD8yuLTNKC7I68dvOOXTzP3MOT8eWr0VFgc0a
+fGoyN5I85GTHdo5/Bm4AxpNAzY7rfarOQDInTk33Am5V1NMAQD6gIDXJc9UbyKaiQJobAESmLKFw
+8S1rAN5VFMiEBgCRKcksfEZiydxo8gZKoHUNAKS7DCBvNQCQBWUAuacBgMwpA0h7nUHs8OoIhai7
+jnnWPEqkMYEyz0jzFud2WDq1qYoxMMKrsAw4dqRAtHqFioUJ9eFq2CbndeAsx05SabQaOl4Vk1XO
+ZQvN2qqCg/8cuMtbgUP1JtOnsmpptNgxbsWxFc595Xyn7V2VTztVIVmvi9BGFTJ6tG3u11XWfwSd
+omrO747Om8oCcXTOmbCntl+d/xNrfBHrUDW/P2Djm7KAjNe7XspW6dJT2Uw9zU3Ws8NYFTDsnF2k
+164ngI8Tztn7lEiTdEsbLdebOSBKC4YVslm9r2RPFeN+2Sr1VTcUS5ZE9nNR3i3do/bmbnQUcK/c
+ZzUvXD4PSofpMp11pRa50/nyPr1yods00AH9/k1uuVOPoB1yuftpn6P/AcwC1HbjMZkWAAAAAElF
+TkSuQmCC
+"
+       id="image37970_core_armour_0"
+       x="5.0522304"
+       y="133.17828"
+       style="stroke-width:1.25992" /></g></g><text x="15.5" y="24.9" font-size="2.9" font-family="sans-serif" font-weight="bold" fill="black">Heavy</text><text x="15.5" y="28.2" font-size="2.5" font-family="sans-serif" fill="#222222">4+ armour save</text><g transform="translate(6.0,38.7) scale(0.5000000625000078,0.5)"><defs
+     id="defs2_core_armour_1" /><g
+     id="layer1_core_armour_1"
+     transform="translate(-20.872855,-132.17828)"><rect
+       style="fill:#6666ff;fill-opacity:1;stroke-width:0.233098;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:0;paint-order:markers stroke fill"
+       id="rect234-2-6-0-5_core_armour_1"
+       width="15.999999"
+       height="15.999999"
+       x="20.872856"
+       y="132.17828"
+       rx="3.4285712"
+       ry="3.4285712" /><image
+       width="14"
+       height="14"
+       preserveAspectRatio="none"
+       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAF
+WUlEQVR4nO2aa4hVVRTHfzblo8x8ZA1+EDMlqympCCWLshdED+yBZSWNGtrLsAe9DEooJ79YgtHL
+rAkqqOlhVFZmWZgRfYgpGC2dovJBKabiY8ycEwv+OxZnzr33zD1nzoT4hwPn7rX3Wmvvs/fa/732
+hYM4cHESMBNYBKwEWoGtwD6gDdissi+A54DbgRP5H6EW+B6IqnyapaPbO7HaOWWjPgs4HxgFHAv0
+BHqr7gmSzVLd0G51d3am1nViHbBX7/ekaHuv6u5V20I7MwCYATQBa4DdMQfu0u/9wC1l9NyqOpG+
+jB+Q3dLdJFv98+7AAmBXiTle5+o+4cqXAKc4mb2/5+QNMVmSbrP5lHzIhIuAP6S0HVgK1AMjgA9V
+flOszWTXZhtwpJ7tKjPZjbE20yR7X7qnyFa7a3NhtZ0w5f9I0YrY6CJnIk2FmpjMHP9G8il6IpWZ
+zONQYK3k18Zkp8p2JF9MT6dwuevEXOCQhDrm/I+q80iCPDi/wjmT5MjjkrUkDAiy3eA6c1naTth8
+3KSGT1aoe642PFu818RkfYGdmh7terey+Fe1tn8DZ1WwtUA+bUq7Zh51I2R7QCXc50Zrakz2slu4
+9u5xm4ted6aw08tFt6QZ0AGtqjyH9JjtHG50YXO8K7d3w0DgdRdA0uw7AXPcvlUWPRRpwn7wAOnx
+kHP6N02bw4DP9PRUxNvg6t3dCf0Pui+4Tb6WxFWOauzSiF2Zwogt0i/Vdqdz9CeF53q3g/s6y0oE
+kjiudvtKoDYTKIPgzMPApXrfoJEtBQufr7pPPkjz33OpyO0H04HBwK8qe7FEtAqwL7lRdS+Rb5FY
+dCJGqYJR7mNUFnbiiSXa9APeVZ0twGgnOwK4Q/vMGtH2w538TOAvtX0jIaIFXKc6Zgf51qYyI6El
+iVxoYLheZc8nfIXJWgshJHqqkhanAX9Kxy+yF/86iyS3DgUsKbfGlkpoZC1guMq+02jbXrEQ+N1N
+F5uOw6geRkm+jgWKhbI1Wrat/LgY8bSyD5IUBpowJjY9Sh2I1uqrpFmslVCjXb+1jD3zJWCsCyYd
+ECLJYn3ygOXu7LBcDHdcpfBXJXoA5wDzFLLDGedTV+d04CUX/Tqg0cXpdkWio4BJLlQWjWWyPUmb
+7GuOEe9PYAv/YZCiy3o3fUJUmk/xmO8CUJj66xXezdeKGKhTmp+jnabQOWBazIc3qzlk2Xx9xSmx
+uF80xsQ4XNXrsrc72fnwVxSOl+3tYr+ZEEik0YqiUSvbxgAyY4+UeXpRFPo6spgZgQ9lzmRUgcGO
+x2XGz1LWHXnaOtm2HT8zPpeyCygeF8u27fKZ8bSU2QmwaMyWbSORmREoyscUj08SKHzVOFoHGUv7
+DKU4DHV3K6noSBo0JuRruxrzZNOYbm44wyXZbLftaoxwyT2j7bniWY3QDzo5dhWGyUYkm7ljqiNw
+O4D7yyQMqkEfRcYdzk48c5kZPmP+lTvcbNYFaBaMBB5zKZ8IWOXOQ2Y7N9THrhDG6+Y2UmQxlozu
+MG4GztP0G6CcWC9Fv+GSWfLgGZ25/XnjW228NbIVyXZuaJHS+OiP0+VmQKD8nXm26Mh6dkz3TMnN
+dm4In9oI5BVl6k2UUyuVp9qqK4M25a/WSfaC7hzHlsgyTnBk1Wznhv4unWrP2/qDQN442eUIQlo0
+1wtRNM8btCZCpsWSejckXKd1Bv2k4yMXRPbpJivzqbAcLPv3lksdBcPNSm9OV27KRneIwmofvddJ
+NkN1m90VX0jxNOnusDCM1MWL/+dDtU+LbspG0M0YIoZqF6fvaIG2aG/Yo2ejylapzlzd4lrbgzjg
+8C9RoBFyBAFz6gAAAABJRU5ErkJggg==
+"
+       id="image38050_core_armour_1"
+       x="21.872856"
+       y="133.17828"
+       style="stroke-width:1.25992" /></g></g><text x="15.5" y="41.6" font-size="2.9" font-family="sans-serif" font-weight="bold" fill="black">Medium</text><text x="15.5" y="44.9" font-size="2.5" font-family="sans-serif" fill="#222222">5+ armour save</text><g transform="translate(6.0,55.4) scale(0.5,0.5)"><defs
+     id="defs2_core_armour_2" /><g
+     id="layer1_core_armour_2"
+     transform="translate(-37.693478,-132.17828)"><rect
+       style="fill:#6666ff;fill-opacity:1;stroke-width:0.233098;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:0;paint-order:markers stroke fill"
+       id="rect234-2-6-6-8_core_armour_2"
+       width="15.999999"
+       height="15.999999"
+       x="37.693481"
+       y="132.17828"
+       rx="3.4285712"
+       ry="3.4285712" /><image
+       width="13.999998"
+       height="13.999998"
+       preserveAspectRatio="none"
+       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAB
+OUlEQVR4nO2ZXUrDQBCAv2PoS38e9R4t9aHX0+YQguAF9M3eomlO0Cr+EYgEJiDBpNOSuLPpfDCE
+nYfNfJvsZiDgnA8TIAEy4FuuK8lHwxzYA8UfUeZnRMC0RaKKHTDGOMkBiSruME6mFEkxzpdS5BPj
+bJUiG4yzUorcYpyJ8tQaEQEzKbZJIorvSMVYjthUDoBUXqconsSg+qpcudlza/3XXLG5D0Xw/mva
+gYSJ/ivpSCJ4/5V1LJKGEtFubG3koUSKHiIIgxUZHVn00qoIJ6y+i3SJi+Ai/eAiuEg/DEYk+1XA
+tkWk6YvfNMe/cyM3L2MhOe3KFy1zmOBYEbMULmIMF7GGi1jDRazhItb4qBX7Jvn3Wr4cm+a5VvCD
+5O9r+SeMcw2s5XfDI3Ap+QsZvwIvwFXgOh365AevGVvHGeSiQgAAAABJRU5ErkJggg==
+"
+       id="image38062_core_armour_2"
+       x="38.693481"
+       y="133.17828"
+       style="stroke-width:1.25992" /></g></g><text x="15.5" y="58.3" font-size="2.9" font-family="sans-serif" font-weight="bold" fill="black">Light</text><text x="15.5" y="61.599999999999994" font-size="2.5" font-family="sans-serif" fill="#222222">6+ armour save</text><g transform="translate(6.0,72.1) scale(0.5,0.5)"><defs
+     id="defs2_core_armour_3" /><g
+     id="layer1_core_armour_3"
+     transform="translate(-54.514108,-132.17828)"><rect
+       style="fill:#6666ff;fill-opacity:1;stroke-width:0.233098;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:0;paint-order:markers stroke fill"
+       id="rect234-2-6-3-4_core_armour_3"
+       width="15.999999"
+       height="15.999999"
+       x="54.514107"
+       y="132.17828"
+       rx="3.4285712"
+       ry="3.4285712" /></g></g><text x="15.5" y="75.0" font-size="2.9" font-family="sans-serif" font-weight="bold" fill="black">Unarmoured</text><text x="15.5" y="78.3" font-size="2.5" font-family="sans-serif" fill="#222222">No armour save</text><g transform="translate(52.333333333333336,22.0) scale(0.5000000937500175,0.5)"><defs
+     id="defs2_core_weapon1_0" /><g
+     id="layer1_core_weapon1_0"
+     transform="translate(-4.05223,-115.11998)"><rect
+       style="fill:#ff0000;stroke-width:0.233098;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:0;paint-order:markers stroke fill"
+       id="rect234-2-6-9_core_weapon1_0"
+       width="15.999999"
+       height="15.999999"
+       x="4.0522299"
+       y="115.11997"
+       rx="3.4285712"
+       ry="3.4285712" /><image
+       width="13.999996"
+       height="13.999996"
+       preserveAspectRatio="none"
+       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAC
+JklEQVR4nO2az0tUURSAP5IIskUWTSZESJtK21m0lCJo3iLEkFm0a9d/0l/RKnHl1oXrQHdBhjFi
+SjoGViKSkDCDNy6cB4/HvTnvjrx3zzAfnMXD+XG/uefcc+9FGDCgL5gBdiXqKKUBtAEjYWXUSxhg
+mz6QMEATqKGEOY9EGl+BWyiXMBpkGl1K2DgBntEHEom872lMNTMTKJHI85dYZHZ7kEj/FoXMTo8S
+JhaZFzIrW9InQiRMLDIpdhBrgRImttUslQmRSGJbzWoymBCJRJ7XYpFB0iREwkhEI1OTAu5lNWsC
+34G9qs8zPpmiNWSqOs9cAd4Dtx0yIRJGelapXANW5cs3czKhEm3ZDpXGmCOV7MyErGYmI2E3pqVx
+Vzp8dhCrkmZFVzNTlcQDoOXYclx3vPYG8LkLiQ7wukyJR8Cv3CC+SZr5OEumU7bEc+A4N4gfkmZn
+YWumGUM6vXLk+gHwsIdjQLtsiTcy/dlB2Jl5UvBzWlVKvAVOHZ3apllR6tKxd8ruE5Z7UgfZwrRX
+QSq4ALwDJuR5EtiXmbFppoKLwIL8+vs5GZtmKrgMLOXq4WfBlalyrgIfPQ3LppkKbgKfPBKLwBAK
+uANseCSWgUso4P5/bg9XgGEUMOXY/KVhN3gjKGAaOPJI2FPeKAp4Cfz1SNjbi3EUkDg2f2n8zjS/
+6Fn3SPwBHqOIo9gvk7tl3nHEnEUhI8AH4FAuC9T+m8WAAZwP/wAoqq51Isc3HQAAAABJRU5ErkJg
+gg==
+"
+       id="image38018_core_weapon1_0"
+       x="5.0522313"
+       y="116.11997"
+       style="stroke-width:1.25992" /></g></g><text x="61.833333333333336" y="24.9" font-size="2.9" font-family="sans-serif" font-weight="bold" fill="black">Blunt</text><text x="61.833333333333336" y="28.2" font-size="2.5" font-family="sans-serif" fill="#222222">Good against Heavy. All</text><text x="61.833333333333336" y="31.099999999999998" font-size="2.5" font-family="sans-serif" fill="#222222">attacks are blocked on 6s</text><text x="61.833333333333336" y="34.0" font-size="2.5" font-family="sans-serif" fill="#222222">exclusively.</text><g transform="translate(52.333333333333336,38.7) scale(0.5000000625000078,0.5)"><defs
+     id="defs2_core_weapon1_1" /><g
+     id="layer1_core_weapon1_1"
+     transform="translate(-20.872855,-115.11998)"><rect
+       style="fill:#ff0000;stroke-width:0.233098;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:0;paint-order:markers stroke fill"
+       id="rect234-2-6-0_core_weapon1_1"
+       width="15.999999"
+       height="15.999999"
+       x="20.872856"
+       y="115.11997"
+       rx="3.4285712"
+       ry="3.4285712" /><image
+       width="13.999996"
+       height="13.999996"
+       preserveAspectRatio="none"
+       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAC
+qElEQVR4nNWZSWgUQRRAX0c0KkbE5aRoUC8uEQWXg6i4BMQJ4kUQEUE8CIIgnnMQVIg7EhC8efLg
+ehQCIQjmoMGDiBuKSwzqxYWYoFFjS8EPFMN0uruK6fr9oBjoLuj/un7/WgbKSQSsBc4Ab4D7lDD4
+s8BbILbaa0rAMuA48KoqeLudRiktwHng3TjB282MlDq2ASMZBWJJM5N2qlgHDOWQiOWDV8VS4EtO
+CdPWoIh5wHsHiX5NaTULeOYgEUspVsFUoNdRItZSrSYCdz0k+jWklQngqodEDJxDAZc8JX7LpBmU
+dk+JYaASWmI/8M9D4iuwPrTETuCPh8RHYEVoiU3ATw+J58D80BItkhKuEg+BOaElFgKfPCS6gabQ
+EuYtvvSQuAU0hpaYDjzykOgEGkJLTAK6PCQ6UMAE4IajwF/gEErodJT4BexGCScdJX4ArSjhsKPE
+Z2BVvYNrkH10WvXYA4w6SJhDtUX1lmgEbsoDe2Viq8UWye+8Ek+AufWWmAL0VD34G7C3qt9qye+8
+Ej0yz9SdDeMEcQ2YIf1mA7cdZuvJFLgNvZyyV95s9T+YcWSuyDxTKFGKzKgcxYythRanHDKfKFog
+j4xpj4Hl0t9UoMEawkdQQJRBZtjauR2wro9IaVZDlGHp8VSqneG6HERvRyFRhpG5YFUzU5pVsQQ4
+laMAbEUhTZIyJsiLIpKWZgPATBQRWUuUOKeMmfTU0J4QZFaZfSigVXZrsYfMd6A5tMgC4CjwYRyZ
+LAXgnoYDhLF/krprBPhCqhkZZFZSMG1yojckvxVrThiwAruTsASvJdNV9CKxLeFt7pL7x+QEvSMl
+VexvxmzGplEwfQkiD+R+c47lhpHZaC1XCmUwQcRcLxV9KSNSGioJIjsoIRUZAbNlNb+lk/gPDBCA
+Hz13VO0AAAAASUVORK5CYII=
+"
+       id="image37994_core_weapon1_1"
+       x="21.872858"
+       y="116.11997"
+       style="stroke-width:1.25992" /></g></g><text x="61.833333333333336" y="41.6" font-size="2.9" font-family="sans-serif" font-weight="bold" fill="black">Sword</text><text x="61.833333333333336" y="44.9" font-size="2.5" font-family="sans-serif" fill="#222222">Good against Medium.</text><g transform="translate(52.333333333333336,55.4) scale(0.5,0.5)"><defs
+     id="defs2_core_weapon1_2" /><g
+     id="layer1_core_weapon1_2"
+     transform="translate(-37.693478,-115.11998)"><rect
+       style="fill:#ff0000;stroke-width:0.233098;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:0;paint-order:markers stroke fill"
+       id="rect234-2-6-6_core_weapon1_2"
+       width="15.999999"
+       height="15.999999"
+       x="37.693481"
+       y="115.11997"
+       rx="3.4285712"
+       ry="3.4285712" /><image
+       width="14"
+       height="14"
+       preserveAspectRatio="none"
+       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAC
+qklEQVR4nO2a24tNURjAfwdjiEFMhpKMB9EUuRR5UsYLCpGUy0Qe5kF4ERr5G8adV7cX82rOg9xD
+ueVByKWkPCC3ch0ztlZ9anXa55y19jrr7E/51VdzmrP2Xr896/J9aw/8J5gxwAjr53vAc2Ax/xBb
+gc/Aa2AecAFIJPqBPUAB5ey3Om1ioORzItEDDEcpO8p0ulxcl2GniqUVnn6leAC0oIRW4GMGiUTi
+ITAKBfQGSCQSi/KWmFkDiV5gcN4iGwIlHgFNKMA8yeMBIj9k31HD7sC/zAlgaJ4C7dYuvRP4HSBz
+F5iTh8R0oA84DTRYc6YvQKYfOAZMqqdIt9WBopUkrgyUSYDvIjQttoQZz+9Kbn4LGCu/XytPN3Rp
+HgCOxhRZVebG94Fx8p2NGdOWpCQ+xRS5WiV/apbvba6BTE8sifkON79tzZl9gSLLYkiYpfayYwfO
+A0OkzcmMEleIxKYMG51hmJS7Pm1/ArNjSEwE3nh2Zq/VfgbwzaPtthgSZohc85Qww6mULse2h6jD
+5ucSN4DGlOs0As+qtD0ADIohsd1T4iUwvsL1VleYE2YO1pxCyqlItXgPtDlc+1JKwjg3hoQpds55
+SnwFFjpevw14JUOwI1aFaG7yxFPiF7AcRawDvnhKmBpkC0poyLAyJZLhdqKE0cDFDBJmTqxACRMk
+W/WVeAssQAnNcsrnK3EHmIISmqRDvhLdVn2eOwUpVnwEzPuONSijy1PiseNuXVeWeB4KnLIqPTVM
+Bj44Cpg6exdKKXpscutRSofHcFKTbpTSIum1i8RBFHPYUcK8Th6JUlql8nIRMUWUWo54pOJq0o40
+XjiKPEU5RUcRU9aqZpZjxWcWBPW0O+zoaveOtNXrTJkj/puaUnMcmSr//HJWjmLMq+W/b5nU8gct
+yNI4XzyMxgAAAABJRU5ErkJggg==
+"
+       id="image38006_core_weapon1_2"
+       x="38.693481"
+       y="116.11997"
+       style="stroke-width:1.25992" /></g></g><text x="61.833333333333336" y="58.3" font-size="2.9" font-family="sans-serif" font-weight="bold" fill="black">Axe</text><text x="61.833333333333336" y="61.599999999999994" font-size="2.5" font-family="sans-serif" fill="#222222">Good against Light.</text><g transform="translate(52.333333333333336,72.1) scale(0.5,0.5)"><defs
+     id="defs2_core_weapon1_3" /><g
+     id="layer1_core_weapon1_3"
+     transform="translate(-54.514108,-115.11998)"><rect
+       style="fill:#ff0000;stroke-width:0.233098;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:0;paint-order:markers stroke fill"
+       id="rect234-2-6-3_core_weapon1_3"
+       width="15.999999"
+       height="15.999999"
+       x="54.514107"
+       y="115.11997"
+       rx="3.4285712"
+       ry="3.4285712" /><image
+       width="13.999998"
+       height="13.999998"
+       preserveAspectRatio="none"
+       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAE
+EklEQVR4nO1aWUhVURRdZZONRgVREYXRTAN9NFDQTH6IGYREg2BZ1E9zEfRTRlEfRUVgBFGG0oCl
+NkEDUglFpFEfQhZZkTZYNFq9phcbtnE83nvOvve9l9dqwQLxrLvP3vfes8/e5z7gP/5e9AawDEAr
+NGGMBfAGQBhAikXbBkAmgJ4IGLoDeM5BENcYtM0AFLHuGAKGfUoQtkBmKrpaAC0QELQF8EULZLFB
+f0XTJiIgmKw5Rlzpou0I4KumHYWAZKlSh0AeuOjXOWgHoZHRC8AjB8eIIU2bAKDQRTvckBQWAugU
+yyBokmIXx4iVWqrV14XKXS5zzOXxw7EMZJHBMeIlRXvAoi1zmaOUx7/y2oo66A7XWJzbz9phAH5Y
+tGRLxwBNMzUSh2fxGuih/X+exTHiCtbmCbSfHObeoGnm+w2CnH/HRjK0sfMC55JY+0yg/ajYngbg
+DAenatL8BrJXMZKljUmcq9sbdIecWM7JY5dBM8FPEK0BfFCM7NHGPwuc68PaCoGWypv1Fs12P4Es
+14ycA9BcGS8XONeetRcE2lTBzSnzGsRWF0PZima3ZdIninatRXsSwGZBsNVeghgP4KfBGI0T+jvU
+Syq3KTa7aq+pyhfcj9z0mdlckWsxdkjRrnbR3FFeqzpkOuheAxjN43XZ0cR3Dv525RKmQRvw2GKM
+Fq6KOQDucglPJckOQ12Uzte/BXBcK91NTzfMpKemgtbsNR5bok8WshijJigWqBIEkqVdk6Ylo3p4
+ZTFGdy4WOGWZN8Ttgoqryvg93WCxh2ykozOXJSWso8lfAjhhKNPrkGKZdxPrOgDYCOCWlpToidbD
+KovBfMPpyVPDdd8B7AQQZwgm3+XaI7weRvINEqXmBM4mpo1Lx2iulcICFnLl7FZNbOEbUgvgulIo
+Jlr8Umu730jlO6gLi7geUjFEsK50Fng8NWmmZCcTaetoAKpAb3DZUMk7L90xFUOF2caJOVrJY0KS
+0OZ9+MB05UTRL7OFweQK7dFeJkZfXnymMsYLqa8ZaJnzsdDWN5vz8dwRXha0rH74g7tIOpFxQkho
+56EpiEkRrAOvpNJlgYMPNcLr6YDDEf08pNVokrpEdb8pEFxDr/oI6aH0n+RRJZiJgjXpdi4m7gJj
+yRxl39pk0B207UvvGzmQMPfx6tFUCTdYNZzxkiGA/pmgMfgdwBhEiMoABBIGcNtSbFpxNgBBhA3F
+qhjpAQggzDwdSSDxXIiFA8AqRIiJHkqEWPILooDkAGSwakQJg7Vm3y8lB9pOpD0jqpjAh3TVgsk/
+sgOr+KNNS7bRhRu3PA/V9FLEEFR2TwEwm08SM/jvGfwEJb9FGSfYryoBtEMTQDcAF12CqAnKN3gp
+4vj7+0M+J6jgipZ+3/Jv4hfiO4ws1suK0QAAAABJRU5ErkJggg==
+"
+       id="image38038_core_weapon1_3"
+       x="55.514107"
+       y="116.11997"
+       style="stroke-width:1.25992" /></g></g><text x="61.833333333333336" y="75.0" font-size="2.9" font-family="sans-serif" font-weight="bold" fill="black">Claw</text><text x="61.833333333333336" y="78.3" font-size="2.5" font-family="sans-serif" fill="#222222">Automatically hits</text><text x="61.833333333333336" y="81.2" font-size="2.5" font-family="sans-serif" fill="#222222">Unarmoured.</text><g transform="translate(98.66666666666667,22.0) scale(0.5,0.5)"><defs
+     id="defs2_core_weapon2_0"><filter
+       style="color-interpolation-filters:sRGB"
+       id="filter38028_core_weapon2_0"
+       x="0"
+       y="0"
+       width="1"
+       height="1"><feColorMatrix
+         values="8.76358 0 0 -4.88179 -3.88179 0 8.76358 0 -4.88179 -3.88179 0 0 8.76358 -4.88179 -3.88179 0 0 0 1 0"
+         id="feColorMatrix38026_core_weapon2_0" /></filter></defs><g
+     id="layer1_core_weapon2_0"
+     transform="translate(-71.334726,-115.11998)"><rect
+       style="fill:#ff0000;stroke-width:0.233098;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:0;paint-order:markers stroke fill"
+       id="rect234-2-6-30_core_weapon2_0"
+       width="15.999999"
+       height="15.999999"
+       x="71.334732"
+       y="115.11997"
+       rx="3.4285712"
+       ry="3.4285712" /><image
+       width="13.999998"
+       height="13.999998"
+       preserveAspectRatio="none"
+       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAB5ElEQVR4nO2aMUtCURiGH5UcrIZoKNqiNRqCgv5BQUi1Ry1BpAVC/ZJorD9Q0NRQ4FZ7W4PQEg2BURAOlmhD92Jg5r3i+d6S88AHVy/c83zv8R4O1wtacsCO2EHGNFAHGsCM2EXCCV/NN4BjsYs540CVZgDV4DtzkopBgV0g/e1zGsiLXMzJAGWasx/WMzAk9DIjT2vzYeWEXu4pUEgCJdoHcA+kZIIGrNG++bBWZXYG3NA5gGuZnWPm6Nx8WAsiR6ecET2AU5GjMyaBGtEDqAFTFmJWG6EC8Vb3FLDnyMWcEeCN6LMfVgUYdS1n8QvYprsdXgbY6rGLOQPAA/FnP6xHWE+3Xvb/sEn3zYe1YS3dS6JsfKQbI9drwO0fuYaMQeCO7me/BAybW/eYWeCd+M1/APMCXyccED+AfYmpIxLABdGbvwqeHfQVY8ATnZsvAxMiR+cs0fwv4KeqA1mZnRFF2gdQtJZR3GeVLs85oe8Wmrj4ANQCanwAagE1PgC1gBofgFpAjQ9ALaDGB6AWUOMDUAuo8QGoBdT4ANQCanwAagE1PgC1gBofgFpAjQ9ALaDGB6AWUOMDUAuo8QEIxnz95dyLlYSSLO1fkVkWeplyRGvzhwqRhGLQgEVgJTg+By4VEp+KDvtz/EjymwAAAABJRU5ErkJggg=="
+       id="image37982_core_weapon2_0"
+       x="72.334732"
+       y="116.11997"
+       style="stroke-width:1.6127;" /></g></g><text x="108.16666666666667" y="24.9" font-size="2.9" font-family="sans-serif" font-weight="bold" fill="black">Spear</text><text x="108.16666666666667" y="28.2" font-size="2.5" font-family="sans-serif" fill="#222222">Good against charges.</text><text x="108.16666666666667" y="31.099999999999998" font-size="2.5" font-family="sans-serif" fill="#222222">Strikes first against</text><text x="108.16666666666667" y="34.0" font-size="2.5" font-family="sans-serif" fill="#222222">charges or opponents</text><text x="108.16666666666667" y="36.9" font-size="2.5" font-family="sans-serif" fill="#222222">moving at least 2</text><g transform="translate(98.66666666666667,38.7) scale(0.5,0.5)"><defs
+     id="defs2_core_weapon2_1" /><g
+     id="layer1_core_weapon2_1"
+     transform="translate(-88.155359,-115.11998)"><rect
+       style="fill:#ff0000;stroke-width:0.233098;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:0;paint-order:markers stroke fill"
+       id="rect234-2-6-37_core_weapon2_1"
+       width="15.999999"
+       height="15.999999"
+       x="88.155357"
+       y="115.11997"
+       rx="3.4285712"
+       ry="3.4285712" /></g></g><text x="108.16666666666667" y="41.6" font-size="2.9" font-family="sans-serif" font-weight="bold" fill="black">Blank</text><text x="108.16666666666667" y="44.9" font-size="2.5" font-family="sans-serif" fill="#222222">No special effect.</text><polygon points="48.33,27.40 45.93,27.40 45.93,30.00 40.33,26.00 45.93,22.00 45.93,24.60 48.33,24.60" fill="#444444"/><polygon points="48.33,44.10 45.93,44.10 45.93,46.70 40.33,42.70 45.93,38.70 45.93,41.30 48.33,41.30" fill="#444444"/><polygon points="48.33,60.80 45.93,60.80 45.93,63.40 40.33,59.40 45.93,55.40 45.93,58.00 48.33,58.00" fill="#444444"/><polygon points="48.33,77.50 45.93,77.50 45.93,80.10 40.33,76.10 45.93,72.10 45.93,74.70 48.33,74.70" fill="#444444"/><text x="6.0" y="95.8" font-size="3.6" font-family="sans-serif" font-weight="bold" fill="black">Abilities</text><line x1="6.0" y1="96.6" x2="142.0" y2="96.6" stroke="#999999" stroke-width="0.2"/><g transform="translate(6.0,97.8) scale(0.5714285714285714,0.5714285306122479)"><defs
+     id="defs2_core_skill_97.8_0" /><g
+     id="layer1_core_skill_97.8_0"
+     transform="translate(-39.826756,-14.415789)"><rect
+       style="fill:#ff0000;stroke-width:0.233098;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:0;paint-order:markers stroke fill"
+       id="rect234-9_core_skill_97.8_0"
+       width="14"
+       height="14"
+       x="39.826756"
+       y="14.41579"
+       rx="3"
+       ry="3" /><image
+       width="10"
+       height="9.9741955"
+       preserveAspectRatio="none"
+       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAC
+iklEQVR4nO2aTYhOURjHf6/P2WBQvjdKI58LJKVeG0XZkF4lTMrHAjVsSBaKlCxoFpRSmLITyUT5
+WJAM05SFj1BjQT7KAs0YGmOurp5br9v7Xue8c58z58S//st7zvO7H895znMu/JeR6oA24DZQIGCt
+ByJxkYB1owzkLIFqGtBXBtINjCZAHSyDSLyVwFQAOiuA3CcwLa8AkXg2AelCBsgxAtEY4GsGyAdg
+OAFoZwZE4tUEoA4DkCt4rnkGELF/AJPxWM2GILH34qlGAB8tQF74Wkius4BIvBQPdb0GkDOug6yX
+InAWsFhW7rXAZmAXcCBVIJq6C9gH7AAagTUy9iJgJjDVptDcBrQAl4Cbkj6fA2+BLzUEp+XPwBvg
+GdAusV4EzgElpLyOAndnDLJSaAc7mIE8qRXJ6zUDeOpBUJGlX8p3+4dGAZc9CC4y9DVJQhVVkCzy
+04NAoyruB44CQ0wyWcnTJPAN2Iil5gOvPAg+Er8GFlKjxgO3PIC4C0xggBom7+RgQZzOe0e5Aehx
+CPAd2IKSFsi7qg3xDliCsqZIraMF0S5zONEJRZDjONQTRZDHriAmyeqqBdLvqjHR6OBj3+QCpMUB
+yHltiIKkRm2Q99odlrkOICLxHE2Q3Q5BmjRBWi2D6QWOiHstr23V7CR2WQTyKFV2x33hhxbXdwMj
+NUCWGQbQI7vMoRXGiHd12y1uSFED5LDBxHeABoOxpqeOrqv5kAbIg4wJP8mdtk2Zpb80vtvyhqjP
+aIleldZmrZqYscj2AWNz5Pjdk620aMX937y0qspeJ9djulOpoi6+g+PQOUhtTrWjTuY5wb2ywxkX
+P8cUZa7cfzKIB94vvy25Uh2wR9L+v6NfqcfPxTBhRuQAAAAASUVORK5CYII=
+"
+       id="image890_core_skill_97.8_0"
+       x="41.826756"
+       y="16.428692"
+       style="stroke-width:1.76617" /></g></g><text x="15.5" y="100.7" font-size="2.9" font-family="sans-serif" font-weight="bold" fill="black">Veteran</text><text x="15.5" y="104.0" font-size="2.5" font-family="sans-serif" fill="#222222">+1 to hit</text><g transform="translate(52.333333333333336,97.8) scale(0.5714287346939242,0.5714285306122479)"><defs
+     id="defs2_core_skill_97.8_1" /><g
+     id="layer1_core_skill_97.8_1"
+     transform="translate(-54.355924,-14.415789)"><rect
+       style="fill:#ff0000;stroke-width:0.233098;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:0;paint-order:markers stroke fill"
+       id="rect234-90_core_skill_97.8_1"
+       width="14"
+       height="14"
+       x="54.355923"
+       y="14.41579"
+       rx="3"
+       ry="3" /><image
+       width="10"
+       height="10"
+       preserveAspectRatio="none"
+       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAD
+kElEQVR4nO2YO2hUQRSGvzUPHzEQwUQLQTCoiI1EIQlYaaGJKBaChbIJiI0pQgo7BTujkmiEgJWI
+jYIgCiKChVHwtYqFUaKJEl1dQWxEEY2PrBw4F4abu3dn7t59FPvDYWF35j/nn3Nm5sxCFVVUERX3
+gPfAMNAJJCg9Eup7WGO5G4VkGsgali6RqIQRfNoXg8TkjGEfiWkfgBFgc4yi1gPHgDchfoeiEHeG
+EJqWApoKENCkHDa+JCZnyEq/s3TwEFgUwccC3Ys2PtKFZD+svPx2Hahx4J4HXHHgH6IA2JaXZ+cc
+uEccuTsKEeJSXp4dseA96siZjuNQcSkvsVngQAjffh2TLVVZRS0vsb/AbuZiB/AnAl8HMSDhcDya
+9gNoN3ja9TtXnlScF7Cc9WMRgvgCrFWOrcCM4/yxAu+oQMwHLkUQI13ACuXYC/yznHcVWEiRICk+
+GUHMc2NlD1mMP6v3TNHR77Cynt3RrApO5Rgzq/1WSbEH+Oko5rKutGT2gu832T/7KBO2AF8dxYzq
+3Drgln73HdhOmbEB+OQo5rDObQRuKEdFYCUw4SBE9kIvFYolDi252O9KKCc/FuunnPvXHMR8AzZS
+IVgFZPR+QN8ko463/5oya2Ap8NoIasToi/oduty3wLJiBdmiDdsrIBnw+pNyehIQ1HmgVsf0OnS7
+wuWVqIda9S2L9RhojiLkqc/RpE+Q3AMHA/42ErsJNOi4Lr0nwkRMK1edT8Ckb1wqDiF+Qd6qi/OB
+gM42pVkVbAI+B3DN6Nx8ArKFCJEgxkNW0S9owPf7FNBq8LXqd+aYAUsBWY0lUmnZiBG7r4HUGWVm
+ZsPP5z3SpnVOrXKE+ShIhIdmbcPDHMlqonV+W1uPXGjQtkTGCnrycE8Ay4kJNmXmZcUrtTCYY4tW
+TlEz42XFBT2lyoR3F3RbZMbLii3CsjFuZKIrjgZztfZDckzusshMMoZsTBiZ2KaPN/n3ZV1UEfIs
+feY783fmETNlmZUa7RhsRGSNLMmf3s44k+MCyycmGTEbYSI8O+0qojtHw/cL6DPGBe2ZFxb8L/Oc
+Tn3qy+9/1tivOVEPnAh5tsrGbAuY5xfzwELII4sjti3kMJBnw6DGPAeDIUfhxTyXXIt2rynLc992
+fKP6zhWXxDwHmRypjHI/xI1kjlKXmK2EfKRykLGNL6i0jlM5GLSNr14HZ/JtpjKhvsLjq6IKKhn/
+AWy6B8aPMpT5AAAAAElFTkSuQmCC
+"
+       id="image926_core_skill_97.8_1"
+       x="56.355923"
+       y="16.415791"
+       style="stroke-width:1.76389" /></g></g><text x="61.833333333333336" y="100.7" font-size="2.9" font-family="sans-serif" font-weight="bold" fill="black">Multistrike</text><text x="61.833333333333336" y="104.0" font-size="2.5" font-family="sans-serif" fill="#222222">This many attacks per</text><text x="61.833333333333336" y="106.9" font-size="2.5" font-family="sans-serif" fill="#222222">model</text><g transform="translate(98.66666666666667,97.8) scale(0.5714285714285714,0.5714285306122479)"><defs
+     id="defs2_core_skill_97.8_2" /><g
+     id="layer1_core_skill_97.8_2"
+     transform="translate(-68.885095,-14.415789)"><rect
+       style="fill:#ff0000;stroke-width:0.233098;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:0;paint-order:markers stroke fill"
+       id="rect234-9-1_core_skill_97.8_2"
+       width="14"
+       height="14"
+       x="68.885094"
+       y="14.41579"
+       rx="3"
+       ry="3" /><image
+       width="10.000001"
+       height="10.000001"
+       preserveAspectRatio="none"
+       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAF
+GElEQVR4nO2ZeYhXVRTHP78ZJ81pwRYr26xsMdtoKrHICqOSCIwiotVoMcjqj2xhStocWsgmcBpK
+hELaKYnoH6moyBZNK0O0jbTFstGidMqxxn5x5Hvj8ubd+97v/X6zRV84OL537vmdc5dzvuc++B8V
+4zhgOfA20MAgQB0wAtgbOBWYAbwJ/A2UJdcyAPGO52BMvgGagS3Ar8ARDPBANgO/AF8CrwKzgDOB
+euk3S28tMIFBjlYF8ydwP7AbgxhXA50KaBMwHzgPGMkAxBBJCPsBj2o7+tvzZ2CZMtxrwHvAaukt
+6kP/t52JD7R1upW1xkf0dwYuAp4CVgB/RZKGBdTrsNmfnUi1TrqAU3La2Q7YHTgYOAwYDVwnO229
+HAPDgYUZKXglUCpov002zqcPYDM5KaO2jJFuE7BDBbYXa/xB1Tq5D3AhcDNwL9AC3ApMB84BDvcO
+dr10tqYEcox0Vilb3Zjz9zdovK18YcwJOJWU34BbvO1zBvCT994c315ca6P33CYjC1t09owCFcKV
+OSmIL68Au2j8KOAtPbcqbzg9oW9MYFiGH+ul6+xWhJGa5XIBWQOc4G21S/RvXeAMxdIzSuflCjJf
+KpUoKrYdrk/YbAnonpjhy0PSu6vSICyP/15lIE5eAHaSXasLnyfe23lpzNHPmO53GWyhB+6pURBO
+vvCou5HEJd67O/R8ggINYZH0b8gbRKP4TpZzRtVnAi8B63Lo28xP0W/sLwrzsLKcnR+rFd97q5dE
+kyhPp6p+JhwdiInxoaMT46zYXQF8HRm31XPC9SMWyDxPZ1rEt1nS+QrYKyuQVTkCsZl0M5s0OBbo
+CIzrUCvsYNX9+YROW8Q3y3oLpBdlwk05grADt6P0jV/dqb+NnpzkBbMyMW6dl5JDOmVltjy1bWlM
+aUaOQMyQ4QL931bQsK+ohDuwQ9Qs3Q1cJbqON3ZTwP7xEf/qvax3diyQZ3MEMlsrt9Z7Zrcmhs/k
+ZAi2Yk9HbLdKb0Sg2p8lvffJwEcF06v9AMpgbuY/BNqB24BHgE8zksBMHfySzo0FnMSD0jfCGkTJ
+66MrlWtko9VL4XnHrhfBdFun3Xt3KOm1JLb9tu3xckFxRapFmagkMpg1bol6d4OxidcT7y9N+Lha
+z6OXFElWWolMlY029ezu79iYx4Ch0rVs9m2KTvK8ORLbUG0hDMlE2ViglIzOytIUXeNwl3u/O009
+fTmFdO6R8NExCJf+U+HvzUpko9e5/aBnztGh6gIXiorP8baSNVlPROw2p/jo6k70ytUncpXIkxp/
+ZILCWA8SwthIhuyOZKWXpXNxyPCwwPJmiTk8TjbmJt7ZBZthVzVE1q+fq1XoilCYSZEJuD1BkXpg
+SsHVcBT8wJQbQ0chDshpa7EyZ56+xEhjKp4pEESn8r7Ju4FD3ahUnHboQxksC59o5XpkrnEZ15Qx
+aVcHmFUoxwe41R9e6i4pdWd90RqeYND/YnnBIPJIh+7EEJl8DvhRH36Mghyid5ZO52Z0iJlY1ouB
+uDY35qCl0o+B06gStkxv9HIwXaohVjj3VN9+sramfYqbTI3QkJI++0I26KNpzXFTzuvRWsiKWlxK
+xzC5ihvGPGJ3uI/nuMuqCY5SZql1EGtqcagrxSh1ebUIwOrFfZE7q16HFZ8Xqwhgs5KIqyX9ijrN
+Zl7nu0UYp4cqcH9jqpqd0NYxin1Z0W8YfY2J3mewsgJ7QFR90GGMaI0x2mP72xn+S/gHDyPEL0+f
+CwYAAAAASUVORK5CYII=
+"
+       id="image818_core_skill_97.8_2"
+       x="70.885094"
+       y="16.415789"
+       style="stroke-width:1.76389" /></g></g><text x="108.16666666666667" y="100.7" font-size="2.9" font-family="sans-serif" font-weight="bold" fill="black">Extra wound</text><text x="108.16666666666667" y="104.0" font-size="2.5" font-family="sans-serif" fill="#222222">Additional wounds against</text><text x="108.16666666666667" y="106.9" font-size="2.5" font-family="sans-serif" fill="#222222">multiwound models</text><g transform="translate(6.0,114.5) scale(0.5714285714285714,0.5714285714285714)"><defs
+     id="defs2_core_skill_114.5_0" /><g
+     id="layer1_core_skill_114.5_0"
+     transform="translate(-39.826756,-28.944957)"><rect
+       style="fill:#6666ff;fill-opacity:1;stroke-width:0.233098;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:0;paint-order:markers stroke fill"
+       id="rect234-1-0_core_skill_114.5_0"
+       width="14"
+       height="14"
+       x="39.826756"
+       y="28.944958"
+       rx="3"
+       ry="3" /><image
+       width="10"
+       height="10"
+       preserveAspectRatio="none"
+       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAC
+SUlEQVR4nNWZO2sVQRiGH8FCES9gISgYRQ1IELw01iKoRMsQlVQWsbIKAbEQtbBSkhQKahovjY0W
+CqL5AdoEFUMMBGKhkkBEUBQviflkYAJhyc5+5+zO7HceeOA0y77v7pzd2RmIQxtwBRgFvnnd78vA
+VlqAbcAQ8BuQHP8C94B2DLIDuAvMBQpknfPHuGNrZxcw7K+ytsByd+gOsLOOAgf88JgvUSDrP+AJ
+cDh2+C1AH/CmwvB5vvbn2lxVeDd+zwIj/opJYueBF0Bvo/+lTUC3H7NTNQSXAqd8tm6fNRdpMXP5
+YyCcKP2VXwO+GggoSmdDRT4aCChKP4SKTBgIKErHQkVGDQQUpa9CRUYMBBSlT0NFbhsIKEoHQ0XO
+GwgoSs+FinQZCChKj4WK7DcQUJQGP8zWVjw1j+V3YCUFpJiml/U5Cm4YCCoFXtQUOW0gqBR4SLuU
+I8ZnvWtQMmYgsOT4mAa4ZCCw5OiGvpoOA4FlGd3C3zoaZNxAcMn4iCboNxBcmnlaZdkA/DAQXrzv
+gBU0yU0DBcR7hhLsrmlhTjJ+AlZRkvutfjeWvulD+x2xfa+Z6Wq5VmORTirEPcE+11DiIRHoTFzi
+S9FCdRkeJCxykoi4ITaZoMQtErAH+BmxxFtgNYnoARYilJgBtpOYCxWXcHf5IDUxVFEJ98I9So24
+2ehAyRJul+wERrhaYqHtCMY41eDTzO2O7cMoe/2WWFGJlzHf2lXhAj7LKbDgVzJLf1ukpMvvvC6W
+mAaO06JsBK77z4D1Mc/0Hy0q2f7FWAa8AAAAAElFTkSuQmCC
+"
+       id="image641_core_skill_114.5_0"
+       x="41.826756"
+       y="30.944958"
+       style="stroke-width:1.76389" /></g></g><text x="15.5" y="117.4" font-size="2.9" font-family="sans-serif" font-weight="bold" fill="black">Shield</text><text x="15.5" y="120.7" font-size="2.5" font-family="sans-serif" fill="#222222">Reroll failed blocks</text><g transform="translate(52.333333333333336,114.5) scale(0.5714287346939242,0.5714285714285714)"><defs
+     id="defs2_core_skill_114.5_1" /><g
+     id="layer1_core_skill_114.5_1"
+     transform="translate(-54.355924,-28.944957)"><rect
+       style="fill:#6666ff;fill-opacity:1;stroke-width:0.233098;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:0;paint-order:markers stroke fill"
+       id="rect234-1-85_core_skill_114.5_1"
+       width="14"
+       height="14"
+       x="54.355923"
+       y="28.944958"
+       rx="3"
+       ry="3" /><image
+       width="10.000001"
+       height="10.000001"
+       preserveAspectRatio="none"
+       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAD
+GUlEQVR4nO2Z3YtNURjGf8yIoeTk24WLkZLciCtGZFy4RSJjxiiSXPgX3Bs1CsUYNPwBcyVMISQX
+Spnx0ZmERiNGGHFhGpbeeletdnvtM+fstfc5k/PUU2evj/fdz15rvWu960Ad/x+alNMarUBRuZ1p
+iCXAdcA4/Av0AYuZBpgBdABjEREuvwEngZnUKFYBDxMERPkAaKbGcBj4UYYIS+nTSQ1gNnCpAgFR
+9lUzshWARwFEWIotsZkrlgLPAoqwfAGsyEtEQR2ajDgELMhaxCxgIEMRRnlf119mOJODCKM8nZWI
+TcBkjkL+AFtCi5Bd+GWOIoyzXoKeAPZUQYRR7gop5EmMA5lqLWU+by7j2SjFdxCs9HypFp3DWT0b
+h/IOqXGsitPKKI+EEHKjBoT0hRDyOMGBJEsXgfW6gS0DDpTY+QeBfXrMmQNsAHrVlkk4h6XGaIKI
+Nk+fucCdmD63Ek657QliPoQQ8tNjvEfr5wPXgO/AW80QBYuAz057+b3QyV/ea7bYqzYElz2+xkMI
++eUxLlNCcDVmpOTSQXDcKZffaF30y1/Ruo0JCVhqjHuM2yny1bMjNyqHYp6j7cWGoMnjy9anQtFj
+XBar4J2n/oTW71SiZXFt32j9ck/9qxBC7nmM79f6Ts8i/RLJ+ApaFhc0ZKEL2jy+7oYQcsFjfEij
+k533gzFtuh073Z5QbC/u5iUcTM9lvbPfdiJRoy5o905rAlijnHDKx7St9LERLi5cWx4NIWRdggMb
+VkVsg7aXNLUL+K31N5VGy7qcVLZB+7ph2sRwbajbw48lHAmfO2FXsDqmjZRZtGqfUnZH9R3Icp3E
+sd/pF62z6C/D3nkCYlsZjt0Xnmp5EreGFNJeRSEHQ4mQBfm6ikKKTnRLhY4yHYcWYpwNM9fRyELI
+cNpROVSB0yyEGCc9KBuN+iXSCClEmEbIcKWjIrnBSEohPlRic0TfqWI0639+A86xIw8hk8BT4JQm
+ccF2d3tC3QGc1VQ1tJBPemOyN4+/FqYyWqWQy1evFHKBsNu5lEhCj7a1lw511FFHHUwJ/wDqTK0s
+vD7kEgAAAABJRU5ErkJggg==
+"
+       id="image1001_core_skill_114.5_1"
+       x="56.355923"
+       y="30.944958"
+       style="stroke-width:1.76389" /></g></g><text x="61.833333333333336" y="117.4" font-size="2.9" font-family="sans-serif" font-weight="bold" fill="black">Armour</text><text x="61.833333333333336" y="120.7" font-size="2.5" font-family="sans-serif" fill="#222222">+1 to block</text><g transform="translate(98.66666666666667,114.5) scale(0.5714285714285714,0.5714285714285714)"><defs
+     id="defs2_core_skill_114.5_2" /><g
+     id="layer1_core_skill_114.5_2"
+     transform="translate(-68.885095,-28.944957)"><rect
+       style="fill:#6666ff;fill-opacity:1;stroke-width:0.233098;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:0;paint-order:markers stroke fill"
+       id="rect234-1-0-2_core_skill_114.5_2"
+       width="14"
+       height="14"
+       x="68.885094"
+       y="28.944958"
+       rx="3"
+       ry="3" /><image
+       width="10.000001"
+       height="10.000001"
+       preserveAspectRatio="none"
+       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAB
+5UlEQVR4nO2ZT0rDQBSHv42XUGirIHgCT2BFbaXewJ1X8AIW3brR9hQeQLBdCKKewIVg2xPYito/
+OBKYgoRk+pK0zYvkB4/AZPJmvkzz5pcUcuUKUgloAj1gZI8N254Z7QJ9wASE114mA1p3QBgb70AR
+5WrOgDA2rlGunhCkg3INhSDfKFdXCPKGcjWEIFcoV0lYtQpkQGU72TCITOwjUxVtie3YAtCxP6dM
+rMS/8lUT4cM+0ea/XL5KGqn7L4mvMsJI1X9JfZXR7r+kvsoswn9VgSfgwx4rCUCkD7aJUADEEEEJ
+jmKCmAWESM8hFz+SMZB+yMX9OYEUIk76QOuKEOPumzggFcedyRTIFMZbgYE9xoVIHWSeWjpIDWjb
+vSMoodfeAg41g1xETF7XCFKLmHgaVW0g7Zggd9pABjFB+nMG+UkK8rfD5ozJ+89Hdb9dB8iaAyQo
+hxMkbJCw8xLt28G92HOM4WoPyrF0kFljSkAiJ81BNIAMfV++Z4H4+6sBqdsSfCYE8fdXA+JX0nKr
+EsRTDuJQDpIWyCqwA5wAl8At8KoVZAXYsC9cp/YT6X0MM7pUkG3gGDgHboAXYBxxwkHxZcca+do/
+k4D4NzzpX8mLiFYSEP+GV08BZgw8AFtJQHKRgn4BzwiUMAnYkY0AAAAASUVORK5CYII=
+"
+       id="image1013_core_skill_114.5_2"
+       x="-80.885094"
+       y="30.944958"
+       style="stroke-width:1.76389"
+       transform="scale(-1,1)" /></g></g><text x="108.16666666666667" y="117.4" font-size="2.9" font-family="sans-serif" font-weight="bold" fill="black">Dodge</text><text x="108.16666666666667" y="120.7" font-size="2.5" font-family="sans-serif" fill="#222222">-1 to be hit</text><g transform="translate(6.0,131.2) scale(0.5714285714285714,0.571428408163312)"><defs
+     id="defs2_core_skill_131.2_0" /><g
+     id="layer1_core_skill_131.2_0"
+     transform="translate(-39.826756,-58.00329)"><rect
+       style="fill:#ff6600;stroke-width:0.233098;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:0;paint-order:markers stroke fill"
+       id="rect234-1-8-1-2_core_skill_131.2_0"
+       width="14"
+       height="14"
+       x="39.826756"
+       y="58.003292"
+       rx="3"
+       ry="3" /><image
+       width="10"
+       height="10"
+       preserveAspectRatio="none"
+       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAE
+D0lEQVR4nO2ZXYhWRRjHfy5lYGsIJpbkjaAXanbRhS2GaVSYIuF6pyjBigRuhrDeLnqjl9pFukSZ
+QhF5o64fkYuiqKCimJUaih+htheCXZit1VbywH9iOJwz58z7Me9e+IOB5d155jz/88x5ZuYZeMLI
+ZQPwAPgKGMvI5SmgC7gKHM7r8Dvwn9pdYCOwCHgDeAt4D1ij3z8GdgF7gWPA98B1tWvAaeAg8CnQ
+A7wDtNcpoA1YofGdn7/kdfzC69CM9jdwAvgImBQpYjpwMmfMtXmdRwHrgeEmC3KidgNzKohYDPyZ
+M8ZN4JmQ4Xl1vAz8CtzXt3MHuAB8Kyes7QN+yEzL2HYImBnw50iB3ftlb2C3Oi4nPvzdwP6CNxhq
+j4APNSuy9Of0P6tvJshmde6ldp6XY1ciBX2ecfCFnDFs6r9axYkuGVhWqhdzaok3Xau0Hk/EZf32
+E3Bc09j8q8Q8GVuWaBQudd6uIOQ+MNmLhKX28bU8dLIGGKTxPAtsBf4pEXO3XhHu7Q0B/zZgESui
+Q4tnSMwt4MV6H+Tm5is0j+e0HQqJ+U3fTGmGKsKlvE6aT4e2MiFBn9U6+FYNYCt9s5morFSWBGyf
+F023jPtoLv46YR/2tpJFc0bsA96V8QDpRNgi2lESFdtRRzHN25ilEuH4ukRMlY3m/4zWVmBYfzfr
+m8iKMMaVLJzfEMkNGVp0UkTCZ6HWsTwhf8WuLwMytO8lRSSy9AWiYhvSyriBLIOlioRPe2CK2Qay
+MutltIW0kfBZGZheY6jIEhnZQSllJHzaAkeAN6nILBnYvit1JHyWFgixIkYl2pU5hmrYtNUbCZ+2
+gpPmdiIYlJGdUVohwrE2R4htbCvjakl2akw5nbKMzylonCKCnTJa1aJI+OzPCPmRCHpltKlFkQhN
+r0tEsExGVutqVSQcMzJCfiaC2TKyXN5KEah499ATUuRTLlMzBehPgNUSOCWhCId/kjxKRcyxiwWL
+kdV6F6gum0qEccDzYQ8NEDFX/V4DXiYdezw/7BokyISACJuj870tzD1dBqVin+fLlkZEwolIVWlx
+fOf5Y1eFDYmE+98O0nHBe+4HRZ1OR0bCNbNLxR3vuXanmcuhGkS41HxeRYFNKvvP00Yz7+KmHv6o
+eh6xS8q3gXUqU5aJKGtDOs/06+PsVg1gWo3VmSFv7NdjjUMiLmrRnK2rul5dEJ30jgBFbViVmgHV
+ByxpdKpwXnQL4I9p61gUmwMiLEGEaJdjnXK0T47fqHB7PKgXsksvaFnmgBV9NdhVo4gynlY0F6hA
+bVOvX7tafwoVtdux9zdzmyCijFHAS0oaXUoilkzOKbk4X76MGXRSRkSqfVURPZ4/lsWi3o6l1zMj
+QITzZ7uWBrvHeQIjkcd2zYuJqoPueQAAAABJRU5ErkJggg==
+"
+       id="image707_core_skill_131.2_0"
+       x="41.826756"
+       y="60.003292"
+       style="stroke-width:1.76389" /></g></g><text x="15.5" y="134.1" font-size="2.9" font-family="sans-serif" font-weight="bold" fill="black">Shoot</text><text x="15.5" y="137.4" font-size="2.5" font-family="sans-serif" fill="#222222">May shoot this many times</text><text x="15.5" y="140.3" font-size="2.5" font-family="sans-serif" fill="#222222">per turn</text><g transform="translate(52.333333333333336,131.2) scale(0.5714287346939242,0.571428408163312)"><defs
+     id="defs2_core_skill_131.2_1" /><g
+     id="layer1_core_skill_131.2_1"
+     transform="translate(-54.355924,-58.00329)"><rect
+       style="fill:#ff6600;stroke-width:0.233098;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:0;paint-order:markers stroke fill"
+       id="rect234-1-8-1-3_core_skill_131.2_1"
+       width="14"
+       height="14"
+       x="54.355923"
+       y="58.003292"
+       rx="3"
+       ry="3" /><image
+       width="10"
+       height="10"
+       preserveAspectRatio="none"
+       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAD
+6UlEQVR4nO2Z34tVVRTHP6LNlJAp6FydygR1oP4CHcuHNPVCpU816btvolhDgxDok4zTiyDhj9ce
+kiLUNPUh6Rc0VA/W5PxQn7TpJQs10a46Hlmwrlxu+8c65+5zGcIvLHC8Z629v2fv9V1r3QuP8f/F
+PGATMAScAsaBv4EacBu4CvwCnAZ2AxuAZ5gm6AS2AGeB+0CW0+4Cx4GNwBORtYR8cjwF7AQmC2ze
+Z38AW4GZHhLyTFJUgcsJCTTbb8CLDhLJiDwJfFQigbp9AsxykEhCpAL83AYSWYBEs+XOmSXApTaR
+yBrWTUqi0mYS/xqI7C6SE3mvk0jwN6poK4AulVVRueeAlfqZ1Jl7Tb53VEhQvyQkyJnYUvD2Agty
+xF+kG/vHQWIkFYlqDhJHgWcpjm6g10FiRP9uhAjBS3mq9YSBwAN9SzNIAznNXzX2GLCw6XMplB/r
+Z3VlC2KngcQU8Bbp4DuJqgpA8/rSAURPw9J2DLSJxB3P+pOxU9lizIkYXgOOaAd8C7ihrcehhnwI
+kegNkKjbm6ENnDWoUyixe1R+Q3Wiakjsbn0Bob0cC80TsVZcJNaH1Tp/tEqijj2GEcA5z2yKON4P
+1ImexCTqp9JcNJttPQ58GHGSK+NDiuvkwqnInpxF8mTESWTZl9itkKg2CUAj3ovs6UscuBhxkt7J
+hSMtkpDnDnpir4rs6bzL6VrEyZcf457n3zeSyLSiu/B8ZE/yhcZ/UIs4dXgWu+l5XppCwU8REmLX
+PbFnG8pB24j8oONAqO2QGC505phfSrtarjbG1zuNBga7LGB/upxiHa8MRS4c9jxf0zzpVhvwkMha
+SPaxIvL7rmextRE/i73qid0f8TvhchqKOH2LH1+3QOKrQNzvI76DLqeNhhbFV4mXA38VICF5uTSQ
+H1MR/9ddjnMNTaPzDSheyUlGSLwciDdkaBrn+JzPGHRbipQPy4BzxuvkOwnBYsM8IjntxWbDJj41
+zOlrdIga1W9JxC6oOvkSuw6J/blhH32hIFKAfjcE2UV5+MCw/tVAgX6EHYZAkoRvl0Ciz5DgYtss
+wToD1bqsr4NmaPGcMqx7Ufdowvoc6vNZRABiWGzMiUxfnhTgXDiQg4wozD7VfisqKrExdcoabD8F
+IMf3Y45F6rnznU52vbrZDrWK/l+/VmzLNcoabNiS4D7MN+ZL2XY552l7f+iJjcFl2gTwAonQVeCa
+pbDhnD9VmHNmvypHO0gcyiOzRbCu5Ks2XkRii0Le1HZtFVIRuKIVu9RTCBF6x/OboMXuaRfb14q0
+pobMBm9oYfxC5+lrOrvX9N+jOp4O6lD0dPJdPAbTAw8BPC+D2Br7TnMAAAAASUVORK5CYII=
+"
+       id="image830_core_skill_131.2_1"
+       x="56.355923"
+       y="60.003292"
+       style="stroke-width:1.76389" /></g></g><text x="61.833333333333336" y="134.1" font-size="2.9" font-family="sans-serif" font-weight="bold" fill="black">Accuracy</text><text x="61.833333333333336" y="137.4" font-size="2.5" font-family="sans-serif" fill="#222222">Shots hit on</text><g transform="translate(98.66666666666667,131.2) scale(0.5714285714285714,0.571428408163312)"><defs
+     id="defs2_core_skill_131.2_2" /><g
+     id="layer1_core_skill_131.2_2"
+     transform="translate(-68.885095,-58.00329)"><rect
+       style="fill:#ff6600;stroke-width:0.233098;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:0;paint-order:markers stroke fill"
+       id="rect234-1-8-1-2-1_core_skill_131.2_2"
+       width="14"
+       height="14"
+       x="68.885094"
+       y="58.003292"
+       rx="3"
+       ry="3" /><image
+       width="10.000001"
+       height="10.000001"
+       preserveAspectRatio="none"
+       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAC
+0klEQVR4nO2Zy04UQRSGvyGgM/GyZiks1REjK4eFBl5BDV6eQV4AMxsvo6zVxLDRyIYQBIkv4C0m
+RjfiA0BwgTIYtmhsU8khmZxUzVT3VF9G509qQ/e5/F1zTp36gXQRqdWziPpECoaeJHIImALqwCrw
+1ULE/G1F3pkEhigQzgLzwK4l8U7L2DwBxvIkcAZ4lSB511oDqlkSKANzwO+AJA7WL6AhMVLFMPCh
+TSJN4ClwE6hZntfk2TN51+XnMzCa5k9pwxH4NTANHI7RtcxXvwq8cfj8DoynQWLPEswQuxSg/V4B
+Ni3v74UkM+zYiUXgSKggwFFgybEzI906rzhq4i5QIjwGpNh1vE/dNoA5i9M7pI/7lrj3kjobs7TY
+xZR2wrYzy5bWfDqJM33YbQSuiU44BmypHF4mGTv01rbrTmlh2pKH6aDemLecE3nhrcrlsa/hkGUA
+NF8mL9xQuewAgz6GUxZDfWJniYrlw170MawrIzMX5Y3nKqdZH6NVZWSGvLwxo3J64WOkb3bnyR81
+ldO67aUoxsoaUZzc+kQyQPRfEulU7KbQ8saET7H/s+23XsADcSHJgTipjJpZyDMdRpSfKqcLvkNj
+s8BD4w/foRGRMVuNjWSTB0rAO5XLozgOzJXyj3JwmexxzdJmY8uqa8rBpkg2WeE48E3lYJT82KjK
+hb/V0ZIIA2ljQJJujb0PnEzqsBFSlomBB5a4t7txWBZBWTttpLQzAw4SH0PcUkdFttTOl0WyCVkT
+K5Y428CJUEHGHSL2VoczxmfoLIkqrws7kpjnQpFoJWPbmUh6/XXLBNCOSEUOu/cOn9tpkDjAiAjK
+rlF6V4SCGcc/eibk2YJl7NA1Eezn5EJZOpduzSHWvojkmcpPp0SLDUXCFHricyIEqiJj7iRI3gyA
+D+WjFAaDogDekovPuiXxL9K2Z2UU955i84ZP++0JRH0iBUNmRP4C/plMJPSk960AAAAASUVORK5C
+YII=
+"
+       id="image854_core_skill_131.2_2"
+       x="70.885094"
+       y="60.003292"
+       style="stroke-width:1.76389" /></g></g><text x="108.16666666666667" y="134.1" font-size="2.9" font-family="sans-serif" font-weight="bold" fill="black">Range</text><text x="108.16666666666667" y="137.4" font-size="2.5" font-family="sans-serif" fill="#222222">Range is</text><g transform="translate(6.0,147.89999999999998) scale(0.5714285714285714,0.5714285714285714)"><defs
+     id="defs2_core_skill_147.9_0" /><g
+     id="layer1_core_skill_147.9_0"
+     transform="translate(-39.826756,-43.474127)"><rect
+       style="fill:#00ff00;stroke-width:0.233098;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:0;paint-order:markers stroke fill"
+       id="rect234-1-8-8_core_skill_147.9_0"
+       width="14"
+       height="14"
+       x="39.826756"
+       y="43.474125"
+       rx="3"
+       ry="3" /><image
+       width="10"
+       height="10"
+       preserveAspectRatio="none"
+       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAD
+WElEQVR4nO2Za2jPURjHP3ML26IQxlKWFLmEbeTS3HIrL2lN2lIKL+TFkuKNXJIUmuIV9kqUXKcW
+LeMFLygh2uSWS7nMFraY9tOp51enf7//+f/Of7/f+f9i33renOvzPed5nnPOc6AP/x/GAuuA40Aj
+8AJoA7qBhyQY/YAK4BTQAngGaSeBmAwcAN5kUF6XByQIs4B64I8FAV/OkQAsAm5nobwu+3NtQud7
+ScCXmlwQKACOSLTxIhK1q06xytKJw0qRKwKDgWNATwwkfgJ5rojcC6lUKVBuSeQRDtEdUqkyYK4l
+kYsuifyIwaR8OeSSyJcYiWwmx2iKyEeW5JpIRUQ+MiGJRDxL+Q30T6JpeZbS6lrpTyEVs/UR9cBy
+ivaQitn6iHp0OUVnTKF3p0sSA2K6YylZ75LIKAvFbH1koesHlBeTj0wiAWiKwLTUI41/4UAcQUKJ
+lFr6yEoSalpllj6ikhfO8Dim0OtJWHcSuYpiPEN8cZL33W6pVDbvkQ8uiNyxVMrWRy5Llj52XIvJ
+nL4CG7R5qoGDwDJJPcXyNbAYOBthAuISMEbzQX+x1MV0HzBMm39Q9JSgUHK0zWkUvA6MF2kIqFcp
+pSptvI3y0ePJp890rW4BcEaSdy+Bk8AKWdisMA44LSHSzwbmpUmbKgI+igPqVcYe2Y0rWnmLljKd
+ksEv6+U2bo2tKRP6q3Y4CyK1UndCK+sASqR8OfA9DYEuYJM2vrrajLQhcjVlwDopnx0wWYMQUHLD
+cNN9rZVVStkcMaMgEp0SBBTyJSgows9TFs+IVBP6DAyRuvsWDn5T+szTylQ+GbkBtxr6Vmtm/jTg
+y87Xx4iugIG3aasYVJ8qavWmSp8LWvlqKdudIcL5O5FKwhf1X5kRQYp+E/Px/0s6DIq0aZnENVr5
+RwkaQ2WXg/r2ADOkb51hjl9h/lfepun8BBitPYWV3b7X6t8BR7VTuzwlE6NCq8Jag4LN0qZYlDXt
++l5bZ9dF+c/SgLNGf/WpuL8lwJErQ6z0LmlTG0WirybEILfEIUvE8QrEJHYAz9L0mRYiYMyXNo0h
+dFAy00SkMKa/keEy/itDm4kh2uiirjdG7ImByEAZ27RI+SHa6KKimhHqNno3YiI+etvGCzir+kCS
+8BcdYANtt0XBEAAAAABJRU5ErkJggg==
+"
+       id="image719_core_skill_147.9_0"
+       x="27.167509"
+       y="55.873917"
+       style="stroke-width:1.76389"
+       transform="rotate(-15)" /></g></g><text x="15.5" y="150.79999999999998" font-size="2.9" font-family="sans-serif" font-weight="bold" fill="black">Move</text><text x="15.5" y="154.1" font-size="2.5" font-family="sans-serif" fill="#222222">Extra moves per action</text><g transform="translate(52.333333333333336,147.89999999999998) scale(0.5714285714285714,0.5714285714285714)"><defs
+     id="defs2_core_skill_147.9_1" /><g
+     id="layer1_core_skill_147.9_1"
+     transform="translate(-68.885095,-43.474127)"><rect
+       style="fill:#00ff00;stroke-width:0.233098;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:0;paint-order:markers stroke fill"
+       id="rect234-1-8-8-7_core_skill_147.9_1"
+       width="14"
+       height="14"
+       x="68.885094"
+       y="43.474125"
+       rx="3"
+       ry="3" /><image
+       width="10"
+       height="10"
+       preserveAspectRatio="none"
+       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAC
+JElEQVR4nO3ZS6hNURzH8Q9CUd4hyUQmSgbyKCOvMFBSJsYMlJIMPDJQd2AsA5nJzISoWxS6AxIz
+IZKUKLo3A6/rcbG1a9067c657j5nr3P3yvnWb7p+69f67/96bHr06PHfMDcoeX4hw3yJMxyCbJc4
+QyHIGYnzOAR5ickS5mYIkmubhDnXEOSKhDnQEOQ31kqU9Q1Bct3DlIh+S2MNPA1fCmFORu6SO2MN
+3l8I8hM7InmNlnBfjJU/XAiS6zPWVW1U8LiDxVUOvgJ/moT5FKElFz3eYVOVBgNNTHL9CCs2qSKf
+Zh75ee9UVRvyvhYmo8o3zmUV+IzlcQMLOjWYjsF/GOWrcwELIwXJ8AYbOw1zehxGuT7iPNZECJKF
+rnm0k3KejQ/jNBvVo3By3hJWtYogWdC1Ti59B0uaNeorHuIijmN3KJOVWIIZbYz5qt1jU9457ncQ
+Joa+41A7YZaH7yCrma5iTtkwe1tskhOtF1hdNsyxGkw8a6JvYZMuRV8NJp610CXMLBPmSE3LLMPT
+0BXHzVa8r8HEs4KeYVU7t7v+lEuryC48n8AAw9ivIvKNcw/uptB+y2ygJ/AAIxFDXMYsXSKv2c3h
+9JqfkG/hCd42eeSIfkSJSdkQr7FBDSkT4jrmqSnjCTASLnm1flTvylW3G4wV4jYWSYRWz0G1L6Ui
+xRCDqf6XyRo0EO7ySZKFK8FZTJUwQzF/K3STaD96evRQPX8B35aYEN0P6OAAAAAASUVORK5CYII=
+"
+       id="image989_core_skill_147.9_1"
+       x="70.885094"
+       y="-55.474125"
+       style="stroke-width:1.76389"
+       transform="scale(1,-1)" /></g></g><text x="61.833333333333336" y="150.79999999999998" font-size="2.9" font-family="sans-serif" font-weight="bold" fill="black">Turn</text><text x="61.833333333333336" y="154.1" font-size="2.5" font-family="sans-serif" fill="#222222">Extra turns per action</text><g transform="translate(98.66666666666667,147.89999999999998) scale(0.5714287346939242,0.5714285714285714)"><defs
+     id="defs2_core_skill_147.9_2" /><g
+     id="layer1_core_skill_147.9_2"
+     transform="translate(-54.355924,-43.474127)"><rect
+       style="fill:#00ff00;stroke-width:0.233098;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:0;paint-order:markers stroke fill"
+       id="rect234-1-8-81_core_skill_147.9_2"
+       width="14"
+       height="14"
+       x="54.355923"
+       y="43.474125"
+       rx="3"
+       ry="3" /><image
+       width="10"
+       height="10.000001"
+       preserveAspectRatio="none"
+       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAC
+6ElEQVR4nN2ZSWgUQRSGv4zRSdxwD24XLyLiRW8u4AIiiCgiGhEU3OIxBlxAXNDDKEZjctGTejCg
+KIK45OASPKgRUQQVAiIeoolGDyIxKi6RgjfQNHTP656Z6mp/KGiqitfvq/X1a9ApC3QCAyGlF5iL
+48oCbwqAmNIHLMFxTQReKmB+AqtxXBOA5wqY38BGHNco4KESZiuOaxhwRwHzF2jAcQ0F2hQwphzF
+cQ0BLithjgEVOKxBwDklzGkgg8OqAJqVMK1AJY7DHFfCXJNL1mntUcLcAqpxUBlgAdACfFfCtAMj
+cMT5+bI/3iud95cOYHTSzr+L6by/vABqbDk/DzhVQufzpQtoBGaUE2AmcEgZwkd1vllmNuPK6TMQ
+wfkm+fiyfsPn0jTypYZxynm/mpQQ510PDKPA1KMLNKeTgmW2t4CdbcBBElauSJjhQDdwEweUKwLm
+sLR9dmU/5WLATJLcV75tGik9AM766msV7xgMXLHx3a+FaZEUkbfupML+Lun7GAvSwvjLgwJ2qyWn
+bPouw5LiwPTL0gnSCulnsptWFQdmdoi9RuljInBch9kRYuuC9FlLQmqNAGJOskKDsgnLqpEk3K8I
+IK9C7NVKn4s288D7gK8x9sgfYGSA3SzQI8nwleUEyMi0d8U8fvNlccg7lgusmeXN5YAYD9woEkAT
+LVcBz6TfJ8qosfLfcKcks58CPyKCXA2wPcbzU+kLsArLqpQMzHqJkdoKJPBMm18mMr7ryXs5E2Aa
+jQuZvSm+vuukvsdW8q5Us2eWkVf5/We+JlOtt3JaOZHkLka9wEf+A72Wr8nUaCqwHTgC7AYWyU/W
+67JHJifpnLks6+RkMnfECWCpL9lgwpozsg/8x3Ef8EGeDaR1Vcm90R9wX5j7YJakhDqk7htwCTgA
+7Bf4bsVlWVa1ewJB88NziyyVDcA9z2g/kuf7AUsnA6wBbid1/Jqk2xNgTkB7vWekO2VmUqsGCf4W
+ltLqPyJcWoaOzUjLAAAAAElFTkSuQmCC
+"
+       id="image914_core_skill_147.9_2"
+       x="56.355923"
+       y="-55.474125"
+       transform="scale(1,-1)"
+       style="stroke-width:1.76389" /></g></g><text x="108.16666666666667" y="150.79999999999998" font-size="2.9" font-family="sans-serif" font-weight="bold" fill="black">Charge</text><text x="108.16666666666667" y="154.1" font-size="2.5" font-family="sans-serif" fill="#222222">May move 1 extra into</text><text x="108.16666666666667" y="157.0" font-size="2.5" font-family="sans-serif" fill="#222222">combat. Strike first if</text><text x="108.16666666666667" y="159.9" font-size="2.5" font-family="sans-serif" fill="#222222">moving at least 2.</text><g transform="translate(6.0,164.59999999999997) scale(0.5714285714285714,0.5714288979593702)"><defs
+     id="defs2_core_skill_164.6_0" /><g
+     id="layer1_core_skill_164.6_0"
+     transform="translate(-39.826756,-72.532469)"><rect
+       style="fill:#ffff00;stroke-width:0.233098;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:0;paint-order:markers stroke fill"
+       id="rect234-1-8-1-1-2_core_skill_164.6_0"
+       width="14"
+       height="14"
+       x="39.826756"
+       y="72.532463"
+       rx="3"
+       ry="3" /><image
+       width="10"
+       height="10"
+       preserveAspectRatio="none"
+       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAD
+SklEQVR4nO2ZTWxNURDHf2l4vqKCxvdXxEK0QSNEG2JdCxISRMRXQ0IkQmhFYuEjZaMabdkQsWFn
+a4GSltiQkFcLVpU2RCIaLaVon0wzL7lu78e57937epr4J7O5d86Z+d8zM2fOuZAMyoAGoB34ptKu
+z+Sd9UgBzcAAkPGRP0Cj6lqJFPAogIBbHtpKpjkCiaxcxTKUachEJSJjSrEIDR5O9gM1wByVWn3m
+1qvHIrzxcFAcd6PWQy+NRej1cHC2h94sD70eLEKPh4MSTm7M9dD7yigMrVO2h9YVn2SvNUj2y1iE
+0jzK7zIsQ2MORKRsW4eUth2mJB4AY7EUKW07gsLst66EtSTcOVOvFalXJa2JbV1O/IeNeJZDpfKT
+pyNJJBOzxIbpwEVgOzDeQiKTgN3AXWCln9IEV6h80fPEOAuIpIATQLdD950SG4azPpO/Bcp9DLTF
+SKI14PTZ7jPmult5JvA9wMhPYBfmiCsXtgJ9AfMMAkudA2oMjMugIwUkst+wEf1nVdKGyy/3VTsK
+QGRLhG5aLv+KZdC8iLEsZ4oNCRJZr6EcxacqGbgzh8T8mP0KMRMpBj7k4M8FGXzJ52WHlmCvdz+A
++QkQWRCwGp+BTp93cnzgvseLFmCyTi6htxyoBCqAVUBJgqFVojYqVMr00kIwDXjpMZ/cGQx9eefD
+O7o5CsaEGE2CSBimeuxfEupDYZLRXbPaMeC4Vo4u4IU2dY+BpgIQaVJbbWr7vVYnqWbZD3wO+KXz
+SThSB1wDZqjSROBGiCMHEiRyMKT8y55XpLqLgZvKYRhaDRyR3XZFAkTKHRESJPcwQLVhyfvkbg/y
+JLIkQumVVQtFUYQDU4eWzHyJLNQ8yBjIc0dohWJRwB7ilk4tk7kSqQzYHzIu6da8iIRNIf8C3W3L
+UceXMiEiuscclSdMxJfN5IhDhkay8grYa6C3D3gdce7D5ImT2sJnRkgG1YdYsM2wLMYt/XpGjxXr
+PNqZJKVDW/pEMAW4lXCoDaoNsZU4VgNPEiDRonMXHGuB2yEXBGHSpyuwBgsgjeZG/dnTZeB8l+pW
+OY4M1kH+e5zxySPZ1E6Pln8jWexxdQYDEe/GrEKdg8h5RjFSesqTM06i4fQXRNOlYAKsKHQAAAAA
+SUVORK5CYII=
+"
+       id="image902_core_skill_164.6_0"
+       x="41.826756"
+       y="74.532463"
+       style="stroke-width:1.76389" /></g></g><text x="15.5" y="167.49999999999997" font-size="2.9" font-family="sans-serif" font-weight="bold" fill="black">Unbreakable</text><text x="15.5" y="170.79999999999998" font-size="2.5" font-family="sans-serif" fill="#222222">Ignores all leadership</text><text x="15.5" y="173.7" font-size="2.5" font-family="sans-serif" fill="#222222">saves</text><g transform="translate(52.333333333333336,164.59999999999997) scale(0.5714287346939242,0.5714288979593702)"><defs
+     id="defs2_core_skill_164.6_1" /><g
+     id="layer1_core_skill_164.6_1"
+     transform="translate(-54.355924,-72.532469)"><rect
+       style="fill:#ffff00;stroke-width:0.233098;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:0;paint-order:markers stroke fill"
+       id="rect234-1-8-1-1-6_core_skill_164.6_1"
+       width="14"
+       height="14"
+       x="54.355923"
+       y="72.532463"
+       rx="3"
+       ry="3" /><image
+       width="10"
+       height="10"
+       preserveAspectRatio="none"
+       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAB
+lUlEQVR4nO2XvUrEQBRGj+s+h4os/hWCooggLIKllrba+T6WKoiNFiKIbGkhC4JYLFooIgv6GIo/
+UYQrhEmyM9nM7GbhHrhNmJnkzDc3JKAoiqIoiqIoJaAqNbBUgE3gGXgFdgZNqCICT8CPUS8iNEyJ
+GQI2gLsUAbMega0yCq0BLQcBsx4kvb9N6CvrDgKfUp3GtGStviRwa3m4b+AUmADGgD0HoXtJKDgr
+wFUOARNXoRvpN+/UgabDEToCarF5NblmXh8HDoEPy5pNuXdhloFGFwmk7fz/uMnYuFFgF3i33OMa
+WO1GYMmjQNa8qS6F6i4Cs3KTKICAT6FLYDFL4sIi0KkH8giY9QUcA9PGxhxYeiiSZ04QQqANbEu1
+HRI6AWYMoX2LkFWkyBFK+0iMf0TahBrAXGzuiBy5tzwivgVMXIUiEZq3CCUILRBKKEGRHijyn1F1
+7KEIOJM3a1wolZAJ+E5oIWuhXiXgM6HztAV6nYCvhBKURSCvUIKyCbgKJSirgE0oQegmDvVSUBRF
+URRFUQjLL3HhxnaitKueAAAAAElFTkSuQmCC
+"
+       id="image878_core_skill_164.6_1"
+       x="56.355923"
+       y="74.532463"
+       style="stroke-width:1.76389" /></g></g><text x="61.833333333333336" y="167.49999999999997" font-size="2.9" font-family="sans-serif" font-weight="bold" fill="black">Brave</text><text x="61.833333333333336" y="170.79999999999998" font-size="2.5" font-family="sans-serif" fill="#222222">Roll an extra leadership</text><text x="61.833333333333336" y="173.7" font-size="2.5" font-family="sans-serif" fill="#222222">die, and drop the highest</text><g transform="translate(98.66666666666667,164.59999999999997) scale(0.5714285714285714,0.5714288979593702)"><defs
+     id="defs2_core_skill_164.6_2"><filter
+       style="color-interpolation-filters:sRGB"
+       id="filter33837_core_skill_164.6_2"
+       x="0"
+       y="0"
+       width="1"
+       height="1"><feColorMatrix
+         type="hueRotate"
+         values="180"
+         result="color1"
+         id="feColorMatrix33833_core_skill_164.6_2" /><feColorMatrix
+         values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 -0.21 -0.72 -0.07 2 0 "
+         result="fbSourceGraphic"
+         id="feColorMatrix33835_core_skill_164.6_2" /><feColorMatrix
+         result="fbSourceGraphicAlpha"
+         in="fbSourceGraphic"
+         values="0 0 0 -1 0 0 0 0 -1 0 0 0 0 -1 0 0 0 0 1 0"
+         id="feColorMatrix33839_core_skill_164.6_2" /><feFlood
+         id="feFlood33841_core_skill_164.6_2"
+         result="flood1"
+         flood-color="rgb(255,255,0)"
+         flood-opacity="1"
+         in="fbSourceGraphic" /><feBlend
+         in2="fbSourceGraphic"
+         id="feBlend33843_core_skill_164.6_2"
+         result="blend1"
+         in="flood1"
+         mode="normal" /><feComposite
+         in2="fbSourceGraphic"
+         id="feComposite33845_core_skill_164.6_2"
+         operator="in"
+         in="blend1" /></filter></defs><g
+     id="layer1_core_skill_164.6_2"
+     transform="translate(-68.885095,-72.532469)"><rect
+       style="fill:#000000;fill-opacity:1;stroke-width:0.233098;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:0;paint-order:markers stroke fill"
+       id="rect234-1-8-1-1-2-5_core_skill_164.6_2"
+       width="14"
+       height="14"
+       x="68.885094"
+       y="72.532463"
+       rx="3"
+       ry="3" /><image
+       width="10"
+       height="10"
+       preserveAspectRatio="none"
+       xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAB50lEQVR4nO3YQUsbQRjG8Scxn8OKiNoeBIsiBUEEj/Xotb35fTxqofRiD0WQ4tGDCIJ4kPZQkRJoP0ZLrfl72Akss2tmNplJhjAPvJdlZ2Z/++4sm7RAU5H2pC8gVDIktWRIasmQ1JIhqSVDUkuGNEjHVNTEhLQl7Um6k9SVtK+YIAhebdAe6B6EVb9A+6CZ0OuGnKwF2gV9qwHYdQd6FxIUCrEDuvUA2PXDdK81achbD8CDqUHn3Jq5xg7ZAd04Lu4R9AW0CJoDHXqAvpsORYdsgi4aAOzxvqBriv0WHLIFunQs/gD6BFoojVswx+zj86CPoH+OOS/N2iND3oDOhuhA3Z3vn7dUOu8F6AD017HGFWh7GMhGQMBz45aHBNV2yD6wYhbpRQCEBJ2D1p+DfHUABu2BJgC7/oOOQS+tG/OBwXuoZ665AokB6ILem+p6dOgz6JUFOnKAnJBRHqHfFN9UndLY/jfYTw/QGWi1NHaW4pH70wQSGmCXL6hnQK8doAokNiAWqAIZZQ80AdjVwW8P9UAnFG/WMqgCid2B0B1aK48vTzSuDoTs0GkdZNwdCNUhL8gkAE1BAyEpAHxBtZAUAS5QBRJ7E4eu/ktBoOJH/zQk/2WaWjIktWRIasmQ1JIhqWVqIE9Zbr4phyxX2QAAAABJRU5ErkJggg=="
+       id="image878-0_core_skill_164.6_2"
+       x="71.073685"
+       y="91.221054"
+       style="stroke-width:1.76389;"
+       transform="matrix(1,0,0,-1,-0.188591,175.75352)" /></g></g><text x="108.16666666666667" y="167.49999999999997" font-size="2.9" font-family="sans-serif" font-weight="bold" fill="black">Cowardly</text><text x="108.16666666666667" y="170.79999999999998" font-size="2.5" font-family="sans-serif" fill="#222222">Roll an extra leadership</text><text x="108.16666666666667" y="173.7" font-size="2.5" font-family="sans-serif" fill="#222222">die, and drop the lowest</text></g></svg>

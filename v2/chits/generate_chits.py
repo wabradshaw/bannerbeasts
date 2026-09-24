@@ -58,16 +58,16 @@ ICON_MAP = {
     "Cowardly": "cowardly.svg",
     "Unbreakable": "anchored.svg",
     "Extra wound": "damaging.svg",
-    "Extra strike": "multistrike.svg",
+    "Multistrike": "multistrike.svg",
     "Poison": "poison.svg",
     "Armour": "armour.svg",
     "Beserk": "beserk.svg",
-    "-G-Burst": "g-burst.svg",
-    "-G-Rabid": "g-rabid.svg",
-    "-G-Jetpack": "jetpack.svg",
-    "-U-Ethereal": "ethereal.svg",
-    "-U-Scary": "scary.svg",
-    "-U-Vampiric": "u-vampiric.svg",
+    "Burst": "g-burst.svg",
+    "Rabid": "g-rabid.svg",
+    "Jetpack": "jetpack.svg",
+    "Ethereal": "ethereal.svg",
+    "Scary": "scary.svg",
+    "Vampiric": "u-vampiric.svg",
 }
 
 # Known stacking rules: ability -> f(stack_count) -> label string.
@@ -81,13 +81,13 @@ def table_rule(mapping: dict[int, str]):
 
 STACK_RULES = {
     "Shoot": lambda n: str(int(n)),
-    "Extra strike": lambda n: str(int(n) + 1),
+    "Multistrike": lambda n: str(int(n) + 1),
     "Veteran": lambda n: f"{5 - int(n)}+",
     "Move": lambda n: f"+{int(n)}",
     "Range": lambda n: str(int(n) + 2),
     "Accuracy": lambda n: f"{5 - int(n)}+",
     "Armour": lambda n: f"+{int(n)}",
-    "-U-Vampiric": table_rule({1: "5+", 2: "3+", 3: "2+"}),
+    "Vampiric": table_rule({1: "5+", 2: "3+", 3: "2+"}),
     "Poison": table_rule({1: "6s", 2: "5+", 3: "4+"}),
 }
 

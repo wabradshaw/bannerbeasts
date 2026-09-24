@@ -35,8 +35,8 @@ WEAPON_ICON_MAP = {
     "Claw": "claw.svg",
     "Spear": "spear.svg",
     "Blank": "blank-weapon.svg",
-    "-Gobbo - Bomb": "bombs.svg",
-    "-Undead-Scythe": "scythe.svg",
+    "Bomb": "bombs.svg",
+    "Scythe": "scythe.svg",
 }
 ARMOUR_ICON_MAP = {
     "Heavy": "heavy-armour.svg",
